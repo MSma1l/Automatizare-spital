@@ -71,7 +71,10 @@ app.include_router(resources_router)
 # ─── File serving ─────────────────────────────────────────────
 @app.get("/api/uploads/{path:path}")
 async def serve_upload(path: str):
-    file_path = os.path.join(settings.UPLOAD_DIR, path)
+    file_path = os.path.realpath(os.path.join(settings.UPLOAD_DIR, path))
+    upload_root = os.path.realpath(settings.UPLOAD_DIR)
+    if not file_path.startswith(upload_root + os.sep) and file_path != upload_root:
+        return JSONResponse(status_code=403, content={"detail": "Acces interzis"})
     if os.path.exists(file_path):
         return FileResponse(file_path)
     return JSONResponse(status_code=404, content={"detail": "Fișier negăsit"})
@@ -95,13 +98,13 @@ async def startup_event():
         admin = db.query(User).filter(User.role == UserRole.ADMIN).first()
         if not admin:
             admin_user = User(
-                email="admin@spital.ro",
-                password_hash=hash_password("admin123"),
+                email="admin@hospital.md",
+                password_hash=hash_password("Admin123!"),
                 role=UserRole.ADMIN,
             )
             db.add(admin_user)
             db.commit()
-            logging.info("Admin default creat: admin@spital.ro / admin123")
+            logging.info("Admin default creat: admin@hospital.md / Admin123!")
     finally:
         db.close()
 
@@ -109,5 +112,5 @@ async def startup_event():
     os.makedirs(os.path.join(settings.UPLOAD_DIR, "chat"), exist_ok=True)
 
 
-# ─── Replace app with socket_app for uvicorn ─────────────────
-app = socket_app
+# ─── ASGI app for uvicorn (wraps FastAPI with Socket.IO) ──────
+application = socket_app

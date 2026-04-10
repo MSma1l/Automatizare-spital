@@ -1,145 +1,196 @@
 """Agent 7: Help Agent (Medical FAQ Assistant)
-Virtual assistant using a local transformer model (DistilBERT) for medical Q&A.
+Uses trained TF-IDF model for multilingual Q&A (Romanian + Russian).
+Falls back to keyword matching if trained model is unavailable.
 """
 import os
 import json
+import pickle
 import logging
 import numpy as np
 from agents.base_agent import BaseAgent
 
 logger = logging.getLogger(__name__)
 
-# Medical FAQ knowledge base (Romanian)
-MEDICAL_FAQ = [
-    {
-        "question": "Ce fac dacă am febră mare?",
-        "answer": "Dacă aveți febră peste 38.5°C, luați un antitermic (paracetamol). Beți multe lichide și odihniți-vă. Dacă febra persistă mai mult de 3 zile sau depășește 40°C, prezentați-vă la urgențe.",
-        "category": "urgente",
-        "keywords": ["febra", "temperatura", "cald", "frisoane"],
-    },
-    {
-        "question": "Am dureri de cap severe. Ce trebuie să fac?",
-        "answer": "Durerile de cap pot avea multe cauze. Luați un analgezic (paracetamol/ibuprofen). Dacă durerea este bruscă și foarte intensă, aveți vedere încețoșată sau vomitați, mergeți la urgențe imediat - ar putea fi o urgență neurologică.",
-        "category": "neurologie",
-        "keywords": ["durere cap", "cefalee", "migrena", "cap"],
-    },
-    {
-        "question": "Cum pot programa o consultație?",
-        "answer": "Pentru a programa o consultație: 1) Accesați secțiunea 'Programare' din meniul principal. 2) Alegeți specialitatea dorită. 3) Selectați medicul. 4) Alegeți data și ora disponibilă. 5) Confirmați programarea. Veți primi o notificare de confirmare.",
-        "category": "sistem",
-        "keywords": ["programare", "consultatie", "rezervare", "medic"],
-    },
-    {
-        "question": "Am dureri de piept. Este grav?",
-        "answer": "Durerile de piept pot fi grave. Dacă aveți durere în piept care se extinde spre brațul stâng, dificultăți de respirație, transpirații reci, SUNAȚI IMEDIAT LA 112. Acestea pot fi simptome de infarct miocardic. Nu așteptați!",
-        "category": "urgente",
-        "keywords": ["durere piept", "inima", "infarct", "respiratie"],
-    },
-    {
-        "question": "Ce investigații trebuie să fac anual?",
-        "answer": "Investigații recomandate anual: hemoleucogramă completă, glicemie, profil lipidic, funcție hepatică și renală, sumar urină. După 40 ani: EKG, ecografie abdominală. Femei: examen ginecologic, mamografie (după 40 ani). Bărbați: PSA (după 50 ani).",
-        "category": "preventie",
-        "keywords": ["investigatii", "analize", "control", "anual", "preventie"],
-    },
-    {
-        "question": "Cum îmi pot accesa istoricul medical?",
-        "answer": "Istoricul medical se găsește în secțiunea 'Istoric' din meniul principal. Acolo puteți vedea toate consultațiile anterioare, notele medicului și recomandările primite. Puteți descărca rapoarte PDF pentru fiecare consultație.",
-        "category": "sistem",
-        "keywords": ["istoric", "medical", "consultatie", "raport"],
-    },
-    {
-        "question": "Am simptome de răceală. Ce recomandați?",
-        "answer": "Pentru simptome de răceală: odihniți-vă, beți multe lichide calde, luați vitamina C. Paracetamol pentru febră/dureri. Dacă simptomele persistă peste 7 zile sau se agravează (tuse cu sânge, dificultăți de respirație), programați o consultație.",
-        "category": "general",
-        "keywords": ["raceala", "gripa", "tuse", "nas", "gat"],
-    },
-    {
-        "question": "Când trebuie să merg la urgențe?",
-        "answer": "Mergeți la urgențe în caz de: durere severă de piept, dificultăți respiratorii, pierderea conștienței, sângerare abundentă, fracturi evidente, reacții alergice severe, durere abdominală intensă, AVC (paralizie facială, tulburări de vorbire), febră >40°C.",
-        "category": "urgente",
-        "keywords": ["urgente", "urgenta", "grav", "spital", "112"],
-    },
-    {
-        "question": "Cum pot comunica cu medicul meu?",
-        "answer": "Puteți comunica cu medicul prin secțiunea 'Mesaje' din aplicație. Aveți acces la chat text și video consultații. Conversațiile se creează automat după ce aveți o programare cu un medic.",
-        "category": "sistem",
-        "keywords": ["mesaj", "chat", "comunicare", "medic", "video"],
-    },
-    {
-        "question": "Ce este tensiunea arterială normală?",
-        "answer": "Tensiunea arterială normală este sub 120/80 mmHg. Pre-hipertensiune: 120-139/80-89. Hipertensiune stadiul 1: 140-159/90-99. Hipertensiune stadiul 2: ≥160/≥100. Dacă aveți valori peste 140/90 constant, consultați un cardiolog.",
-        "category": "cardiologie",
-        "keywords": ["tensiune", "arteriala", "hipertensiune", "tensiunea"],
-    },
-]
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "models", "saved_models", "help_agent_latest.pkl")
+QA_PATH = os.path.join(os.path.dirname(__file__), "..", "models", "training_data", "help_agent_qa.json")
 
 
 class HelpAgent(BaseAgent):
     name = "help"
-    description = "Medical FAQ virtual assistant"
+    description = "Medical FAQ virtual assistant (RO + RU)"
 
     def __init__(self, db=None):
         if db:
             super().__init__(db)
-        self.faq_data = MEDICAL_FAQ
-        self._embeddings = None
+        self._model_data = None
+        self._qa_data = None
+        self._load_model()
 
-    def _compute_keyword_score(self, query: str, faq_entry: dict) -> float:
-        """Compute similarity score based on keyword matching."""
-        query_lower = query.lower()
-        query_words = set(query_lower.split())
+    def _load_model(self):
+        """Load trained TF-IDF model if available."""
+        if os.path.exists(MODEL_PATH):
+            try:
+                with open(MODEL_PATH, "rb") as f:
+                    data = pickle.load(f)
+                self._model_data = data.get("model", data)
+                logger.info("Help Agent: Loaded trained TF-IDF model")
+                return
+            except Exception as e:
+                logger.warning(f"Help Agent: Could not load model: {e}")
 
-        score = 0
-        for keyword in faq_entry["keywords"]:
-            if keyword.lower() in query_lower:
-                score += 2
-            elif any(kw in query_lower for kw in keyword.lower().split()):
-                score += 1
+        # Fallback: load Q&A JSON directly
+        if os.path.exists(QA_PATH):
+            try:
+                with open(QA_PATH, "r", encoding="utf-8") as f:
+                    self._qa_data = json.load(f)
+                logger.info(f"Help Agent: Loaded {len(self._qa_data['qa_pairs'])} Q&A pairs from JSON")
+            except Exception as e:
+                logger.warning(f"Help Agent: Could not load Q&A data: {e}")
 
-        # Bonus for category match
-        common_words = query_words & set(faq_entry.get("category", "").lower().split())
-        score += len(common_words)
-
-        return score
+    def _detect_language(self, text: str) -> str:
+        """Simple language detection: Russian uses Cyrillic characters."""
+        cyrillic_count = sum(1 for c in text if '\u0400' <= c <= '\u04FF')
+        return "ru" if cyrillic_count > len(text) * 0.3 else "ro"
 
     def answer(self, question: str) -> dict:
-        """Answer a medical question using keyword matching and FAQ database."""
+        """Answer a medical question using trained model or keyword fallback."""
+        lang = self._detect_language(question)
+
+        # Method 1: Trained TF-IDF model
+        if self._model_data and "tfidf" in self._model_data:
+            return self._answer_with_tfidf(question, lang)
+
+        # Method 2: JSON Q&A with keyword matching
+        if self._qa_data:
+            return self._answer_with_keywords(question, lang)
+
+        # Method 3: Hardcoded fallback
+        return self._fallback_answer(lang)
+
+    def _answer_with_tfidf(self, question: str, lang: str) -> dict:
+        """Use trained TF-IDF + cosine similarity for retrieval."""
+        from sklearn.metrics.pairwise import cosine_similarity
+
+        tfidf = self._model_data["tfidf"]
+        tfidf_matrix = self._model_data["tfidf_matrix"]
+        answers_ro = self._model_data["corpus_answers_ro"]
+        answers_ru = self._model_data["corpus_answers_ru"]
+        categories = self._model_data["corpus_categories"]
+        questions = self._model_data["corpus_questions"]
+
+        query_vec = tfidf.transform([question])
+        sims = cosine_similarity(query_vec, tfidf_matrix).flatten()
+
+        # Get top 5 matches
+        top_indices = sims.argsort()[-5:][::-1]
+        best_idx = top_indices[0]
+        confidence = float(sims[best_idx])
+
+        if confidence < 0.05:
+            return self._fallback_answer(lang)
+
+        answers = answers_ru if lang == "ru" else answers_ro
+
+        related = []
+        for idx in top_indices[1:4]:
+            if sims[idx] > 0.05:
+                related.append(questions[idx])
+
+        return {
+            "answer": answers[best_idx],
+            "category": categories[best_idx],
+            "confidence": round(min(1.0, confidence * 2), 2),
+            "language": lang,
+            "related_questions": related,
+            "method": "tfidf",
+        }
+
+    def _answer_with_keywords(self, question: str, lang: str) -> dict:
+        """Keyword-based matching on Q&A JSON data."""
+        question_lower = question.lower()
+        pairs = self._qa_data["qa_pairs"]
+
         scores = []
-        for faq in self.faq_data:
-            score = self._compute_keyword_score(question, faq)
-            scores.append((score, faq))
+        for pair in pairs:
+            score = 0
+            for keyword in pair.get("keywords", []):
+                if keyword.lower() in question_lower:
+                    score += 2
+                elif any(kw in question_lower for kw in keyword.lower().split()):
+                    score += 1
+            # Also match against the question text
+            q_field = "question_ru" if lang == "ru" else "question_ro"
+            q_words = set(pair.get(q_field, "").lower().split())
+            common = set(question_lower.split()) & q_words
+            score += len(common) * 0.5
+            scores.append((score, pair))
 
         scores.sort(key=lambda x: x[0], reverse=True)
 
         if scores[0][0] > 0:
             best = scores[0][1]
-            confidence = min(1.0, scores[0][0] / 5)
+            confidence = min(1.0, scores[0][0] / 6)
+            answer_field = "answer_ru" if lang == "ru" else "answer_ro"
+            q_field = "question_ru" if lang == "ru" else "question_ro"
+
+            related = [s[1][q_field] for s in scores[1:4] if s[0] > 0]
+
             return {
-                "answer": best["answer"],
+                "answer": best[answer_field],
                 "category": best["category"],
                 "confidence": round(confidence, 2),
-                "related_questions": [s[1]["question"] for s in scores[1:4] if s[0] > 0],
+                "language": lang,
+                "related_questions": related,
+                "method": "keywords",
             }
 
+        return self._fallback_answer(lang)
+
+    def _fallback_answer(self, lang: str) -> dict:
+        """Default answer when no match is found."""
+        if lang == "ru":
+            answer = (
+                "Не удалось найти конкретный ответ на ваш вопрос. "
+                "Рекомендуем записаться на консультацию к врачу-специалисту "
+                "для получения персонализированных рекомендаций. "
+                "В экстренных случаях звоните 112."
+            )
+        else:
+            answer = (
+                "Nu am găsit un răspuns specific pentru întrebarea dumneavoastră. "
+                "Vă recomandăm să programați o consultație cu un medic specialist "
+                "pentru a primi sfaturi personalizate. "
+                "În caz de urgență, sunați la 112."
+            )
+
         return {
-            "answer": "Nu am găsit un răspuns specific pentru întrebarea dumneavoastră. "
-                      "Vă recomandăm să programați o consultație cu un medic specialist "
-                      "pentru a primi sfaturi personalizate.",
+            "answer": answer,
             "category": "general",
             "confidence": 0,
-            "related_questions": [faq["question"] for faq in self.faq_data[:3]],
+            "language": lang,
+            "related_questions": [],
+            "method": "fallback",
         }
 
     def run(self) -> dict:
-        """Return available FAQ categories and questions."""
-        categories = {}
-        for faq in self.faq_data:
-            cat = faq["category"]
-            if cat not in categories:
-                categories[cat] = []
-            categories[cat].append(faq["question"])
+        """Return available FAQ categories and stats."""
+        if self._qa_data:
+            categories = {}
+            for pair in self._qa_data["qa_pairs"]:
+                cat = pair["category"]
+                if cat not in categories:
+                    categories[cat] = []
+                categories[cat].append(pair["question_ro"])
+            return {
+                "total_pairs": len(self._qa_data["qa_pairs"]),
+                "languages": ["ro", "ru"],
+                "categories": categories,
+                "model_loaded": self._model_data is not None,
+            }
 
         return {
-            "categories": categories,
-            "total_questions": len(self.faq_data),
+            "total_pairs": 0,
+            "languages": ["ro", "ru"],
+            "categories": {},
+            "model_loaded": False,
         }

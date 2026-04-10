@@ -116,9 +116,10 @@ const LoginPage: React.FC = () => {
 
           {/* Demo credentials */}
           <div className="mt-8 p-4 bg-primary-50 rounded-lg">
-            <p className="text-sm font-medium text-primary-700 mb-2">Cont demo administrator:</p>
-            <p className="text-sm text-primary-600">Email: admin@spital.ro</p>
-            <p className="text-sm text-primary-600">Parolă: admin123</p>
+            <p className="text-sm font-medium text-primary-700 mb-2">Conturi demo:</p>
+            <p className="text-sm text-primary-600">Admin: admin@hospital.md / Admin123!</p>
+            <p className="text-sm text-primary-600">Medic: doctor@hospital.md / Doctor123!</p>
+            <p className="text-sm text-primary-600">Pacient: patient@hospital.md / Patient123!</p>
           </div>
         </div>
       </div>

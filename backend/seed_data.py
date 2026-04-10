@@ -24,12 +24,12 @@ db = SessionLocal()
 print("Seeding database...")
 
 # ─── Admin ──────────────────────────────────────────────────
-admin_user = db.query(User).filter(User.email == "admin@spital.ro").first()
+admin_user = db.query(User).filter(User.email == "admin@hospital.md").first()
 if not admin_user:
-    admin_user = User(email="admin@spital.ro", password_hash=hash_password("admin123"), role=UserRole.ADMIN)
+    admin_user = User(email="admin@hospital.md", password_hash=hash_password("Admin123!"), role=UserRole.ADMIN)
     db.add(admin_user)
     db.flush()
-    print("  Admin created: admin@spital.ro / admin123")
+    print("  Admin created: admin@hospital.md / Admin123!")
 
 # ─── Doctors ────────────────────────────────────────────────
 DOCTORS_DATA = [
@@ -43,7 +43,7 @@ DOCTORS_DATA = [
 
 doctors = []
 for i, dd in enumerate(DOCTORS_DATA):
-    email = f"dr.{dd['last_name'].lower()}@spital.ro"
+    email = f"dr.{dd['last_name'].lower()}@hospital.md" if i > 0 else "doctor@hospital.md"
     existing = db.query(User).filter(User.email == email).first()
     if existing:
         doctor = db.query(Doctor).filter(Doctor.user_id == existing.id).first()
@@ -51,7 +51,7 @@ for i, dd in enumerate(DOCTORS_DATA):
             doctors.append(doctor)
         continue
 
-    user = User(email=email, password_hash=hash_password("doctor123"), role=UserRole.DOCTOR)
+    user = User(email=email, password_hash=hash_password("Doctor123!"), role=UserRole.DOCTOR)
     db.add(user)
     db.flush()
 
@@ -73,7 +73,7 @@ for i, dd in enumerate(DOCTORS_DATA):
         db.add(schedule)
 
     doctors.append(doctor)
-    print(f"  Doctor created: {email} / doctor123")
+    print(f"  Doctor created: {email} / Doctor123!")
 
 db.commit()
 
@@ -93,7 +93,7 @@ PATIENTS_DATA = [
 
 patients = []
 for pd in PATIENTS_DATA:
-    email = f"{pd['first_name'].lower()}.{pd['last_name'].lower()}@email.ro"
+    email = f"patient@hospital.md" if pd['first_name'] == 'Ion' else f"{pd['first_name'].lower()}.{pd['last_name'].lower()}@email.md"
     existing = db.query(User).filter(User.email == email).first()
     if existing:
         patient = db.query(Patient).filter(Patient.user_id == existing.id).first()
@@ -101,7 +101,7 @@ for pd in PATIENTS_DATA:
             patients.append(patient)
         continue
 
-    user = User(email=email, password_hash=hash_password("pacient123"), role=UserRole.PATIENT)
+    user = User(email=email, password_hash=hash_password("Patient123!"), role=UserRole.PATIENT)
     db.add(user)
     db.flush()
 
@@ -117,7 +117,7 @@ for pd in PATIENTS_DATA:
     db.add(patient)
     db.flush()
     patients.append(patient)
-    print(f"  Patient created: {email} / pacient123")
+    print(f"  Patient created: {email} / Patient123!")
 
 db.commit()
 
@@ -210,6 +210,6 @@ if db.query(Notification).count() == 0:
 
 db.close()
 print("\nSeed complete! Demo accounts:")
-print("  Admin:   admin@spital.ro / admin123")
-print("  Doctor:  dr.popescu@spital.ro / doctor123")
-print("  Patient: ion.vasile@email.ro / pacient123")
+print("  Admin:   admin@hospital.md / Admin123!")
+print("  Doctor:  doctor@hospital.md / Doctor123!")
+print("  Patient: patient@hospital.md / Patient123!")

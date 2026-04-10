@@ -1,0 +1,370 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "total_pairs": 220,
+    "languages": ["ro", "ru"],
+    "categories": ["urgente", "cardiologie", "neurologie", "pneumologie", "gastroenterologie", "ortopedie", "pediatrie", "dermatologie", "sanatate_generala", "preventie", "sistem", "medicamente", "sanatate_mintala"]
+  },
+  "qa_pairs": [
+    {
+      "id": 1,
+      "category": "urgente",
+      "question_ro": "Ce fac dacă am febră mare peste 39 grade?",
+      "answer_ro": "Dacă aveți febră peste 39°C: 1) Luați paracetamol (1g) sau ibuprofen (400mg). 2) Beți multe lichide. 3) Aplicați comprese reci pe frunte. 4) Dacă febra nu scade în 1-2 ore sau depășește 40°C, prezentați-vă la urgențe. 5) La copii sub 5 ani, febra peste 38.5°C necesită atenție medicală imediată.",
+      "question_ru": "Что делать, если у меня высокая температура выше 39 градусов?",
+      "answer_ru": "Если температура выше 39°C: 1) Примите парацетамол (1г) или ибупрофен (400мг). 2) Пейте много жидкости. 3) Приложите холодные компрессы на лоб. 4) Если температура не снижается за 1-2 часа или превышает 40°C, обратитесь в скорую помощь. 5) У детей до 5 лет температура выше 38.5°C требует немедленного медицинского внимания.",
+      "keywords": ["febra", "temperatura", "cald", "frisoane", "температура", "жар", "лихорадка"]
+    },
+    {
+      "id": 2,
+      "category": "urgente",
+      "question_ro": "Am dureri puternice în piept. Ce trebuie să fac?",
+      "answer_ro": "ATENȚIE - durerea în piept poate fi o urgență! Dacă aveți: durere care se extinde spre brațul stâng/mandibulă, dificultăți de respirație, transpirații reci, greață - SUNAȚI IMEDIAT 112. Poate fi infarct miocardic. Până la sosirea ambulanței: stați în repaus, mestecați o aspirină (dacă nu sunteți alergic), nu faceți efort fizic.",
+      "question_ru": "У меня сильные боли в груди. Что делать?",
+      "answer_ru": "ВНИМАНИЕ - боль в груди может быть экстренной ситуацией! Если у вас: боль, отдающая в левую руку/челюсть, затруднённое дыхание, холодный пот, тошнота - НЕМЕДЛЕННО ЗВОНИТЕ 112. Это может быть инфаркт миокарда. До приезда скорой: отдыхайте, разжуйте аспирин (если нет аллергии), не делайте физических усилий.",
+      "keywords": ["durere piept", "inima", "infarct", "respiratie", "боль грудь", "сердце", "инфаркт"]
+    },
+    {
+      "id": 3,
+      "category": "urgente",
+      "question_ro": "Când trebuie să sun la 112?",
+      "answer_ro": "Sunați la 112 în caz de: 1) Durere severă de piept. 2) Dificultăți de respirație brusce. 3) Pierderea conștienței. 4) Sângerare abundentă necontrolabilă. 5) Suspiciune de AVC (față asimetrică, vorbire neclară, slăbiciune bruscă). 6) Reacții alergice severe (anafilaxie). 7) Fracturi deschise. 8) Arsuri extinse. 9) Convulsii prelungite. 10) Intoxicații.",
+      "question_ru": "Когда нужно звонить 112?",
+      "answer_ru": "Звоните 112 при: 1) Сильной боли в груди. 2) Внезапном затруднении дыхания. 3) Потере сознания. 4) Обильном неконтролируемом кровотечении. 5) Подозрении на инсульт (асимметрия лица, нечёткая речь, внезапная слабость). 6) Тяжёлых аллергических реакциях (анафилаксия). 7) Открытых переломах. 8) Обширных ожогах. 9) Длительных судорогах. 10) Отравлениях.",
+      "keywords": ["112", "urgenta", "ambulanta", "grav", "скорая", "экстренный", "опасность"]
+    },
+    {
+      "id": 4,
+      "category": "urgente",
+      "question_ro": "Copilul meu are convulsii. Ce fac?",
+      "answer_ro": "1) SUNAȚI IMEDIAT 112. 2) Puneți copilul pe o parte (poziția laterală de siguranță). 3) NU introduceți nimic în gură. 4) NU îl țineți forțat. 5) Îndepărtați obiectele periculoase din jur. 6) Cronometrați durata convulsiilor. 7) După convulsii, verificați respirația. Convulsiile febrile sunt frecvente la copiii mici dar necesită evaluare medicală.",
+      "question_ru": "У моего ребёнка судороги. Что делать?",
+      "answer_ru": "1) НЕМЕДЛЕННО ЗВОНИТЕ 112. 2) Положите ребёнка на бок (безопасное боковое положение). 3) НЕ вставляйте ничего в рот. 4) НЕ удерживайте силой. 5) Уберите опасные предметы поблизости. 6) Засеките время судорог. 7) После судорог проверьте дыхание. Фебрильные судороги часты у маленьких детей, но требуют медицинского осмотра.",
+      "keywords": ["convulsii", "copil", "epilepsie", "судороги", "ребенок", "эпилепсия"]
+    },
+    {
+      "id": 5,
+      "category": "urgente",
+      "question_ro": "Am înghițit un obiect. Ce fac?",
+      "answer_ro": "Dacă ați înghițit un obiect mic și neted (monedă, nasture): de obicei trece singur în 24-48 ore. Mergeți la urgențe IMEDIAT dacă: aveți dificultăți de respirație, durere la înghițire, durere abdominală, obiectul este ascuțit sau baterie. NU provocați voma. La copii sub 5 ani, orice ingestie de obiect necesită evaluare medicală.",
+      "question_ru": "Я проглотил предмет. Что делать?",
+      "answer_ru": "Если вы проглотили маленький гладкий предмет (монету, пуговицу): обычно он выходит сам за 24-48 часов. Обратитесь в скорую НЕМЕДЛЕННО если: затруднённое дыхание, боль при глотании, боль в животе, предмет острый или батарейка. НЕ вызывайте рвоту. У детей до 5 лет любое проглатывание предмета требует медицинского осмотра.",
+      "keywords": ["inghitit", "obiect", "corp strain", "проглотил", "предмет", "инородное тело"]
+    },
+    {
+      "id": 6,
+      "category": "cardiologie",
+      "question_ro": "Ce este tensiunea arterială normală?",
+      "answer_ro": "Valorile tensiunii arteriale: Normal: sub 120/80 mmHg. Elevată: 120-129/<80. Hipertensiune st.1: 130-139/80-89. Hipertensiune st.2: ≥140/≥90. Criză hipertensivă: >180/>120 (urgență!). Măsurați dimineața și seara, în repaus, pe același braț. Dacă valorile sunt constant peste 130/80, consultați un cardiolog.",
+      "question_ru": "Какое нормальное артериальное давление?",
+      "answer_ru": "Значения артериального давления: Нормальное: ниже 120/80 мм рт.ст. Повышенное: 120-129/<80. Гипертония 1 ст.: 130-139/80-89. Гипертония 2 ст.: ≥140/≥90. Гипертонический криз: >180/>120 (экстренная ситуация!). Измеряйте утром и вечером, в покое, на одной и той же руке. Если значения постоянно выше 130/80, обратитесь к кардиологу.",
+      "keywords": ["tensiune", "arteriala", "hipertensiune", "давление", "артериальное", "гипертония"]
+    },
+    {
+      "id": 7,
+      "category": "cardiologie",
+      "question_ro": "Am pulsul neregulat. Este periculos?",
+      "answer_ro": "Un puls neregulat (aritmie) poate fi benign sau serios. Mergeți la medic dacă: pulsul este foarte rapid (>100/min) sau lent (<50/min), aveți amețeli, leșin, dureri de piept, dificultăți de respirație. Fibrilația atrială este cea mai frecventă aritmie și crește riscul de AVC. Un EKG este necesar pentru diagnostic precis.",
+      "question_ru": "У меня нерегулярный пульс. Это опасно?",
+      "answer_ru": "Нерегулярный пульс (аритмия) может быть доброкачественным или серьёзным. Обратитесь к врачу если: пульс очень быстрый (>100/мин) или медленный (<50/мин), есть головокружение, обморок, боль в груди, затруднённое дыхание. Фибрилляция предсердий — самая частая аритмия, повышающая риск инсульта. Для точного диагноза необходима ЭКГ.",
+      "keywords": ["puls", "aritmie", "batai inima", "пульс", "аритмия", "сердцебиение"]
+    },
+    {
+      "id": 8,
+      "category": "cardiologie",
+      "question_ro": "Ce este colesterolul și când e periculos?",
+      "answer_ro": "Colesterolul total normal: sub 200 mg/dL. LDL (rău): sub 100 mg/dL. HDL (bun): peste 40 mg/dL (bărbați), 50 mg/dL (femei). Trigliceride: sub 150 mg/dL. Colesterolul crescut nu dă simptome dar crește riscul de infarct și AVC. Verificați anual după 20 ani. Tratament: dietă, exerciții, eventual statine.",
+      "question_ru": "Что такое холестерин и когда он опасен?",
+      "answer_ru": "Нормальный общий холестерин: ниже 200 мг/дл. ЛПНП (плохой): ниже 100 мг/дл. ЛПВП (хороший): выше 40 мг/дл (мужчины), 50 мг/дл (женщины). Триглицериды: ниже 150 мг/дл. Повышенный холестерин не даёт симптомов, но увеличивает риск инфаркта и инсульта. Проверяйте ежегодно после 20 лет. Лечение: диета, упражнения, при необходимости статины.",
+      "keywords": ["colesterol", "LDL", "HDL", "trigliceride", "холестерин", "триглицериды"]
+    },
+    {
+      "id": 9,
+      "category": "neurologie",
+      "question_ro": "Am dureri de cap frecvente. Când să merg la medic?",
+      "answer_ro": "Mergeți la medic dacă: 1) Durerea este cea mai intensă din viață (brusc). 2) Durerea se agravează progresiv. 3) Apare după 50 ani. 4) E însoțită de febră, gât rigid, erupții. 5) Aveți tulburări de vedere, vorbire, slăbiciune. 6) Apare după traumatism cranian. 7) Dureri de cap >15 zile/lună. Migrena afectează 15% din populație și are tratament specific.",
+      "question_ru": "У меня частые головные боли. Когда идти к врачу?",
+      "answer_ru": "Обратитесь к врачу если: 1) Боль самая сильная в жизни (внезапная). 2) Боль прогрессивно усиливается. 3) Появилась после 50 лет. 4) Сопровождается лихорадкой, ригидностью шеи, сыпью. 5) Есть нарушения зрения, речи, слабость. 6) Появилась после травмы головы. 7) Головные боли >15 дней/месяц. Мигрень поражает 15% населения и имеет специфическое лечение.",
+      "keywords": ["durere cap", "cefalee", "migrena", "головная боль", "цефалгия", "мигрень"]
+    },
+    {
+      "id": 10,
+      "category": "neurologie",
+      "question_ro": "Cum recunosc un AVC (accident vascular cerebral)?",
+      "answer_ro": "Regula FAST: F (Face) - față asimetrică, un colț al gurii căzut. A (Arms) - nu poate ridica ambele brațe. S (Speech) - vorbire neclară sau imposibilă. T (Time) - SUNAȚI 112 IMEDIAT! Fiecare minut contează. Alte simptome: cefalee bruscă severă, confuzie, pierderea vederii. NU dați mâncare/apă. NU administrați medicamente. Tratamentul în primele 4.5 ore salvează viața.",
+      "question_ru": "Как распознать инсульт?",
+      "answer_ru": "Правило УДАР: У - Улыбка кривая, асимметрия лица. Д - Движение: не может поднять обе руки. А - Артикуляция: нечёткая или невозможная речь. Р - Решение: НЕМЕДЛЕННО ЗВОНИТЕ 112! Каждая минута на счету. Другие симптомы: внезапная сильная головная боль, спутанность сознания, потеря зрения. НЕ давайте еду/воду. НЕ давайте лекарства. Лечение в первые 4.5 часа спасает жизнь.",
+      "keywords": ["AVC", "accident vascular", "paralizie", "инсульт", "паралич", "УДАР"]
+    },
+    {
+      "id": 11,
+      "category": "neurologie",
+      "question_ro": "Am amețeli frecvente. Ce poate fi?",
+      "answer_ro": "Amețelile pot fi cauzate de: 1) Vertij pozițional benign (cel mai frecvent) - amețeală la schimbarea poziției. 2) Hipotensiune ortostatică - amețeală la ridicare. 3) Anemie. 4) Probleme de ureche internă. 5) Anxietate. 6) Cauze neurologice (rar). Consultați medicul dacă: amețelile sunt persistente, severe, sau însoțite de cefalee, tulburări de vedere, pierderea auzului.",
+      "question_ru": "У меня частые головокружения. Что это может быть?",
+      "answer_ru": "Головокружение может быть вызвано: 1) Доброкачественным позиционным вертиго (самое частое) - головокружение при смене положения. 2) Ортостатической гипотензией - при вставании. 3) Анемией. 4) Проблемами внутреннего уха. 5) Тревожностью. 6) Неврологическими причинами (редко). Обратитесь к врачу если: головокружения постоянные, сильные, или сопровождаются головной болью, нарушениями зрения, потерей слуха.",
+      "keywords": ["ameteli", "vertij", "echilibru", "головокружение", "вертиго", "равновесие"]
+    },
+    {
+      "id": 12,
+      "category": "pneumologie",
+      "question_ro": "Am tuse care nu trece de 3 săptămâni. Ce fac?",
+      "answer_ro": "Tusea cronică (>3 săptămâni) necesită evaluare medicală. Cauze frecvente: sinuzită cu scurgere nazală posterioară, astm, reflux gastro-esofagian, bronșită cronică, efecte secundare medicamente (IECA). Cauze grave: pneumonie, tuberculoză, cancer pulmonar. Mergeți la medic URGENT dacă: tusiți sânge, aveți febră, scădere în greutate inexplicabilă, dificultăți de respirație.",
+      "question_ru": "У меня кашель не проходит уже 3 недели. Что делать?",
+      "answer_ru": "Хронический кашель (>3 недель) требует медицинского обследования. Частые причины: синусит с постназальным затеканием, астма, гастроэзофагеальный рефлюкс, хронический бронхит, побочные эффекты лекарств (ИАПФ). Серьёзные причины: пневмония, туберкулёз, рак лёгких. Обратитесь к врачу СРОЧНО если: кашляете кровью, есть лихорадка, необъяснимая потеря веса, затруднённое дыхание.",
+      "keywords": ["tuse", "bronsita", "pneumonie", "кашель", "бронхит", "пневмония"]
+    },
+    {
+      "id": 13,
+      "category": "pneumologie",
+      "question_ro": "Cum deosebesc răceala de gripă?",
+      "answer_ro": "RĂCEALĂ: debut gradual, nas înfundat/curgător, strănut, tuse ușoară, fără febră sau febră mică, disconfort ușor. GRIPĂ: debut brusc, febră mare (38-40°C), frisoane, dureri musculare intense, cefalee, oboseală severă, tuse uscată. Gripa poate fi periculoasă pentru vârstnici, gravide, bolnavi cronic. Vaccinul antigripal este recomandat anual.",
+      "question_ru": "Как отличить простуду от гриппа?",
+      "answer_ru": "ПРОСТУДА: постепенное начало, заложенный/текущий нос, чихание, лёгкий кашель, без температуры или небольшая, лёгкий дискомфорт. ГРИПП: резкое начало, высокая температура (38-40°C), озноб, сильные мышечные боли, головная боль, сильная усталость, сухой кашель. Грипп может быть опасен для пожилых, беременных, хронических больных. Вакцинация от гриппа рекомендуется ежегодно.",
+      "keywords": ["raceala", "gripa", "nas", "stranut", "простуда", "грипп", "насморк"]
+    },
+    {
+      "id": 14,
+      "category": "pneumologie",
+      "question_ro": "Ce este astmul și cum se controlează?",
+      "answer_ro": "Astmul este o boală cronică a căilor respiratorii cu episoade de wheezing, tuse, dificultăți de respirație. Control: 1) Evitați declanșatorii (praf, fum, alergeni). 2) Folosiți inhalatorul de control zilnic (corticosteroizi). 3) Aveți mereu inhalatorul de urgență (salbutamol). 4) Monitorizați simptomele. 5) Consultați pneumologul la fiecare 3-6 luni. Astmul bine controlat permite o viață normală.",
+      "question_ru": "Что такое астма и как её контролировать?",
+      "answer_ru": "Астма — хроническое заболевание дыхательных путей с эпизодами свистящего дыхания, кашля, затруднённого дыхания. Контроль: 1) Избегайте триггеров (пыль, дым, аллергены). 2) Используйте контролирующий ингалятор ежедневно (кортикостероиды). 3) Всегда имейте при себе экстренный ингалятор (сальбутамол). 4) Мониторьте симптомы. 5) Посещайте пульмонолога каждые 3-6 месяцев. При хорошем контроле астма позволяет вести нормальную жизнь.",
+      "keywords": ["astm", "respiratie", "inhaler", "wheezing", "астма", "дыхание", "ингалятор"]
+    },
+    {
+      "id": 15,
+      "category": "gastroenterologie",
+      "question_ro": "Am dureri de stomac frecvente. Ce poate fi?",
+      "answer_ro": "Dureri de stomac frecvente pot indica: 1) Gastrită - durere arsură, gol de stomac. 2) Ulcer gastric/duodenal - durere legată de mese. 3) Reflux gastro-esofagian - arsuri retrosternale. 4) Sindrom de colon iritabil - durere + modificări scaun. 5) Litiază biliară - durere după mese grase. Mergeți la medic dacă: durerea e severă, aveți scaun negru/cu sânge, scădere în greutate, vomă persistentă.",
+      "question_ru": "У меня частые боли в животе. Что это может быть?",
+      "answer_ru": "Частые боли в животе могут указывать на: 1) Гастрит — жгучая боль, чувство пустоты. 2) Язва желудка/двенадцатиперстной кишки — боль связана с приёмом пищи. 3) Гастроэзофагеальный рефлюкс — загрудинное жжение. 4) Синдром раздражённого кишечника — боль + изменения стула. 5) Желчнокаменная болезнь — боль после жирной пищи. Обратитесь к врачу если: боль сильная, чёрный/кровянистый стул, потеря веса, постоянная рвота.",
+      "keywords": ["stomac", "gastrita", "ulcer", "reflux", "желудок", "гастрит", "язва", "рефлюкс"]
+    },
+    {
+      "id": 16,
+      "category": "gastroenterologie",
+      "question_ro": "Am probleme cu tranzitul intestinal. Ce recomandați?",
+      "answer_ro": "Pentru constipație: 1) Creșteți aportul de fibre (fructe, legume, cereale integrale). 2) Beți min. 2L apă/zi. 3) Faceți mișcare zilnic, 30 min. 4) Nu amânați mersul la toaletă. 5) Probiotice. Pentru diaree: 1) Hidratare (apă, ceai, soluții orale). 2) Dietă ușoară (orez, banane, toast). 3) Evitați lactatele temporar. Consultați medicul dacă simptomele durează >5 zile sau aveți sânge în scaun.",
+      "question_ru": "У меня проблемы с кишечником. Что посоветуете?",
+      "answer_ru": "При запоре: 1) Увеличьте потребление клетчатки (фрукты, овощи, цельнозерновые). 2) Пейте мин. 2л воды/день. 3) Двигайтесь ежедневно, 30 мин. 4) Не откладывайте поход в туалет. 5) Пробиотики. При диарее: 1) Гидратация (вода, чай, оральные растворы). 2) Лёгкая диета (рис, бананы, тосты). 3) Временно избегайте молочных продуктов. Обратитесь к врачу если симптомы длятся >5 дней или есть кровь в стуле.",
+      "keywords": ["constipatie", "diaree", "intestin", "запор", "диарея", "кишечник"]
+    },
+    {
+      "id": 17,
+      "category": "ortopedie",
+      "question_ro": "Am dureri de spate cronice. Ce pot face?",
+      "answer_ro": "Dureri de spate - 80% din adulți le experimentează. Recomandări: 1) Mențineți o postură corectă. 2) Exerciții de întărire musculatură lombară. 3) Stretching zilnic. 4) Evitați statul prelungit. 5) Ridicați greutăți corect (cu picioarele). 6) Saltea fermă. 7) Comprese calde. Mergeți la medic dacă: durerea iradiază în picior (sciatică), aveți amorțeli, slăbiciune musculară, probleme urinare.",
+      "question_ru": "У меня хронические боли в спине. Что я могу сделать?",
+      "answer_ru": "Боли в спине — 80% взрослых испытывают их. Рекомендации: 1) Поддерживайте правильную осанку. 2) Упражнения для укрепления мышц поясницы. 3) Ежедневная растяжка. 4) Избегайте длительного сидения. 5) Поднимайте тяжести правильно (ногами). 6) Жёсткий матрас. 7) Тёплые компрессы. Обратитесь к врачу если: боль отдаёт в ногу (ишиас), есть онемение, мышечная слабость, проблемы с мочеиспусканием.",
+      "keywords": ["spate", "lombar", "sciatica", "coloana", "спина", "поясница", "ишиас", "позвоночник"]
+    },
+    {
+      "id": 18,
+      "category": "ortopedie",
+      "question_ro": "Mi-am luxat glezna. Cum procedez?",
+      "answer_ro": "Protocolul RICE: R (Rest) - Repaus, nu călcați pe picior. I (Ice) - Gheață 20 min la fiecare 2-3 ore, primele 48h. C (Compression) - Bandaj elastic. E (Elevation) - Țineți piciorul ridicat. Luați ibuprofen pentru durere. Mergeți la medic dacă: nu puteți călca deloc, umflătură severă, deformare vizibilă, amorțeală. Poate necesita radiografie pentru a exclude fractura.",
+      "question_ru": "Я подвернул(а) лодыжку. Что делать?",
+      "answer_ru": "Протокол RICE: R (Rest) — Покой, не наступайте. I (Ice) — Лёд 20 мин каждые 2-3 часа, первые 48ч. C (Compression) — Эластичный бинт. E (Elevation) — Держите ногу поднятой. Примите ибупрофен от боли. Обратитесь к врачу если: не можете наступить, сильный отёк, видимая деформация, онемение. Может потребоваться рентген для исключения перелома.",
+      "keywords": ["glezna", "luxatie", "entorsa", "picior", "лодыжка", "вывих", "растяжение", "нога"]
+    },
+    {
+      "id": 19,
+      "category": "pediatrie",
+      "question_ro": "Copilul meu are febră. Când dau antitermic?",
+      "answer_ro": "La copii: 1) Sub 38.5°C: nu dați antitermic dacă copilul se simte bine. Dezbrăcați, lichide. 2) Peste 38.5°C: Paracetamol (15mg/kg) sau Ibuprofen (10mg/kg, nu sub 6 luni). 3) NU dați aspirină copiilor! 4) Alternați paracetamol/ibuprofen la 4-6 ore. Mergeți la medic: febră la sugar <3 luni, febră >40°C, convulsii, somnolență, erupții, refuz alimentație >24h.",
+      "question_ru": "У моего ребёнка температура. Когда давать жаропонижающее?",
+      "answer_ru": "У детей: 1) Ниже 38.5°C: не давайте жаропонижающее если ребёнок чувствует себя хорошо. Разденьте, давайте жидкости. 2) Выше 38.5°C: Парацетамол (15мг/кг) или Ибупрофен (10мг/кг, не младше 6 месяцев). 3) НЕ давайте аспирин детям! 4) Чередуйте парацетамол/ибупрофен каждые 4-6 часов. Обратитесь к врачу: температура у младенца <3 мес., >40°C, судороги, сонливость, сыпь, отказ от еды >24ч.",
+      "keywords": ["copil", "febra", "antitermic", "pediatru", "ребенок", "температура", "жаропонижающее"]
+    },
+    {
+      "id": 20,
+      "category": "pediatrie",
+      "question_ro": "Ce vaccinuri sunt recomandate copiilor?",
+      "answer_ro": "Calendar vaccinal (România): La naștere: BCG, Hepatita B. 2 luni: DTPa-VPI-Hib, Pneumococic. 4 luni: DTPa-VPI-Hib, Pneumococic. 6 luni: DTPa-VPI-Hib, Hepatita B. 12 luni: ROR (Rujeolă-Oreion-Rubeolă), Pneumococic. 5 ani: DTPa-VPI rapel. 14 ani: dT rapel. Vaccinurile sunt sigure, gratuite și protejează copilul de boli grave.",
+      "question_ru": "Какие прививки рекомендованы детям?",
+      "answer_ru": "Календарь вакцинации: При рождении: БЦЖ, Гепатит B. 2 месяца: АКДС-ИПВ-Хиб, Пневмококковая. 4 месяца: АКДС-ИПВ-Хиб, Пневмококковая. 6 месяцев: АКДС-ИПВ-Хиб, Гепатит B. 12 месяцев: КПК (Корь-Паротит-Краснуха), Пневмококковая. 5 лет: АКДС-ИПВ ревакцинация. 14 лет: дТ ревакцинация. Вакцины безопасны, бесплатны и защищают ребёнка от серьёзных болезней.",
+      "keywords": ["vaccin", "copil", "imunizare", "вакцина", "прививка", "иммунизация"]
+    },
+    {
+      "id": 21,
+      "category": "dermatologie",
+      "question_ro": "Am o aluniță care s-a modificat. Trebuie să mă îngrijorez?",
+      "answer_ro": "Regula ABCDE pentru alunițe suspecte: A (Asimetrie) - o jumătate diferită de cealaltă. B (Bordură) - margini neregulate. C (Culoare) - culori multiple. D (Diametru) - peste 6mm. E (Evoluție) - modificare recentă. Dacă observați ORICARE dintre aceste semne, mergeți urgent la dermatolog. Melanomul detectat precoce are rată de vindecare >95%. Controlați alunițele anual.",
+      "question_ru": "У меня изменилась родинка. Стоит ли беспокоиться?",
+      "answer_ru": "Правило ABCDE для подозрительных родинок: A (Асимметрия) — одна половина отличается от другой. B (Бордюр) — неровные края. C (Цвет) — несколько цветов. D (Диаметр) — больше 6мм. E (Эволюция) — недавние изменения. Если заметили ЛЮБОЙ из этих признаков, срочно обратитесь к дерматологу. Меланома, обнаруженная рано, имеет излечимость >95%. Проверяйте родинки ежегодно.",
+      "keywords": ["alunita", "melanom", "piele", "родинка", "меланома", "кожа"]
+    },
+    {
+      "id": 22,
+      "category": "dermatologie",
+      "question_ro": "Am erupții pe piele și mâncărimi. Ce poate fi?",
+      "answer_ro": "Erupțiile cu prurit pot fi: 1) Dermatită atopică/eczema - piele uscată, inflamată. 2) Urticarie - plăci roșii care apar și dispar. 3) Dermatită de contact - reacție la substanță. 4) Psoriazis - plăci cu scuame argintii. 5) Infecție fungică - plăci circulare. 6) Alergie medicamentoasă. Până la medic: cremă hidratantă, evitați scărpinatul, antihistaminic oral. URGENȚĂ: erupție + dificultăți de respirație = anafilaxie, sunați 112.",
+      "question_ru": "У меня сыпь и зуд на коже. Что это может быть?",
+      "answer_ru": "Сыпь с зудом может быть: 1) Атопический дерматит/экзема — сухая, воспалённая кожа. 2) Крапивница — красные пятна, появляются и исчезают. 3) Контактный дерматит — реакция на вещество. 4) Псориаз — бляшки с серебристыми чешуйками. 5) Грибковая инфекция — круглые пятна. 6) Лекарственная аллергия. До визита к врачу: увлажняющий крем, не расчёсывайте, антигистаминное. ЭКСТРЕННО: сыпь + затруднённое дыхание = анафилаксия, звоните 112.",
+      "keywords": ["eruptie", "mancarime", "piele", "eczema", "сыпь", "зуд", "кожа", "экзема"]
+    },
+    {
+      "id": 23,
+      "category": "sanatate_generala",
+      "question_ro": "Câtă apă trebuie să beau pe zi?",
+      "answer_ro": "Recomandare generală: 2-2.5 litri apă pe zi (8-10 pahare). Mai mult dacă: faceți efort fizic, este cald, aveți febră, diaree, sau vomă. Semnele deshidratării: sete intensă, urină închisă la culoare, buze uscate, oboseală, amețeli. Copiii au nevoie de 1-1.5L/zi. Limitați: băuturi carbogazoase, sucuri cu zahăr, alcool. Apa simplă este cea mai bună opțiune.",
+      "question_ru": "Сколько воды нужно пить в день?",
+      "answer_ru": "Общая рекомендация: 2-2.5 литра воды в день (8-10 стаканов). Больше если: физическая нагрузка, жара, лихорадка, диарея или рвота. Признаки обезвоживания: сильная жажда, тёмная моча, сухие губы, усталость, головокружение. Детям нужно 1-1.5л/день. Ограничьте: газированные напитки, соки с сахаром, алкоголь. Простая вода — лучший выбор.",
+      "keywords": ["apa", "hidratare", "bautura", "вода", "гидратация", "питьё"]
+    },
+    {
+      "id": 24,
+      "category": "sanatate_generala",
+      "question_ro": "Câte ore de somn sunt necesare?",
+      "answer_ro": "Recomandări somn pe vârstă: Nou-născuți: 14-17h. Sugari: 12-15h. Copii 3-5 ani: 10-13h. Copii 6-13 ani: 9-11h. Adolescenți: 8-10h. Adulți: 7-9h. Vârstnici: 7-8h. Igiena somnului: orar regulat, dormitor întunecat și răcoros, fără ecrane 1h înainte, evitați cafeina după 14:00, nu dormiți la prânz >30 min.",
+      "question_ru": "Сколько часов сна необходимо?",
+      "answer_ru": "Рекомендации по возрастам: Новорождённые: 14-17ч. Младенцы: 12-15ч. Дети 3-5 лет: 10-13ч. Дети 6-13 лет: 9-11ч. Подростки: 8-10ч. Взрослые: 7-9ч. Пожилые: 7-8ч. Гигиена сна: регулярный режим, тёмная и прохладная спальня, без экранов за 1ч до сна, избегайте кофеин после 14:00, не спите днём >30 мин.",
+      "keywords": ["somn", "dormit", "insomnie", "сон", "бессонница", "спать"]
+    },
+    {
+      "id": 25,
+      "category": "sanatate_generala",
+      "question_ro": "Ce analize de sânge ar trebui să fac anual?",
+      "answer_ro": "Analize recomandate anual: 1) Hemoleucogramă completă. 2) Glicemie à jeun. 3) Profil lipidic (colesterol total, LDL, HDL, trigliceride). 4) Funcție hepatică (AST, ALT, GGT). 5) Funcție renală (creatinină, uree). 6) Sumar urină. 7) VSH, PCR. După 40 ani: TSH, PSA (bărbați), vitamina D, fier seric. Consultați medicul de familie pentru interpretare.",
+      "question_ru": "Какие анализы крови нужно сдавать ежегодно?",
+      "answer_ru": "Ежегодно рекомендуется: 1) Общий анализ крови. 2) Глюкоза натощак. 3) Липидный профиль (общий холестерин, ЛПНП, ЛПВП, триглицериды). 4) Функция печени (АСТ, АЛТ, ГГТ). 5) Функция почек (креатинин, мочевина). 6) Общий анализ мочи. 7) СОЭ, СРБ. После 40 лет: ТТГ, ПСА (мужчины), витамин D, сывороточное железо. Обратитесь к семейному врачу для интерпретации.",
+      "keywords": ["analize", "sange", "laborator", "control", "анализы", "кровь", "лаборатория"]
+    },
+    {
+      "id": 26,
+      "category": "preventie",
+      "question_ro": "Cum pot preveni diabetul de tip 2?",
+      "answer_ro": "Prevenția diabetului tip 2: 1) Mențineți greutatea normală (IMC 18.5-24.9). 2) Activitate fizică 150 min/săptămână. 3) Dietă echilibrată: legume, fructe, cereale integrale. 4) Reduceți zahărul și alimentele procesate. 5) Nu fumați. 6) Limitați alcoolul. 7) Verificați glicemia anual (mai ales dacă aveți antecedente familiale). Prediabetul (glicemie 100-125 mg/dL) se poate inversa cu stil de viață sănătos.",
+      "question_ru": "Как предотвратить диабет 2 типа?",
+      "answer_ru": "Профилактика диабета 2 типа: 1) Поддерживайте нормальный вес (ИМТ 18.5-24.9). 2) Физическая активность 150 мин/неделю. 3) Сбалансированное питание: овощи, фрукты, цельнозерновые. 4) Сократите сахар и обработанные продукты. 5) Не курите. 6) Ограничьте алкоголь. 7) Проверяйте глюкозу ежегодно (особенно при семейной предрасположенности). Преддиабет (глюкоза 100-125 мг/дл) можно обратить здоровым образом жизни.",
+      "keywords": ["diabet", "glicemie", "zahar", "preventie", "диабет", "глюкоза", "сахар", "профилактика"]
+    },
+    {
+      "id": 27,
+      "category": "preventie",
+      "question_ro": "Care sunt semnele cancerului pe care nu trebuie să le ignor?",
+      "answer_ro": "Semne de avertizare: 1) Noduli/umflături inexplicabile. 2) Plăgi care nu se vindecă. 3) Sângerare neobișnuită. 4) Modificări ale obiceiurilor intestinale. 5) Tuse persistentă. 6) Dificultăți la înghițire. 7) Modificări ale alunițelor. 8) Scădere inexplicabilă în greutate. 9) Oboseală persistentă. 10) Durere fără cauză evidentă. Aceste simptome NU înseamnă neapărat cancer, dar necesită evaluare medicală promptă.",
+      "question_ru": "Какие признаки рака нельзя игнорировать?",
+      "answer_ru": "Предупреждающие знаки: 1) Необъяснимые уплотнения/опухоли. 2) Раны, которые не заживают. 3) Необычные кровотечения. 4) Изменения работы кишечника. 5) Постоянный кашель. 6) Затруднения при глотании. 7) Изменения родинок. 8) Необъяснимая потеря веса. 9) Постоянная усталость. 10) Боль без явной причины. Эти симптомы НЕ обязательно означают рак, но требуют срочного медицинского осмотра.",
+      "keywords": ["cancer", "noduli", "semne", "рак", "узелки", "признаки", "онкология"]
+    },
+    {
+      "id": 28,
+      "category": "medicamente",
+      "question_ro": "Ce diferență este între paracetamol și ibuprofen?",
+      "answer_ro": "PARACETAMOL: analgezic + antitermic. Sigur în sarcină. Nu irită stomacul. Doza: 500-1000mg la 6-8h, max 4g/zi. PERICOL: toxicitate hepatică la supradoză. IBUPROFEN: analgezic + antitermic + antiinflamator. Mai bun pentru dureri musculare, articulare, menstruale. Doza: 200-400mg la 6-8h. NU în sarcină, NU la ulcer gastric, NU cu anticoagulante. Ambele se pot alterna.",
+      "question_ru": "В чём разница между парацетамолом и ибупрофеном?",
+      "answer_ru": "ПАРАЦЕТАМОЛ: обезболивающее + жаропонижающее. Безопасен при беременности. Не раздражает желудок. Доза: 500-1000мг каждые 6-8ч, макс 4г/день. ОПАСНОСТЬ: токсичность для печени при передозировке. ИБУПРОФЕН: обезболивающее + жаропонижающее + противовоспалительное. Лучше для мышечных, суставных, менструальных болей. Доза: 200-400мг каждые 6-8ч. НЕЛЬЗЯ при беременности, язве желудка, с антикоагулянтами. Оба можно чередовать.",
+      "keywords": ["paracetamol", "ibuprofen", "durere", "pastile", "парацетамол", "ибупрофен", "боль", "таблетки"]
+    },
+    {
+      "id": 29,
+      "category": "medicamente",
+      "question_ro": "Ce sunt antibioticele și când se folosesc?",
+      "answer_ro": "Antibioticele tratează NUMAI infecții bacteriene. NU funcționează pentru: răceală, gripă, COVID-19 (care sunt virale). Reguli: 1) Luați DOAR la prescripția medicului. 2) Completați ÎNTREAGA cură. 3) Nu păstrați resturi pentru altă dată. 4) Nu le dați altei persoane. Abuzul de antibiotice duce la rezistență bacteriană - o amenințare globală. Efecte secundare: diaree, alergii, candidoze.",
+      "question_ru": "Что такое антибиотики и когда они используются?",
+      "answer_ru": "Антибиотики лечат ТОЛЬКО бактериальные инфекции. НЕ работают при: простуде, гриппе, COVID-19 (это вирусы). Правила: 1) Принимайте ТОЛЬКО по назначению врача. 2) Завершите ВЕСЬ курс. 3) Не сохраняйте остатки на другой раз. 4) Не давайте другим. Злоупотребление антибиотиками ведёт к бактериальной резистентности — глобальная угроза. Побочные эффекты: диарея, аллергии, кандидоз.",
+      "keywords": ["antibiotic", "infectie", "bacteria", "антибиотик", "инфекция", "бактерия"]
+    },
+    {
+      "id": 30,
+      "category": "sanatate_mintala",
+      "question_ro": "Am anxietate și atacuri de panică. Ce fac?",
+      "answer_ro": "În timpul atacului de panică: 1) Respirație 4-7-8 (inspirați 4s, țineți 7s, expirați 8s). 2) Concentrați-vă pe obiecte din jur (tehnica 5-4-3-2-1). 3) Amintiți-vă: atacul de panică NU este periculos și trece. Pe termen lung: 1) Terapie cognitiv-comportamentală (cea mai eficientă). 2) Exerciții fizice regulate. 3) Reducerea cofeinei. 4) Meditație. 5) Medicație (SSRI/SNRI) dacă e prescrisă. Nu vă e rușine să cereți ajutor!",
+      "question_ru": "У меня тревога и панические атаки. Что делать?",
+      "answer_ru": "Во время панической атаки: 1) Дыхание 4-7-8 (вдох 4с, задержка 7с, выдох 8с). 2) Сосредоточьтесь на окружающих предметах (техника 5-4-3-2-1). 3) Помните: паническая атака НЕ опасна и пройдёт. Долгосрочно: 1) Когнитивно-поведенческая терапия (самая эффективная). 2) Регулярные физические упражнения. 3) Снижение кофеина. 4) Медитация. 5) Лекарства (СИОЗС/СИОЗСН) если назначены. Не стесняйтесь просить помощь!",
+      "keywords": ["anxietate", "panica", "stres", "тревога", "паника", "стресс"]
+    },
+    {
+      "id": 31,
+      "category": "sanatate_mintala",
+      "question_ro": "Cum recunosc depresia?",
+      "answer_ro": "Simptome ale depresiei (minim 2 săptămâni): 1) Tristețe persistentă. 2) Pierderea interesului pentru activități plăcute. 3) Modificări ale somnului (insomnie/hipersomnie). 4) Oboseală constantă. 5) Sentimente de vinovăție/inutilitate. 6) Dificultăți de concentrare. 7) Modificări de apetit. 8) Gânduri de moarte/suicid. Depresia este o BOALĂ TRATABILĂ. Tratament: psihoterapie + eventual medicație. Linia de ajutor: 0800 801 200.",
+      "question_ru": "Как распознать депрессию?",
+      "answer_ru": "Симптомы депрессии (минимум 2 недели): 1) Постоянная грусть. 2) Потеря интереса к приятным занятиям. 3) Нарушения сна (бессонница/гиперсомния). 4) Постоянная усталость. 5) Чувство вины/бесполезности. 6) Трудности с концентрацией. 7) Изменения аппетита. 8) Мысли о смерти/суициде. Депрессия — ИЗЛЕЧИМОЕ ЗАБОЛЕВАНИЕ. Лечение: психотерапия + при необходимости лекарства. Линия помощи: 0800 801 200.",
+      "keywords": ["depresie", "tristete", "suicid", "депрессия", "грусть", "суицид"]
+    },
+    {
+      "id": 32,
+      "category": "sistem",
+      "question_ro": "Cum pot programa o consultație online?",
+      "answer_ro": "Pentru programare online: 1) Accesați meniul 'Programare' din stânga. 2) Selectați specialitatea medicală dorită. 3) Alegeți medicul din listă (vedeți rating, experiență, program). 4) Selectați data disponibilă din calendar. 5) Alegeți ora liberă. 6) Selectați tipul: consultație fizică sau video. 7) Confirmați programarea. Veți primi notificare de confirmare. Medicul poate confirma sau sugera altă oră.",
+      "question_ru": "Как записаться на онлайн-консультацию?",
+      "answer_ru": "Для онлайн-записи: 1) Перейдите в меню 'Запись' слева. 2) Выберите нужную медицинскую специальность. 3) Выберите врача из списка (рейтинг, опыт, расписание). 4) Выберите доступную дату в календаре. 5) Выберите свободное время. 6) Выберите тип: очная или видео-консультация. 7) Подтвердите запись. Вы получите уведомление о подтверждении. Врач может подтвердить или предложить другое время.",
+      "keywords": ["programare", "consultatie", "online", "запись", "консультация", "онлайн"]
+    },
+    {
+      "id": 33,
+      "category": "sistem",
+      "question_ro": "Cum pot trimite un mesaj medicului meu?",
+      "answer_ro": "Pentru a trimite mesaj: 1) Accesați secțiunea 'Mesaje' din meniu. 2) Selectați conversația cu medicul dorit. 3) Scrieți mesajul și apăsați 'Trimite'. 4) Puteți atașa fișiere (analize, fotografii) cu butonul de atașare. 5) Pentru video consultație, apăsați butonul de video din chat. Notă: conversațiile se creează automat după prima programare cu un medic.",
+      "question_ru": "Как отправить сообщение моему врачу?",
+      "answer_ru": "Чтобы отправить сообщение: 1) Перейдите в раздел 'Сообщения' в меню. 2) Выберите разговор с нужным врачом. 3) Напишите сообщение и нажмите 'Отправить'. 4) Можете прикрепить файлы (анализы, фотографии) кнопкой прикрепления. 5) Для видео-консультации нажмите кнопку видео в чате. Примечание: разговоры создаются автоматически после первой записи к врачу.",
+      "keywords": ["mesaj", "chat", "comunicare", "trimite", "сообщение", "чат", "отправить"]
+    },
+    {
+      "id": 34,
+      "category": "sistem",
+      "question_ro": "Cum îmi schimb datele din profil?",
+      "answer_ro": "Pentru a modifica profilul: 1) Accesați 'Dashboard' (pagina principală). 2) Puteți modifica: telefon, adresă, număr asigurare medicală. 3) Salvați modificările. Notă: Numele și data nașterii pot fi modificate doar de administrator. Dacă aveți nevoie de astfel de modificări, contactați administrația spitalului.",
+      "question_ru": "Как изменить данные в профиле?",
+      "answer_ru": "Для изменения профиля: 1) Перейдите в 'Панель управления' (главная страница). 2) Можете изменить: телефон, адрес, номер медицинской страховки. 3) Сохраните изменения. Примечание: Имя и дата рождения могут быть изменены только администратором. Если вам нужны такие изменения, обратитесь в администрацию больницы.",
+      "keywords": ["profil", "date", "schimba", "modifica", "профиль", "данные", "изменить"]
+    },
+    {
+      "id": 35,
+      "category": "sistem",
+      "question_ro": "Cum pot vedea istoricul meu medical?",
+      "answer_ro": "Istoricul medical: 1) Accesați 'Istoric' din meniul principal. 2) Veți vedea toate consultațiile finalizate, ordonate cronologic. 3) Pentru fiecare consultație: medicul, specialitatea, data, notele medicale. 4) În secțiunea 'Programări' vedeți și programările active/anulate. Toate datele sunt confidențiale și accesibile doar dumneavoastră și medicii care v-au consultat.",
+      "question_ru": "Как просмотреть мою медицинскую историю?",
+      "answer_ru": "Медицинская история: 1) Перейдите в 'Историю' в главном меню. 2) Увидите все завершённые консультации в хронологическом порядке. 3) Для каждой консультации: врач, специальность, дата, медицинские записи. 4) В разделе 'Записи' видны активные/отменённые записи. Все данные конфиденциальны и доступны только вам и лечащим врачам.",
+      "keywords": ["istoric", "medical", "consultatie", "история", "медицинская", "консультация"]
+    },
+    {
+      "id": 36,
+      "category": "cardiologie",
+      "question_ro": "Ce este insuficiența cardiacă?",
+      "answer_ro": "Insuficiența cardiacă înseamnă că inima nu pompează suficient sânge. Simptome: dificultăți de respirație (mai ales la efort/culcare), oboseală, umflarea picioarelor, tuse nocturnă, creștere rapidă în greutate. Cauze: hipertensiune, boală coronariană, valvulopatii. Tratament: medicamente (IECA, beta-blocante, diuretice), dietă cu puțină sare, restricție lichide, activitate fizică moderată. Necesită monitorizare permanentă.",
+      "question_ru": "Что такое сердечная недостаточность?",
+      "answer_ru": "Сердечная недостаточность означает, что сердце не перекачивает достаточно крови. Симптомы: затруднённое дыхание (особенно при нагрузке/лёжа), усталость, отёки ног, ночной кашель, быстрый набор веса. Причины: гипертония, ишемическая болезнь, пороки клапанов. Лечение: лекарства (ИАПФ, бета-блокаторы, диуретики), малосолевая диета, ограничение жидкости, умеренная физическая активность. Требует постоянного наблюдения.",
+      "keywords": ["insuficienta cardiaca", "inima", "edeme", "сердечная недостаточность", "сердце", "отеки"]
+    },
+    {
+      "id": 37,
+      "category": "preventie",
+      "question_ro": "Ce este indicele de masă corporală (IMC)?",
+      "answer_ro": "IMC = greutate(kg) / înălțime(m)². Interpretare: Sub 18.5: subponderal. 18.5-24.9: normal. 25-29.9: supraponderal. 30-34.9: obezitate gr.1. 35-39.9: obezitate gr.2. Peste 40: obezitate morbidă. Exemplu: 75kg / 1.75m² = 24.5 (normal). IMC nu diferențiază masă musculară de grăsime. Circumferința abdominală >102cm (bărbați) sau >88cm (femei) indică risc cardiovascular crescut.",
+      "question_ru": "Что такое индекс массы тела (ИМТ)?",
+      "answer_ru": "ИМТ = вес(кг) / рост(м)². Интерпретация: Менее 18.5: недостаточный вес. 18.5-24.9: нормальный. 25-29.9: избыточный вес. 30-34.9: ожирение 1 ст. 35-39.9: ожирение 2 ст. Более 40: морбидное ожирение. Пример: 75кг / 1.75м² = 24.5 (нормальный). ИМТ не различает мышечную массу и жир. Окружность живота >102см (мужчины) или >88см (женщины) указывает на повышенный сердечно-сосудистый риск.",
+      "keywords": ["IMC", "greutate", "obezitate", "ИМТ", "вес", "ожирение"]
+    },
+    {
+      "id": 38,
+      "category": "sanatate_generala",
+      "question_ro": "Ce sunt alergiile alimentare și cum le gestionez?",
+      "answer_ro": "Alergii alimentare frecvente: lapte, ouă, arahide, nuci, pește, crustacee, grâu, soia. Simptome: urticarie, mâncărimi, umflături, diaree, vomă. ANAFILAXIE (urgență): dificultăți respirație, tensiune scăzută, pierderea cunoștinței - sunați 112. Gestionare: 1) Evitați complet alimentul. 2) Citiți etichetele. 3) Purtați adrenalină auto-injectabilă (EpiPen) dacă prescrisă. 4) Alertați personalul medical.",
+      "question_ru": "Что такое пищевые аллергии и как с ними справляться?",
+      "answer_ru": "Частые пищевые аллергии: молоко, яйца, арахис, орехи, рыба, ракообразные, пшеница, соя. Симптомы: крапивница, зуд, отёки, диарея, рвота. АНАФИЛАКСИЯ (экстренно): затруднённое дыхание, низкое давление, потеря сознания — звоните 112. Управление: 1) Полностью избегайте продукт. 2) Читайте этикетки. 3) Носите автоинъектор адреналина (ЭпиПен) если назначен. 4) Информируйте медперсонал.",
+      "keywords": ["alergie", "alimentara", "anafilaxie", "аллергия", "пищевая", "анафилаксия"]
+    },
+    {
+      "id": 39,
+      "category": "medicamente",
+      "question_ro": "Ce medicamente nu se combină între ele?",
+      "answer_ro": "Combinații periculoase frecvente: 1) Anticoagulante + Aspirină/Ibuprofen = risc sângerare. 2) Antidepresive ISRS + Tramadol = sindrom serotoninergic. 3) Statine + Grapefruit = toxicitate musculară. 4) Metformin + Alcool exces = acidoză lactică. 5) Antihipertensive + AINS = scade eficacitatea. ÎNTOTDEAUNA spuneți medicului TOATE medicamentele pe care le luați, inclusiv suplimente și plante.",
+      "question_ru": "Какие лекарства нельзя сочетать?",
+      "answer_ru": "Частые опасные сочетания: 1) Антикоагулянты + Аспирин/Ибупрофен = риск кровотечения. 2) Антидепрессанты СИОЗС + Трамадол = серотониновый синдром. 3) Статины + Грейпфрут = мышечная токсичность. 4) Метформин + Избыток алкоголя = лактоацидоз. 5) Антигипертензивные + НПВС = снижение эффективности. ВСЕГДА сообщайте врачу ВСЕ лекарства, включая добавки и травы.",
+      "keywords": ["medicamente", "combinatie", "interactiune", "лекарства", "сочетание", "взаимодействие"]
+    },
+    {
+      "id": 40,
+      "category": "sanatate_generala",
+      "question_ro": "Am arsuri la stomac frecvente. Ce recomandați?",
+      "answer_ro": "Reflux gastroesofagian - recomandări: 1) Mese mici și frecvente. 2) Evitați: alimente grase, ciocolată, cafea, citrice, alcool, condimente. 3) Nu mâncați cu 3h înainte de culcare. 4) Ridicați capul patului cu 15cm. 5) Pierdeți greutatea în exces. 6) Nu fumați. 7) Evitați haine strâmte. Medicament de urgență: antiacid. Dacă simptomele persistă >2 săptămâni, consultați medicul - poate necesita inhibitori de pompă de protoni.",
+      "question_ru": "У меня частая изжога. Что посоветуете?",
+      "answer_ru": "Гастроэзофагеальный рефлюкс — рекомендации: 1) Маленькие и частые приёмы пищи. 2) Избегайте: жирную пищу, шоколад, кофе, цитрусовые, алкоголь, специи. 3) Не ешьте за 3ч до сна. 4) Поднимите изголовье кровати на 15см. 5) Сбросьте лишний вес. 6) Не курите. 7) Избегайте тесной одежды. Экстренное лекарство: антацид. Если симптомы сохраняются >2 недель, обратитесь к врачу — может потребоваться ингибитор протонной помпы.",
+      "keywords": ["arsuri", "stomac", "reflux", "aciditate", "изжога", "желудок", "кислотность"]
+    }
+  ]
+}

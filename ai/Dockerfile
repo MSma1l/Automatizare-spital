@@ -12,8 +12,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-RUN mkdir -p /app/models
+RUN mkdir -p /app/models/saved_models /app/models/reports /app/models/training_data
+
+COPY entrypoint.sh .
+RUN chmod +x entrypoint.sh
 
 EXPOSE 8001
 
-CMD ["uvicorn", "api.agent_api:app", "--host", "0.0.0.0", "--port", "8001", "--reload"]
+CMD ["./entrypoint.sh"]
