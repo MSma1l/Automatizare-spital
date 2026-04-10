@@ -113,11 +113,15 @@ def get_appointments(
     query = db.query(Appointment).filter(Appointment.doctor_id == doctor.id)
 
     if status_filter:
-        query = query.filter(Appointment.status == status_filter)
+        try:
+            status_enum = AppointmentStatus(status_filter)
+        except ValueError:
+            raise HTTPException(status_code=400, detail="Status invalid")
+        query = query.filter(Appointment.status == status_enum)
     if date_from:
-        query = query.filter(Appointment.date_time >= date_from)
+        query = query.filter(Appointment.date_time >= datetime.strptime(date_from, "%Y-%m-%d"))
     if date_to:
-        query = query.filter(Appointment.date_time <= date_to)
+        query = query.filter(Appointment.date_time <= datetime.strptime(date_to, "%Y-%m-%d"))
 
     appointments = query.order_by(Appointment.date_time).all()
 
@@ -153,7 +157,11 @@ def update_appointment(
         raise HTTPException(status_code=404, detail="Programare negăsită")
 
     if data.status:
-        appointment.status = data.status
+        try:
+            status_enum = AppointmentStatus(data.status)
+        except ValueError:
+            raise HTTPException(status_code=400, detail="Status invalid")
+        appointment.status = status_enum
         # Notify patient
         patient = db.query(Patient).filter(Patient.id == appointment.patient_id).first()
         if patient and data.status in ["confirmed", "rejected"]:

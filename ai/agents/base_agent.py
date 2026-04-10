@@ -11,7 +11,7 @@ class BaseAgent:
     name: str = "base_agent"
     description: str = "Base agent"
 
-    def __init__(self, db: Session):
+    def __init__(self, db: Session = None):
         self.db = db
 
     def run(self) -> dict:
@@ -20,6 +20,9 @@ class BaseAgent:
 
     def log_action(self, action: str, data: dict = None):
         """Log agent action to database."""
+        if not self.db:
+            logger.info(f"[{self.name}] {action}")
+            return
         from models.db import AgentLog
         log = AgentLog(
             agent_name=self.name,
@@ -34,6 +37,9 @@ class BaseAgent:
     def create_recommendation(self, target_user_id: int, recommendation: str,
                               priority: str = "normal", data: dict = None):
         """Create a recommendation for a user."""
+        if not self.db:
+            logger.info(f"[{self.name}] Recommendation for user {target_user_id}: {recommendation[:50]}...")
+            return
         from models.db import AgentRecommendation
         rec = AgentRecommendation(
             agent_name=self.name,

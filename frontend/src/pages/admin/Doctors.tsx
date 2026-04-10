@@ -266,21 +266,24 @@ const AdminDoctors: React.FC = () => {
                 {form.schedules.map((s, idx) => (
                   <div key={idx} className="flex items-center gap-2 mb-2">
                     <select value={s.day_of_week} onChange={e => {
-                      const newSchedules = [...form.schedules];
-                      newSchedules[idx].day_of_week = parseInt(e.target.value);
+                      const newSchedules = form.schedules.map((item, i) =>
+                        i === idx ? { ...item, day_of_week: parseInt(e.target.value) } : item
+                      );
                       setForm({...form, schedules: newSchedules});
                     }} className="px-2 py-1.5 border rounded-lg text-sm">
                       {DAYS.map((d, i) => <option key={i} value={i}>{d}</option>)}
                     </select>
                     <input type="time" value={s.start_time} onChange={e => {
-                      const newSchedules = [...form.schedules];
-                      newSchedules[idx].start_time = e.target.value;
+                      const newSchedules = form.schedules.map((item, i) =>
+                        i === idx ? { ...item, start_time: e.target.value } : item
+                      );
                       setForm({...form, schedules: newSchedules});
                     }} className="px-2 py-1.5 border rounded-lg text-sm" />
                     <span className="text-gray-400">-</span>
                     <input type="time" value={s.end_time} onChange={e => {
-                      const newSchedules = [...form.schedules];
-                      newSchedules[idx].end_time = e.target.value;
+                      const newSchedules = form.schedules.map((item, i) =>
+                        i === idx ? { ...item, end_time: e.target.value } : item
+                      );
                       setForm({...form, schedules: newSchedules});
                     }} className="px-2 py-1.5 border rounded-lg text-sm" />
                     <button type="button" onClick={() => removeSchedule(idx)} className="text-red-400 hover:text-red-600"><X size={16} /></button>

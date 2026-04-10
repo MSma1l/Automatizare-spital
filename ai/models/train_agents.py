@@ -406,7 +406,7 @@ def train_recommendation_agent():
 
     # TF-IDF on conditions for patient similarity
     tfidf = TfidfVectorizer(max_features=100, ngram_range=(1, 2))
-    conditions_tfidf = tfidf.fit_transform(df["conditions"].str.replace("|", " "))
+    conditions_tfidf = tfidf.fit_transform(df["conditions"].str.replace("|", " ", regex=False))
     logger.info(f"TF-IDF matrix shape: {conditions_tfidf.shape}")
 
     # Similarity matrix (for a subset to save memory)

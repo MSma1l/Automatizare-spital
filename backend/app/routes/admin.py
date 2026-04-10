@@ -161,17 +161,17 @@ def update_doctor(
     if not doctor:
         raise HTTPException(status_code=404, detail="Medicul nu a fost găsit")
 
-    update_data = data.model_dump(exclude_unset=True)
-    schedules_data = update_data.pop("schedules", None)
+    update_data = data.model_dump(exclude_unset=True, exclude={"schedules"})
+    schedules_pydantic = data.schedules  # keep as Pydantic objects
 
     for field, value in update_data.items():
         if isinstance(value, str):
             value = sanitize_string(value)
         setattr(doctor, field, value)
 
-    if schedules_data is not None:
+    if schedules_pydantic is not None:
         db.query(DoctorSchedule).filter(DoctorSchedule.doctor_id == doctor.id).delete()
-        for s in schedules_data:
+        for s in schedules_pydantic:
             schedule = DoctorSchedule(
                 doctor_id=doctor.id,
                 day_of_week=s.day_of_week,
@@ -446,6 +446,7 @@ def update_bed(
     update_data = data.model_dump(exclude_unset=True)
 
     if "patient_id" in update_data:
+        update_data.pop("status", None)  # Don't override auto-set status
         if update_data["patient_id"]:
             bed.status = BedStatus.OCCUPIED
             bed.admitted_at = datetime.utcnow()
@@ -495,9 +496,9 @@ def appointments_report(
 ):
     query = db.query(Appointment)
     if start_date:
-        query = query.filter(Appointment.date_time >= start_date)
+        query = query.filter(Appointment.date_time >= datetime.strptime(start_date, "%Y-%m-%d"))
     if end_date:
-        query = query.filter(Appointment.date_time <= end_date)
+        query = query.filter(Appointment.date_time <= datetime.strptime(end_date, "%Y-%m-%d"))
 
     appointments = query.all()
     by_status = {}

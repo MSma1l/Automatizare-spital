@@ -24,9 +24,13 @@ def get_conversations(
 ):
     if current_user.role == UserRole.DOCTOR:
         doctor = db.query(Doctor).filter(Doctor.user_id == current_user.id).first()
+        if not doctor:
+            return []
         convos = db.query(Conversation).filter(Conversation.doctor_id == doctor.id).all()
     elif current_user.role == UserRole.PATIENT:
         patient = db.query(Patient).filter(Patient.user_id == current_user.id).first()
+        if not patient:
+            return []
         convos = db.query(Conversation).filter(Conversation.patient_id == patient.id).all()
     else:
         return []
@@ -68,10 +72,11 @@ def get_conversations(
 
 @router.post("/conversations")
 def create_or_get_conversation(
-    doctor_id: int,
+    target_id: int,
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
+    """Create or get conversation. target_id = doctor_id (for patients) or patient_id (for doctors)."""
     if current_user.role == UserRole.PATIENT:
         patient = db.query(Patient).filter(Patient.user_id == current_user.id).first()
         if not patient:
@@ -79,13 +84,13 @@ def create_or_get_conversation(
 
         existing = (
             db.query(Conversation)
-            .filter(Conversation.doctor_id == doctor_id, Conversation.patient_id == patient.id)
+            .filter(Conversation.doctor_id == target_id, Conversation.patient_id == patient.id)
             .first()
         )
         if existing:
             return {"conversation_id": existing.id}
 
-        convo = Conversation(doctor_id=doctor_id, patient_id=patient.id)
+        convo = Conversation(doctor_id=target_id, patient_id=patient.id)
         db.add(convo)
         db.commit()
         db.refresh(convo)
@@ -95,7 +100,7 @@ def create_or_get_conversation(
         if not doctor:
             raise HTTPException(status_code=404, detail="Profil medic negăsit")
 
-        patient = db.query(Patient).filter(Patient.id == doctor_id).first()
+        patient = db.query(Patient).filter(Patient.id == target_id).first()
         if not patient:
             raise HTTPException(status_code=404, detail="Pacient negăsit")
 
@@ -169,6 +174,16 @@ async def upload_file_to_chat(
     convo = db.query(Conversation).filter(Conversation.id == conversation_id).first()
     if not convo:
         raise HTTPException(status_code=404, detail="Conversație negăsită")
+
+    # Verify user is participant
+    if current_user.role == UserRole.DOCTOR:
+        doctor = db.query(Doctor).filter(Doctor.user_id == current_user.id).first()
+        if not doctor or convo.doctor_id != doctor.id:
+            raise HTTPException(status_code=403, detail="Acces interzis")
+    elif current_user.role == UserRole.PATIENT:
+        patient = db.query(Patient).filter(Patient.user_id == current_user.id).first()
+        if not patient or convo.patient_id != patient.id:
+            raise HTTPException(status_code=403, detail="Acces interzis")
 
     await validate_upload_file(file)
 

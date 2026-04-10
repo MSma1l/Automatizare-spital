@@ -7,6 +7,7 @@ const BookAppointment: React.FC = () => {
   const [doctors, setDoctors] = useState<any[]>([]);
   const [specialties, setSpecialties] = useState<string[]>([]);
   const [filterSpecialty, setFilterSpecialty] = useState('');
+  const [searchTerm, setSearchTerm] = useState('');
   const [selectedDoctor, setSelectedDoctor] = useState<any>(null);
   const [selectedDate, setSelectedDate] = useState('');
   const [slots, setSlots] = useState<any[]>([]);
@@ -26,9 +27,12 @@ const BookAppointment: React.FC = () => {
       .finally(() => setLoading(false));
   }, []);
 
-  const filteredDoctors = filterSpecialty
-    ? doctors.filter(d => d.specialty === filterSpecialty)
-    : doctors;
+  const filteredDoctors = doctors.filter((d: any) => {
+    const matchesSpecialty = !filterSpecialty || d.specialty === filterSpecialty;
+    const matchesSearch = !searchTerm ||
+      `${d.first_name} ${d.last_name}`.toLowerCase().includes(searchTerm.toLowerCase());
+    return matchesSpecialty && matchesSearch;
+  });
 
   const fetchSlots = async (doctorId: number, date: string) => {
     try {
@@ -190,7 +194,7 @@ const BookAppointment: React.FC = () => {
       <div className="flex items-center gap-4 mb-6">
         <div className="relative flex-1 max-w-md">
           <Search size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
-          <input type="text" placeholder="Caută medic..." className="w-full pl-10 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary-500 outline-none" />
+          <input type="text" placeholder="Caută medic..." value={searchTerm} onChange={e => setSearchTerm(e.target.value)} className="w-full pl-10 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-primary-500 outline-none" />
         </div>
         <select value={filterSpecialty} onChange={e => setFilterSpecialty(e.target.value)}
           className="px-3 py-2 border rounded-lg focus:ring-2 focus:ring-primary-500 outline-none">

@@ -17,7 +17,7 @@ const DoctorPatients: React.FC = () => {
 
   const startChat = async (patientId: number) => {
     try {
-      const res = await api.post(`/chat/conversations?doctor_id=${patientId}`);
+      const res = await api.post(`/chat/conversations?target_id=${patientId}`);
       navigate('/doctor/chat', { state: { conversationId: res.data.conversation_id } });
     } catch {
       navigate('/doctor/chat');

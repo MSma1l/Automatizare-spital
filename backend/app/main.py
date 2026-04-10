@@ -46,7 +46,7 @@ from app.websocket.video_handler import register_video_handlers
 register_chat_handlers(sio)
 register_video_handlers(sio)
 
-socket_app = socketio.ASGIApp(sio, other_app=app)
+socket_app = socketio.ASGIApp(sio, app)
 
 # ─── Routes ───────────────────────────────────────────────────
 from app.routes.auth import router as auth_router

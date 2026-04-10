@@ -66,8 +66,9 @@ class SchedulingAgent(BaseAgent):
                         "date": day.isoformat(),
                         "count": count,
                     })
+                    doc_label = f"Dr. {doctor.first_name} {doctor.last_name}" if doctor else f"Doctor #{doctor_id}"
                     suggestions.append(
-                        f"Dr. {doctor.first_name} {doctor.last_name} are {count} programări pe {day}. Redistribuiți."
+                        f"{doc_label} are {count} programări pe {day}. Redistribuiți."
                     )
 
         if conflicts:

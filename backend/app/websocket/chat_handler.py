@@ -54,6 +54,18 @@ def register_chat_handlers(sio: socketio.AsyncServer):
             if not convo:
                 return
 
+            # Verify sender is a participant
+            from app.models.doctor import Doctor
+            from app.models.patient import Patient
+            doctor = db.query(Doctor).filter(Doctor.id == convo.doctor_id).first()
+            patient = db.query(Patient).filter(Patient.id == convo.patient_id).first()
+            is_participant = (
+                (doctor and doctor.user_id == user_id) or
+                (patient and patient.user_id == user_id)
+            )
+            if not is_participant:
+                return
+
             msg = Message(
                 conversation_id=conversation_id,
                 sender_id=user_id,

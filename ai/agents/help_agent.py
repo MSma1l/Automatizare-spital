@@ -20,8 +20,7 @@ class HelpAgent(BaseAgent):
     description = "Medical FAQ virtual assistant (RO + RU)"
 
     def __init__(self, db=None):
-        if db:
-            super().__init__(db)
+        super().__init__(db)
         self._model_data = None
         self._qa_data = None
         self._load_model()
@@ -127,7 +126,7 @@ class HelpAgent(BaseAgent):
 
         scores.sort(key=lambda x: x[0], reverse=True)
 
-        if scores[0][0] > 0:
+        if scores and scores[0][0] > 0:
             best = scores[0][1]
             confidence = min(1.0, scores[0][0] / 6)
             answer_field = "answer_ru" if lang == "ru" else "answer_ro"

@@ -59,7 +59,12 @@ def get_current_user(
     if not user_id:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Token invalid")
 
-    user = db.query(User).filter(User.id == int(user_id)).first()
+    try:
+        user_id_int = int(user_id)
+    except (ValueError, TypeError):
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Token invalid")
+
+    user = db.query(User).filter(User.id == user_id_int).first()
     if not user or not user.is_active:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Utilizator inactiv")
     return user
