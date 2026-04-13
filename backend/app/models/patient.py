@@ -24,6 +24,7 @@ class Patient(Base):
     phone = Column(String(20), nullable=True)
     address = Column(String(500), nullable=True)
     insurance_number = Column(String(50), nullable=True)
+    photo_url = Column(String(500), nullable=True)
     created_at = Column(DateTime, default=datetime.utcnow)
     updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 

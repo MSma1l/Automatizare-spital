@@ -14,6 +14,7 @@ import AdminPatients from './pages/admin/Patients';
 import AdminResources from './pages/admin/Resources';
 import AdminBeds from './pages/admin/Beds';
 import AdminReports from './pages/admin/Reports';
+import AdminAIAgents from './pages/admin/AIAgents';
 
 // Doctor pages
 import DoctorDashboard from './pages/doctor/Dashboard';
@@ -26,6 +27,10 @@ import PatientDashboard from './pages/patient/Dashboard';
 import BookAppointment from './pages/patient/BookAppointment';
 import PatientHistory from './pages/patient/History';
 import PatientChat from './pages/patient/Chat';
+import PatientAIAssistant from './pages/patient/AIAssistant';
+
+// Shared
+import Profile from './pages/Profile';
 
 // Layout
 import DashboardLayout from './components/Sidebar/DashboardLayout';
@@ -78,6 +83,8 @@ const AppRoutes: React.FC = () => {
         <Route path="resources" element={<AdminResources />} />
         <Route path="beds" element={<AdminBeds />} />
         <Route path="reports" element={<AdminReports />} />
+        <Route path="ai-agents" element={<AdminAIAgents />} />
+        <Route path="profile" element={<Profile />} />
       </Route>
 
       {/* Doctor routes */}
@@ -86,6 +93,7 @@ const AppRoutes: React.FC = () => {
         <Route path="appointments" element={<DoctorAppointments />} />
         <Route path="patients" element={<DoctorPatients />} />
         <Route path="chat" element={<DoctorChat />} />
+        <Route path="profile" element={<Profile />} />
       </Route>
 
       {/* Patient routes */}
@@ -94,6 +102,8 @@ const AppRoutes: React.FC = () => {
         <Route path="book" element={<BookAppointment />} />
         <Route path="history" element={<PatientHistory />} />
         <Route path="chat" element={<PatientChat />} />
+        <Route path="ai" element={<PatientAIAssistant />} />
+        <Route path="profile" element={<Profile />} />
       </Route>
 
       {/* Default redirect */}

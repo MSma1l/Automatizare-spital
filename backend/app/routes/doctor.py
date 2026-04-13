@@ -173,6 +173,24 @@ def update_appointment(
                 NotificationType.APPOINTMENT,
             )
 
+        # Auto-create conversation when appointment is confirmed or completed
+        if data.status in ["confirmed", "completed"] and patient:
+            existing_convo = (
+                db.query(Conversation)
+                .filter(Conversation.doctor_id == doctor.id, Conversation.patient_id == patient.id)
+                .first()
+            )
+            if not existing_convo:
+                new_convo = Conversation(doctor_id=doctor.id, patient_id=patient.id)
+                db.add(new_convo)
+                # Notify patient that chat is available
+                create_notification(
+                    db, patient.user_id,
+                    "Chat disponibil",
+                    f"Acum puteți comunica direct cu Dr. {doctor.first_name} {doctor.last_name} prin chat.",
+                    NotificationType.MESSAGE,
+                )
+
     if data.notes:
         appointment.notes = sanitize_string(data.notes)
 

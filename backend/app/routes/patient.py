@@ -423,6 +423,7 @@ def get_medical_history(
     return [
         {
             "id": a.id,
+            "doctor_id": a.doctor_id,
             "doctor_name": f"Dr. {a.doctor.first_name} {a.doctor.last_name}",
             "doctor_specialty": a.doctor.specialty,
             "date_time": a.date_time.isoformat(),
@@ -431,3 +432,45 @@ def get_medical_history(
         }
         for a in completed
     ]
+
+
+@router.post("/chat-with-doctor/{doctor_id}")
+def open_chat_with_doctor(
+    doctor_id: int,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(patient_required),
+):
+    """Open or create a conversation with a doctor the patient has visited."""
+    patient = _get_patient(db, current_user)
+
+    # Verify patient has had at least one appointment with this doctor
+    has_appt = (
+        db.query(Appointment)
+        .filter(
+            Appointment.patient_id == patient.id,
+            Appointment.doctor_id == doctor_id,
+            Appointment.status.in_([
+                AppointmentStatus.CONFIRMED,
+                AppointmentStatus.COMPLETED,
+            ]),
+        )
+        .first()
+    )
+    if not has_appt:
+        raise HTTPException(
+            status_code=403,
+            detail="Puteți comunica doar cu medicii la care aveți o programare confirmată sau finalizată",
+        )
+
+    convo = (
+        db.query(Conversation)
+        .filter(Conversation.doctor_id == doctor_id, Conversation.patient_id == patient.id)
+        .first()
+    )
+    if not convo:
+        convo = Conversation(doctor_id=doctor_id, patient_id=patient.id)
+        db.add(convo)
+        db.commit()
+        db.refresh(convo)
+
+    return {"conversation_id": convo.id}

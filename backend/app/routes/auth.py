@@ -136,6 +136,7 @@ def get_me(current_user: User = Depends(get_current_user), db: Session = Depends
                 "patient_id": patient.id,
                 "first_name": patient.first_name,
                 "last_name": patient.last_name,
+                "photo_url": patient.photo_url,
             }
 
     return result

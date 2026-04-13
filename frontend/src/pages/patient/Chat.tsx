@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import api from '../../services/api';
 import { getSocket } from '../../services/socket';
 import { useAuth } from '../../contexts/AuthContext';
@@ -6,8 +7,10 @@ import { Send, Paperclip, Video } from 'lucide-react';
 
 const PatientChat: React.FC = () => {
   const { user } = useAuth();
+  const location = useLocation();
+  const initialConvoId = (location.state as any)?.conversationId ?? null;
   const [conversations, setConversations] = useState<any[]>([]);
-  const [activeConvo, setActiveConvo] = useState<number | null>(null);
+  const [activeConvo, setActiveConvo] = useState<number | null>(initialConvoId);
   const [messages, setMessages] = useState<any[]>([]);
   const [newMessage, setNewMessage] = useState('');
   const messagesEndRef = useRef<HTMLDivElement>(null);

@@ -127,6 +127,7 @@ class PatientOut(BaseModel):
     phone: Optional[str]
     address: Optional[str]
     insurance_number: Optional[str]
+    photo_url: Optional[str] = None
     is_active: bool = True
     created_at: datetime
 

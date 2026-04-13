@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import toast from 'react-hot-toast';
 import api from '../../services/api';
-import { FileText, Calendar } from 'lucide-react';
+import { FileText, Calendar, MessageSquare } from 'lucide-react';
 
 const PatientHistory: React.FC = () => {
   const [appointments, setAppointments] = useState<any[]>([]);
   const [history, setHistory] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     Promise.all([
@@ -24,6 +27,15 @@ const PatientHistory: React.FC = () => {
       setAppointments(prev => prev.map(a => a.id === id ? { ...a, status: 'cancelled' } : a));
     } catch {
       // handle error
+    }
+  };
+
+  const openChatWithDoctor = async (doctorId: number, doctorName: string) => {
+    try {
+      const res = await api.post(`/patient/chat-with-doctor/${doctorId}`);
+      navigate('/patient/chat', { state: { conversationId: res.data.conversation_id } });
+    } catch (e: any) {
+      toast.error(e?.response?.data?.detail || `Nu se poate deschide chatul cu ${doctorName}`);
     }
   };
 
@@ -68,6 +80,15 @@ const PatientHistory: React.FC = () => {
                   </div>
                   <div className="flex items-center gap-3">
                     <span className={`px-3 py-1 text-xs rounded-full ${statusColors[a.status]}`}>{statusLabels[a.status]}</span>
+                    {a.status === 'confirmed' && (
+                      <button
+                        onClick={() => openChatWithDoctor(a.doctor_id, a.doctor_name)}
+                        className="flex items-center gap-1 px-3 py-1 text-xs text-primary-600 border border-primary-200 rounded-full hover:bg-primary-50"
+                        title="Trimite mesaj medicului"
+                      >
+                        <MessageSquare size={14} /> Chat
+                      </button>
+                    )}
                     {['pending', 'confirmed'].includes(a.status) && (
                       <button onClick={() => cancelAppointment(a.id)}
                         className="px-3 py-1 text-xs text-red-500 border border-red-200 rounded-full hover:bg-red-50">

@@ -57,8 +57,11 @@ from app.routes.chat import router as chat_router
 from app.routes.video import router as video_router
 from app.routes.appointments import router as appointments_router
 from app.routes.resources import router as resources_router
+from app.routes.ai import router as ai_router
+from app.routes.me import router as me_router
 
 app.include_router(auth_router)
+app.include_router(me_router)
 app.include_router(admin_router)
 app.include_router(doctor_router)
 app.include_router(patient_router)
@@ -66,6 +69,7 @@ app.include_router(chat_router)
 app.include_router(video_router)
 app.include_router(appointments_router)
 app.include_router(resources_router)
+app.include_router(ai_router)
 
 
 # ─── File serving ─────────────────────────────────────────────

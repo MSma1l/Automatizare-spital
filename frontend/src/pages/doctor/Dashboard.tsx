@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import api from '../../services/api';
-import { Calendar, Users, MessageSquare, Clock } from 'lucide-react';
+import { Calendar, Users, MessageSquare, Clock, Sparkles, Activity } from 'lucide-react';
 
 const DoctorDashboard: React.FC = () => {
   const [stats, setStats] = useState<any>(null);
   const [todayAppts, setTodayAppts] = useState<any[]>([]);
+  const [aiRecs, setAiRecs] = useState<any>(null);
+  const [aiLoading, setAiLoading] = useState(true);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -17,6 +19,11 @@ const DoctorDashboard: React.FC = () => {
       setTodayAppts(a.data.filter((ap: any) => ap.date_time.startsWith(today)));
     }).catch(() => {})
       .finally(() => setLoading(false));
+
+    api.get('/ai/recommendations')
+      .then(res => setAiRecs(res.data))
+      .catch(() => setAiRecs(null))
+      .finally(() => setAiLoading(false));
   }, []);
 
   if (loading) {
@@ -46,6 +53,58 @@ const DoctorDashboard: React.FC = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* AI Recommendations widget */}
+      <div className="bg-gradient-to-br from-purple-50 to-primary-50 rounded-xl p-6 shadow-sm border border-purple-100 mb-6">
+        <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center gap-2">
+            <div className="w-9 h-9 bg-gradient-to-br from-purple-500 to-primary-500 rounded-lg flex items-center justify-center">
+              <Sparkles size={18} className="text-white" />
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-800">Recomandări AI</h3>
+              <p className="text-xs text-gray-500">Generate de RecommendationAgent (TF-IDF + RandomForest)</p>
+            </div>
+          </div>
+          <span className="text-xs px-2 py-1 bg-white text-purple-700 rounded-full border border-purple-200">
+            <Activity size={12} className="inline mr-1" /> Local AI
+          </span>
+        </div>
+
+        {aiLoading ? (
+          <p className="text-sm text-gray-400">Se încarcă recomandările...</p>
+        ) : aiRecs && Array.isArray(aiRecs.recommendations) && aiRecs.recommendations.length > 0 ? (
+          <div className="space-y-2">
+            {aiRecs.recommendations.slice(0, 5).map((r: any, i: number) => (
+              <div key={i} className="bg-white p-3 rounded-lg border border-purple-100">
+                <div className="flex items-start justify-between gap-2">
+                  <div className="flex-1">
+                    <p className="text-sm text-gray-800">
+                      {r.message || r.recommendation || r.action || JSON.stringify(r)}
+                    </p>
+                    {r.patient_name && (
+                      <p className="text-xs text-gray-500 mt-1">Pacient: {r.patient_name}</p>
+                    )}
+                  </div>
+                  {r.priority && (
+                    <span className={`text-xs px-2 py-0.5 rounded-full ${
+                      r.priority === 'high' ? 'bg-red-100 text-red-700' :
+                      r.priority === 'medium' ? 'bg-amber-100 text-amber-700' :
+                      'bg-gray-100 text-gray-600'
+                    }`}>
+                      {r.priority}
+                    </span>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p className="text-sm text-gray-500">
+            Nu există recomandări noi. Agentul AI analizează pacienții cu programări recente și sugerează follow-up.
+          </p>
+        )}
       </div>
 
       {/* Today's appointments */}

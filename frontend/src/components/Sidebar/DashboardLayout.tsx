@@ -5,7 +5,7 @@ import api from '../../services/api';
 import {
   LayoutDashboard, Users, Calendar, MessageSquare, BedDouble,
   Package, FileBarChart, UserCircle, LogOut, Bell, Menu, X,
-  Stethoscope, ClipboardList, History, Search,
+  Stethoscope, ClipboardList, History, Search, Sparkles,
 } from 'lucide-react';
 
 const navConfig: Record<string, Array<{ to: string; icon: React.ReactNode; label: string }>> = {
@@ -16,6 +16,7 @@ const navConfig: Record<string, Array<{ to: string; icon: React.ReactNode; label
     { to: '/admin/resources', icon: <Package size={20} />, label: 'Resurse' },
     { to: '/admin/beds', icon: <BedDouble size={20} />, label: 'Paturi' },
     { to: '/admin/reports', icon: <FileBarChart size={20} />, label: 'Rapoarte' },
+    { to: '/admin/ai-agents', icon: <Sparkles size={20} />, label: 'Agenți AI' },
   ],
   doctor: [
     { to: '/doctor', icon: <LayoutDashboard size={20} />, label: 'Dashboard' },
@@ -28,6 +29,7 @@ const navConfig: Record<string, Array<{ to: string; icon: React.ReactNode; label
     { to: '/patient/book', icon: <Search size={20} />, label: 'Programare' },
     { to: '/patient/history', icon: <History size={20} />, label: 'Istoric' },
     { to: '/patient/chat', icon: <MessageSquare size={20} />, label: 'Mesaje' },
+    { to: '/patient/ai', icon: <Sparkles size={20} />, label: 'Asistent AI' },
   ],
 };
 
@@ -99,15 +101,27 @@ const DashboardLayout: React.FC = () => {
         </nav>
 
         <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-gray-100">
-          <div className="flex items-center gap-3 px-3 py-2">
-            <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
-              <UserCircle size={24} className="text-primary-600" />
-            </div>
+          <button
+            onClick={() => { navigate(`/${role}/profile`); setSidebarOpen(false); }}
+            className="flex items-center gap-3 px-3 py-2 w-full rounded-lg hover:bg-gray-50 transition-colors text-left"
+            title="Profil personal"
+          >
+            {user?.profile?.photo_url ? (
+              <img
+                src={user.profile.photo_url}
+                alt="avatar"
+                className="w-10 h-10 rounded-full object-cover"
+              />
+            ) : (
+              <div className="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
+                <UserCircle size={24} className="text-primary-600" />
+              </div>
+            )}
             <div className="flex-1 min-w-0">
               <p className="text-sm font-medium text-gray-700 truncate">{displayName}</p>
               <p className="text-xs text-gray-400 capitalize">{role}</p>
             </div>
-          </div>
+          </button>
           <button
             onClick={handleLogout}
             className="flex items-center gap-2 w-full px-4 py-2 mt-2 text-sm text-red-600 rounded-lg hover:bg-red-50 transition-colors"
