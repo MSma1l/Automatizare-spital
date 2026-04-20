@@ -11,9 +11,10 @@ from app.models.patient import Patient
 from app.models.appointment import Appointment, AppointmentStatus
 from app.models.message import Message, Conversation
 from app.models.review import Review
-from app.schemas import DoctorStats, AppointmentUpdate, DoctorOut
+from app.schemas import DoctorStats, AppointmentUpdate, DoctorOut, PatientCreate
 from app.services.auth_service import require_role, get_current_user
 from app.services.notification_service import create_notification
+from app.services.patient_service import create_patient_account
 from app.models.notification import NotificationType
 from app.security.sanitizer import sanitize_string
 
@@ -196,6 +197,17 @@ def update_appointment(
 
     db.commit()
     return {"message": "Programare actualizată"}
+
+
+@router.post("/patients")
+def create_patient_as_doctor(
+    data: PatientCreate,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(doctor_required),
+):
+    """Doctors can register new patients directly."""
+    patient = create_patient_account(db, data)
+    return {"message": "Pacient creat cu succes", "patient_id": patient.id}
 
 
 @router.get("/patients")

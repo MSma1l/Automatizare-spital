@@ -15,11 +15,12 @@ from app.models.bed import Bed, BedStatus
 from app.models.resource import Resource
 from app.schemas import (
     DoctorCreate, DoctorUpdate, DoctorOut,
-    PatientOut, PatientUpdate,
+    PatientCreate, PatientOut, PatientUpdate,
     ResourceCreate, ResourceUpdate, ResourceOut,
     BedCreate, BedUpdate, BedOut,
     AdminStats,
 )
+from app.services.patient_service import create_patient_account
 from app.services.auth_service import hash_password, require_role
 from app.services.notification_service import create_notification
 from app.services.email_service import send_welcome_email
@@ -248,6 +249,16 @@ def list_patients(
             "email": user.email if user else None,
         })
     return result
+
+
+@router.post("/patients")
+def create_patient(
+    data: PatientCreate,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(admin_required),
+):
+    patient = create_patient_account(db, data)
+    return {"message": "Pacient creat cu succes", "patient_id": patient.id}
 
 
 @router.get("/patients/{patient_id}")

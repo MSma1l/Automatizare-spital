@@ -24,6 +24,10 @@ class AskRequest(BaseModel):
     question: str
 
 
+class ParseTextRequest(BaseModel):
+    text: str
+
+
 async def _get(path: str, params: dict | None = None):
     try:
         async with httpx.AsyncClient(timeout=TIMEOUT) as client:
@@ -62,6 +66,30 @@ async def ask_medical_question(
 async def get_faq_topics(current_user: User = Depends(get_current_user)):
     """List FAQ categories and example questions."""
     return await _get("/agents/help/faq")
+
+
+# ─── Registration Agent (admin + doctor only) ────────────────────────
+def _admin_or_doctor(user: User = Depends(get_current_user)) -> User:
+    if user.role not in (UserRole.ADMIN, UserRole.DOCTOR):
+        raise HTTPException(status_code=403, detail="Doar admin sau medic")
+    return user
+
+
+@router.post("/registration/parse")
+async def registration_parse(
+    req: ParseTextRequest,
+    current_user: User = Depends(_admin_or_doctor),
+):
+    """Parse patient registration text (ID card / insurance card / intake form)
+    and return structured fields ready to populate the create-patient form."""
+    if not req.text or not req.text.strip():
+        raise HTTPException(status_code=400, detail="Text gol")
+    return await _post("/agents/registration/parse", {"text": req.text.strip()})
+
+
+@router.get("/registration/info")
+async def registration_info(current_user: User = Depends(_admin_or_doctor)):
+    return await _get("/agents/registration/info")
 
 
 # ─── Doctor-only: AI recommendations ─────────────────────────────────
@@ -158,5 +186,6 @@ async def list_ai_agents(current_user: User = Depends(get_current_user)):
             {"key": "monitoring", "name": "Monitorizare Spital", "description": "Status resurse și alerte la 10 min.", "users": ["admin"]},
             {"key": "predictive", "name": "Predicții Volum Pacienți", "description": "Forecast time-series pentru fluxul de pacienți.", "users": ["admin"]},
             {"key": "notification", "name": "Notificări Automate", "description": "Reminder programări cu 24h înainte.", "users": ["admin"]},
+            {"key": "registration", "name": "Înregistrare Pacient AI", "description": "Extrage datele pacientului din acte (buletin, card asigurare) și completează formularul automat.", "users": ["admin", "doctor"]},
         ]
     }

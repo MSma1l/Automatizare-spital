@@ -14,6 +14,7 @@ from agents.predictive_agent import PredictiveAgent
 from agents.recommendation_agent import RecommendationAgent
 from agents.notification_agent import NotificationAgent
 from agents.help_agent import HelpAgent
+from agents.registration_agent import RegistrationAgent
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -164,6 +165,23 @@ def ask_help_agent(req: QuestionRequest, db: Session = Depends(get_db)):
 @app.get("/agents/help/faq")
 def get_faq(db: Session = Depends(get_db)):
     agent = HelpAgent(db)
+    return agent.run()
+
+
+# ─── Registration Agent ──────────────────────────────────────
+class ParseTextRequest(BaseModel):
+    text: str
+
+
+@app.post("/agents/registration/parse")
+def registration_parse(req: ParseTextRequest, db: Session = Depends(get_db)):
+    agent = RegistrationAgent(db)
+    return agent.parse(req.text)
+
+
+@app.get("/agents/registration/info")
+def registration_info(db: Session = Depends(get_db)):
+    agent = RegistrationAgent(db)
     return agent.run()
 
 

@@ -9,18 +9,6 @@ class LoginRequest(BaseModel):
     password: str = Field(min_length=6)
 
 
-class RegisterRequest(BaseModel):
-    email: EmailStr
-    password: str = Field(min_length=6)
-    first_name: str = Field(min_length=1, max_length=100)
-    last_name: str = Field(min_length=1, max_length=100)
-    birth_date: Optional[date] = None
-    gender: Optional[str] = None
-    phone: Optional[str] = None
-    address: Optional[str] = None
-    insurance_number: Optional[str] = None
-
-
 class TokenResponse(BaseModel):
     access_token: str
     refresh_token: str
@@ -107,6 +95,18 @@ class DoctorOut(BaseModel):
 
 
 # ─── Patient ─────────────────────────────────────────────────────────
+class PatientCreate(BaseModel):
+    email: EmailStr
+    password: str = Field(min_length=6)
+    first_name: str = Field(min_length=1, max_length=100)
+    last_name: str = Field(min_length=1, max_length=100)
+    birth_date: Optional[date] = None
+    gender: Optional[str] = None
+    phone: Optional[str] = None
+    address: Optional[str] = None
+    insurance_number: Optional[str] = None
+
+
 class PatientUpdate(BaseModel):
     first_name: Optional[str] = None
     last_name: Optional[str] = None

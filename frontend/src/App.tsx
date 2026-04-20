@@ -5,7 +5,6 @@ import { AuthProvider, useAuth } from './contexts/AuthContext';
 
 // Auth pages
 import LoginPage from './pages/auth/LoginPage';
-import RegisterPage from './pages/auth/RegisterPage';
 
 // Admin pages
 import AdminDashboard from './pages/admin/Dashboard';
@@ -71,9 +70,9 @@ const AppRoutes: React.FC = () => {
 
   return (
     <Routes>
-      {/* Public routes */}
+      {/* Public routes — single entry point for all roles */}
       <Route path="/login" element={user ? <Navigate to={`/${user.role}`} /> : <LoginPage />} />
-      <Route path="/register" element={user ? <Navigate to={`/${user.role}`} /> : <RegisterPage />} />
+      <Route path="/register" element={<Navigate to="/login" />} />
 
       {/* Admin routes */}
       <Route path="/admin" element={<ProtectedRoute roles={['admin']}><DashboardLayout /></ProtectedRoute>}>

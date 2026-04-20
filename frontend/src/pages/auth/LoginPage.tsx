@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
 import toast from 'react-hot-toast';
 import { Stethoscope, Mail, Lock, Eye, EyeOff } from 'lucide-react';
@@ -108,10 +107,7 @@ const LoginPage: React.FC = () => {
           </form>
 
           <p className="mt-6 text-center text-sm text-gray-500">
-            Nu aveți cont?{' '}
-            <Link to="/register" className="text-primary-500 hover:text-primary-600 font-medium">
-              Înregistrare pacient
-            </Link>
+            Pentru cont nou contactați administratorul sau medicul dumneavoastră.
           </p>
 
           {/* Demo credentials */}

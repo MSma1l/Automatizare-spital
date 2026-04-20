@@ -542,6 +542,114 @@ def generate_notification_data():
 
 
 # ═══════════════════════════════════════════════════════════════
+# 7. REGISTRATION AGENT - line-level field labels (RO + RU, 3000 rows)
+# ═══════════════════════════════════════════════════════════════
+FIRST_NAMES_M = ["Ion", "Mihai", "Andrei", "Alexandru", "Dan", "George", "Vlad", "Adrian",
+                  "Radu", "Cristian", "Marius", "Paul", "Florin", "Cosmin", "Gabriel"]
+FIRST_NAMES_F = ["Maria", "Ana", "Elena", "Cristina", "Ioana", "Andreea", "Laura",
+                  "Mihaela", "Diana", "Raluca", "Oana", "Monica", "Simona", "Daniela"]
+LAST_NAMES = ["Popescu", "Ionescu", "Popa", "Dumitrescu", "Stanescu", "Moldovan", "Radu",
+              "Georgescu", "Constantinescu", "Marinescu", "Preda", "Tudor", "Stoica",
+              "Florea", "Vasile", "Munteanu", "Ciobanu", "Enache"]
+STREETS_RO = ["Str. Libertății", "Str. Mihai Eminescu", "Bd. Unirii", "Str. 1 Decembrie",
+              "Str. Mihai Viteazul", "Str. Ștefan cel Mare", "Bd. Dacia", "Str. Florilor"]
+CITIES_RO = ["București", "Cluj-Napoca", "Iași", "Timișoara", "Constanța", "Brașov",
+             "Chișinău", "Bălți", "Galați", "Oradea"]
+
+
+def _random_ro_text_for_field(field: str) -> str:
+    """Generate the *value part* of a labeled line for a given field."""
+    if field == "first_name":
+        return random.choice(FIRST_NAMES_M + FIRST_NAMES_F)
+    if field == "last_name":
+        return random.choice(LAST_NAMES)
+    if field == "full_name":
+        return f"{random.choice(LAST_NAMES)} {random.choice(FIRST_NAMES_M + FIRST_NAMES_F)}"
+    if field == "birth_date":
+        d = random.randint(1, 28)
+        m = random.randint(1, 12)
+        y = random.randint(1945, 2010)
+        fmt = random.choice(["{d:02d}.{m:02d}.{y}", "{d}/{m}/{y}", "{y}-{m:02d}-{d:02d}"])
+        return fmt.format(d=d, m=m, y=y)
+    if field == "gender":
+        return random.choice(["M", "F", "Masculin", "Feminin", "male", "female", "мужской", "женский"])
+    if field == "phone":
+        prefix = random.choice(["+40 7", "+373 7", "07", "+7 9"])
+        return f"{prefix}{random.randint(10000000, 99999999)}"
+    if field == "address":
+        return f"{random.choice(STREETS_RO)} {random.randint(1, 200)}, {random.choice(CITIES_RO)}"
+    if field == "insurance_number":
+        kind = random.choice(["RO", "MD", "", "CNP "])
+        return f"{kind}{random.randint(10**9, 10**15)}"
+    if field == "email":
+        fn = random.choice(FIRST_NAMES_M + FIRST_NAMES_F).lower()
+        ln = random.choice(LAST_NAMES).lower()
+        dom = random.choice(["gmail.com", "yahoo.com", "mail.md", "hospital.md"])
+        return f"{fn}.{ln}@{dom}"
+    return "other"
+
+
+def generate_registration_data():
+    print("Generating registration agent data...")
+    # label keywords map per field (RO + RU)
+    KEY_VARIANTS = {
+        "first_name": ["Prenume", "prenumele", "Имя"],
+        "last_name":  ["Nume", "Numele", "Nume de familie", "Фамилия"],
+        "full_name":  ["Nume complet", "Nume și prenume", "Пациент"],
+        "birth_date": ["Data nașterii", "Data nasterii", "Născut", "DOB", "Дата рождения"],
+        "gender":     ["Sex", "Gen", "Пол"],
+        "phone":      ["Telefon", "Tel", "Mobil", "Телефон"],
+        "address":    ["Adresa", "Adresă", "Domiciliu", "Адрес"],
+        "insurance_number": ["Asigurare", "Nr. asigurare", "CNP", "Polis", "Полис"],
+        "email":      ["Email", "E-mail", "Mail", "Эл. почта"],
+    }
+    rows = []
+
+    # labeled lines
+    for field, keys in KEY_VARIANTS.items():
+        for _ in range(200):  # 200 per field x 9 fields = 1800
+            key = random.choice(keys)
+            sep = random.choice([": ", " - ", " : ", ":  "])
+            value = _random_ro_text_for_field(field)
+            line = f"{key}{sep}{value}"
+            rows.append({"text": line, "label": field})
+
+    # free-text distractor lines (label "none")
+    DISTRACTORS = [
+        "Consultat astăzi la ora 10:00 de Dr. Popescu.",
+        "Pacientul nu prezintă simptome acute.",
+        "Investigații recomandate: analize sânge, ECG.",
+        "Alergii cunoscute: penicilină.",
+        "Fumător: Nu",
+        "Diabet: Nu",
+        "Ultima vizită: 2024-05-10",
+        "Tratament curent: Paracetamol 500mg",
+        "Recomandare: Revenire peste 7 zile.",
+        "Grupa sanguină: A+",
+        "Consult efectuat",
+        "Observații: bun general",
+        "Rețetă eliberată",
+        "Notă: pacient colaborativ",
+    ]
+    for _ in range(600):
+        rows.append({"text": random.choice(DISTRACTORS), "label": "none"})
+
+    # Unlabeled lines with ONLY the value (e.g., scanned OCR with no keys) — hardest case
+    for field in ["phone", "email", "birth_date", "insurance_number", "full_name", "address"]:
+        for _ in range(100):
+            rows.append({"text": _random_ro_text_for_field(field), "label": field})
+
+    random.shuffle(rows)
+
+    path = os.path.join(DATA_DIR, "registration.csv")
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=["text", "label"])
+        writer.writeheader()
+        writer.writerows(rows)
+    print(f"  -> {len(rows)} rows saved to registration.csv")
+
+
+# ═══════════════════════════════════════════════════════════════
 # RUN ALL GENERATORS
 # ═══════════════════════════════════════════════════════════════
 if __name__ == "__main__":
@@ -554,6 +662,7 @@ if __name__ == "__main__":
     generate_predictive_data()
     generate_recommendation_data()
     generate_notification_data()
+    generate_registration_data()
     print("=" * 60)
     print("Help Agent Q&A data is in help_agent_qa.json (separate file)")
     print("All training data generated successfully!")

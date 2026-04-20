@@ -662,6 +662,67 @@ def train_help_agent():
 
 
 # ═══════════════════════════════════════════════════════════════
+# 8. REGISTRATION AGENT (TF-IDF + LogisticRegression line classifier)
+# ═══════════════════════════════════════════════════════════════
+def train_registration_agent():
+    logger.info("=" * 60)
+    logger.info("Training Registration Agent (TF-IDF + LogisticRegression)")
+    logger.info("=" * 60)
+
+    csv_path = os.path.join(DATA_DIR, "registration.csv")
+    df = pd.read_csv(csv_path)
+    logger.info(f"Loaded {len(df)} labeled lines")
+
+    texts = df["text"].astype(str).values
+    labels = df["label"].astype(str).values
+
+    le = LabelEncoder()
+    y = le.fit_transform(labels)
+
+    tfidf = TfidfVectorizer(
+        max_features=3000,
+        ngram_range=(1, 2),
+        analyzer="char_wb",  # char n-grams handle RO diacritics + RU Cyrillic well
+        min_df=1,
+        sublinear_tf=True,
+    )
+    X = tfidf.fit_transform(texts)
+    logger.info(f"TF-IDF matrix: {X.shape}")
+
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
+
+    clf = LogisticRegression(max_iter=1000, random_state=42, n_jobs=-1, multi_class="auto")
+    clf.fit(X_train, y_train)
+
+    y_pred = clf.predict(X_test)
+    acc = accuracy_score(y_test, y_pred)
+    f1 = f1_score(y_test, y_pred, average="weighted", zero_division=0)
+    cv = cross_val_score(clf, X, y, cv=5, scoring="accuracy")
+
+    logger.info(f"Accuracy:  {acc:.4f}")
+    logger.info(f"F1 (weighted): {f1:.4f}")
+    logger.info(f"CV accuracy: {cv.mean():.4f} (+/- {cv.std():.4f})")
+
+    report = {
+        "agent": "registration",
+        "model_type": "TF-IDF (char_wb) + LogisticRegression (multi-class)",
+        "samples": len(df),
+        "classes": list(le.classes_),
+        "metrics": {
+            "accuracy": round(acc, 4),
+            "f1_weighted": round(f1, 4),
+            "cv_mean": round(cv.mean(), 4),
+            "cv_std": round(cv.std(), 4),
+        },
+        "trained_at": datetime.now().isoformat(),
+    }
+
+    save_model({"tfidf": tfidf, "clf": clf, "le": le}, "registration_agent", metadata=report)
+    save_report(report, "registration_agent")
+    return report
+
+
+# ═══════════════════════════════════════════════════════════════
 # GENERATE DATA + MAIN
 # ═══════════════════════════════════════════════════════════════
 def generate_data():
@@ -671,6 +732,7 @@ def generate_data():
         generate_resource_data, generate_scheduling_data,
         generate_monitoring_data, generate_predictive_data,
         generate_recommendation_data, generate_notification_data,
+        generate_registration_data,
     )
     generate_resource_data()
     generate_scheduling_data()
@@ -678,6 +740,7 @@ def generate_data():
     generate_predictive_data()
     generate_recommendation_data()
     generate_notification_data()
+    generate_registration_data()
     logger.info("All training data generated.")
 
 
@@ -693,6 +756,7 @@ def train_all():
         "recommendation": train_recommendation_agent,
         "notification": train_notification_agent,
         "help": train_help_agent,
+        "registration": train_registration_agent,
     }
 
     for name, train_fn in agents.items():
@@ -736,7 +800,8 @@ if __name__ == "__main__":
 
     # Check if data exists
     csv_files = ["resource_allocation.csv", "scheduling.csv", "monitoring.csv",
-                 "predictive_timeseries.csv", "recommendations.csv", "notifications.csv"]
+                 "predictive_timeseries.csv", "recommendations.csv", "notifications.csv",
+                 "registration.csv"]
     missing = [f for f in csv_files if not os.path.exists(os.path.join(DATA_DIR, f))]
     if missing:
         logger.info(f"Missing data files: {missing}. Generating...")
@@ -751,6 +816,7 @@ if __name__ == "__main__":
             "recommendation": train_recommendation_agent,
             "notification": train_notification_agent,
             "help": train_help_agent,
+            "registration": train_registration_agent,
         }
         if args.agent in agent_map:
             agent_map[args.agent]()
