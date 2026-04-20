@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import api from '../../services/api';
 import toast from 'react-hot-toast';
 import { Search, Star, Calendar, Clock, ArrowLeft } from 'lucide-react';
 
 const BookAppointment: React.FC = () => {
+  const [searchParams] = useSearchParams();
+  const initialSpecialty = searchParams.get('specialty') || '';
   const [doctors, setDoctors] = useState<any[]>([]);
   const [specialties, setSpecialties] = useState<string[]>([]);
-  const [filterSpecialty, setFilterSpecialty] = useState('');
+  const [filterSpecialty, setFilterSpecialty] = useState(initialSpecialty);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedDoctor, setSelectedDoctor] = useState<any>(null);
   const [selectedDate, setSelectedDate] = useState('');

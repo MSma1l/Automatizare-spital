@@ -5,7 +5,7 @@ This router proxies authenticated requests to it.
 """
 import logging
 import httpx
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, UploadFile, File
 from pydantic import BaseModel
 
 from app.config import settings
@@ -90,6 +90,34 @@ async def registration_parse(
 @router.get("/registration/info")
 async def registration_info(current_user: User = Depends(_admin_or_doctor)):
     return await _get("/agents/registration/info")
+
+
+@router.post("/registration/parse-image")
+async def registration_parse_image(
+    file: UploadFile = File(...),
+    current_user: User = Depends(_admin_or_doctor),
+):
+    """Upload a photo of an ID / insurance card. OCR it and return structured
+    patient fields ready to populate the create-patient form."""
+    if not file.content_type or not file.content_type.startswith("image/"):
+        raise HTTPException(status_code=400, detail="Fișierul nu este o imagine")
+
+    content = await file.read()
+    if len(content) > 10 * 1024 * 1024:
+        raise HTTPException(status_code=400, detail="Imagine prea mare (max 10MB)")
+
+    # Forward as multipart/form-data to AI service
+    try:
+        async with httpx.AsyncClient(timeout=httpx.Timeout(30.0, connect=5.0)) as client:
+            r = await client.post(
+                f"{AI_BASE}/agents/registration/parse-image",
+                files={"file": (file.filename or "image.jpg", content, file.content_type)},
+            )
+            r.raise_for_status()
+            return r.json()
+    except httpx.HTTPError as e:
+        logger.error(f"AI service image-parse failed: {e}")
+        raise HTTPException(status_code=503, detail="Serviciul AI este indisponibil")
 
 
 # ─── Doctor-only: AI recommendations ─────────────────────────────────

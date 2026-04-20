@@ -29,8 +29,8 @@ class MonitoringAgent(BaseAgent):
             else:
                 warnings.append({"resource_id": r.id, "message": msg, "severity": severity})
 
-        # Check equipment in maintenance
-        in_maintenance = self.db.query(Resource).filter(Resource.status == "maintenance").all()
+        # Check equipment in maintenance (Postgres enum stores NAMES, not values)
+        in_maintenance = self.db.query(Resource).filter(Resource.status == "MAINTENANCE").all()
         for r in in_maintenance:
             warnings.append({
                 "resource_id": r.id,

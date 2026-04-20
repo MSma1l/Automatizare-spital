@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import toast from 'react-hot-toast';
 import {
   User as UserIcon, Mail, Lock, Camera, Save, Trash2,
-  Phone, MapPin, Calendar, Shield, Stethoscope, IdCard,
+  Phone, MapPin, Calendar, Shield, Stethoscope, CreditCard,
 } from 'lucide-react';
 import api from '../services/api';
 import { useAuth } from '../contexts/AuthContext';
@@ -305,7 +305,7 @@ const Profile: React.FC = () => {
                     className="input-base"
                   />
                 </Field>
-                <Field label="Număr asigurare" icon={<IdCard size={14} />}>
+                <Field label="Număr asigurare" icon={<CreditCard size={14} />}>
                   <input
                     type="text"
                     value={form.insurance_number || ''}

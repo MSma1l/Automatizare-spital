@@ -1,7 +1,7 @@
 """AI Service API - FastAPI endpoints for all agents."""
 import logging
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, Depends, Query
+from fastapi import FastAPI, Depends, Query, UploadFile, File, HTTPException
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
@@ -183,6 +183,23 @@ def registration_parse(req: ParseTextRequest, db: Session = Depends(get_db)):
 def registration_info(db: Session = Depends(get_db)):
     agent = RegistrationAgent(db)
     return agent.run()
+
+
+@app.post("/agents/registration/parse-image")
+async def registration_parse_image(
+    file: UploadFile = File(...),
+    db: Session = Depends(get_db),
+):
+    """OCR a photo of an ID card / insurance card and extract patient fields."""
+    if not file.content_type or not file.content_type.startswith("image/"):
+        raise HTTPException(status_code=400, detail="Fișierul nu este o imagine")
+    data = await file.read()
+    if len(data) > 10 * 1024 * 1024:
+        raise HTTPException(status_code=400, detail="Imagine prea mare (max 10MB)")
+    if len(data) < 100:
+        raise HTTPException(status_code=400, detail="Imagine invalidă")
+    agent = RegistrationAgent(db)
+    return agent.parse_image(data)
 
 
 # ─── Run all agents ──────────────────────────────────────────

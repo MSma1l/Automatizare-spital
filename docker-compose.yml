@@ -96,7 +96,12 @@ services:
     environment:
       - REACT_APP_API_URL=/api
       - REACT_APP_WS_URL=/
+      # Disable webpack-dev-server HMR WebSocket (avoids ws://localhost/ws errors
+      # in production-like reverse-proxy setup). App still hot-reloads when the
+      # container sees source changes via docker exec; HMR is only for dev workflow.
       - WDS_SOCKET_PORT=0
+      - FAST_REFRESH=false
+      - CHOKIDAR_USEPOLLING=false
     depends_on:
       backend:
         condition: service_started

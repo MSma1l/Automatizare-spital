@@ -205,8 +205,30 @@ def create_patient_as_doctor(
     db: Session = Depends(get_db),
     current_user: User = Depends(doctor_required),
 ):
-    """Doctors can register new patients directly."""
+    """Doctors can register new patients directly. Immediately links the patient
+    to this doctor by creating a Conversation so the patient shows up in the
+    doctor's patient list even before the first appointment."""
+    doctor = _get_doctor(db, current_user)
     patient = create_patient_account(db, data)
+
+    # Link patient to doctor via a conversation (acts as "managed by" marker)
+    existing_convo = (
+        db.query(Conversation)
+        .filter(Conversation.doctor_id == doctor.id, Conversation.patient_id == patient.id)
+        .first()
+    )
+    if not existing_convo:
+        db.add(Conversation(doctor_id=doctor.id, patient_id=patient.id))
+        db.commit()
+
+    # Welcome notification for the new patient
+    create_notification(
+        db, patient.user_id,
+        "Bun venit!",
+        f"Dr. {doctor.first_name} {doctor.last_name} v-a înregistrat în sistem. "
+        f"Puteți să vă autentificați cu email-ul și parola primite.",
+        NotificationType.SYSTEM,
+    )
     return {"message": "Pacient creat cu succes", "patient_id": patient.id}
 
 
@@ -216,13 +238,19 @@ def get_my_patients(
     current_user: User = Depends(doctor_required),
 ):
     doctor = _get_doctor(db, current_user)
-    patient_ids = (
-        db.query(Appointment.patient_id)
+    # Union: patients who had appointments with this doctor +
+    # patients linked via a conversation (e.g. doctor-created patients).
+    appt_ids = {
+        pid for (pid,) in db.query(Appointment.patient_id)
         .filter(Appointment.doctor_id == doctor.id)
-        .distinct()
-        .all()
-    )
-    patient_ids = [pid for (pid,) in patient_ids]
+        .distinct().all()
+    }
+    convo_ids = {
+        pid for (pid,) in db.query(Conversation.patient_id)
+        .filter(Conversation.doctor_id == doctor.id)
+        .distinct().all()
+    }
+    patient_ids = list(appt_ids | convo_ids)
 
     patients = db.query(Patient).filter(Patient.id.in_(patient_ids)).all()
     result = []

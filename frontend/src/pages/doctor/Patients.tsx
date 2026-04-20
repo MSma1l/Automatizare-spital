@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import api from '../../services/api';
 import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
-import { MessageSquare, Plus, Sparkles, X } from 'lucide-react';
+import { MessageSquare, Plus, Sparkles, X, Camera, Upload } from 'lucide-react';
 
 type PatientForm = {
   email: string;
@@ -28,8 +28,11 @@ const DoctorPatients: React.FC = () => {
   const [form, setForm] = useState<PatientForm>(emptyForm);
   const [saving, setSaving] = useState(false);
   const [showAI, setShowAI] = useState(false);
-  const [aiText, setAiText] = useState('');
+  const [aiImage, setAiImage] = useState<File | null>(null);
+  const [aiImagePreview, setAiImagePreview] = useState<string>('');
   const [aiBusy, setAiBusy] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+  const cameraInputRef = useRef<HTMLInputElement>(null);
   const navigate = useNavigate();
 
   const fetchPatients = () => {
@@ -73,14 +76,38 @@ const DoctorPatients: React.FC = () => {
     }
   };
 
+  const handleImageSelected = (f: File | null) => {
+    if (!f) return;
+    if (!f.type.startsWith('image/')) {
+      toast.error('Selectați un fișier imagine');
+      return;
+    }
+    if (f.size > 10 * 1024 * 1024) {
+      toast.error('Imagine prea mare (max 10MB)');
+      return;
+    }
+    setAiImage(f);
+    setAiImagePreview(URL.createObjectURL(f));
+  };
+
+  const clearAIImage = () => {
+    if (aiImagePreview) URL.revokeObjectURL(aiImagePreview);
+    setAiImage(null);
+    setAiImagePreview('');
+  };
+
   const runAIExtract = async () => {
-    if (!aiText.trim()) {
-      toast.error('Introduceți textul documentului');
+    if (!aiImage) {
+      toast.error('Încărcați o imagine a actului');
       return;
     }
     setAiBusy(true);
     try {
-      const res = await api.post('/ai/registration/parse', { text: aiText });
+      const fd = new FormData();
+      fd.append('file', aiImage);
+      const res = await api.post('/ai/registration/parse-image', fd, {
+        headers: { 'Content-Type': 'multipart/form-data' },
+      });
       const data = res.data.extracted || {};
       setForm(prev => ({
         ...prev,
@@ -93,7 +120,13 @@ const DoctorPatients: React.FC = () => {
         insurance_number: data.insurance_number || prev.insurance_number,
         email: data.email || prev.email,
       }));
-      toast.success(`AI a extras ${res.data.fields_found} câmpuri (încredere ${Math.round(res.data.confidence * 100)}%)`);
+      const fieldsFound = res.data.fields_found || 0;
+      if (fieldsFound === 0) {
+        toast.error('AI nu a putut extrage date din imagine. Completați manual.');
+      } else {
+        toast.success(`AI a extras ${fieldsFound} câmpuri (încredere ${Math.round((res.data.confidence || 0) * 100)}%)`);
+      }
+      clearAIImage();
       setShowAI(false);
       setShowCreate(true);
     } catch (err: any) {
@@ -112,7 +145,7 @@ const DoctorPatients: React.FC = () => {
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-2xl font-bold text-gray-800">Pacienții Mei</h1>
         <div className="flex gap-2">
-          <button onClick={() => { setAiText(''); setShowAI(true); }}
+          <button onClick={() => { clearAIImage(); setShowAI(true); }}
             className="flex items-center gap-2 px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition">
             <Sparkles size={18} /> Adaugă cu AI
           </button>
@@ -261,16 +294,46 @@ const DoctorPatients: React.FC = () => {
             </div>
             <div className="p-6 space-y-4">
               <p className="text-sm text-gray-600">
-                Lipiți textul de pe buletin/card de asigurare. Agentul AI va extrage datele și va completa formularul automat.
+                Faceți o fotografie a buletinului sau a cardului de asigurare, sau încărcați o imagine existentă.
+                Agentul AI va rula OCR, va extrage datele și va completa formularul automat.
               </p>
-              <textarea value={aiText} onChange={e => setAiText(e.target.value)}
-                rows={10} placeholder={`Exemplu:\nNume: Popescu Ion\nData nașterii: 15.03.1985\nTelefon: +40722111222\nAdresă: Str. Libertății 12, București\nAsigurare: RO9988776655`}
-                className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-purple-500 outline-none font-mono text-sm" />
+
+              <input ref={fileInputRef} type="file" accept="image/*" className="hidden"
+                onChange={e => handleImageSelected(e.target.files?.[0] || null)} />
+              <input ref={cameraInputRef} type="file" accept="image/*" capture="environment" className="hidden"
+                onChange={e => handleImageSelected(e.target.files?.[0] || null)} />
+
+              {!aiImagePreview ? (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <button type="button" onClick={() => cameraInputRef.current?.click()}
+                    className="flex flex-col items-center justify-center gap-2 py-8 border-2 border-dashed border-purple-200 rounded-xl hover:bg-purple-50 transition">
+                    <Camera size={36} className="text-purple-500" />
+                    <span className="text-sm font-medium text-gray-700">Fă o fotografie</span>
+                    <span className="text-xs text-gray-400">Folosește camera</span>
+                  </button>
+                  <button type="button" onClick={() => fileInputRef.current?.click()}
+                    className="flex flex-col items-center justify-center gap-2 py-8 border-2 border-dashed border-purple-200 rounded-xl hover:bg-purple-50 transition">
+                    <Upload size={36} className="text-purple-500" />
+                    <span className="text-sm font-medium text-gray-700">Încarcă imagine</span>
+                    <span className="text-xs text-gray-400">JPG, PNG (max 10MB)</span>
+                  </button>
+                </div>
+              ) : (
+                <div className="relative">
+                  <img src={aiImagePreview} alt="Preview"
+                    className="w-full max-h-72 object-contain rounded-lg border border-gray-200 bg-gray-50" />
+                  <button type="button" onClick={clearAIImage}
+                    className="absolute top-2 right-2 bg-white/90 hover:bg-white p-1.5 rounded-full shadow">
+                    <X size={16} className="text-gray-700" />
+                  </button>
+                </div>
+              )}
+
               <div className="flex justify-end gap-3">
-                <button onClick={() => setShowAI(false)}
+                <button onClick={() => { clearAIImage(); setShowAI(false); }}
                   className="px-4 py-2 text-gray-600 border rounded-lg hover:bg-gray-50">Anulează</button>
-                <button onClick={runAIExtract} disabled={aiBusy}
-                  className="flex items-center gap-2 px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 disabled:opacity-50">
+                <button onClick={runAIExtract} disabled={aiBusy || !aiImage}
+                  className="flex items-center gap-2 px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 disabled:opacity-50 disabled:cursor-not-allowed">
                   <Sparkles size={16} /> {aiBusy ? 'Se procesează...' : 'Extrage și completează'}
                 </button>
               </div>

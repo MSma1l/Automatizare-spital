@@ -1,6 +1,16 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import api from '../../services/api';
-import { Send, Sparkles, Bot, User as UserIcon, AlertCircle, BookOpen } from 'lucide-react';
+import { useAuth } from '../../contexts/AuthContext';
+import { Send, Sparkles, Bot, User as UserIcon, AlertCircle, BookOpen, Calendar, Trash2 } from 'lucide-react';
+
+interface BookingIntent {
+  intent: 'book' | 'cancel' | null;
+  specialty?: string | null;
+  urgent?: boolean;
+  date_hint?: 'today' | 'tomorrow' | 'this_week' | null;
+  language?: string;
+}
 
 interface ChatMsg {
   role: 'user' | 'ai';
@@ -8,20 +18,69 @@ interface ChatMsg {
   category?: string;
   confidence?: number;
   related?: string[];
+  booking?: BookingIntent;
 }
 
+const WELCOME_MSG: ChatMsg = {
+  role: 'ai',
+  content:
+    'Bună ziua! Sunt asistentul medical AI. Pot răspunde la întrebări despre simptome, urgențe, prevenție, medicamente și sănătate generală în română și rusă. Cum vă pot ajuta?',
+};
+
+const STORAGE_PREFIX = 'aiChat_patient_';
+const MAX_STORED_MSGS = 100;
+
 const PatientAIAssistant: React.FC = () => {
+  const { user } = useAuth();
+  const storageKey = user ? `${STORAGE_PREFIX}${user.id}` : `${STORAGE_PREFIX}anon`;
+
   const [question, setQuestion] = useState('');
-  const [history, setHistory] = useState<ChatMsg[]>([
-    {
-      role: 'ai',
-      content:
-        'Bună ziua! Sunt asistentul medical AI. Pot răspunde la întrebări despre simptome, urgențe, prevenție, medicamente și sănătate generală în română și rusă. Cum vă pot ajuta?',
-    },
-  ]);
+  const [history, setHistory] = useState<ChatMsg[]>([WELCOME_MSG]);
   const [loading, setLoading] = useState(false);
   const [faq, setFaq] = useState<Record<string, string[]>>({});
   const endRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
+
+  const goToBooking = (specialty?: string | null) => {
+    if (specialty) {
+      navigate(`/patient/book?specialty=${encodeURIComponent(specialty)}`);
+    } else {
+      navigate('/patient/book');
+    }
+  };
+
+  // Load persisted chat on mount / when user changes
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem(storageKey);
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          setHistory(parsed);
+          return;
+        }
+      }
+    } catch {
+      // ignore corrupted storage
+    }
+    setHistory([WELCOME_MSG]);
+  }, [storageKey]);
+
+  // Persist whenever history changes (trim to last MAX_STORED_MSGS)
+  useEffect(() => {
+    try {
+      const toStore = history.slice(-MAX_STORED_MSGS);
+      localStorage.setItem(storageKey, JSON.stringify(toStore));
+    } catch {
+      // quota exceeded — fail silently
+    }
+  }, [history, storageKey]);
+
+  const clearHistory = () => {
+    if (!window.confirm('Ștergi întregul istoric al conversației cu AI?')) return;
+    localStorage.removeItem(storageKey);
+    setHistory([WELCOME_MSG]);
+  };
 
   useEffect(() => {
     api.get('/ai/help/faq').then(res => setFaq(res.data.categories || {})).catch(() => {});
@@ -46,6 +105,7 @@ const PatientAIAssistant: React.FC = () => {
           category: res.data.category,
           confidence: res.data.confidence,
           related: res.data.related_questions || [],
+          booking: res.data.booking_intent || undefined,
         },
       ]);
     } catch (e: any) {
@@ -76,20 +136,34 @@ const PatientAIAssistant: React.FC = () => {
     sistem: 'Despre sistem',
     medicamente: 'Medicamente',
     sanatate_mintala: 'Sănătate mintală',
+    programari: 'Programări',
   };
+
+  const hasHistory = history.length > 1;
 
   return (
     <div>
-      <div className="flex items-center gap-3 mb-2">
-        <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-primary-500 rounded-xl flex items-center justify-center">
-          <Sparkles size={20} className="text-white" />
+      <div className="flex items-center justify-between mb-2">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-primary-500 rounded-xl flex items-center justify-center">
+            <Sparkles size={20} className="text-white" />
+          </div>
+          <div>
+            <h1 className="text-2xl font-bold text-gray-800">Asistent Medical AI</h1>
+            <p className="text-sm text-gray-500">
+              Antrenat pe 220+ întrebări medicale (RO + RU). Nu înlocuiește consultul medical.
+            </p>
+          </div>
         </div>
-        <div>
-          <h1 className="text-2xl font-bold text-gray-800">Asistent Medical AI</h1>
-          <p className="text-sm text-gray-500">
-            Antrenat pe 220+ întrebări medicale (RO + RU). Nu înlocuiește consultul medical.
-          </p>
-        </div>
+        {hasHistory && (
+          <button
+            onClick={clearHistory}
+            className="flex items-center gap-2 px-3 py-2 text-sm text-gray-600 border border-gray-200 rounded-lg hover:bg-red-50 hover:border-red-200 hover:text-red-600 transition"
+            title="Șterge istoricul conversației"
+          >
+            <Trash2 size={16} /> Șterge istoric
+          </button>
+        )}
       </div>
 
       <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 mb-4 flex items-start gap-2">
@@ -130,6 +204,30 @@ const PatientAIAssistant: React.FC = () => {
                           Încredere: {Math.round(m.confidence * 100)}%
                         </span>
                       )}
+                    </div>
+                  )}
+                  {m.booking?.intent === 'book' && (
+                    <div className="mt-2 ml-2">
+                      <button
+                        onClick={() => goToBooking(m.booking?.specialty)}
+                        className="inline-flex items-center gap-2 px-3 py-2 bg-gradient-to-r from-purple-500 to-primary-500 text-white text-sm rounded-lg hover:opacity-90 shadow-sm"
+                      >
+                        <Calendar size={14} />
+                        {m.booking?.specialty
+                          ? `Programează-te la ${m.booking.specialty}`
+                          : 'Deschide programările'}
+                      </button>
+                    </div>
+                  )}
+                  {m.booking?.intent === 'cancel' && (
+                    <div className="mt-2 ml-2">
+                      <button
+                        onClick={() => navigate('/patient/history')}
+                        className="inline-flex items-center gap-2 px-3 py-2 bg-red-500 text-white text-sm rounded-lg hover:bg-red-600 shadow-sm"
+                      >
+                        <Calendar size={14} />
+                        Vezi programările mele
+                      </button>
                     </div>
                   )}
                   {m.related && m.related.length > 0 && (

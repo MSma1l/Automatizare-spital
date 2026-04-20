@@ -52,19 +52,25 @@ class HelpAgent(BaseAgent):
         return "ru" if cyrillic_count > len(text) * 0.3 else "ro"
 
     def answer(self, question: str) -> dict:
-        """Answer a medical question using trained model or keyword fallback."""
+        """Answer a medical question using trained model or keyword fallback.
+        Always attaches a `booking_intent` field so the client can offer a
+        'Programează acum' shortcut when the user wants to make an appointment.
+        """
         lang = self._detect_language(question)
 
         # Method 1: Trained TF-IDF model
         if self._model_data and "tfidf" in self._model_data:
-            return self._answer_with_tfidf(question, lang)
-
+            result = self._answer_with_tfidf(question, lang)
         # Method 2: JSON Q&A with keyword matching
-        if self._qa_data:
-            return self._answer_with_keywords(question, lang)
-
+        elif self._qa_data:
+            result = self._answer_with_keywords(question, lang)
         # Method 3: Hardcoded fallback
-        return self._fallback_answer(lang)
+        else:
+            result = self._fallback_answer(lang)
+
+        # Attach booking intent regardless of answer source
+        result["booking_intent"] = self.detect_booking_intent(question)
+        return result
 
     def _answer_with_tfidf(self, question: str, lang: str) -> dict:
         """Use trained TF-IDF + cosine similarity for retrieval."""
@@ -169,6 +175,95 @@ class HelpAgent(BaseAgent):
             "language": lang,
             "related_questions": [],
             "method": "fallback",
+        }
+
+    # ── Booking intent detection (NLP) ──────────────────────────
+    # Extracts: intent ("book"|"cancel"|"info"|None), specialty, date hint
+    _BOOK_KEYWORDS = [
+        "programar", "programez", "programa", "rezerv", "vreau o consult",
+        "doresc o consult", "consult", "vizita la medic", "vreau la medic",
+        "запис", "записа", "прием", "визит", "хочу на прием", "book",
+    ]
+    _CANCEL_KEYWORDS = [
+        "anulez", "anulare", "renunt", "sterg programar", "nu mai vreau",
+        "отмен", "убрать запись", "cancel",
+    ]
+
+    # Map user terms → canonical specialty names used in the DB
+    _SPECIALTY_SYNONYMS = {
+        "cardiolog": "Cardiologie",
+        "inima": "Cardiologie", "tensiune": "Cardiologie",
+        "кардиолог": "Cardiologie", "сердц": "Cardiologie",
+        "neurolog": "Neurologie",
+        "cap": "Neurologie", "migrena": "Neurologie",
+        "невролог": "Neurologie", "мигрен": "Neurologie",
+        "pediatr": "Pediatrie",
+        "copil": "Pediatrie", "bebelus": "Pediatrie",
+        "педиатр": "Pediatrie", "ребен": "Pediatrie",
+        "ortoped": "Ortopedie",
+        "oas": "Ortopedie", "fractur": "Ortopedie",
+        "ортопед": "Ortopedie", "кост": "Ortopedie",
+        "dermatolog": "Dermatologie",
+        "piele": "Dermatologie", "acnee": "Dermatologie",
+        "дерматолог": "Dermatologie", "кожа": "Dermatologie",
+        "chirurg": "Chirurgie Generală",
+        "хирург": "Chirurgie Generală",
+        "intern": "Medicină Internă",
+        "general": "Medicină Internă",
+        "ginecolog": "Ginecologie",
+        "гинеколог": "Ginecologie",
+        "urolog": "Urologie",
+        "уролог": "Urologie",
+        "oftalmolog": "Oftalmologie", "ochi": "Oftalmologie",
+        "офтальмолог": "Oftalmologie", "глаз": "Oftalmologie",
+        "orl": "ORL", "ureche": "ORL", "gat": "ORL", "nas": "ORL",
+        "ухо": "ORL", "горло": "ORL",
+        "psihiatr": "Psihiatrie",
+        "психиатр": "Psihiatrie",
+        "radiolog": "Radiologie",
+        "рентген": "Radiologie",
+        "anestez": "Anestezie",
+    }
+
+    _URGENT_KEYWORDS = ["urgent", "azi", "astazi", "acum", "imediat", "срочн", "сегодня", "немедл"]
+
+    def detect_booking_intent(self, text: str) -> dict:
+        """Detect if user wants to book/cancel an appointment and extract entities.
+        Returns: {intent, specialty, urgent, date_hint, raw_match}
+        """
+        t = text.lower().strip()
+        if not t:
+            return {"intent": None}
+
+        intent = None
+        if any(k in t for k in self._CANCEL_KEYWORDS):
+            intent = "cancel"
+        elif any(k in t for k in self._BOOK_KEYWORDS):
+            intent = "book"
+
+        specialty = None
+        for syn, canon in self._SPECIALTY_SYNONYMS.items():
+            if syn in t:
+                specialty = canon
+                break
+
+        urgent = any(k in t for k in self._URGENT_KEYWORDS)
+
+        # Date hints (relative)
+        date_hint = None
+        if "maine" in t or "завтра" in t:
+            date_hint = "tomorrow"
+        elif "azi" in t or "astazi" in t or "сегодня" in t:
+            date_hint = "today"
+        elif "saptamana" in t or "неделе" in t:
+            date_hint = "this_week"
+
+        return {
+            "intent": intent,
+            "specialty": specialty,
+            "urgent": urgent,
+            "date_hint": date_hint,
+            "language": self._detect_language(text),
         }
 
     def run(self) -> dict:

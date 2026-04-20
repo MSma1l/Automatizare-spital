@@ -238,6 +238,56 @@ class RegistrationAgent(BaseAgent):
 
         return out
 
+    # ── OCR (image → text) ───────────────────────────────────────
+    def parse_image(self, image_bytes: bytes) -> dict:
+        """Run OCR on an uploaded image (ID / insurance card / intake form),
+        then feed the extracted text through the normal `parse()` pipeline.
+
+        Uses Tesseract with Romanian+Russian+English language models.
+        """
+        try:
+            import pytesseract
+            from PIL import Image, ImageOps, ImageFilter
+            import io
+        except ImportError as e:
+            return {
+                "extracted": {}, "confidence": 0.0, "fields_found": 0,
+                "method": "ocr_unavailable", "error": f"OCR dependencies missing: {e}",
+                "ocr_text": "",
+            }
+
+        try:
+            img = Image.open(io.BytesIO(image_bytes))
+            # Preprocess: grayscale + auto-contrast + slight sharpen — improves
+            # OCR accuracy on phone photos of ID cards considerably.
+            img = ImageOps.exif_transpose(img)  # honor EXIF orientation
+            img = img.convert("L")
+            img = ImageOps.autocontrast(img)
+            img = img.filter(ImageFilter.SHARPEN)
+
+            # Try multi-language OCR: ron+rus+eng
+            try:
+                text = pytesseract.image_to_string(img, lang="ron+rus+eng")
+            except pytesseract.TesseractError:
+                # Fall back to english-only if language packs are missing
+                text = pytesseract.image_to_string(img)
+        except Exception as e:
+            return {
+                "extracted": {}, "confidence": 0.0, "fields_found": 0,
+                "method": "ocr_failed", "error": str(e), "ocr_text": "",
+            }
+
+        if not text.strip():
+            return {
+                "extracted": {}, "confidence": 0.0, "fields_found": 0,
+                "method": "ocr_empty", "ocr_text": "",
+            }
+
+        result = self.parse(text)
+        result["method"] = f"ocr+{result.get('method', 'rules')}"
+        result["ocr_text"] = text
+        return result
+
     # ── Public API ───────────────────────────────────────────────
     def parse(self, text: str) -> dict:
         if not text or not text.strip():

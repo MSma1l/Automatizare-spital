@@ -5,6 +5,12 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends \
     gcc \
     libpq-dev \
+    tesseract-ocr \
+    tesseract-ocr-ron \
+    tesseract-ocr-rus \
+    tesseract-ocr-eng \
+    libtesseract-dev \
+    libleptonica-dev \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
