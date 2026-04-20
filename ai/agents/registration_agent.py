@@ -52,12 +52,28 @@ GENDER_MAP = {
 
 # ── Regex patterns ─────────────────────────────────────────────────
 DATE_PATTERNS = [
-    re.compile(r"\b(\d{1,2})[./-](\d{1,2})[./-](\d{4})\b"),
-    re.compile(r"\b(\d{4})[./-](\d{1,2})[./-](\d{1,2})\b"),
+    # DD.MM.YYYY / DD/MM/YYYY / DD-MM-YYYY
+    re.compile(r"\b(\d{1,2})[./\-](\d{1,2})[./\-](\d{4})\b"),
+    # YYYY-MM-DD / YYYY.MM.DD / YYYY/MM/DD
+    re.compile(r"\b(\d{4})[./\-](\d{1,2})[./\-](\d{1,2})\b"),
+    # DD MM YYYY (space separated — Moldovan ID card format: "10 12 2004")
+    re.compile(r"\b(\d{1,2})\s+(\d{1,2})\s+(\d{4})\b"),
 ]
 PHONE_PATTERN = re.compile(r"(?:\+?\d{1,3}[\s.-]?)?(?:\(?\d{2,4}\)?[\s.-]?)?\d{3}[\s.-]?\d{3,4}(?:[\s.-]?\d{2,4})?")
 EMAIL_PATTERN = re.compile(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+")
 INSURANCE_PATTERN = re.compile(r"\b(?:RO|MD|CNP)?\s*\d{10,16}\b", re.IGNORECASE)
+# Moldovan ID card document number: letter(s) + 7-9 digits (e.g. B37050258)
+MD_ID_DOCNO_PATTERN = re.compile(r"\b[A-Z]{1,2}\d{7,9}\b")
+# Words that are all-caps (possible name on Moldovan ID card)
+ALLCAPS_WORD = re.compile(r"^[A-ZÎÂĂȘȚÂÎ]{3,}$")
+
+# Keywords that identify a Moldovan ID card layout (labels-above-value)
+MD_ID_MARKERS = [
+    "buletin de identitate", "republica moldova", "agentia servicii publice",
+    "agenția servicii publice", "cetatenia", "cetățenia", "гражданство",
+    "data nasterii", "data nașterii", "дата рождения",
+    "data emiterii", "data expirarii", "data expirării",
+]
 
 
 def _normalize_date(s: str) -> str | None:
@@ -76,6 +92,30 @@ def _normalize_date(s: str) -> str | None:
         except ValueError:
             continue
     return None
+
+
+def _find_all_dates(s: str) -> list[str]:
+    """Return all dates in text as YYYY-MM-DD, in order of appearance."""
+    results: list[tuple[int, str]] = []
+    for pat in DATE_PATTERNS:
+        for m in pat.finditer(s):
+            a, b, c = m.groups()
+            try:
+                if len(a) == 4:
+                    dt = datetime(int(a), int(b), int(c))
+                else:
+                    dt = datetime(int(c), int(b), int(a))
+                results.append((m.start(), dt.date().isoformat()))
+            except ValueError:
+                continue
+    # Sort by position, dedup preserving order
+    seen: set = set()
+    out: list[str] = []
+    for _, iso in sorted(results, key=lambda x: x[0]):
+        if iso not in seen:
+            seen.add(iso)
+            out.append(iso)
+    return out
 
 
 def _clean_phone(s: str) -> str:
@@ -106,38 +146,145 @@ class RegistrationAgent(BaseAgent):
     def _rule_extract(self, text: str) -> dict:
         out: dict = {}
         lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+        text_l = text.lower()
+        is_md_id = any(marker in text_l for marker in MD_ID_MARKERS)
 
+        # ── Pass 1: "Key: value" on same line ─────────────────────
         for line in lines:
-            # Key: value pattern
             if ":" in line:
                 key, _, value = line.partition(":")
                 key_l = key.strip().lower()
                 value = value.strip()
                 field = KEYWORD_TO_FIELD.get(key_l)
                 if not field:
-                    # Try longest prefix match
                     for kw, f in KEYWORD_TO_FIELD.items():
                         if key_l.startswith(kw):
                             field = f
                             break
-                if not field:
-                    continue
-                self._assign(out, field, value)
+                if field and value:
+                    self._assign(out, field, value)
 
-        # Free-text fallbacks (apply only if missing) — scan line by line
-        # so a phone on one line doesn't swallow digits from the next line.
+        # ── Pass 2: Moldovan ID card layout — label on one line, value on next ─
+        # Handles patterns like:
+        #   Numele/Фамилия
+        #   GÎSCA
+        #   Prenumele/Имя
+        #   VLAD
+        #   Data nașterii/Дата рождения
+        #   10 12 2004
+        for i, line in enumerate(lines):
+            line_l = line.lower().strip(" \t:/")
+            # Match label line — may contain "/Cyrillic" variant
+            field = None
+            for kw, f in KEYWORD_TO_FIELD.items():
+                # exact-ish match with optional /suffix (e.g. "Numele/Фамилия")
+                if line_l == kw or line_l.startswith(kw + "/") or line_l.startswith(kw + " "):
+                    field = f
+                    break
+            if not field:
+                continue
+            # Look at next 1-2 lines for the value
+            for j in (1, 2):
+                if i + j >= len(lines):
+                    break
+                val = lines[i + j].strip()
+                if not val:
+                    continue
+                # Skip if next line is itself another label
+                if any(val.lower().startswith(kw) for kw in KEYWORD_TO_FIELD):
+                    continue
+                if field not in out or not out[field]:
+                    self._assign(out, field, val)
+                    break
+
+        # ── Pass 3: Moldovan ID — positional heuristics when labels are missing ─
+        if is_md_id:
+            # Document number (doc number) can serve as insurance_number fallback
+            for line in lines:
+                m = MD_ID_DOCNO_PATTERN.search(line)
+                if m and "insurance_number" not in out:
+                    out["insurance_number"] = m.group(0)
+                    break
+
+            # Use ALL found dates: first=birth, (ignore emission and expiry)
+            dates = _find_all_dates(text)
+            if dates and "birth_date" not in out:
+                # The birth date is typically the smallest (earliest) year
+                try:
+                    dates_sorted = sorted(dates)
+                    out["birth_date"] = dates_sorted[0]
+                except Exception:
+                    out["birth_date"] = dates[0]
+
+            # Find all-caps single-word names (length > 2) that are NOT labels/countries
+            SKIP = {"REPUBLICA", "MOLDOVA", "BULETIN", "IDENTITATE", "MDA", "ROU", "RUS",
+                    "AGENTIA", "AGENȚIA", "SERVICII", "PUBLICE", "SEX", "NUMELE",
+                    "PRENUMELE", "CETATENIA", "CETĂȚENIA", "DATA", "NASTERII",
+                    "NAȘTERII", "EMITERII", "EXPIRARII", "EXPIRĂRII",
+                    "ФАМИЛИЯ", "ИМЯ", "ГРАЖДАНСТВО", "ПОЛ", "РОЖДЕНИЯ", "ВЫДАЧИ"}
+            allcaps_names = []
+            for line in lines:
+                # Skip lines that are pure digits/date/doc number
+                if re.fullmatch(r"[\d\s./-]+", line):
+                    continue
+                if MD_ID_DOCNO_PATTERN.search(line):
+                    continue
+                tokens = [t for t in re.split(r"[\s/,.;:]+", line) if t]
+                for t in tokens:
+                    tc = t.strip("/-.,:;")
+                    if len(tc) >= 3 and tc.upper() == tc and tc.upper() not in SKIP and tc.isalpha():
+                        allcaps_names.append(tc)
+            # In Moldovan ID: first all-caps name = last_name, second = first_name
+            if allcaps_names:
+                if "last_name" not in out:
+                    out["last_name"] = allcaps_names[0].capitalize()
+                if "first_name" not in out and len(allcaps_names) >= 2:
+                    out["first_name"] = allcaps_names[1].capitalize()
+
+            # Gender: single letter M or F on its own, near "Sex" label
+            if "gender" not in out:
+                for i, line in enumerate(lines):
+                    if re.search(r"\b(sex|пол)\b", line.lower()):
+                        # Scan same line + next 2 lines for single M/F
+                        for j in range(i, min(i + 3, len(lines))):
+                            m = re.search(r"\b([MFmf])\b", lines[j])
+                            if m:
+                                out["gender"] = "male" if m.group(1).upper() == "M" else "female"
+                                break
+                        if "gender" in out:
+                            break
+
+        # ── Pass 4: Free-text fallbacks ────────────────────────────
         if "email" not in out:
             m = EMAIL_PATTERN.search(text)
             if m:
                 out["email"] = m.group(0).lower()
 
         if "phone" not in out:
-            for line in lines:
-                m = PHONE_PATTERN.search(line)
-                if m:
-                    candidate = _clean_phone(m.group(0))
-                    digits = re.sub(r"\D", "", candidate)
-                    if 7 <= len(digits) <= 15:
+            # Skip phone extraction on MD ID cards unless an explicit phone label
+            # exists — the document number looks like a phone otherwise.
+            has_phone_label = any(
+                kw in text_l
+                for kw in ("telefon", "tel.", "mobil", "телефон", "phone")
+            )
+            if not is_md_id or has_phone_label:
+                insurance_digits = re.sub(r"\D", "", out.get("insurance_number", ""))
+                for line in lines:
+                    # Skip date-looking lines
+                    if _normalize_date(line):
+                        continue
+                    # Skip the line that holds the ID card doc number
+                    if MD_ID_DOCNO_PATTERN.search(line):
+                        continue
+                    m = PHONE_PATTERN.search(line)
+                    if m:
+                        candidate = _clean_phone(m.group(0))
+                        digits = re.sub(r"\D", "", candidate)
+                        if not (7 <= len(digits) <= 15):
+                            continue
+                        # Skip if it's just a substring of the insurance/doc number
+                        if insurance_digits and digits in insurance_digits:
+                            continue
                         out["phone"] = candidate
                         break
 
@@ -151,6 +298,11 @@ class RegistrationAgent(BaseAgent):
         if "insurance_number" not in out:
             phone_digits = re.sub(r"\D", "", out.get("phone", ""))
             for line in lines:
+                # ID card doc number is good substitute
+                m = MD_ID_DOCNO_PATTERN.search(line)
+                if m:
+                    out["insurance_number"] = m.group(0)
+                    break
                 m = INSURANCE_PATTERN.search(line)
                 if not m:
                     continue

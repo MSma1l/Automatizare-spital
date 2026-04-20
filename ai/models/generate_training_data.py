@@ -639,6 +639,49 @@ def generate_registration_data():
         for _ in range(100):
             rows.append({"text": _random_ro_text_for_field(field), "label": field})
 
+    # ── Moldovan ID card samples ──────────────────────────────
+    # Realistic layout: label and bilingual header on one line, value on next.
+    # Adds ~800 rows that directly mirror what OCR produces on MD ID cards.
+    md_last_names = ["GISCA", "POPESCU", "IONESCU", "MOLDOVANU", "ROSCA", "CEBAN",
+                     "RUSU", "STIRBATI", "CHIRIAC", "BOTNARU", "VIERU", "URSU",
+                     "CARAMAN", "MUNTEANU", "TOFAN", "GRECU", "LUPU"]
+    md_first_names = ["VLAD", "ION", "ANDREI", "MIHAI", "STEFAN", "ALEXANDRU",
+                      "DANIEL", "VICTOR", "NICOLAE", "DUMITRU", "PETRU", "SERGIU",
+                      "MARIA", "ANA", "ELENA", "DANIELA", "CRISTINA", "IRINA"]
+
+    for _ in range(100):
+        # Labels (appear alone as their own line in OCR output)
+        rows.append({"text": "Numele/Фамилия", "label": "last_name"})
+        rows.append({"text": "Prenumele/Имя", "label": "first_name"})
+        rows.append({"text": "Data nașterii/Дата рождения", "label": "birth_date"})
+        rows.append({"text": "Data nasterii/Data nasterii", "label": "birth_date"})
+        rows.append({"text": "Sex/Пол", "label": "gender"})
+        rows.append({"text": "Cetățenia/Гражданство", "label": "none"})
+        rows.append({"text": "Data emiterii/Дата выдачи", "label": "none"})
+        rows.append({"text": "Data expirării/Действителен до", "label": "none"})
+
+    for _ in range(80):
+        # Name values (all caps, alone on a line)
+        rows.append({"text": random.choice(md_last_names), "label": "last_name"})
+        rows.append({"text": random.choice(md_first_names), "label": "first_name"})
+
+    for _ in range(80):
+        # Date values in MD ID format: "10 12 2004"
+        d = random.randint(1, 28); m = random.randint(1, 12); y = random.randint(1950, 2015)
+        rows.append({"text": f"{d:02d} {m:02d} {y}", "label": "birth_date"})
+
+    for _ in range(40):
+        # Gender
+        rows.append({"text": random.choice(["M", "F"]), "label": "gender"})
+
+    # Noise from ID card (should be labeled "none")
+    for _ in range(80):
+        rows.append({"text": "REPUBLICA MOLDOVA", "label": "none"})
+        rows.append({"text": "BULETIN DE IDENTITATE", "label": "none"})
+        rows.append({"text": "AGENTIA SERVICII PUBLICE", "label": "none"})
+        rows.append({"text": "MDA", "label": "none"})
+        rows.append({"text": f"B{random.randint(10000000, 99999999)}", "label": "insurance_number"})
+
     random.shuffle(rows)
 
     path = os.path.join(DATA_DIR, "registration.csv")
