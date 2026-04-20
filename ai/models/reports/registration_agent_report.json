@@ -1,0 +1,24 @@
+{
+  "agent": "registration",
+  "model_type": "TF-IDF (char_wb) + LogisticRegression (multi-class)",
+  "samples": 3000,
+  "classes": [
+    "address",
+    "birth_date",
+    "email",
+    "first_name",
+    "full_name",
+    "gender",
+    "insurance_number",
+    "last_name",
+    "none",
+    "phone"
+  ],
+  "metrics": {
+    "accuracy": 0.9983,
+    "f1_weighted": 0.9983,
+    "cv_mean": 0.9993,
+    "cv_std": 0.0013
+  },
+  "trained_at": "2026-04-20T22:10:34.356039"
+}

@@ -1,0 +1,15 @@
+2026-04-20 22:10:13,060 [INFO] ============================================================
+2026-04-20 22:10:13,060 [INFO] Training Registration Agent (TF-IDF + LogisticRegression)
+2026-04-20 22:10:13,060 [INFO] ============================================================
+2026-04-20 22:10:13,067 [INFO] Loaded 3000 labeled lines
+2026-04-20 22:10:13,137 [INFO] TF-IDF matrix: (3000, 640)
+2026-04-20 22:10:33,781 [INFO] ============================================================
+2026-04-20 22:10:33,781 [INFO] Training Registration Agent (TF-IDF + LogisticRegression)
+2026-04-20 22:10:33,781 [INFO] ============================================================
+2026-04-20 22:10:33,789 [INFO] Loaded 3000 labeled lines
+2026-04-20 22:10:33,871 [INFO] TF-IDF matrix: (3000, 640)
+2026-04-20 22:10:34,355 [INFO] Accuracy:  0.9983
+2026-04-20 22:10:34,355 [INFO] F1 (weighted): 0.9983
+2026-04-20 22:10:34,356 [INFO] CV accuracy: 0.9993 (+/- 0.0013)
+2026-04-20 22:10:34,369 [INFO] Model saved: C:\Depozit\gitProjects\Automatizare-spital\ai\models\saved_models\registration_agent_v20260420_221034.pkl
+2026-04-20 22:10:34,370 [INFO] Report saved: C:\Depozit\gitProjects\Automatizare-spital\ai\models\reports\registration_agent_report.json
