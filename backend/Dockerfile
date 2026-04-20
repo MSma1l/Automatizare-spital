@@ -15,7 +15,10 @@ COPY . .
 RUN mkdir -p /app/uploads
 
 COPY entrypoint.sh .
-RUN chmod +x entrypoint.sh
+# Strip any CRLF line endings (happens when cloned on Windows without .gitattributes)
+# then make executable. Without this, Linux errors with:
+#   exec ./entrypoint.sh: no such file or directory
+RUN sed -i 's/\r$//' entrypoint.sh && chmod +x entrypoint.sh
 
 EXPOSE 8000
 
