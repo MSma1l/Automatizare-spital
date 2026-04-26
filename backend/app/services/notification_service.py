@@ -1,5 +1,6 @@
 from sqlalchemy.orm import Session
 from app.models.notification import Notification, NotificationType
+from app.models.user import User, UserRole
 
 
 def create_notification(
@@ -19,6 +20,36 @@ def create_notification(
     db.commit()
     db.refresh(notification)
     return notification
+
+
+def notify_role(
+    db: Session,
+    role: UserRole,
+    title: str,
+    message: str,
+    notif_type: NotificationType = NotificationType.INFO,
+) -> int:
+    """Broadcast a notification to every active user with the given role."""
+    targets = db.query(User).filter(User.role == role, User.is_active == True).all()
+    for u in targets:
+        n = Notification(
+            user_id=u.id,
+            title=title,
+            message=message,
+            type=notif_type,
+        )
+        db.add(n)
+    db.commit()
+    return len(targets)
+
+
+def notify_admins(
+    db: Session,
+    title: str,
+    message: str,
+    notif_type: NotificationType = NotificationType.INFO,
+) -> int:
+    return notify_role(db, UserRole.ADMIN, title, message, notif_type)
 
 
 def get_unread_count(db: Session, user_id: int) -> int:

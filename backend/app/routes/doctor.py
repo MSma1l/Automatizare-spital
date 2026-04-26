@@ -13,7 +13,7 @@ from app.models.message import Message, Conversation
 from app.models.review import Review
 from app.schemas import DoctorStats, AppointmentUpdate, DoctorOut, PatientCreate
 from app.services.auth_service import require_role, get_current_user
-from app.services.notification_service import create_notification
+from app.services.notification_service import create_notification, notify_admins
 from app.services.patient_service import create_patient_account
 from app.models.notification import NotificationType
 from app.security.sanitizer import sanitize_string
@@ -228,6 +228,14 @@ def create_patient_as_doctor(
         f"Dr. {doctor.first_name} {doctor.last_name} v-a înregistrat în sistem. "
         f"Puteți să vă autentificați cu email-ul și parola primite.",
         NotificationType.SYSTEM,
+    )
+    # Inform admins
+    notify_admins(
+        db,
+        "Pacient nou (înregistrat de medic)",
+        f"Dr. {doctor.first_name} {doctor.last_name} a înregistrat pacientul "
+        f"{patient.first_name} {patient.last_name}.",
+        NotificationType.INFO,
     )
     return {"message": "Pacient creat cu succes", "patient_id": patient.id}
 

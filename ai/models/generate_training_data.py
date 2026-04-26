@@ -682,6 +682,51 @@ def generate_registration_data():
         rows.append({"text": "MDA", "label": "none"})
         rows.append({"text": f"B{random.randint(10000000, 99999999)}", "label": "insurance_number"})
 
+    # ── "Anchetă Pacient / Анкета пациента" intake-form samples ──
+    # Mirrors the bilingual paper form used by the clinic. The OCR output of
+    # such a sheet has labels with a slash separating RO and RU variants.
+    ANKETA_LABELS = {
+        "first_name":       ["Prenume / Имя", "Prenume/Имя", "Prenume Имя"],
+        "last_name":        ["Nume / Фамилия", "Nume/Фамилия", "Nume Фамилия"],
+        "birth_date":       ["Data nașterii / Дата рождения (DD.MM.YYYY)",
+                             "Data nasterii / Data rojdenia",
+                             "Data nașterii / Дата рождения"],
+        "gender":           ["Sex / Пол (Masculin / Мужской) (Feminin / Женский)",
+                             "Sex / Пол", "Sex/Пол"],
+        "phone":            ["Telefon / Телефон (+_)", "Telefon / Телефон",
+                             "Telefon Телефон"],
+        "email":            ["E-mail / Почта", "Email / Почта", "E-mail/Почта"],
+        "address":          ["Adresa completă / Полный адрес",
+                             "Adresa completa / Polnyi adres",
+                             "Adresă / Адрес"],
+        "insurance_number": ["Asigurare / Полис / CNP (13 cifre/цифр)",
+                             "Asigurare / Полис / CNP",
+                             "CNP (13 cifre)", "Полис / CNP"],
+    }
+    ANKETA_NOISE = [
+        "CLINICĂ PRIVATĂ", "CLINICA PRIVATA",
+        "ANCHETĂ PACIENT", "ANCHETA PACIENT", "АНКЕТА ПАЦИЕНТА",
+        "Vă rugăm să completați cu litere de tipar.",
+        "Пожалуйста, заполняйте печатными буквами.",
+        "Extragerea automată a datelor (RegistrationAgent)",
+        "Data completării / Дата заполнения:",
+        "Semnătura / Подпись:",
+        "(Masculin / Мужской) (Feminin / Женский)",
+        "(13 cifre/цифр)", "(+___):", "(DD.MM.YYYY)",
+    ]
+
+    # Each label appears alone on its own line, then a value below.
+    for _ in range(80):
+        for field, variants in ANKETA_LABELS.items():
+            rows.append({"text": random.choice(variants), "label": field})
+            rows.append({"text": _random_ro_text_for_field(field), "label": field})
+    # Noise/header lines from the form itself
+    for _ in range(120):
+        rows.append({"text": random.choice(ANKETA_NOISE), "label": "none"})
+    # CNP-specific samples (13 digits, distinct from doc number)
+    for _ in range(80):
+        rows.append({"text": str(random.randint(10**12, 10**13 - 1)), "label": "insurance_number"})
+
     random.shuffle(rows)
 
     path = os.path.join(DATA_DIR, "registration.csv")

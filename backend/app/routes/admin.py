@@ -22,7 +22,7 @@ from app.schemas import (
 )
 from app.services.patient_service import create_patient_account
 from app.services.auth_service import hash_password, require_role
-from app.services.notification_service import create_notification
+from app.services.notification_service import create_notification, notify_admins
 from app.services.email_service import send_welcome_email
 from app.security.sanitizer import sanitize_string, sanitize_filename
 from app.security.validators import validate_upload_file
@@ -148,6 +148,19 @@ def create_doctor(
     db.refresh(doctor)
     send_welcome_email(data.email, data.first_name, "medic")
 
+    notify_admins(
+        db,
+        "Medic nou înregistrat",
+        f"Dr. {doctor.first_name} {doctor.last_name} ({doctor.specialty}) a fost adăugat în sistem.",
+        NotificationType.INFO,
+    )
+    create_notification(
+        db, user.id,
+        "Bun venit!",
+        f"Contul dvs. medical a fost creat. Specialitate: {doctor.specialty}.",
+        NotificationType.SYSTEM,
+    )
+
     return {"message": "Medic creat cu succes", "doctor_id": doctor.id}
 
 
@@ -228,6 +241,12 @@ def toggle_doctor_active(
     db.commit()
 
     status_text = "activat" if user.is_active else "dezactivat"
+    notify_admins(
+        db,
+        "Cont medic actualizat",
+        f"Contul Dr. {doctor.first_name} {doctor.last_name} a fost {status_text}.",
+        NotificationType.INFO,
+    )
     return {"message": f"Contul medicului a fost {status_text}", "is_active": user.is_active}
 
 
@@ -258,6 +277,18 @@ def create_patient(
     current_user: User = Depends(admin_required),
 ):
     patient = create_patient_account(db, data)
+    notify_admins(
+        db,
+        "Pacient nou înregistrat",
+        f"Pacientul {patient.first_name} {patient.last_name} a fost adăugat în sistem.",
+        NotificationType.INFO,
+    )
+    create_notification(
+        db, patient.user_id,
+        "Bun venit la clinică!",
+        "Contul dvs. de pacient a fost creat. Vă puteți autentifica și programa consultații.",
+        NotificationType.SYSTEM,
+    )
     return {"message": "Pacient creat cu succes", "patient_id": patient.id}
 
 
@@ -332,6 +363,18 @@ def toggle_patient_active(
     db.commit()
 
     status_text = "activat" if user.is_active else "dezactivat"
+    notify_admins(
+        db,
+        "Cont pacient actualizat",
+        f"Contul pacientului {patient.first_name} {patient.last_name} a fost {status_text}.",
+        NotificationType.INFO,
+    )
+    create_notification(
+        db, user.id,
+        "Stare cont actualizată",
+        f"Contul dvs. a fost {status_text}.",
+        NotificationType.SYSTEM,
+    )
     return {"message": f"Contul pacientului a fost {status_text}", "is_active": user.is_active}
 
 
@@ -346,6 +389,32 @@ def list_resources(
     if resource_type:
         query = query.filter(Resource.type == resource_type)
     return [ResourceOut.model_validate(r).model_dump() for r in query.all()]
+
+
+def _check_low_stock(db: Session, resource: Resource) -> None:
+    """Broadcast a stock warning to admins when quantity falls at/under min."""
+    if resource.min_quantity <= 0:
+        return
+    if resource.quantity > resource.min_quantity:
+        return
+    if resource.quantity <= 0:
+        title = "Stoc EPUIZAT"
+        message = (
+            f"Resursa „{resource.name}\" este epuizată "
+            f"(0 / minim {resource.min_quantity})."
+        )
+        notif_type = NotificationType.URGENT
+    else:
+        title = "Stoc scăzut"
+        message = (
+            f"Resursa „{resource.name}\" a atins pragul minim "
+            f"({resource.quantity} / minim {resource.min_quantity})."
+        )
+        notif_type = NotificationType.WARNING
+    try:
+        notify_admins(db, title, message, notif_type)
+    except Exception:
+        pass
 
 
 @router.post("/resources")
@@ -366,6 +435,15 @@ def create_resource(
     db.add(resource)
     db.commit()
     db.refresh(resource)
+
+    notify_admins(
+        db,
+        "Resursă nouă adăugată",
+        f"„{resource.name}\" ({resource.quantity} buc) a fost adăugată în inventar.",
+        NotificationType.INFO,
+    )
+    _check_low_stock(db, resource)
+
     return {"message": "Resursă creată", "id": resource.id}
 
 
@@ -380,12 +458,23 @@ def update_resource(
     if not resource:
         raise HTTPException(status_code=404, detail="Resursa nu a fost găsită")
 
+    old_quantity = resource.quantity
+    old_min = resource.min_quantity
+    was_low = old_min > 0 and old_quantity <= old_min
+
     for field, value in data.model_dump(exclude_unset=True).items():
         if isinstance(value, str):
             value = sanitize_string(value)
         setattr(resource, field, value)
 
     db.commit()
+    db.refresh(resource)
+
+    is_low = resource.min_quantity > 0 and resource.quantity <= resource.min_quantity
+    # Only fire the alert when we *just crossed* the threshold (or got worse).
+    if is_low and (not was_low or resource.quantity < old_quantity):
+        _check_low_stock(db, resource)
+
     return {"message": "Resursă actualizată"}
 
 
@@ -399,8 +488,15 @@ def delete_resource(
     if not resource:
         raise HTTPException(status_code=404, detail="Resursa nu a fost găsită")
 
+    name = resource.name
     db.delete(resource)
     db.commit()
+    notify_admins(
+        db,
+        "Resursă ștearsă",
+        f"Resursa „{name}\" a fost eliminată din inventar.",
+        NotificationType.INFO,
+    )
     return {"message": "Resursă ștearsă"}
 
 
@@ -440,6 +536,12 @@ def create_bed(
     db.add(bed)
     db.commit()
     db.refresh(bed)
+    notify_admins(
+        db,
+        "Pat adăugat",
+        f"Patul #{bed.room_number} a fost adăugat în {bed.ward}.",
+        NotificationType.INFO,
+    )
     return {"message": "Pat creat", "id": bed.id}
 
 
@@ -455,20 +557,55 @@ def update_bed(
         raise HTTPException(status_code=404, detail="Patul nu a fost găsit")
 
     update_data = data.model_dump(exclude_unset=True)
+    old_status = bed.status
 
-    if "patient_id" in update_data:
-        update_data.pop("status", None)  # Don't override auto-set status
-        if update_data["patient_id"]:
-            bed.status = BedStatus.OCCUPIED
+    # Auto-derive bed.status from patient_id only when the assignment actually
+    # changes. Otherwise the user-provided status wins (so toggling "Liber" →
+    # "Ocupat" without a patient picker still works).
+    new_patient_id = update_data.get("patient_id", bed.patient_id)
+    patient_changed = "patient_id" in update_data and new_patient_id != bed.patient_id
+
+    if patient_changed:
+        if new_patient_id:
+            update_data["status"] = BedStatus.OCCUPIED.value
             bed.admitted_at = datetime.utcnow()
         else:
-            bed.status = BedStatus.FREE
+            update_data["status"] = BedStatus.FREE.value
             bed.admitted_at = None
 
     for field, value in update_data.items():
         setattr(bed, field, value)
 
+    # If user marked the bed FREE explicitly, drop the patient + admitted_at.
+    if (
+        "status" in update_data
+        and update_data["status"] == BedStatus.FREE.value
+        and not patient_changed
+    ):
+        bed.patient_id = None
+        bed.admitted_at = None
+
     db.commit()
+    db.refresh(bed)
+
+    # Notify admins when bed status changes
+    if old_status != bed.status:
+        new_status_label = {
+            BedStatus.FREE: "liber",
+            BedStatus.OCCUPIED: "ocupat",
+            BedStatus.MAINTENANCE: "mentenanță",
+            BedStatus.RESERVED: "rezervat",
+        }.get(bed.status, str(bed.status))
+        try:
+            notify_admins(
+                db,
+                "Status pat actualizat",
+                f"Patul #{bed.room_number} ({bed.ward}) este acum {new_status_label}.",
+                NotificationType.INFO,
+            )
+        except Exception:
+            pass
+
     return {"message": "Pat actualizat"}
 
 

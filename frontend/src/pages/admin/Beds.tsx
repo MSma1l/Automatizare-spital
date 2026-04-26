@@ -39,16 +39,23 @@ const AdminBeds: React.FC = () => {
     e.preventDefault();
     try {
       if (editId) {
-        await api.put(`/admin/beds/${editId}`, form);
-        toast.success('Pat actualizat');
+        // Only send patient_id when explicitly assigning/releasing — otherwise
+        // a null payload would force the backend to reset status to "free".
+        const { patient_id, ...rest } = form;
+        const payload: any = { ...rest };
+        if (patient_id !== null && patient_id !== undefined) {
+          payload.patient_id = patient_id;
+        }
+        await api.put(`/admin/beds/${editId}`, payload);
+        toast.success('Pat actualizat cu succes');
       } else {
-        await api.post('/admin/beds', form);
-        toast.success('Pat creat');
+        await api.post('/admin/beds', { room_number: form.room_number, ward: form.ward, status: form.status });
+        toast.success('Pat creat cu succes');
       }
       setShowModal(false);
       fetchBeds();
     } catch (err: any) {
-      toast.error(err.response?.data?.detail || 'Eroare');
+      toast.error(err.response?.data?.detail || 'Eroare la salvarea patului');
     }
   };
 

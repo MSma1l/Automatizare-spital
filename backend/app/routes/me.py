@@ -21,6 +21,8 @@ from app.security.validators import validate_upload_file
 from app.services.auth_service import (
     get_current_user, hash_password, verify_password,
 )
+from app.services.notification_service import create_notification
+from app.models.notification import NotificationType
 
 router = APIRouter(prefix="/api/me", tags=["profile"])
 
@@ -128,6 +130,13 @@ def update_my_profile(
                 setattr(patient, field, v)
 
     db.commit()
+    if values:
+        create_notification(
+            db, current_user.id,
+            "Profil actualizat",
+            "Datele profilului dvs. au fost salvate.",
+            NotificationType.SYSTEM,
+        )
     return _profile_payload(current_user, db)
 
 
@@ -150,6 +159,12 @@ def change_email(
 
     current_user.email = new_email
     db.commit()
+    create_notification(
+        db, current_user.id,
+        "Email actualizat",
+        f"Adresa de email a fost schimbată la {new_email}.",
+        NotificationType.SYSTEM,
+    )
     return {"message": "Email actualizat", "email": new_email}
 
 
@@ -166,6 +181,12 @@ def change_password(
 
     current_user.password_hash = hash_password(data.new_password)
     db.commit()
+    create_notification(
+        db, current_user.id,
+        "Parolă schimbată",
+        "Parola contului dvs. a fost schimbată cu succes.",
+        NotificationType.SYSTEM,
+    )
     return {"message": "Parolă actualizată"}
 
 
@@ -198,6 +219,12 @@ async def upload_photo(
             patient.photo_url = photo_url
 
     db.commit()
+    create_notification(
+        db, current_user.id,
+        "Fotografie actualizată",
+        "Poza de profil a fost încărcată cu succes.",
+        NotificationType.SYSTEM,
+    )
     return {"photo_url": photo_url}
 
 
@@ -215,4 +242,10 @@ def delete_photo(
         if patient:
             patient.photo_url = None
     db.commit()
+    create_notification(
+        db, current_user.id,
+        "Fotografie ștearsă",
+        "Poza de profil a fost eliminată.",
+        NotificationType.SYSTEM,
+    )
     return {"message": "Fotografie ștearsă"}

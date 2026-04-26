@@ -294,8 +294,10 @@ const DoctorPatients: React.FC = () => {
             </div>
             <div className="p-6 space-y-4">
               <p className="text-sm text-gray-600">
-                Faceți o fotografie a buletinului sau a cardului de asigurare, sau încărcați o imagine existentă.
-                Agentul AI va rula OCR, va extrage datele și va completa formularul automat.
+                Faceți o fotografie a unui document (buletin, card asigurare,
+                sau Anchetă pacient / Анкета пациента) sau încărcați o imagine existentă.
+                Agentul AI va rula OCR, va recunoaște etichetele bilingve (RO + RU)
+                și va completa automat formularul.
               </p>
 
               <input ref={fileInputRef} type="file" accept="image/*" className="hidden"

@@ -47,10 +47,25 @@ const DashboardLayout: React.FC = () => {
     : user?.email || '';
 
   useEffect(() => {
-    api.get('/notifications?unread_only=true')
-      .then(res => setNotifications(res.data))
-      .catch(() => {});
+    let active = true;
+    const fetchNotifs = () => {
+      api.get('/notifications?unread_only=true')
+        .then(res => { if (active) setNotifications(res.data); })
+        .catch(() => {});
+    };
+    fetchNotifs();
+    const id = window.setInterval(fetchNotifs, 30000);
+    return () => { active = false; window.clearInterval(id); };
   }, []);
+
+  const markRead = async (id: number) => {
+    try {
+      await api.put(`/notifications/${id}/read`);
+      setNotifications(prev => prev.filter(n => n.id !== id));
+    } catch {
+      /* noop */
+    }
+  };
 
   const handleLogout = () => {
     logout();
@@ -183,12 +198,27 @@ const DashboardLayout: React.FC = () => {
                   {notifications.length === 0 ? (
                     <p className="p-4 text-center text-gray-400 text-sm">Nicio notificare nouă</p>
                   ) : (
-                    notifications.map((n) => (
-                      <div key={n.id} className="p-3 border-b border-gray-50 hover:bg-gray-50">
-                        <p className="text-sm font-medium text-gray-700">{n.title}</p>
-                        <p className="text-xs text-gray-500 mt-1">{n.message}</p>
-                      </div>
-                    ))
+                    notifications.map((n) => {
+                      const accent =
+                        n.type === 'urgent' ? 'border-l-red-500' :
+                        n.type === 'warning' ? 'border-l-orange-400' :
+                        n.type === 'appointment' ? 'border-l-blue-500' :
+                        n.type === 'message' ? 'border-l-emerald-500' :
+                        'border-l-primary-400';
+                      return (
+                        <div
+                          key={n.id}
+                          onClick={() => markRead(n.id)}
+                          className={`p-3 border-b border-gray-50 hover:bg-gray-50 cursor-pointer border-l-4 ${accent}`}
+                        >
+                          <p className="text-sm font-medium text-gray-700">{n.title}</p>
+                          <p className="text-xs text-gray-500 mt-1">{n.message}</p>
+                          <p className="text-[10px] text-gray-400 mt-1">
+                            {new Date(n.created_at).toLocaleString('ro-RO')}
+                          </p>
+                        </div>
+                      );
+                    })
                   )}
                 </div>
               )}

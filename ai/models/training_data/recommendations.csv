@@ -1,0 +1,1201 @@
+patient_id,doctor_id,age,gender,specialty,conditions,n_conditions,n_previous_visits,days_since_last_visit,compliance_score,risk_level,risk_score,suggested_investigations,suggested_treatments,needs_followup,needs_attention
+138,25,22,male,Psihiatrie,Fibrilație atrială,1,16,332,0.51,medium,3,Spirometrie|CT toracic|TSH|Glicemie,Psihoterapie|Terapie inhalatorie|Intervenție chirurgicală,1,0
+260,26,69,female,Oftalmologie,BPOC|Anxietate generalizată,2,18,230,0.99,high,5,Ecocardiografie|Glicemie|Profil lipidic,Medicație orală,1,1
+151,18,74,female,Neurologie,Migrenă cronică|Anxietate generalizată|Lombosciatică,3,7,114,0.77,medium,4,Ecografie abdominală|EEG|Profil lipidic|Funcție renală,Terapie inhalatorie|Monitorizare ambulatorie|Terapie cu oxigen,1,0
+240,20,57,female,Medicină Internă,Boală coronariană|Pneumonie|BPOC,3,20,130,0.43,high,6,Hemoleucogramă completă,Injecții subcutanate,1,1
+85,21,80,female,Ortopedie,Migrenă cronică|Anemie feriprivă|Astm bronșic,3,10,35,0.85,high,6,HbA1c|Sumar urină,Intervenție chirurgicală|Regim alimentar,1,1
+210,2,29,male,Medicină Internă,Gastrita cronică|Epilepsie|Pneumonie|Colecistită,4,16,346,0.41,high,7,TSH|Spirometrie|Sumar urină,Psihoterapie|Fizioterapie,1,1
+112,18,60,female,Psihiatrie,Diabet zaharat tip 2|Migrenă cronică,2,9,320,0.54,low,1,Coagulogramă|Ionogramă,Medicație orală|Psihoterapie,1,0
+130,13,67,male,Urologie,Lombosciatică,1,9,310,0.67,medium,3,TSH,Intervenție chirurgicală|Terapie inhalatorie|Medicație orală,1,0
+285,23,46,male,Chirurgie Generală,BPOC|Hipertensiune arterială,2,15,8,0.63,low,2,Profil lipidic,Psihoterapie|Monitorizare ambulatorie,0,0
+218,1,27,female,Cardiologie,Artrită reumatoidă|Anxietate generalizată,2,8,163,0.35,low,2,Radiografie toracică|Spirometrie,Exerciții fizice regulate|Psihoterapie,1,1
+103,25,81,male,Dermatologie,Migrenă cronică|Insuficiență cardiacă,2,11,12,0.62,medium,4,Ecografie abdominală|Funcție renală|TSH,Medicație orală,0,0
+183,27,25,male,Ginecologie,Colecistită|Anxietate generalizată,2,10,171,0.3,medium,3,Ecocardiografie|CT toracic|Profil hepatic,Intervenție chirurgicală|Regim alimentar|Medicație orală,1,1
+232,7,45,female,Neurologie,Lombosciatică,1,15,143,0.36,medium,3,Glicemie|Sumar urină|Ecografie abdominală,Terapie cu oxigen,1,1
+224,14,26,female,Urologie,Fibrilație atrială|Lombosciatică|Artrită reumatoidă,3,13,154,0.68,medium,4,Cultură urină,Fizioterapie|Monitorizare ambulatorie|Terapie inhalatorie,1,0
+254,16,43,male,Medicină Internă,Anemie feriprivă,1,0,40,0.64,low,0,Glicemie|EEG|RMN cerebral,Regim alimentar,0,0
+80,11,70,male,ORL,Anxietate generalizată,1,20,218,0.88,medium,4,Funcție renală|Ecografie abdominală|Profil hepatic|Coagulogramă,Intervenție chirurgicală|Terapie inhalatorie,1,0
+1,5,46,female,Ginecologie,Migrenă cronică|Hipotiroidism|Boală coronariană,3,6,231,0.49,high,7,TSH,Fizioterapie|Intervenție chirurgicală|Terapie inhalatorie,1,1
+221,11,41,male,ORL,Hipotiroidism,1,12,91,0.62,low,2,CT toracic|Radiografie toracică|Hemoleucogramă completă,Injecții subcutanate,1,0
+262,25,49,female,Chirurgie Generală,Epilepsie|Artrită reumatoidă,2,12,336,0.51,low,2,ECG|Profil lipidic,Injecții subcutanate|Monitorizare ambulatorie|Regim alimentar,1,0
+132,29,51,female,Medicină Internă,BPOC,1,19,338,0.98,low,2,Glicemie,Monitorizare ambulatorie|Intervenție chirurgicală|Fizioterapie,1,0
+32,9,48,female,Psihiatrie,Pneumonie,1,14,32,0.9,low,0,Funcție renală|Ecografie abdominală|Radiografie toracică,Injecții subcutanate|Medicație orală|Regim alimentar,0,0
+299,20,77,male,Urologie,Lombosciatică,1,5,143,0.34,high,6,Ionogramă|Hemoleucogramă completă|RMN cerebral,Intervenție chirurgicală|Psihoterapie|Terapie cu oxigen,1,1
+286,21,23,female,Medicină Internă,Lombosciatică,1,5,249,0.42,medium,3,Cultură urină|HbA1c|Ionogramă|Spirometrie,Psihoterapie|Monitorizare ambulatorie,1,0
+246,26,28,female,Medicină Internă,Anemie feriprivă,1,5,33,0.82,low,2,EEG|Profil hepatic,Medicație orală,0,0
+271,24,81,male,Neurologie,BPOC,1,2,291,0.78,medium,4,EEG,Intervenție chirurgicală|Exerciții fizice regulate,1,0
+87,10,68,female,Ginecologie,Anemie feriprivă|Fibrilație atrială|Astm bronșic,3,16,70,0.43,high,7,Coagulogramă|ECG|TSH|Radiografie toracică,Intervenție chirurgicală|Psihoterapie,1,1
+226,2,76,male,Medicină Internă,Astm bronșic|Lombosciatică|Pneumonie,3,18,183,0.62,high,6,CT toracic|Cultură urină,Terapie inhalatorie|Fizioterapie|Medicație orală,1,1
+78,20,82,male,Cardiologie,BPOC|Migrenă cronică|Astm bronșic,3,7,226,0.47,high,8,Radiografie toracică|TSH|RMN cerebral,Exerciții fizice regulate|Terapie cu oxigen,1,1
+162,17,41,male,Neurologie,Depresie|Epilepsie,2,2,227,0.36,medium,4,Cultură urină,Intervenție chirurgicală,1,1
+242,21,72,male,Neurologie,Anemie feriprivă,1,9,160,0.47,high,5,Ecocardiografie|EEG,Fizioterapie|Terapie inhalatorie,1,1
+5,28,46,female,Pediatrie,Fibrilație atrială,1,2,16,0.37,medium,3,RMN cerebral|EEG|Cultură urină,Terapie cu oxigen|Exerciții fizice regulate,0,1
+297,19,63,female,Ginecologie,Boală coronariană,1,15,0,0.55,low,0,Spirometrie|Ionogramă,Fizioterapie,0,0
+35,29,52,male,Chirurgie Generală,Anemie feriprivă,1,6,202,0.91,medium,3,Sumar urină|Funcție renală,Medicație orală|Intervenție chirurgicală,1,0
+154,22,57,female,Oftalmologie,Boală coronariană|Hipertensiune arterială,2,12,99,0.83,low,0,Cultură urină|Ecocardiografie|TSH|Hemoleucogramă completă,Regim alimentar|Injecții subcutanate,1,0
+298,10,36,male,Neurologie,Fibrilație atrială,1,8,228,0.48,high,5,CT toracic|Profil lipidic,Terapie cu oxigen|Monitorizare ambulatorie,1,1
+87,2,44,female,Ortopedie,Boală coronariană|Insuficiență cardiacă|Hipertensiune arterială,3,6,261,0.41,high,5,Coagulogramă|Profil lipidic,Terapie inhalatorie,1,1
+189,20,62,female,Ginecologie,Astm bronșic|Gastrita cronică|Infecție urinară|Diabet zaharat tip 2,4,20,198,0.66,high,5,Profil lipidic|RMN cerebral,Regim alimentar|Terapie cu oxigen|Terapie inhalatorie,1,1
+139,28,71,male,Neurologie,BPOC|Boală coronariană|Lombosciatică,3,6,123,0.59,high,6,Profil hepatic|Radiografie toracică|Ecocardiografie,Exerciții fizice regulate,1,1
+56,4,62,female,Oftalmologie,Anxietate generalizată,1,4,295,0.36,medium,4,HbA1c|EEG|Profil lipidic|Glicemie,Intervenție chirurgicală,1,1
+34,16,71,female,Psihiatrie,Hipertensiune arterială|Hipotiroidism,2,18,154,0.68,medium,4,EEG|Hemoleucogramă completă,Regim alimentar|Exerciții fizice regulate|Intervenție chirurgicală,1,0
+7,4,28,female,ORL,Gastrita cronică,1,0,319,0.57,low,1,RMN cerebral|Spirometrie,Medicație orală|Injecții subcutanate|Monitorizare ambulatorie,1,0
+65,2,18,female,Cardiologie,Hipotiroidism|BPOC|Epilepsie|Depresie,4,20,14,0.55,medium,3,Spirometrie|Sumar urină,Fizioterapie|Injecții subcutanate|Regim alimentar,0,0
+254,2,51,female,Dermatologie,Epilepsie|Anxietate generalizată,2,11,49,0.78,low,2,ECG|RMN cerebral,Terapie inhalatorie,0,0
+231,25,55,male,Neurologie,Depresie|BPOC|Hipotiroidism|Anxietate generalizată,4,18,50,0.74,medium,3,Funcție renală|Glicemie,Intervenție chirurgicală|Terapie cu oxigen|Monitorizare ambulatorie,0,0
+14,20,64,male,Neurologie,Epilepsie|Pneumonie|Anemie feriprivă|Depresie,4,1,133,0.79,medium,3,Radiografie toracică|TSH,Regim alimentar|Terapie cu oxigen|Fizioterapie,1,0
+277,27,59,female,Urologie,Anxietate generalizată|Infecție urinară|Diabet zaharat tip 2,3,6,244,0.32,high,7,Profil hepatic|Ecocardiografie|Glicemie|TSH,Terapie inhalatorie,1,1
+285,14,57,female,Pediatrie,Colecistită|Lombosciatică,2,16,234,0.96,medium,3,Ecocardiografie,Regim alimentar|Terapie inhalatorie,1,0
+61,30,53,male,Chirurgie Generală,Astm bronșic,1,17,51,0.47,medium,4,Glicemie|Profil hepatic|Profil lipidic|Hemoleucogramă completă,Injecții subcutanate,0,0
+184,10,31,male,ORL,Lombosciatică,1,16,53,0.31,low,2,CT toracic|ECG|Coagulogramă,Medicație orală|Intervenție chirurgicală,0,1
+166,27,64,female,Neurologie,Boală coronariană,1,4,339,0.97,low,1,Profil lipidic|Glicemie|Coagulogramă|Ecocardiografie,Fizioterapie|Exerciții fizice regulate|Terapie inhalatorie,1,0
+131,4,81,female,Neurologie,Migrenă cronică,1,16,119,0.41,medium,4,EEG,Terapie inhalatorie|Fizioterapie|Intervenție chirurgicală,1,0
+68,4,67,female,Psihiatrie,Pneumonie|Astm bronșic,2,20,30,0.3,medium,4,ECG,Medicație orală|Terapie cu oxigen|Regim alimentar,0,1
+215,15,66,female,Chirurgie Generală,Anemie feriprivă|Colecistită,2,7,95,0.45,medium,4,EEG|Funcție renală,Exerciții fizice regulate|Injecții subcutanate,1,0
+158,10,68,male,Ortopedie,Hipertensiune arterială|Hernie de disc|Lombosciatică,3,19,329,0.34,high,7,Funcție renală|Hemoleucogramă completă,Terapie cu oxigen|Terapie inhalatorie,1,1
+139,6,85,male,Medicină Internă,Anemie feriprivă|Insuficiență cardiacă,2,10,228,0.64,medium,4,Hemoleucogramă completă,Psihoterapie|Monitorizare ambulatorie|Fizioterapie,1,0
+147,30,33,male,Chirurgie Generală,Hipotiroidism|Colecistită,2,18,260,0.82,medium,3,Spirometrie,Terapie inhalatorie|Exerciții fizice regulate,1,0
+160,19,63,female,Ortopedie,Lombosciatică|Artrită reumatoidă,2,20,162,0.4,medium,4,Profil hepatic,Fizioterapie,1,0
+157,5,51,female,ORL,Depresie|Infecție urinară,2,1,339,0.41,medium,4,Glicemie|Cultură urină,Intervenție chirurgicală,1,0
+55,21,49,female,Ortopedie,Epilepsie,1,15,264,0.83,medium,3,HbA1c|RMN cerebral,Intervenție chirurgicală|Fizioterapie,1,0
+191,8,25,male,Cardiologie,Lombosciatică|Astm bronșic|Artrită reumatoidă,3,0,7,0.38,medium,4,Glicemie|RMN cerebral,Injecții subcutanate|Terapie cu oxigen,0,1
+43,10,49,female,ORL,Hipertensiune arterială|Hipotiroidism,2,10,339,0.94,low,2,TSH|Profil hepatic,Regim alimentar|Fizioterapie,1,0
+28,24,57,female,Medicină Internă,Hernie de disc|Depresie,2,16,230,0.79,low,1,EEG|Sumar urină|RMN cerebral,Exerciții fizice regulate,1,0
+179,1,75,female,Dermatologie,Anemie feriprivă|Colecistită,2,5,358,0.61,medium,3,Ecocardiografie|Coagulogramă|Sumar urină|Hemoleucogramă completă,Monitorizare ambulatorie,1,0
+55,20,54,female,Chirurgie Generală,Hipotiroidism,1,20,94,0.39,low,2,Glicemie,Monitorizare ambulatorie,1,1
+145,5,34,female,Oftalmologie,Artrită reumatoidă|Insuficiență cardiacă|BPOC,3,17,43,0.87,medium,3,Ecocardiografie|HbA1c,Exerciții fizice regulate|Intervenție chirurgicală,0,0
+242,10,57,female,Oftalmologie,Hernie de disc|Boală coronariană,2,3,309,1.0,low,2,Glicemie|HbA1c|Ionogramă,Monitorizare ambulatorie|Psihoterapie,1,0
+66,8,25,male,Ginecologie,Hipotiroidism,1,16,205,0.31,medium,4,RMN cerebral|TSH|Ecocardiografie|EEG,Injecții subcutanate,1,1
+261,18,54,female,Psihiatrie,BPOC|Colecistită,2,2,143,0.62,low,0,Spirometrie|Hemoleucogramă completă|Funcție renală|Ionogramă,Monitorizare ambulatorie|Exerciții fizice regulate,1,0
+255,17,51,female,Dermatologie,Insuficiență cardiacă,1,15,133,0.84,low,2,ECG|Radiografie toracică|RMN cerebral,Monitorizare ambulatorie,1,0
+105,13,67,female,Cardiologie,Infecție urinară,1,12,234,0.38,high,5,Sumar urină,Psihoterapie,1,1
+251,23,74,male,Dermatologie,Colecistită|Migrenă cronică|Gastrita cronică,3,14,265,0.82,high,6,TSH|Cultură urină|Ecografie abdominală,Medicație orală|Exerciții fizice regulate|Psihoterapie,1,1
+213,16,59,female,Neurologie,Epilepsie|Lombosciatică|Hipotiroidism,3,10,338,0.61,high,5,Hemoleucogramă completă|Cultură urină|Profil lipidic|Profil hepatic,Regim alimentar|Injecții subcutanate,1,1
+192,11,44,male,Cardiologie,BPOC,1,3,134,0.37,medium,3,ECG|Spirometrie|Coagulogramă|HbA1c,Fizioterapie|Psihoterapie|Terapie inhalatorie,1,1
+230,23,34,female,Cardiologie,Epilepsie,1,20,320,0.41,medium,4,Profil hepatic,Injecții subcutanate|Psihoterapie,1,0
+221,11,37,female,Dermatologie,Lombosciatică|BPOC|Colecistită|Migrenă cronică,4,4,258,0.82,medium,4,Hemoleucogramă completă|ECG,Regim alimentar,1,0
+38,1,71,female,Oftalmologie,Colecistită|Fibrilație atrială,2,12,174,0.41,high,5,HbA1c,Injecții subcutanate|Psihoterapie|Monitorizare ambulatorie,1,1
+25,20,70,female,Pediatrie,Hipotiroidism|Diabet zaharat tip 2,2,1,293,0.47,high,5,HbA1c|CT toracic,Terapie cu oxigen|Medicație orală,1,1
+31,12,18,female,Psihiatrie,Anemie feriprivă,1,18,198,0.94,medium,3,CT toracic,Psihoterapie|Injecții subcutanate|Terapie cu oxigen,1,0
+180,5,45,female,Dermatologie,Lombosciatică|Astm bronșic,2,3,13,0.86,low,2,Profil lipidic|Ionogramă,Intervenție chirurgicală|Monitorizare ambulatorie|Terapie cu oxigen,0,0
+18,10,25,female,Ortopedie,Fibrilație atrială,1,3,185,0.38,medium,4,CT toracic|HbA1c|EEG|Profil hepatic,Fizioterapie|Intervenție chirurgicală|Regim alimentar,1,1
+268,14,63,male,Neurologie,BPOC|Lombosciatică|Fibrilație atrială|Infecție urinară,4,1,253,0.88,medium,3,Ecocardiografie|Glicemie|Profil lipidic,Monitorizare ambulatorie|Fizioterapie,1,0
+74,18,77,female,Oftalmologie,Anxietate generalizată|Epilepsie|Pneumonie|BPOC,4,12,249,0.95,high,6,Ionogramă|EEG,Exerciții fizice regulate,1,1
+201,29,78,female,Pediatrie,Pneumonie|Diabet zaharat tip 2|Boală coronariană|Infecție urinară,4,2,105,0.32,high,6,ECG|TSH|Ecocardiografie,Medicație orală|Terapie inhalatorie|Fizioterapie,1,1
+108,15,81,female,Cardiologie,Pneumonie,1,0,203,0.76,medium,4,Radiografie toracică|Coagulogramă,Terapie cu oxigen|Intervenție chirurgicală|Injecții subcutanate,1,0
+18,9,32,male,Medicină Internă,Hipotiroidism,1,10,323,0.52,low,1,Coagulogramă|Ecografie abdominală|Ecocardiografie|Profil hepatic,Fizioterapie,1,0
+153,22,66,male,Psihiatrie,Diabet zaharat tip 2,1,9,242,0.77,medium,4,Profil lipidic,Terapie cu oxigen,1,0
+188,9,55,male,Oftalmologie,Lombosciatică|BPOC|Hernie de disc,3,14,16,0.42,high,5,Cultură urină|Profil lipidic|CT toracic|Hemoleucogramă completă,Terapie inhalatorie,1,1
+87,8,75,male,Dermatologie,Lombosciatică,1,10,203,0.31,high,7,Glicemie|Coagulogramă|Profil lipidic,Terapie inhalatorie|Intervenție chirurgicală,1,1
+121,6,41,female,Ginecologie,Boală coronariană|Astm bronșic,2,15,260,0.54,low,2,Spirometrie|ECG,Monitorizare ambulatorie|Fizioterapie|Exerciții fizice regulate,1,0
+150,5,36,male,Oftalmologie,Hipotiroidism,1,7,279,0.48,high,5,CT toracic|Profil hepatic|EEG|Glicemie,Intervenție chirurgicală|Terapie inhalatorie,1,1
+249,6,38,female,Chirurgie Generală,Pneumonie|Artrită reumatoidă|Gastrita cronică,3,13,7,0.65,low,2,Ecografie abdominală|RMN cerebral,Psihoterapie,0,0
+100,16,83,male,Medicină Internă,Boală coronariană|Hipotiroidism|Fibrilație atrială,3,12,212,0.67,high,5,Funcție renală|Hemoleucogramă completă|Ionogramă|Profil hepatic,Terapie inhalatorie|Intervenție chirurgicală|Terapie cu oxigen,1,1
+27,1,24,male,Ortopedie,Hipotiroidism|Hipertensiune arterială,2,19,103,0.78,low,2,Radiografie toracică,Regim alimentar|Fizioterapie,1,0
+19,8,46,female,Neurologie,Boală coronariană,1,6,241,0.5,medium,3,Profil hepatic|Ecografie abdominală,Fizioterapie|Terapie cu oxigen|Intervenție chirurgicală,1,0
+258,20,53,female,Dermatologie,Gastrita cronică,1,4,312,0.47,medium,4,EEG|Funcție renală,Fizioterapie,1,0
+16,22,78,male,Urologie,Anxietate generalizată,1,11,313,0.65,medium,4,Glicemie|Funcție renală|Hemoleucogramă completă|Ionogramă,Psihoterapie|Terapie cu oxigen|Regim alimentar,1,0
+10,20,44,male,Medicină Internă,Colecistită|Insuficiență cardiacă|Lombosciatică,3,9,168,0.88,medium,3,Profil hepatic|Spirometrie,Injecții subcutanate|Fizioterapie|Intervenție chirurgicală,1,0
+120,26,35,female,Ortopedie,Insuficiență cardiacă,1,3,161,1.0,low,1,TSH|CT toracic,Exerciții fizice regulate,1,0
+297,7,41,female,Dermatologie,Astm bronșic,1,12,173,0.87,low,1,Sumar urină,Psihoterapie,1,0
+89,25,55,female,Neurologie,Depresie,1,13,218,0.87,medium,3,CT toracic,Terapie inhalatorie|Fizioterapie,1,0
+295,13,68,female,Ginecologie,Astm bronșic,1,16,43,0.45,high,6,Hemoleucogramă completă|Cultură urină,Medicație orală,1,1
+294,4,29,female,Medicină Internă,Hipotiroidism,1,1,210,0.96,medium,3,Coagulogramă|Funcție renală|CT toracic|Glicemie,Monitorizare ambulatorie|Intervenție chirurgicală,1,0
+185,12,27,female,Medicină Internă,Anemie feriprivă|Diabet zaharat tip 2,2,5,70,0.44,medium,4,RMN cerebral|Spirometrie|HbA1c,Medicație orală|Monitorizare ambulatorie,0,0
+3,24,52,male,ORL,Insuficiență cardiacă,1,9,310,0.37,medium,4,TSH|Sumar urină|Ecocardiografie|HbA1c,Monitorizare ambulatorie|Terapie cu oxigen,1,1
+140,5,41,male,Neurologie,Migrenă cronică|Insuficiență cardiacă|Boală coronariană,3,18,245,0.43,high,6,Coagulogramă,Medicație orală,1,1
+228,7,31,female,Chirurgie Generală,Fibrilație atrială,1,18,187,0.68,low,2,Hemoleucogramă completă|Funcție renală|Ecocardiografie,Fizioterapie,1,0
+52,1,56,female,Pediatrie,Epilepsie|Astm bronșic|BPOC,3,10,332,0.6,medium,3,RMN cerebral|Ecografie abdominală,Monitorizare ambulatorie,1,0
+34,29,66,male,Pediatrie,Lombosciatică|Colecistită|Astm bronșic,3,11,133,0.91,high,5,Ecografie abdominală|Funcție renală,Terapie inhalatorie,1,1
+56,16,70,male,Psihiatrie,Diabet zaharat tip 2|Anemie feriprivă,2,17,68,0.7,medium,3,CT toracic|Ionogramă|Profil lipidic,Psihoterapie,0,0
+178,15,33,female,Oftalmologie,Boală coronariană|Depresie|Pneumonie|Astm bronșic,4,13,90,0.56,medium,3,Ecocardiografie|HbA1c|RMN cerebral,Medicație orală|Intervenție chirurgicală,0,0
+52,7,45,female,Neurologie,Gastrita cronică|Colecistită|Migrenă cronică,3,12,41,0.6,medium,4,Hemoleucogramă completă|CT toracic|Radiografie toracică|Ecografie abdominală,Monitorizare ambulatorie,0,0
+11,16,48,female,Ginecologie,Hernie de disc,1,8,247,0.3,high,5,Ecografie abdominală|Glicemie|ECG,Monitorizare ambulatorie,1,1
+155,28,18,female,Oftalmologie,Insuficiență cardiacă|Gastrita cronică|Colecistită,3,4,26,0.49,high,5,ECG|Ecocardiografie|Glicemie|HbA1c,Intervenție chirurgicală|Monitorizare ambulatorie|Psihoterapie,1,1
+286,13,51,female,Dermatologie,Boală coronariană,1,19,73,0.75,low,1,Ecografie abdominală|HbA1c|Cultură urină,Terapie inhalatorie|Regim alimentar,0,0
+201,27,31,female,Neurologie,Artrită reumatoidă,1,17,139,0.33,medium,3,TSH|EEG|Profil hepatic|CT toracic,Terapie inhalatorie|Monitorizare ambulatorie,1,1
+30,19,55,male,Dermatologie,Diabet zaharat tip 2,1,19,180,0.57,low,0,Profil lipidic|Ecocardiografie|Funcție renală|CT toracic,Terapie inhalatorie|Fizioterapie|Psihoterapie,1,0
+60,7,37,female,Ginecologie,Migrenă cronică|BPOC,2,11,274,0.79,medium,3,Coagulogramă|HbA1c|Cultură urină,Intervenție chirurgicală|Medicație orală,1,0
+186,17,68,male,Ortopedie,Lombosciatică,1,7,249,0.78,medium,4,Sumar urină|EEG,Psihoterapie,1,0
+50,3,77,male,Medicină Internă,BPOC,1,20,175,0.72,medium,4,Spirometrie|Ecocardiografie|Radiografie toracică,Regim alimentar|Intervenție chirurgicală,1,0
+291,17,61,male,Oftalmologie,Gastrita cronică,1,7,31,0.72,low,2,TSH|Funcție renală|CT toracic|Ionogramă,Injecții subcutanate|Exerciții fizice regulate|Monitorizare ambulatorie,0,0
+105,23,56,male,Neurologie,Depresie,1,3,134,0.41,medium,4,Spirometrie,Injecții subcutanate|Regim alimentar,1,0
+206,15,67,male,Dermatologie,Infecție urinară|Hipotiroidism|Hernie de disc|Lombosciatică,4,1,158,0.32,high,7,ECG|Profil hepatic|Cultură urină,Medicație orală,1,1
+129,30,77,female,Medicină Internă,Artrită reumatoidă|Diabet zaharat tip 2|Colecistită|Infecție urinară,4,18,311,0.64,high,5,Hemoleucogramă completă,Regim alimentar|Intervenție chirurgicală|Terapie inhalatorie,1,1
+145,1,80,male,Pediatrie,Gastrita cronică,1,3,185,0.81,medium,3,HbA1c|Glicemie|Profil hepatic,Psihoterapie,1,0
+289,5,35,male,Oftalmologie,Epilepsie,1,2,358,0.45,high,5,Hemoleucogramă completă,Terapie cu oxigen,1,1
+183,2,26,male,Dermatologie,Colecistită|Fibrilație atrială,2,19,292,0.34,high,5,Spirometrie|CT toracic|TSH,Monitorizare ambulatorie,1,1
+97,23,21,female,Oftalmologie,Hernie de disc|Hipotiroidism|Anxietate generalizată|Migrenă cronică,4,10,192,0.95,medium,3,RMN cerebral|TSH|EEG,Medicație orală,1,0
+126,25,57,female,Chirurgie Generală,Diabet zaharat tip 2,1,6,365,0.5,low,1,Profil lipidic|Ionogramă,Injecții subcutanate,1,0
+107,2,33,female,Cardiologie,Lombosciatică|Anxietate generalizată,2,18,21,0.44,low,2,RMN cerebral|HbA1c,Monitorizare ambulatorie|Medicație orală,0,0
+146,23,47,male,Psihiatrie,Colecistită|Boală coronariană|Infecție urinară,3,4,51,0.74,medium,4,Glicemie|EEG,Regim alimentar|Intervenție chirurgicală|Medicație orală,0,0
+85,8,26,female,Ginecologie,Pneumonie|Boală coronariană|Astm bronșic|Hipertensiune arterială,4,17,31,0.41,high,6,Ionogramă|Coagulogramă,Intervenție chirurgicală,1,1
+246,30,18,male,ORL,Colecistită|Epilepsie|Artrită reumatoidă,3,11,216,0.52,medium,4,Glicemie,Medicație orală|Terapie inhalatorie|Injecții subcutanate,1,0
+95,17,68,male,Oftalmologie,Anemie feriprivă|Fibrilație atrială|Migrenă cronică|Hipertensiune arterială,4,5,118,0.65,high,6,TSH|Profil lipidic|Ecografie abdominală,Monitorizare ambulatorie,1,1
+177,20,27,female,Chirurgie Generală,Diabet zaharat tip 2,1,19,329,0.32,medium,4,Spirometrie|Profil hepatic,Psihoterapie,1,1
+124,20,61,male,Oftalmologie,Astm bronșic|Hipertensiune arterială|Anemie feriprivă|Hernie de disc,4,7,112,0.45,high,6,Cultură urină|EEG,Medicație orală|Injecții subcutanate,1,1
+27,28,40,female,Oftalmologie,Pneumonie,1,19,294,0.79,low,1,Ionogramă|Spirometrie,Terapie inhalatorie|Terapie cu oxigen|Fizioterapie,1,0
+38,1,32,female,ORL,Migrenă cronică,1,17,158,0.64,low,0,Hemoleucogramă completă|Cultură urină,Regim alimentar|Terapie inhalatorie,1,0
+282,28,77,male,Pediatrie,Fibrilație atrială|Boală coronariană,2,20,231,0.62,medium,3,TSH,Injecții subcutanate|Psihoterapie,1,0
+294,3,21,male,Ortopedie,Lombosciatică,1,3,26,0.46,medium,3,TSH|Funcție renală|Glicemie|Profil lipidic,Terapie cu oxigen,0,0
+89,20,61,female,Chirurgie Generală,Boală coronariană|Insuficiență cardiacă|Gastrita cronică|BPOC,4,14,28,0.75,medium,3,Sumar urină|Ecocardiografie|Ionogramă|Hemoleucogramă completă,Fizioterapie,0,0
+53,15,67,female,Medicină Internă,Anxietate generalizată|Fibrilație atrială|Boală coronariană,3,5,250,0.5,high,6,HbA1c|Ecocardiografie,Injecții subcutanate,1,1
+296,29,62,male,ORL,Hipotiroidism|Anemie feriprivă,2,11,203,0.41,medium,3,CT toracic|Profil lipidic,Terapie cu oxigen|Injecții subcutanate|Psihoterapie,1,0
+153,16,64,male,Ginecologie,BPOC|Colecistită,2,17,363,0.99,medium,3,Spirometrie|Sumar urină,Psihoterapie|Terapie inhalatorie,1,0
+220,30,57,female,Medicină Internă,Hipotiroidism|Epilepsie,2,15,248,0.81,low,2,HbA1c|Ionogramă|Sumar urină,Regim alimentar|Intervenție chirurgicală,1,0
+298,14,53,female,Neurologie,Depresie,1,20,2,0.52,low,0,CT toracic|Sumar urină,Monitorizare ambulatorie|Regim alimentar|Injecții subcutanate,0,0
+218,9,66,female,Oftalmologie,Infecție urinară,1,1,153,0.78,low,2,Hemoleucogramă completă|EEG|Ecografie abdominală|ECG,Terapie inhalatorie|Regim alimentar|Injecții subcutanate,1,0
+214,5,77,female,Cardiologie,Fibrilație atrială|Hipertensiune arterială|Anxietate generalizată,3,5,171,0.42,high,8,Ecografie abdominală|Ionogramă,Fizioterapie,1,1
+145,9,66,male,Ginecologie,Epilepsie,1,3,150,0.66,medium,4,Coagulogramă|Profil hepatic|Glicemie,Exerciții fizice regulate|Fizioterapie,1,0
+169,9,65,male,Psihiatrie,Epilepsie|Artrită reumatoidă|Depresie|Anxietate generalizată,4,16,338,0.51,high,5,Sumar urină,Terapie inhalatorie|Medicație orală|Terapie cu oxigen,1,1
+174,5,35,female,ORL,Astm bronșic|Insuficiență cardiacă,2,0,292,0.79,medium,3,Ionogramă,Monitorizare ambulatorie,1,0
+155,25,76,male,Neurologie,Migrenă cronică,1,19,216,0.47,high,7,Hemoleucogramă completă|Ionogramă|HbA1c|Profil lipidic,Regim alimentar|Injecții subcutanate,1,1
+165,20,67,male,Oftalmologie,Lombosciatică|Diabet zaharat tip 2,2,0,360,0.55,medium,3,Spirometrie|Funcție renală|Ecocardiografie|Radiografie toracică,Injecții subcutanate|Terapie inhalatorie|Terapie cu oxigen,1,0
+46,1,56,male,Cardiologie,Migrenă cronică|Astm bronșic,2,16,95,0.68,low,1,CT toracic|Radiografie toracică|Profil lipidic|Cultură urină,Monitorizare ambulatorie|Fizioterapie|Terapie inhalatorie,1,0
+18,23,65,female,Neurologie,Boală coronariană,1,19,24,0.7,low,2,Spirometrie|Cultură urină|Ionogramă|Hemoleucogramă completă,Terapie cu oxigen|Intervenție chirurgicală,0,0
+16,28,69,male,ORL,Lombosciatică|Boală coronariană,2,6,186,0.87,medium,4,Ionogramă|Radiografie toracică,Medicație orală|Intervenție chirurgicală|Terapie inhalatorie,1,0
+187,18,38,female,Ginecologie,Gastrita cronică|Depresie|Insuficiență cardiacă,3,4,212,0.72,high,5,Spirometrie,Terapie cu oxigen|Injecții subcutanate,1,1
+15,14,20,male,Ginecologie,Hipertensiune arterială|Anxietate generalizată,2,5,364,0.46,medium,4,TSH,Terapie cu oxigen,1,0
+188,19,67,male,Chirurgie Generală,Hernie de disc|BPOC|Lombosciatică|Infecție urinară,4,6,287,0.54,high,5,Ecocardiografie|Coagulogramă|Profil hepatic|Spirometrie,Psihoterapie|Injecții subcutanate|Exerciții fizice regulate,1,1
+277,24,78,female,Cardiologie,Pneumonie,1,2,322,0.85,high,5,HbA1c,Medicație orală|Terapie cu oxigen|Monitorizare ambulatorie,1,1
+167,29,38,male,Pediatrie,Artrită reumatoidă,1,5,141,0.36,medium,4,Hemoleucogramă completă|Cultură urină|HbA1c|TSH,Psihoterapie|Monitorizare ambulatorie,1,1
+214,8,49,female,Oftalmologie,Pneumonie|Astm bronșic,2,6,345,0.96,low,1,Profil lipidic|Funcție renală,Fizioterapie,1,0
+157,10,84,female,ORL,Artrită reumatoidă|Epilepsie|Boală coronariană,3,19,251,0.66,high,6,Sumar urină,Terapie cu oxigen|Terapie inhalatorie,1,1
+58,26,22,female,Ortopedie,Epilepsie|Depresie,2,0,7,0.79,low,1,Funcție renală|RMN cerebral,Fizioterapie,0,0
+50,16,23,male,Urologie,Artrită reumatoidă|Boală coronariană|Anxietate generalizată,3,15,252,0.77,medium,4,Radiografie toracică|Profil lipidic,Regim alimentar,1,0
+243,19,39,female,Psihiatrie,Astm bronșic|Hernie de disc|Artrită reumatoidă,3,7,125,0.95,low,2,Ecografie abdominală,Psihoterapie|Fizioterapie,1,0
+25,3,60,male,Oftalmologie,Hernie de disc|Gastrita cronică|Infecție urinară|Hipotiroidism,4,9,206,0.42,high,6,EEG,Regim alimentar|Terapie cu oxigen,1,1
+85,2,83,male,Neurologie,Lombosciatică|Hipertensiune arterială|Colecistită,3,12,221,0.5,high,7,Ecocardiografie|EEG|TSH,Fizioterapie|Exerciții fizice regulate|Medicație orală,1,1
+171,2,30,male,Pediatrie,Anxietate generalizată,1,12,277,0.94,low,2,Hemoleucogramă completă|TSH|Glicemie,Injecții subcutanate|Psihoterapie|Terapie cu oxigen,1,0
+140,22,53,female,Ortopedie,Colecistită,1,4,337,0.93,low,1,RMN cerebral,Injecții subcutanate|Terapie cu oxigen,1,0
+56,15,64,female,Pediatrie,Depresie|Hipertensiune arterială,2,8,196,0.53,low,2,RMN cerebral|Radiografie toracică|Coagulogramă,Terapie inhalatorie|Monitorizare ambulatorie,1,0
+265,3,55,female,Ortopedie,Pneumonie,1,16,273,0.77,low,2,RMN cerebral|EEG|CT toracic|Hemoleucogramă completă,Terapie cu oxigen|Medicație orală|Regim alimentar,1,0
+122,3,78,female,Ortopedie,Anxietate generalizată,1,3,114,0.84,medium,3,CT toracic|Radiografie toracică|Funcție renală|Ecografie abdominală,Medicație orală|Monitorizare ambulatorie|Psihoterapie,1,0
+68,24,74,male,Chirurgie Generală,Insuficiență cardiacă,1,5,131,0.38,medium,4,Hemoleucogramă completă|Ecocardiografie|Funcție renală,Medicație orală|Injecții subcutanate|Exerciții fizice regulate,1,1
+148,16,35,male,Pediatrie,Colecistită|Insuficiență cardiacă|Diabet zaharat tip 2|Anxietate generalizată,4,9,35,0.72,low,2,Ecocardiografie|Profil hepatic|Profil lipidic,Regim alimentar|Intervenție chirurgicală|Medicație orală,0,0
+121,20,80,female,Pediatrie,Hipotiroidism,1,5,49,0.99,low,2,Funcție renală|Ecocardiografie|Cultură urină,Terapie inhalatorie|Psihoterapie,0,0
+213,8,38,male,Urologie,Hipotiroidism|Boală coronariană,2,1,285,0.67,medium,3,Funcție renală,Exerciții fizice regulate,1,0
+139,6,33,female,Psihiatrie,Migrenă cronică|Insuficiență cardiacă,2,20,1,0.59,low,0,Ecocardiografie|CT toracic,Medicație orală|Injecții subcutanate,0,0
+97,10,76,male,Oftalmologie,Hipertensiune arterială|Lombosciatică,2,1,289,0.77,medium,3,ECG|RMN cerebral,Injecții subcutanate,1,0
+17,28,21,male,ORL,Colecistită|Artrită reumatoidă|Boală coronariană,3,12,98,0.46,high,5,Ecografie abdominală|Hemoleucogramă completă|Funcție renală,Monitorizare ambulatorie|Fizioterapie|Injecții subcutanate,1,1
+246,17,48,male,Ginecologie,Insuficiență cardiacă,1,2,85,0.56,low,2,Glicemie|Profil lipidic|TSH|RMN cerebral,Terapie cu oxigen,0,0
+92,16,38,female,Dermatologie,Hipotiroidism|Fibrilație atrială,2,1,225,0.57,low,1,Spirometrie,Psihoterapie,1,0
+44,3,77,female,Urologie,Boală coronariană|Gastrita cronică,2,12,183,0.9,medium,4,HbA1c,Regim alimentar|Terapie cu oxigen|Terapie inhalatorie,1,0
+152,1,36,female,Ginecologie,Boală coronariană,1,4,113,0.37,low,2,CT toracic|Profil hepatic,Exerciții fizice regulate|Regim alimentar,1,1
+10,7,67,female,Urologie,Migrenă cronică,1,7,299,0.85,medium,4,Ecografie abdominală|Ionogramă|Radiografie toracică|Cultură urină,Exerciții fizice regulate|Psihoterapie|Injecții subcutanate,1,0
+258,3,67,male,Cardiologie,Boală coronariană|Fibrilație atrială|Astm bronșic|Depresie,4,6,208,0.44,high,9,TSH|CT toracic|HbA1c|Glicemie,Terapie cu oxigen,1,1
+267,30,22,male,Psihiatrie,Insuficiență cardiacă,1,12,78,0.46,medium,3,Spirometrie,Intervenție chirurgicală,0,0
+151,18,40,female,Ortopedie,Insuficiență cardiacă|Depresie|Fibrilație atrială,3,10,144,0.89,medium,3,CT toracic|Radiografie toracică|Profil hepatic|EEG,Exerciții fizice regulate,1,0
+48,10,65,female,Oftalmologie,Diabet zaharat tip 2|BPOC|Anemie feriprivă|Epilepsie,4,7,181,1.0,medium,4,ECG|Ecocardiografie|Cultură urină,Injecții subcutanate,1,0
+218,15,67,male,Ortopedie,Hernie de disc|Anemie feriprivă,2,2,252,0.51,medium,4,Coagulogramă|Hemoleucogramă completă|Radiografie toracică|Spirometrie,Fizioterapie|Terapie cu oxigen,1,0
+88,23,23,female,Oftalmologie,Lombosciatică|Insuficiență cardiacă|Hipotiroidism,3,9,309,0.61,medium,3,EEG,Medicație orală|Monitorizare ambulatorie,1,0
+204,2,42,female,Urologie,Artrită reumatoidă|Astm bronșic,2,3,219,0.33,medium,3,EEG|CT toracic|Ecografie abdominală,Terapie cu oxigen|Terapie inhalatorie|Fizioterapie,1,1
+50,25,58,female,Ortopedie,Astm bronșic,1,11,11,0.77,low,2,Ecocardiografie|Cultură urină|Profil lipidic,Psihoterapie|Intervenție chirurgicală|Regim alimentar,0,0
+263,8,61,female,Chirurgie Generală,Artrită reumatoidă|Gastrita cronică|Lombosciatică|Epilepsie,4,8,324,0.69,high,5,Cultură urină|Profil hepatic|Radiografie toracică,Terapie inhalatorie,1,1
+150,30,38,male,Psihiatrie,Migrenă cronică|BPOC|Anemie feriprivă,3,16,85,0.86,low,2,EEG|Funcție renală|Radiografie toracică,Monitorizare ambulatorie|Psihoterapie|Terapie inhalatorie,0,0
+232,17,73,female,Ortopedie,Artrită reumatoidă|Diabet zaharat tip 2|Pneumonie,3,3,170,0.67,high,6,Cultură urină|Funcție renală|Radiografie toracică|Spirometrie,Exerciții fizice regulate,1,1
+114,22,38,female,Medicină Internă,Depresie|Anxietate generalizată,2,4,237,0.54,medium,3,Cultură urină|HbA1c,Regim alimentar,1,0
+76,24,65,female,Pediatrie,Infecție urinară,1,15,179,0.62,low,0,Ecocardiografie|ECG|Profil lipidic,Medicație orală|Intervenție chirurgicală|Exerciții fizice regulate,1,0
+11,3,54,female,Medicină Internă,Boală coronariană,1,19,246,0.41,high,5,Glicemie|Profil lipidic|Ecocardiografie,Monitorizare ambulatorie|Terapie inhalatorie,1,1
+8,13,46,male,Psihiatrie,Pneumonie|Depresie|Lombosciatică,3,1,36,0.97,low,2,Glicemie|Ecocardiografie|Profil lipidic|Ecografie abdominală,Monitorizare ambulatorie|Regim alimentar|Terapie cu oxigen,0,0
+271,9,70,female,Oftalmologie,Colecistită,1,15,357,0.46,high,7,HbA1c|Sumar urină,Fizioterapie|Monitorizare ambulatorie|Terapie inhalatorie,1,1
+87,16,57,female,Cardiologie,Hipertensiune arterială,1,12,326,0.73,medium,3,Profil hepatic|RMN cerebral|Profil lipidic|Hemoleucogramă completă,Monitorizare ambulatorie|Regim alimentar|Exerciții fizice regulate,1,0
+111,5,65,female,Medicină Internă,Astm bronșic|Infecție urinară|Hipertensiune arterială,3,12,48,0.3,medium,4,Ecografie abdominală|Cultură urină|Profil lipidic,Monitorizare ambulatorie,0,1
+11,4,18,male,Ortopedie,Boală coronariană,1,5,359,0.58,low,1,Profil lipidic|CT toracic,Regim alimentar,1,0
+40,25,26,female,Oftalmologie,Lombosciatică,1,18,57,0.3,low,2,Cultură urină|Sumar urină|Funcție renală|Profil hepatic,Regim alimentar,0,1
+145,20,57,male,Neurologie,Gastrita cronică|Artrită reumatoidă|Fibrilație atrială,3,17,76,0.82,medium,3,HbA1c|EEG|Radiografie toracică,Terapie cu oxigen,0,0
+260,21,67,male,Medicină Internă,Boală coronariană|Astm bronșic,2,15,10,0.91,medium,3,CT toracic|Radiografie toracică,Terapie cu oxigen|Intervenție chirurgicală,0,0
+168,2,38,female,Psihiatrie,Astm bronșic,1,16,339,0.98,medium,3,CT toracic|Radiografie toracică,Psihoterapie|Regim alimentar|Terapie inhalatorie,1,0
+239,12,60,male,Ortopedie,Lombosciatică,1,20,70,0.59,low,2,Spirometrie|ECG,Exerciții fizice regulate,0,0
+238,21,59,female,Urologie,Boală coronariană|BPOC,2,4,1,0.41,medium,4,Glicemie|Ecocardiografie|TSH|Hemoleucogramă completă,Exerciții fizice regulate,0,0
+213,15,72,female,Dermatologie,Fibrilație atrială,1,5,261,0.82,medium,3,Profil hepatic,Terapie cu oxigen,1,0
+23,30,56,female,Pediatrie,Depresie,1,12,213,0.57,medium,3,Sumar urină|ECG|EEG|Profil lipidic,Fizioterapie|Intervenție chirurgicală|Injecții subcutanate,1,0
+36,30,23,female,Psihiatrie,Gastrita cronică|Migrenă cronică,2,19,167,0.91,low,1,Funcție renală|Radiografie toracică|RMN cerebral,Terapie inhalatorie|Monitorizare ambulatorie,1,0
+61,8,75,male,Chirurgie Generală,Fibrilație atrială,1,14,257,0.82,medium,3,ECG|Funcție renală,Medicație orală|Fizioterapie,1,0
+240,25,66,female,Chirurgie Generală,Infecție urinară,1,20,148,0.39,medium,4,RMN cerebral|Sumar urină|Coagulogramă,Injecții subcutanate|Regim alimentar,1,1
+16,24,21,male,ORL,Migrenă cronică,1,7,196,0.59,low,1,Spirometrie|Ecocardiografie|ECG,Fizioterapie,1,0
+157,26,60,male,Pediatrie,Gastrita cronică,1,16,82,0.99,low,2,Spirometrie|Profil hepatic|Coagulogramă|RMN cerebral,Fizioterapie|Regim alimentar|Medicație orală,0,0
+281,1,32,male,Pediatrie,Colecistită|Anemie feriprivă|Astm bronșic,3,19,39,0.93,low,2,Profil hepatic|Hemoleucogramă completă|HbA1c|RMN cerebral,Exerciții fizice regulate,0,0
+183,24,85,male,ORL,Insuficiență cardiacă,1,6,35,0.55,medium,4,ECG|Ionogramă|Glicemie,Terapie inhalatorie,0,0
+237,29,69,female,Cardiologie,Astm bronșic|Anemie feriprivă,2,6,307,0.61,medium,4,Hemoleucogramă completă|Spirometrie|Cultură urină,Terapie cu oxigen|Fizioterapie|Exerciții fizice regulate,1,0
+33,2,29,male,Cardiologie,Lombosciatică|Migrenă cronică,2,7,7,0.32,medium,4,Profil hepatic|Ecografie abdominală|TSH|Hemoleucogramă completă,Intervenție chirurgicală|Terapie inhalatorie|Terapie cu oxigen,0,1
+149,5,75,female,ORL,Hipertensiune arterială,1,20,269,0.42,high,7,ECG|EEG,Intervenție chirurgicală|Medicație orală,1,1
+52,3,57,male,Neurologie,Colecistită|Epilepsie|Artrită reumatoidă,3,19,257,0.91,high,5,Glicemie|Radiografie toracică|HbA1c|Ionogramă,Intervenție chirurgicală,1,1
+150,5,46,male,Medicină Internă,Lombosciatică|Anemie feriprivă,2,3,144,0.96,low,2,Funcție renală|Glicemie,Monitorizare ambulatorie|Injecții subcutanate,1,0
+69,23,58,female,Cardiologie,Migrenă cronică,1,15,132,0.47,medium,4,Profil hepatic|CT toracic|TSH,Terapie cu oxigen|Monitorizare ambulatorie|Fizioterapie,1,0
+157,11,76,male,Ortopedie,Migrenă cronică|Epilepsie|Hipotiroidism|Anxietate generalizată,4,0,333,0.96,high,6,HbA1c|Hemoleucogramă completă,Exerciții fizice regulate,1,1
+205,4,32,female,Ginecologie,Lombosciatică|Hipotiroidism,2,6,289,0.82,low,2,Spirometrie,Terapie cu oxigen|Psihoterapie,1,0
+197,30,34,female,Oftalmologie,BPOC,1,7,290,0.54,low,1,Hemoleucogramă completă|Profil lipidic,Fizioterapie|Terapie inhalatorie|Psihoterapie,1,0
+172,28,41,female,Medicină Internă,Colecistită|Hernie de disc,2,6,54,0.42,low,2,ECG|RMN cerebral|Spirometrie,Monitorizare ambulatorie|Regim alimentar|Exerciții fizice regulate,0,0
+49,24,32,male,Ginecologie,Hernie de disc,1,7,341,0.44,medium,3,Sumar urină|TSH,Terapie cu oxigen|Fizioterapie,1,0
+173,3,61,female,Oftalmologie,Artrită reumatoidă,1,17,253,0.92,low,2,Glicemie|Cultură urină|Coagulogramă|Ecografie abdominală,Terapie cu oxigen|Medicație orală,1,0
+263,22,28,male,Chirurgie Generală,Lombosciatică|Infecție urinară|Fibrilație atrială,3,10,221,0.41,high,5,Ecocardiografie|Sumar urină|Radiografie toracică|Coagulogramă,Medicație orală|Exerciții fizice regulate|Intervenție chirurgicală,1,1
+79,1,36,female,ORL,Hernie de disc|Infecție urinară,2,9,78,0.77,low,2,Profil hepatic|CT toracic|HbA1c|Ionogramă,Intervenție chirurgicală,0,0
+226,26,35,male,Psihiatrie,Hipotiroidism|Diabet zaharat tip 2,2,12,192,0.73,medium,3,TSH,Psihoterapie|Terapie inhalatorie|Intervenție chirurgicală,1,0
+169,19,53,female,Neurologie,Depresie|Artrită reumatoidă,2,6,50,0.84,low,1,Glicemie,Intervenție chirurgicală|Psihoterapie,0,0
+160,1,39,female,Psihiatrie,Boală coronariană|Pneumonie|Diabet zaharat tip 2,3,12,354,0.76,medium,3,Ecografie abdominală,Medicație orală|Fizioterapie,1,0
+190,24,33,female,Ortopedie,Astm bronșic,1,13,181,0.58,low,1,Profil lipidic|Cultură urină,Medicație orală|Psihoterapie|Monitorizare ambulatorie,1,0
+149,17,55,female,Dermatologie,BPOC,1,0,2,0.62,low,2,CT toracic|Cultură urină|Profil hepatic,Injecții subcutanate|Exerciții fizice regulate,0,0
+151,29,71,female,Neurologie,Boală coronariană|Anemie feriprivă,2,7,102,0.83,medium,3,Ecografie abdominală|Coagulogramă|Sumar urină,Regim alimentar,1,0
+234,24,63,female,Psihiatrie,Anemie feriprivă|Anxietate generalizată,2,1,232,1.0,low,2,CT toracic|Hemoleucogramă completă,Intervenție chirurgicală|Terapie cu oxigen,1,0
+23,30,67,female,Cardiologie,Hipotiroidism|Insuficiență cardiacă,2,13,41,0.96,medium,3,Funcție renală|Sumar urină|Spirometrie|Coagulogramă,Medicație orală|Fizioterapie|Intervenție chirurgicală,0,0
+255,9,31,female,Neurologie,Lombosciatică,1,0,345,0.83,low,2,Ecocardiografie|Sumar urină|Funcție renală,Psihoterapie|Medicație orală,1,0
+299,26,67,male,Cardiologie,Astm bronșic,1,17,337,0.78,high,5,Funcție renală,Exerciții fizice regulate|Intervenție chirurgicală,1,1
+111,17,33,male,Psihiatrie,Insuficiență cardiacă|Hernie de disc,2,2,289,0.37,medium,3,Ionogramă|HbA1c,Psihoterapie|Monitorizare ambulatorie|Fizioterapie,1,1
+212,11,18,male,Urologie,Colecistită|Hipotiroidism|Anxietate generalizată|Gastrita cronică,4,0,52,0.66,medium,4,Cultură urină|CT toracic|TSH|Funcție renală,Fizioterapie|Injecții subcutanate,0,0
+45,11,34,male,Ortopedie,Anemie feriprivă|Gastrita cronică,2,10,41,0.64,low,0,Ecocardiografie|Glicemie|Coagulogramă|Ionogramă,Monitorizare ambulatorie|Injecții subcutanate|Medicație orală,0,0
+123,11,35,female,ORL,Fibrilație atrială|Hipotiroidism|Epilepsie|Artrită reumatoidă,4,15,216,0.76,medium,4,Glicemie,Fizioterapie|Terapie inhalatorie|Intervenție chirurgicală,1,0
+173,4,67,male,Oftalmologie,Fibrilație atrială,1,15,48,0.84,low,2,Ionogramă|Ecocardiografie|Sumar urină,Psihoterapie,0,0
+100,10,33,male,Chirurgie Generală,BPOC,1,9,205,0.31,high,5,RMN cerebral|Sumar urină|Funcție renală|Cultură urină,Monitorizare ambulatorie|Injecții subcutanate,1,1
+152,14,58,female,Psihiatrie,Insuficiență cardiacă,1,3,263,0.89,low,2,Ecocardiografie|Ionogramă|ECG|HbA1c,Terapie inhalatorie,1,0
+262,18,80,female,Dermatologie,Hipotiroidism|Diabet zaharat tip 2|BPOC,3,2,174,0.35,high,8,EEG|Spirometrie|Profil lipidic,Intervenție chirurgicală|Terapie inhalatorie|Terapie cu oxigen,1,1
+289,30,72,male,Urologie,Lombosciatică|Migrenă cronică,2,15,251,0.35,high,6,Glicemie|ECG|CT toracic,Medicație orală|Psihoterapie|Terapie cu oxigen,1,1
+45,1,72,female,Ginecologie,Insuficiență cardiacă|Colecistită|Gastrita cronică,3,12,187,0.6,high,7,Profil lipidic|Sumar urină,Regim alimentar|Medicație orală,1,1
+120,7,66,female,ORL,Lombosciatică|Migrenă cronică,2,3,17,0.9,medium,4,Ecocardiografie|Profil hepatic|HbA1c,Exerciții fizice regulate|Psihoterapie|Fizioterapie,0,0
+29,29,19,male,ORL,Lombosciatică|Diabet zaharat tip 2|Artrită reumatoidă|Epilepsie,4,16,93,0.63,low,2,Profil hepatic,Fizioterapie,1,0
+109,3,19,female,Medicină Internă,Gastrita cronică,1,11,49,0.89,low,2,Profil hepatic|Funcție renală|Ionogramă,Terapie cu oxigen|Monitorizare ambulatorie,0,0
+282,17,56,female,Urologie,Hernie de disc|Hipotiroidism,2,14,358,0.71,low,2,HbA1c,Terapie cu oxigen|Exerciții fizice regulate,1,0
+151,14,26,male,Medicină Internă,Fibrilație atrială|Artrită reumatoidă,2,20,292,0.86,medium,3,Hemoleucogramă completă,Medicație orală|Fizioterapie|Monitorizare ambulatorie,1,0
+265,13,68,female,Urologie,Anxietate generalizată|Depresie|Pneumonie|Migrenă cronică,4,4,9,0.31,high,6,EEG|CT toracic,Medicație orală,1,1
+163,30,35,female,Neurologie,Fibrilație atrială,1,1,226,1.0,medium,3,HbA1c|Ecografie abdominală|Ecocardiografie,Fizioterapie|Injecții subcutanate,1,0
+192,16,73,male,Pediatrie,Depresie|Gastrita cronică|Astm bronșic,3,0,276,0.49,high,8,Coagulogramă|Profil hepatic,Injecții subcutanate,1,1
+106,17,72,female,Medicină Internă,Depresie,1,14,210,0.64,medium,4,HbA1c|Ecocardiografie,Injecții subcutanate|Terapie inhalatorie,1,0
+35,9,47,male,Chirurgie Generală,Pneumonie|BPOC|Migrenă cronică,3,17,328,0.7,high,5,Ecografie abdominală|Glicemie|ECG,Regim alimentar,1,1
+170,19,23,female,Cardiologie,Hipertensiune arterială|Fibrilație atrială|Lombosciatică|Boală coronariană,4,14,16,0.45,medium,4,ECG|Ecografie abdominală|Profil hepatic,Medicație orală|Terapie cu oxigen|Exerciții fizice regulate,0,0
+154,27,37,female,Neurologie,Colecistită,1,3,262,0.7,medium,3,EEG|ECG|Glicemie|Profil hepatic,Terapie cu oxigen|Injecții subcutanate,1,0
+73,21,40,male,Cardiologie,Hernie de disc|Insuficiență cardiacă|Anxietate generalizată,3,8,277,0.84,medium,4,CT toracic,Monitorizare ambulatorie,1,0
+11,24,80,female,Pediatrie,Insuficiență cardiacă,1,8,351,0.34,high,7,Coagulogramă|EEG|Glicemie,Intervenție chirurgicală|Terapie inhalatorie|Exerciții fizice regulate,1,1
+203,13,39,female,Neurologie,Hernie de disc,1,1,217,0.52,medium,3,Funcție renală|Sumar urină|ECG|Ecocardiografie,Psihoterapie|Terapie inhalatorie,1,0
+230,15,30,female,Neurologie,Depresie,1,18,292,0.98,medium,3,Profil hepatic,Monitorizare ambulatorie|Regim alimentar,1,0
+251,21,19,male,Ortopedie,Colecistită,1,18,217,0.84,low,1,RMN cerebral|CT toracic|ECG,Psihoterapie|Injecții subcutanate,1,0
+1,23,19,male,Oftalmologie,Pneumonie|Diabet zaharat tip 2,2,13,146,0.6,low,2,Coagulogramă|RMN cerebral|Glicemie,Psihoterapie|Intervenție chirurgicală|Injecții subcutanate,1,0
+262,16,52,male,Psihiatrie,BPOC,1,18,72,0.42,medium,4,Funcție renală|Profil hepatic|Hemoleucogramă completă|Ecocardiografie,Terapie inhalatorie|Terapie cu oxigen,0,0
+252,18,65,female,Chirurgie Generală,Anemie feriprivă|Epilepsie,2,6,2,0.71,low,0,Sumar urină|RMN cerebral|Ecocardiografie,Psihoterapie,0,0
+114,5,37,male,Chirurgie Generală,Hipotiroidism|Hipertensiune arterială|Lombosciatică|Astm bronșic,4,4,83,0.6,medium,4,Ecografie abdominală|Spirometrie|Hemoleucogramă completă,Injecții subcutanate|Terapie inhalatorie|Psihoterapie,0,0
+228,8,30,female,Oftalmologie,Gastrita cronică,1,13,90,0.4,medium,4,Profil hepatic|Cultură urină|Sumar urină,Medicație orală,0,0
+78,26,82,male,Ginecologie,Diabet zaharat tip 2|Anxietate generalizată|Insuficiență cardiacă|Lombosciatică,4,10,269,0.84,high,7,Radiografie toracică|HbA1c|Cultură urină|Ecografie abdominală,Terapie cu oxigen|Intervenție chirurgicală|Monitorizare ambulatorie,1,1
+126,22,46,male,Pediatrie,BPOC|Pneumonie,2,14,219,0.69,low,2,Ionogramă|EEG,Terapie cu oxigen|Psihoterapie|Fizioterapie,1,0
+263,4,75,male,Urologie,Gastrita cronică|Infecție urinară|Boală coronariană,3,12,178,0.43,high,8,Ecografie abdominală|CT toracic,Monitorizare ambulatorie,1,1
+121,16,80,male,Psihiatrie,Insuficiență cardiacă|Boală coronariană,2,18,309,0.67,medium,3,Funcție renală|Radiografie toracică|EEG|Hemoleucogramă completă,Medicație orală|Terapie cu oxigen|Injecții subcutanate,1,0
+180,2,68,female,Ortopedie,Insuficiență cardiacă|Gastrita cronică|Depresie|Fibrilație atrială,4,17,45,0.93,high,6,EEG|Cultură urină|Ionogramă|Funcție renală,Intervenție chirurgicală|Monitorizare ambulatorie|Medicație orală,1,1
+247,3,26,male,Chirurgie Generală,Colecistită|Lombosciatică,2,13,256,0.96,low,2,Ecocardiografie|Profil lipidic,Medicație orală|Monitorizare ambulatorie,1,0
+22,22,72,male,Dermatologie,Boală coronariană,1,1,363,0.46,high,6,Radiografie toracică|Ionogramă,Monitorizare ambulatorie|Terapie cu oxigen|Medicație orală,1,1
+180,4,85,female,Oftalmologie,Infecție urinară,1,13,201,0.36,high,5,Coagulogramă|RMN cerebral,Intervenție chirurgicală,1,1
+187,16,41,female,Ginecologie,BPOC|Infecție urinară,2,11,243,0.84,medium,3,Funcție renală|CT toracic|Profil lipidic|Hemoleucogramă completă,Fizioterapie|Psihoterapie,1,0
+154,27,47,female,Urologie,Hipertensiune arterială|Anxietate generalizată|Pneumonie,3,13,222,0.93,medium,4,Radiografie toracică|CT toracic,Regim alimentar|Terapie inhalatorie|Exerciții fizice regulate,1,0
+15,10,82,female,Psihiatrie,Anxietate generalizată,1,15,191,0.49,high,5,CT toracic|Ecografie abdominală|EEG,Terapie cu oxigen|Intervenție chirurgicală,1,1
+32,16,81,female,Ginecologie,Fibrilație atrială,1,4,357,0.6,medium,3,Glicemie|CT toracic|Ecografie abdominală|Funcție renală,Regim alimentar,1,0
+255,1,35,female,Chirurgie Generală,Hernie de disc|Gastrita cronică|Anxietate generalizată,3,13,355,0.69,medium,4,CT toracic,Injecții subcutanate,1,0
+124,28,66,male,Neurologie,Pneumonie|Astm bronșic|Insuficiență cardiacă|Diabet zaharat tip 2,4,15,175,0.91,high,5,Hemoleucogramă completă,Terapie cu oxigen|Exerciții fizice regulate,1,1
+188,17,62,male,Oftalmologie,Fibrilație atrială|Insuficiență cardiacă|Lombosciatică,3,8,163,0.55,medium,3,CT toracic|ECG|Ecocardiografie|Ionogramă,Exerciții fizice regulate,1,0
+275,20,57,female,Neurologie,Depresie,1,18,191,0.76,low,1,EEG|Ecocardiografie|Ionogramă|Profil lipidic,Psihoterapie,1,0
+163,14,59,male,Ginecologie,Gastrita cronică,1,19,189,0.8,low,1,Sumar urină,Intervenție chirurgicală,1,0
+33,26,35,female,Dermatologie,Pneumonie,1,20,57,0.34,low,2,Hemoleucogramă completă|EEG,Terapie cu oxigen|Medicație orală|Fizioterapie,0,1
+142,11,34,female,Urologie,Depresie|Anxietate generalizată,2,12,69,0.65,low,0,Hemoleucogramă completă|ECG,Injecții subcutanate|Regim alimentar|Terapie inhalatorie,0,0
+39,17,63,male,Chirurgie Generală,Diabet zaharat tip 2,1,17,97,0.82,low,2,TSH,Intervenție chirurgicală|Regim alimentar|Injecții subcutanate,1,0
+280,12,85,female,Chirurgie Generală,Infecție urinară,1,2,280,0.98,medium,3,Hemoleucogramă completă|Ecografie abdominală|Sumar urină,Injecții subcutanate|Monitorizare ambulatorie,1,0
+96,29,81,male,ORL,Lombosciatică|Pneumonie|Colecistită|Migrenă cronică,4,16,241,0.33,high,7,EEG|TSH|Ecografie abdominală|Hemoleucogramă completă,Regim alimentar|Terapie inhalatorie|Intervenție chirurgicală,1,1
+300,21,57,female,ORL,Boală coronariană,1,11,5,0.9,low,1,Ecografie abdominală|CT toracic,Intervenție chirurgicală,0,0
+192,28,66,female,Cardiologie,Hipotiroidism|Hipertensiune arterială|Anxietate generalizată,3,19,10,0.88,high,6,Spirometrie|Cultură urină|Sumar urină,Monitorizare ambulatorie|Psihoterapie,1,1
+109,27,78,male,Oftalmologie,Anxietate generalizată,1,9,249,0.49,high,7,TSH|Profil lipidic|Ecocardiografie|CT toracic,Exerciții fizice regulate,1,1
+291,24,67,male,Oftalmologie,Insuficiență cardiacă,1,14,216,0.93,high,5,Profil hepatic|Glicemie|RMN cerebral,Injecții subcutanate,1,1
+117,6,28,male,Neurologie,Depresie|Diabet zaharat tip 2|Insuficiență cardiacă,3,13,331,0.59,medium,3,Ecografie abdominală|Profil hepatic,Medicație orală|Psihoterapie,1,0
+113,28,49,male,Oftalmologie,Infecție urinară|Artrită reumatoidă|Boală coronariană|Lombosciatică,4,11,83,0.47,medium,4,Ecocardiografie,Intervenție chirurgicală|Medicație orală,0,0
+93,17,74,female,ORL,Hipotiroidism,1,13,163,0.58,medium,4,Sumar urină|Ionogramă|Profil lipidic|CT toracic,Regim alimentar|Terapie cu oxigen|Psihoterapie,1,0
+185,30,62,male,Urologie,Hernie de disc,1,11,27,0.94,low,2,Radiografie toracică|Ecografie abdominală|CT toracic,Psihoterapie|Exerciții fizice regulate,0,0
+26,16,76,female,Oftalmologie,Boală coronariană|Migrenă cronică|Pneumonie|Infecție urinară,4,3,177,0.77,medium,4,RMN cerebral,Intervenție chirurgicală|Terapie cu oxigen,1,0
+175,9,32,female,Neurologie,Gastrita cronică,1,11,212,0.89,medium,3,EEG|Sumar urină|Spirometrie|RMN cerebral,Terapie inhalatorie|Medicație orală,1,0
+205,8,81,female,Medicină Internă,Anxietate generalizată|Hipotiroidism,2,19,306,0.33,high,7,Radiografie toracică|RMN cerebral,Medicație orală,1,1
+53,27,72,male,Ortopedie,Lombosciatică,1,16,158,0.73,medium,3,Funcție renală,Intervenție chirurgicală|Exerciții fizice regulate|Injecții subcutanate,1,0
+83,18,84,male,Medicină Internă,Epilepsie,1,17,30,0.76,low,2,Ecocardiografie|Glicemie,Terapie inhalatorie|Exerciții fizice regulate|Medicație orală,0,0
+101,12,73,male,Neurologie,Hipertensiune arterială|Fibrilație atrială|Hernie de disc|Pneumonie,4,9,243,0.43,high,7,Cultură urină|Ecocardiografie|Coagulogramă,Fizioterapie,1,1
+57,16,66,male,Oftalmologie,Gastrita cronică|Infecție urinară,2,5,87,0.54,medium,4,Funcție renală|Radiografie toracică|Ecocardiografie,Medicație orală,0,0
+161,23,81,female,Cardiologie,Migrenă cronică|Colecistită,2,8,14,0.91,medium,3,Profil hepatic|TSH,Intervenție chirurgicală|Exerciții fizice regulate|Monitorizare ambulatorie,0,0
+209,11,74,female,Oftalmologie,Diabet zaharat tip 2|Anemie feriprivă,2,3,259,0.93,high,5,Radiografie toracică|TSH|CT toracic,Exerciții fizice regulate,1,1
+20,20,58,female,Chirurgie Generală,Depresie,1,4,148,0.37,medium,4,Funcție renală|Sumar urină,Injecții subcutanate,1,1
+129,1,26,female,Neurologie,Diabet zaharat tip 2|Anemie feriprivă,2,8,310,0.94,medium,3,RMN cerebral|CT toracic|Ecocardiografie,Monitorizare ambulatorie,1,0
+179,27,40,male,Neurologie,Anemie feriprivă|Boală coronariană|Lombosciatică,3,13,344,0.38,high,6,Glicemie|Spirometrie|Profil hepatic,Medicație orală,1,1
+218,29,84,female,Cardiologie,Astm bronșic|BPOC|Lombosciatică,3,2,322,0.64,high,7,Hemoleucogramă completă,Regim alimentar|Monitorizare ambulatorie|Exerciții fizice regulate,1,1
+192,16,31,female,Chirurgie Generală,Depresie,1,11,50,0.5,low,2,CT toracic|Ionogramă|Ecocardiografie,Monitorizare ambulatorie|Medicație orală|Intervenție chirurgicală,0,0
+19,28,77,male,Oftalmologie,Astm bronșic,1,16,25,0.67,medium,4,Funcție renală|Coagulogramă,Intervenție chirurgicală,0,0
+160,17,35,female,Psihiatrie,BPOC,1,20,11,0.88,low,2,Cultură urină,Injecții subcutanate,0,0
+198,9,50,female,Cardiologie,Hipertensiune arterială,1,12,343,0.3,medium,4,HbA1c|Profil lipidic|Funcție renală,Psihoterapie,1,1
+119,7,24,male,Ortopedie,Anemie feriprivă|Artrită reumatoidă,2,4,233,0.43,medium,3,Profil hepatic|Ecografie abdominală,Terapie cu oxigen|Terapie inhalatorie,1,0
+135,27,44,male,ORL,Diabet zaharat tip 2,1,10,299,0.33,medium,4,Ecografie abdominală|Spirometrie|Ecocardiografie|CT toracic,Fizioterapie,1,1
+188,9,44,male,Chirurgie Generală,Depresie|Colecistită|BPOC,3,9,189,0.37,high,5,Coagulogramă|Sumar urină|RMN cerebral,Intervenție chirurgicală,1,1
+195,27,25,male,Oftalmologie,Colecistită|Fibrilație atrială,2,14,130,0.92,low,1,Glicemie|Radiografie toracică|Ecografie abdominală,Intervenție chirurgicală,1,0
+47,26,26,male,Psihiatrie,Hipotiroidism,1,13,158,0.8,low,0,Spirometrie|RMN cerebral,Intervenție chirurgicală,1,0
+22,14,34,male,Ortopedie,Lombosciatică,1,6,184,0.9,low,1,Ionogramă|CT toracic,Injecții subcutanate|Terapie inhalatorie|Fizioterapie,1,0
+167,3,79,female,Ginecologie,Anxietate generalizată,1,8,318,0.61,high,5,EEG|Spirometrie|CT toracic,Fizioterapie,1,1
+263,22,60,female,Pediatrie,Gastrita cronică|Hernie de disc,2,13,216,0.54,low,1,Profil lipidic|Ecocardiografie|Glicemie|Hemoleucogramă completă,Fizioterapie,1,0
+37,8,46,female,Chirurgie Generală,Lombosciatică|Fibrilație atrială|Astm bronșic,3,9,147,0.82,medium,4,CT toracic|RMN cerebral,Terapie inhalatorie|Monitorizare ambulatorie|Injecții subcutanate,1,0
+260,17,47,female,Urologie,Infecție urinară|Insuficiență cardiacă|Hipotiroidism|Depresie,4,11,146,0.45,high,5,CT toracic|Ecografie abdominală,Fizioterapie|Exerciții fizice regulate,1,1
+33,16,43,female,Medicină Internă,Hipertensiune arterială|Gastrita cronică,2,17,293,0.75,low,2,Radiografie toracică|Profil hepatic,Terapie inhalatorie,1,0
+165,14,31,male,Urologie,Astm bronșic,1,1,109,0.87,low,1,ECG|HbA1c,Fizioterapie|Medicație orală|Terapie inhalatorie,1,0
+55,6,30,female,Oftalmologie,Insuficiență cardiacă|BPOC,2,4,284,0.55,low,1,HbA1c|Radiografie toracică|TSH,Intervenție chirurgicală,1,0
+69,14,34,male,Dermatologie,BPOC,1,15,54,0.54,low,1,Radiografie toracică,Exerciții fizice regulate|Intervenție chirurgicală,0,0
+279,28,74,female,Urologie,Diabet zaharat tip 2|Astm bronșic,2,3,327,0.55,high,5,Ecocardiografie,Intervenție chirurgicală,1,1
+153,6,43,male,Psihiatrie,BPOC|Epilepsie,2,11,137,0.59,low,2,Ecocardiografie,Intervenție chirurgicală,1,0
+289,23,42,male,Cardiologie,Epilepsie|Colecistită|Astm bronșic,3,18,232,0.47,high,6,Ionogramă|HbA1c,Injecții subcutanate|Terapie inhalatorie,1,1
+71,15,78,female,ORL,Anemie feriprivă|Hipertensiune arterială|Fibrilație atrială,3,6,168,0.6,high,6,Coagulogramă,Regim alimentar,1,1
+274,14,83,male,Oftalmologie,Hipertensiune arterială|Hernie de disc|Infecție urinară,3,13,253,0.96,high,6,Coagulogramă|Ecocardiografie|Funcție renală|HbA1c,Exerciții fizice regulate|Injecții subcutanate|Monitorizare ambulatorie,1,1
+200,4,40,male,ORL,Hipertensiune arterială,1,1,72,0.5,low,0,CT toracic|HbA1c|Profil hepatic,Psihoterapie|Intervenție chirurgicală,0,0
+232,7,60,male,Pediatrie,Hernie de disc,1,1,66,0.65,low,0,Sumar urină|Coagulogramă|Funcție renală|Ionogramă,Terapie inhalatorie|Psihoterapie|Injecții subcutanate,0,0
+36,3,67,male,Neurologie,Anemie feriprivă,1,11,43,0.51,low,2,Cultură urină|Ecocardiografie|EEG,Terapie inhalatorie|Injecții subcutanate|Medicație orală,0,0
+10,11,63,female,Ginecologie,Diabet zaharat tip 2,1,6,348,0.34,high,5,Cultură urină|CT toracic,Intervenție chirurgicală|Regim alimentar|Terapie inhalatorie,1,1
+197,20,75,male,Chirurgie Generală,Migrenă cronică|BPOC|Lombosciatică,3,5,96,0.37,high,8,CT toracic|ECG|HbA1c,Terapie inhalatorie,1,1
+281,14,23,female,Ortopedie,Hipertensiune arterială|Pneumonie,2,3,282,0.33,high,5,Profil lipidic|HbA1c|CT toracic,Injecții subcutanate,1,1
+54,10,18,female,Cardiologie,Hipertensiune arterială|Astm bronșic,2,7,345,0.49,medium,3,ECG|EEG|Ecografie abdominală,Injecții subcutanate|Exerciții fizice regulate,1,0
+88,26,70,female,Ginecologie,Lombosciatică,1,7,358,0.7,high,5,RMN cerebral|CT toracic,Terapie cu oxigen,1,1
+204,1,55,male,Dermatologie,Astm bronșic,1,14,144,0.8,low,2,TSH|Spirometrie|Ecografie abdominală,Intervenție chirurgicală|Psihoterapie|Terapie inhalatorie,1,0
+96,15,73,male,Cardiologie,Infecție urinară|Anxietate generalizată,2,3,84,0.41,medium,4,EEG|HbA1c|Radiografie toracică|ECG,Regim alimentar|Monitorizare ambulatorie|Terapie cu oxigen,0,0
+5,20,77,male,Oftalmologie,Artrită reumatoidă|Hipotiroidism,2,3,351,0.52,medium,3,Glicemie,Terapie inhalatorie|Medicație orală,1,0
+61,15,25,male,ORL,BPOC|Artrită reumatoidă|Hernie de disc,3,19,242,0.3,high,6,Profil lipidic|RMN cerebral|Ecografie abdominală|Cultură urină,Terapie inhalatorie|Psihoterapie,1,1
+93,25,65,male,Ginecologie,Insuficiență cardiacă,1,1,350,0.38,medium,3,Ecografie abdominală|Coagulogramă,Regim alimentar,1,1
+96,11,66,female,Dermatologie,Lombosciatică|Astm bronșic,2,6,120,0.35,high,5,Spirometrie,Terapie cu oxigen,1,1
+258,8,55,female,Ortopedie,Gastrita cronică,1,6,44,0.56,low,2,Hemoleucogramă completă|Coagulogramă,Injecții subcutanate,0,0
+292,4,49,male,Chirurgie Generală,Epilepsie|BPOC|Anemie feriprivă,3,13,254,0.36,high,6,RMN cerebral|Sumar urină|Ecocardiografie|CT toracic,Injecții subcutanate,1,1
+87,6,83,male,Pediatrie,Epilepsie,1,6,158,0.66,medium,3,ECG|Cultură urină|Ecocardiografie,Injecții subcutanate|Intervenție chirurgicală|Terapie inhalatorie,1,0
+234,11,48,male,Chirurgie Generală,Anxietate generalizată,1,15,0,0.99,low,0,RMN cerebral|Hemoleucogramă completă|Sumar urină|Coagulogramă,Fizioterapie,0,0
+40,11,53,male,Ortopedie,Colecistită,1,16,104,0.31,medium,3,CT toracic|Hemoleucogramă completă|HbA1c|EEG,Fizioterapie,1,1
+11,7,52,male,Dermatologie,Hipertensiune arterială,1,11,64,0.57,low,0,Ecocardiografie|Sumar urină|RMN cerebral|ECG,Fizioterapie|Exerciții fizice regulate,0,0
+208,9,58,female,Pediatrie,Gastrita cronică,1,16,331,0.96,medium,3,Sumar urină|Profil hepatic|RMN cerebral|EEG,Fizioterapie|Intervenție chirurgicală,1,0
+264,14,42,male,Neurologie,BPOC|Artrită reumatoidă,2,4,249,0.73,medium,3,HbA1c|Cultură urină,Fizioterapie,1,0
+214,22,79,male,Oftalmologie,Astm bronșic|Migrenă cronică,2,19,144,0.74,medium,3,HbA1c|RMN cerebral|Cultură urină,Intervenție chirurgicală|Exerciții fizice regulate,1,0
+22,26,44,female,Oftalmologie,Insuficiență cardiacă|Anemie feriprivă|Hipertensiune arterială|Gastrita cronică,4,16,94,0.89,medium,4,Coagulogramă|CT toracic|EEG|Glicemie,Exerciții fizice regulate|Regim alimentar,1,0
+195,13,26,female,Oftalmologie,BPOC,1,5,172,0.97,low,2,Funcție renală|Profil lipidic|Coagulogramă|CT toracic,Intervenție chirurgicală,1,0
+8,7,25,male,Dermatologie,Hernie de disc|Astm bronșic|Depresie,3,5,25,0.4,high,6,Hemoleucogramă completă|TSH,Psihoterapie,1,1
+186,21,60,male,Psihiatrie,Depresie|Insuficiență cardiacă,2,1,237,0.41,high,5,Profil lipidic|Ecocardiografie,Terapie inhalatorie,1,1
+284,5,46,male,Oftalmologie,Hipotiroidism|Astm bronșic,2,3,357,0.38,high,5,Coagulogramă|Profil hepatic,Monitorizare ambulatorie|Medicație orală|Terapie cu oxigen,1,1
+81,15,77,female,Ginecologie,Fibrilație atrială|Artrită reumatoidă|Anemie feriprivă|Hipertensiune arterială,4,20,282,0.8,high,6,TSH|EEG,Terapie inhalatorie|Exerciții fizice regulate,1,1
+131,22,51,female,Chirurgie Generală,BPOC|Hipertensiune arterială,2,12,79,0.87,low,0,Funcție renală|Glicemie|RMN cerebral|Coagulogramă,Terapie cu oxigen|Exerciții fizice regulate|Monitorizare ambulatorie,0,0
+26,6,83,male,Neurologie,Hipertensiune arterială,1,16,139,0.47,medium,4,Coagulogramă|HbA1c,Exerciții fizice regulate|Psihoterapie,1,0
+39,23,74,female,Pediatrie,Hipertensiune arterială|Epilepsie|Anxietate generalizată,3,14,143,0.7,high,5,Profil lipidic|RMN cerebral|Ionogramă,Fizioterapie,1,1
+50,27,39,male,Ortopedie,Lombosciatică|Anxietate generalizată|Boală coronariană,3,13,44,0.77,medium,4,Sumar urină|ECG,Regim alimentar|Psihoterapie,0,0
+270,25,60,male,ORL,Artrită reumatoidă|Insuficiență cardiacă,2,7,259,0.37,medium,3,Hemoleucogramă completă|CT toracic|Profil hepatic|RMN cerebral,Regim alimentar,1,1
+244,14,38,male,Medicină Internă,Epilepsie|Lombosciatică|Boală coronariană,3,10,65,0.55,low,2,Funcție renală|Spirometrie,Intervenție chirurgicală,0,0
+162,16,84,male,Neurologie,Lombosciatică|Gastrita cronică,2,13,256,0.49,high,5,HbA1c|Ecocardiografie|ECG|Profil lipidic,Regim alimentar,1,1
+52,11,84,female,ORL,Boală coronariană,1,17,188,0.67,medium,4,Profil lipidic,Injecții subcutanate,1,0
+24,5,42,female,Pediatrie,Depresie|Anemie feriprivă|Pneumonie,3,5,261,0.71,medium,3,Radiografie toracică,Psihoterapie,1,0
+72,23,49,female,Medicină Internă,Astm bronșic,1,12,253,0.87,low,2,Profil lipidic|TSH|Cultură urină|HbA1c,Psihoterapie|Fizioterapie,1,0
+271,29,53,female,Urologie,Colecistită|Astm bronșic|Infecție urinară,3,2,315,0.44,high,5,RMN cerebral|Profil hepatic,Monitorizare ambulatorie|Regim alimentar|Terapie inhalatorie,1,1
+7,21,50,female,Pediatrie,Infecție urinară|Hipertensiune arterială|Fibrilație atrială|Pneumonie,4,5,48,0.45,high,6,RMN cerebral,Fizioterapie|Injecții subcutanate|Exerciții fizice regulate,1,1
+155,24,47,male,Dermatologie,Migrenă cronică|Anemie feriprivă|Colecistită,3,17,320,0.71,high,5,CT toracic|Sumar urină,Injecții subcutanate,1,1
+9,25,20,male,Oftalmologie,Pneumonie|Artrită reumatoidă,2,7,141,0.55,low,1,Radiografie toracică,Terapie cu oxigen,1,0
+46,22,29,male,ORL,Hipertensiune arterială,1,14,199,0.9,medium,3,Profil hepatic,Intervenție chirurgicală,1,0
+55,13,69,female,Medicină Internă,Infecție urinară,1,4,328,0.98,high,5,TSH|Funcție renală|RMN cerebral|Glicemie,Exerciții fizice regulate|Psihoterapie|Intervenție chirurgicală,1,1
+202,20,35,male,Dermatologie,Lombosciatică,1,1,167,0.56,low,0,RMN cerebral|Profil hepatic,Fizioterapie|Exerciții fizice regulate,1,0
+293,14,43,female,Ortopedie,Depresie,1,2,208,0.31,medium,3,Coagulogramă|RMN cerebral|HbA1c,Fizioterapie|Medicație orală,1,1
+15,3,74,male,Psihiatrie,Gastrita cronică|Pneumonie|Anemie feriprivă,3,7,224,0.39,high,8,Ionogramă|Ecocardiografie|Spirometrie,Injecții subcutanate|Regim alimentar|Terapie cu oxigen,1,1
+21,25,64,female,Neurologie,Fibrilație atrială|Gastrita cronică|Epilepsie,3,12,177,0.57,medium,3,HbA1c|Sumar urină|CT toracic,Intervenție chirurgicală|Terapie cu oxigen,1,0
+49,11,76,male,Neurologie,Insuficiență cardiacă|Diabet zaharat tip 2|Hernie de disc,3,0,53,0.67,high,6,CT toracic,Psihoterapie|Medicație orală|Terapie inhalatorie,1,1
+217,16,41,female,Ortopedie,Epilepsie,1,4,176,0.62,low,0,Spirometrie,Medicație orală,1,0
+178,28,83,female,Urologie,Pneumonie,1,13,33,0.65,low,2,Hemoleucogramă completă|Radiografie toracică,Injecții subcutanate,0,0
+83,19,81,female,Pediatrie,Boală coronariană,1,0,33,0.8,medium,3,Coagulogramă|Ionogramă,Medicație orală|Regim alimentar|Psihoterapie,0,0
+4,2,49,female,Medicină Internă,Migrenă cronică,1,18,338,0.88,low,2,RMN cerebral,Terapie inhalatorie,1,0
+171,24,18,male,Chirurgie Generală,Hernie de disc|Diabet zaharat tip 2,2,19,23,0.73,low,1,TSH,Monitorizare ambulatorie|Regim alimentar|Injecții subcutanate,0,0
+99,13,26,male,Urologie,Pneumonie|Gastrita cronică|Lombosciatică,3,16,276,0.43,high,7,Sumar urină|Coagulogramă,Intervenție chirurgicală,1,1
+100,13,74,female,Neurologie,Colecistită|Epilepsie,2,5,306,0.59,high,5,ECG|EEG|HbA1c,Injecții subcutanate|Psihoterapie,1,1
+237,30,29,female,Neurologie,Lombosciatică|Epilepsie,2,5,227,0.83,low,2,Profil lipidic|Spirometrie|Coagulogramă|Profil hepatic,Terapie inhalatorie|Regim alimentar,1,0
+221,6,51,female,Urologie,Infecție urinară,1,17,337,0.87,medium,3,Cultură urină|Funcție renală|Spirometrie|Hemoleucogramă completă,Medicație orală,1,0
+58,30,43,female,Cardiologie,Lombosciatică|Astm bronșic,2,9,86,0.32,medium,4,Radiografie toracică|Ionogramă,Medicație orală|Psihoterapie,0,1
+90,18,27,female,Cardiologie,Fibrilație atrială,1,9,243,0.67,low,2,Spirometrie|Cultură urină,Medicație orală,1,0
+84,16,47,male,Cardiologie,Depresie|Hipertensiune arterială,2,7,156,0.52,low,0,RMN cerebral|EEG|Funcție renală,Medicație orală|Fizioterapie,1,0
+22,28,59,female,Oftalmologie,Gastrita cronică,1,3,249,0.62,low,2,Profil lipidic|Profil hepatic,Regim alimentar|Exerciții fizice regulate|Injecții subcutanate,1,0
+229,14,26,female,Cardiologie,Hipotiroidism|Boală coronariană,2,2,20,0.45,low,2,EEG|ECG|CT toracic,Intervenție chirurgicală|Fizioterapie,0,0
+30,24,22,male,Urologie,Colecistită,1,18,359,0.54,low,2,Hemoleucogramă completă,Injecții subcutanate,1,0
+141,3,62,female,Medicină Internă,Diabet zaharat tip 2|Hipotiroidism,2,14,80,0.65,low,1,TSH|ECG|Hemoleucogramă completă|Ionogramă,Monitorizare ambulatorie,0,0
+277,19,40,male,Oftalmologie,Epilepsie|BPOC|Colecistită,3,0,60,0.82,low,2,EEG|Hemoleucogramă completă|Cultură urină|ECG,Medicație orală,0,0
+143,17,42,male,Pediatrie,Hernie de disc|Hipotiroidism,2,13,251,0.63,low,2,EEG|Coagulogramă|CT toracic,Fizioterapie,1,0
+60,25,55,female,Ortopedie,Infecție urinară|Pneumonie,2,17,18,0.92,low,2,Spirometrie|Profil hepatic|RMN cerebral|Sumar urină,Psihoterapie|Terapie inhalatorie,0,0
+225,18,65,female,Dermatologie,Depresie,1,5,141,0.4,low,2,Radiografie toracică|EEG,Fizioterapie|Psihoterapie|Terapie inhalatorie,1,0
+205,12,36,male,ORL,BPOC|Epilepsie,2,3,44,0.69,low,2,Funcție renală|EEG|Ecografie abdominală|Radiografie toracică,Exerciții fizice regulate|Injecții subcutanate|Psihoterapie,0,0
+245,22,80,female,Dermatologie,Gastrita cronică|BPOC,2,18,228,0.76,high,5,Hemoleucogramă completă,Exerciții fizice regulate,1,1
+275,15,40,female,Ginecologie,Gastrita cronică|Diabet zaharat tip 2|Anxietate generalizată,3,17,258,0.86,medium,4,Cultură urină|RMN cerebral|ECG|Hemoleucogramă completă,Regim alimentar|Terapie inhalatorie,1,0
+274,10,69,male,Ortopedie,Anemie feriprivă|BPOC|Lombosciatică,3,13,169,0.36,high,6,CT toracic|HbA1c|Spirometrie|Ecografie abdominală,Fizioterapie,1,1
+151,29,27,male,Psihiatrie,Anxietate generalizată|Pneumonie,2,20,247,0.74,low,1,Funcție renală|Sumar urină|CT toracic|HbA1c,Injecții subcutanate|Intervenție chirurgicală|Psihoterapie,1,0
+53,16,19,female,Oftalmologie,Gastrita cronică,1,14,18,0.37,medium,4,Spirometrie|ECG|Ionogramă,Injecții subcutanate|Exerciții fizice regulate,0,1
+69,9,67,female,Chirurgie Generală,Anxietate generalizată,1,11,248,0.69,medium,3,CT toracic|HbA1c,Psihoterapie|Medicație orală,1,0
+3,27,41,male,Ginecologie,Astm bronșic|BPOC|Anxietate generalizată,3,16,25,0.34,high,6,Radiografie toracică,Psihoterapie|Regim alimentar|Terapie cu oxigen,1,1
+274,9,74,female,Chirurgie Generală,Hernie de disc,1,7,148,0.78,medium,4,TSH|Ionogramă,Medicație orală,1,0
+35,7,34,male,Urologie,Artrită reumatoidă|Gastrita cronică|Anemie feriprivă,3,18,134,0.74,medium,3,Spirometrie|Funcție renală,Regim alimentar|Psihoterapie|Injecții subcutanate,1,0
+265,27,81,male,Ortopedie,Colecistită|Epilepsie,2,16,139,0.83,medium,3,TSH|Profil hepatic|HbA1c|Ecocardiografie,Regim alimentar|Fizioterapie,1,0
+154,13,85,female,Chirurgie Generală,Anxietate generalizată|Hipertensiune arterială,2,19,31,0.57,low,2,Coagulogramă,Monitorizare ambulatorie|Psihoterapie,0,0
+28,27,71,male,Medicină Internă,Epilepsie,1,16,272,0.95,medium,3,ECG|Radiografie toracică|Ionogramă|RMN cerebral,Medicație orală|Exerciții fizice regulate,1,0
+272,22,53,male,ORL,Depresie|Fibrilație atrială|Colecistită|Migrenă cronică,4,18,125,0.78,low,2,Coagulogramă,Exerciții fizice regulate|Terapie cu oxigen|Fizioterapie,1,0
+20,6,27,female,ORL,Insuficiență cardiacă,1,20,350,0.66,low,1,Ecocardiografie,Psihoterapie|Injecții subcutanate,1,0
+167,10,31,female,ORL,Artrită reumatoidă,1,15,4,0.3,low,2,Profil hepatic|Coagulogramă|Spirometrie|Glicemie,Regim alimentar|Terapie cu oxigen|Medicație orală,0,1
+82,24,73,male,Ginecologie,Colecistită,1,16,146,0.47,medium,4,Cultură urină|Radiografie toracică|RMN cerebral|Sumar urină,Medicație orală|Exerciții fizice regulate,1,0
+107,5,45,male,Urologie,Hipotiroidism|Lombosciatică|Artrită reumatoidă|Colecistită,4,13,246,0.47,high,6,Ionogramă|CT toracic|ECG,Terapie cu oxigen,1,1
+143,25,61,female,Urologie,Lombosciatică,1,6,47,0.94,low,2,TSH,Terapie inhalatorie|Psihoterapie,0,0
+267,7,39,male,Cardiologie,Boală coronariană|Lombosciatică,2,3,65,0.95,low,1,Cultură urină|Hemoleucogramă completă|Sumar urină,Regim alimentar|Monitorizare ambulatorie,0,0
+96,27,56,female,Psihiatrie,Migrenă cronică|Hernie de disc|Epilepsie,3,20,308,0.97,medium,4,HbA1c,Exerciții fizice regulate,1,0
+213,26,85,female,Pediatrie,Diabet zaharat tip 2,1,4,152,0.41,high,5,CT toracic|Sumar urină|Ecografie abdominală,Injecții subcutanate|Intervenție chirurgicală|Terapie cu oxigen,1,1
+263,7,30,male,Oftalmologie,Hipotiroidism,1,17,347,0.54,low,1,TSH|EEG|Ecocardiografie|ECG,Monitorizare ambulatorie|Terapie inhalatorie|Regim alimentar,1,0
+252,21,27,male,Medicină Internă,Boală coronariană,1,0,88,0.46,medium,3,ECG|Funcție renală|Hemoleucogramă completă|Profil hepatic,Intervenție chirurgicală,0,0
+158,19,81,male,Medicină Internă,Epilepsie|Depresie,2,19,1,0.81,medium,4,Coagulogramă,Injecții subcutanate|Medicație orală,0,0
+123,12,70,male,Pediatrie,Hipertensiune arterială|Fibrilație atrială,2,2,39,0.9,low,2,Hemoleucogramă completă|Profil lipidic|Coagulogramă|Ionogramă,Fizioterapie|Terapie cu oxigen|Psihoterapie,0,0
+184,8,34,male,Cardiologie,Artrită reumatoidă|Depresie,2,11,196,0.99,low,2,Funcție renală,Psihoterapie|Regim alimentar|Injecții subcutanate,1,0
+197,3,75,male,Cardiologie,Migrenă cronică|Hernie de disc|Infecție urinară,3,5,134,0.87,high,5,Coagulogramă|HbA1c|Ionogramă,Medicație orală|Regim alimentar,1,1
+215,11,25,female,Urologie,Pneumonie|Hipotiroidism,2,14,219,0.85,low,1,Cultură urină|Ecocardiografie,Intervenție chirurgicală,1,0
+123,27,62,male,Ortopedie,Epilepsie|Hipertensiune arterială,2,12,102,0.39,medium,4,Profil lipidic|Spirometrie|TSH|Radiografie toracică,Intervenție chirurgicală,1,1
+132,25,58,female,Dermatologie,Gastrita cronică,1,12,239,0.58,low,2,Sumar urină|HbA1c|Radiografie toracică,Psihoterapie,1,0
+5,1,18,male,Psihiatrie,Colecistită,1,8,97,0.61,low,0,Profil hepatic|HbA1c|Hemoleucogramă completă,Medicație orală|Psihoterapie,1,0
+98,6,36,female,Psihiatrie,Infecție urinară|Artrită reumatoidă|Depresie|Hernie de disc,4,13,84,0.75,low,2,Ecocardiografie|Ecografie abdominală,Terapie inhalatorie|Regim alimentar,0,0
+176,9,33,female,Ginecologie,Colecistită|Infecție urinară,2,13,223,0.35,high,5,Profil lipidic,Terapie inhalatorie,1,1
+45,28,33,female,Ortopedie,Lombosciatică|Hernie de disc,2,19,122,0.74,low,0,RMN cerebral|Funcție renală,Terapie cu oxigen|Exerciții fizice regulate|Injecții subcutanate,1,0
+66,13,67,male,Neurologie,Hipotiroidism|Anxietate generalizată|Pneumonie|Diabet zaharat tip 2,4,20,9,0.65,medium,4,Profil hepatic|CT toracic|Cultură urină,Exerciții fizice regulate|Medicație orală,0,0
+261,30,46,male,Pediatrie,Infecție urinară|Lombosciatică,2,8,131,0.57,low,2,Hemoleucogramă completă|HbA1c|Ecocardiografie,Psihoterapie|Exerciții fizice regulate|Medicație orală,1,0
+188,23,56,male,Urologie,Fibrilație atrială|Artrită reumatoidă|Anxietate generalizată|Anemie feriprivă,4,8,165,0.62,medium,3,Profil hepatic,Medicație orală|Terapie cu oxigen,1,0
+20,3,24,female,Chirurgie Generală,Diabet zaharat tip 2,1,11,150,0.85,low,2,Glicemie|ECG|Profil hepatic|Ecografie abdominală,Regim alimentar,1,0
+80,29,67,male,ORL,Colecistită|Epilepsie,2,13,306,0.72,high,5,Sumar urină,Regim alimentar|Injecții subcutanate|Exerciții fizice regulate,1,1
+223,20,67,male,Oftalmologie,Anemie feriprivă|Anxietate generalizată|Boală coronariană|Astm bronșic,4,17,95,0.69,high,5,Glicemie|Hemoleucogramă completă,Terapie inhalatorie|Psihoterapie,1,1
+156,8,64,male,Cardiologie,Epilepsie|Artrită reumatoidă,2,6,353,0.56,medium,3,Radiografie toracică,Fizioterapie|Psihoterapie|Intervenție chirurgicală,1,0
+49,17,69,male,ORL,Anemie feriprivă|Infecție urinară,2,13,111,0.48,high,5,Radiografie toracică|EEG|Coagulogramă,Fizioterapie|Terapie cu oxigen|Regim alimentar,1,1
+291,29,37,female,Chirurgie Generală,Artrită reumatoidă|Diabet zaharat tip 2,2,0,101,0.86,low,1,Ionogramă|Profil lipidic|Cultură urină,Intervenție chirurgicală|Medicație orală,1,0
+149,20,30,male,Urologie,Artrită reumatoidă|Migrenă cronică,2,17,279,0.47,medium,4,ECG,Fizioterapie|Monitorizare ambulatorie,1,0
+260,26,44,female,Cardiologie,BPOC|Insuficiență cardiacă,2,16,40,0.96,low,1,EEG,Monitorizare ambulatorie|Exerciții fizice regulate|Terapie cu oxigen,0,0
+49,4,18,male,Dermatologie,Diabet zaharat tip 2,1,15,112,0.61,low,2,RMN cerebral|CT toracic|Cultură urină|Radiografie toracică,Monitorizare ambulatorie,1,0
+34,17,52,male,Cardiologie,Hipertensiune arterială|Anxietate generalizată|Astm bronșic,3,7,122,0.34,medium,4,HbA1c|Radiografie toracică,Terapie cu oxigen|Regim alimentar|Injecții subcutanate,1,1
+41,3,49,male,Neurologie,Infecție urinară,1,2,297,0.4,medium,4,TSH|Radiografie toracică|RMN cerebral|Ecografie abdominală,Monitorizare ambulatorie|Intervenție chirurgicală|Injecții subcutanate,1,0
+194,3,84,female,Medicină Internă,Boală coronariană|Hipotiroidism,2,20,279,0.82,medium,4,Ecocardiografie|EEG,Terapie cu oxigen|Monitorizare ambulatorie,1,0
+250,29,23,male,Dermatologie,Boală coronariană|Fibrilație atrială,2,19,7,0.91,low,1,Ecografie abdominală|Funcție renală,Intervenție chirurgicală,0,0
+217,4,78,female,Urologie,Insuficiență cardiacă|Anemie feriprivă|Depresie,3,13,349,0.73,high,6,EEG,Terapie cu oxigen|Fizioterapie|Monitorizare ambulatorie,1,1
+14,22,82,female,Psihiatrie,Hipotiroidism|Colecistită|Migrenă cronică,3,17,217,0.56,high,7,Cultură urină|CT toracic|Coagulogramă|Profil hepatic,Monitorizare ambulatorie|Medicație orală,1,1
+260,1,23,female,Chirurgie Generală,Gastrita cronică,1,16,68,0.43,low,2,Profil hepatic|Ecografie abdominală,Terapie cu oxigen,0,0
+143,15,54,male,ORL,Gastrita cronică|Hernie de disc|Infecție urinară,3,16,207,0.87,high,5,Profil lipidic|Cultură urină|Ecografie abdominală|Spirometrie,Intervenție chirurgicală|Regim alimentar,1,1
+185,5,28,female,Pediatrie,Artrită reumatoidă,1,6,1,0.75,low,2,Ionogramă|ECG|Funcție renală|Hemoleucogramă completă,Fizioterapie,0,0
+178,11,81,female,Oftalmologie,Diabet zaharat tip 2|Pneumonie|Depresie,3,17,110,0.65,high,5,Cultură urină,Terapie cu oxigen|Exerciții fizice regulate|Regim alimentar,1,1
+66,7,28,female,Psihiatrie,Migrenă cronică,1,9,319,0.36,medium,3,RMN cerebral|Cultură urină|Hemoleucogramă completă|Coagulogramă,Intervenție chirurgicală|Monitorizare ambulatorie|Exerciții fizice regulate,1,1
+226,25,38,female,Oftalmologie,Epilepsie|Depresie,2,12,122,0.48,medium,3,Spirometrie|Profil lipidic|Radiografie toracică|HbA1c,Fizioterapie|Intervenție chirurgicală,1,0
+92,9,19,female,Ortopedie,Hernie de disc|Diabet zaharat tip 2,2,2,365,0.47,medium,3,Spirometrie,Intervenție chirurgicală|Monitorizare ambulatorie,1,0
+33,22,27,female,Neurologie,Hipertensiune arterială|Lombosciatică,2,10,312,0.7,medium,3,Profil lipidic|Profil hepatic,Psihoterapie,1,0
+282,30,20,male,Ortopedie,Boală coronariană,1,17,298,0.75,low,2,CT toracic,Medicație orală,1,0
+198,4,29,female,Pediatrie,Hernie de disc,1,8,45,0.5,low,0,Spirometrie|RMN cerebral|CT toracic,Fizioterapie,0,0
+106,30,61,female,Oftalmologie,Migrenă cronică,1,19,44,0.54,low,2,EEG|Ecocardiografie|Hemoleucogramă completă|Ionogramă,Medicație orală|Terapie cu oxigen,0,0
+211,23,57,female,Chirurgie Generală,Colecistită,1,9,134,0.45,low,2,CT toracic|Hemoleucogramă completă,Terapie cu oxigen,1,0
+212,12,47,female,Dermatologie,Anemie feriprivă|Gastrita cronică,2,19,218,0.89,low,2,Profil hepatic|Funcție renală|HbA1c|Ecocardiografie,Exerciții fizice regulate|Injecții subcutanate,1,0
+77,9,53,female,Dermatologie,Astm bronșic|Epilepsie|BPOC,3,11,12,0.7,low,2,Ecocardiografie|Spirometrie|Glicemie,Injecții subcutanate|Regim alimentar|Intervenție chirurgicală,0,0
+79,20,50,female,Chirurgie Generală,BPOC,1,4,233,0.36,medium,4,RMN cerebral,Terapie cu oxigen|Exerciții fizice regulate|Fizioterapie,1,1
+144,25,48,female,Ginecologie,Anxietate generalizată|Infecție urinară|Boală coronariană,3,18,81,0.75,medium,4,Profil lipidic|HbA1c|EEG,Medicație orală,0,0
+78,22,49,female,Ortopedie,Artrită reumatoidă,1,4,282,0.6,low,1,HbA1c|Coagulogramă|ECG|RMN cerebral,Exerciții fizice regulate|Fizioterapie|Medicație orală,1,0
+14,14,40,male,Urologie,BPOC,1,20,318,0.42,medium,4,HbA1c|Sumar urină|Profil hepatic,Exerciții fizice regulate|Monitorizare ambulatorie|Psihoterapie,1,0
+63,22,73,male,Ginecologie,Astm bronșic|Boală coronariană,2,15,72,0.73,medium,4,Ecografie abdominală|Coagulogramă,Terapie inhalatorie|Exerciții fizice regulate|Medicație orală,0,0
+108,12,44,male,Chirurgie Generală,Gastrita cronică,1,5,364,0.83,low,1,TSH|RMN cerebral|Spirometrie|Hemoleucogramă completă,Regim alimentar|Injecții subcutanate,1,0
+137,26,75,female,Neurologie,Gastrita cronică|Infecție urinară|Fibrilație atrială,3,17,341,0.73,high,6,Glicemie|Ionogramă,Fizioterapie|Injecții subcutanate|Psihoterapie,1,1
+281,6,30,female,Pediatrie,Anxietate generalizată,1,15,2,0.45,low,2,RMN cerebral|Cultură urină|Ecografie abdominală|TSH,Fizioterapie|Medicație orală|Terapie cu oxigen,0,0
+130,6,73,male,Ginecologie,Infecție urinară|BPOC|Anemie feriprivă|Pneumonie,4,2,81,0.54,high,5,RMN cerebral,Fizioterapie|Psihoterapie,1,1
+278,9,79,female,Oftalmologie,Lombosciatică,1,14,144,0.79,medium,3,Sumar urină|RMN cerebral|Ecocardiografie|Radiografie toracică,Exerciții fizice regulate|Regim alimentar,1,0
+235,19,56,male,Medicină Internă,Fibrilație atrială|Hipotiroidism,2,6,90,0.71,low,1,Radiografie toracică|RMN cerebral,Psihoterapie|Medicație orală,0,0
+192,4,65,female,Cardiologie,Anxietate generalizată|Colecistită|Hernie de disc,3,10,135,0.65,medium,3,CT toracic,Monitorizare ambulatorie|Regim alimentar|Intervenție chirurgicală,1,0
+92,12,18,male,Psihiatrie,Fibrilație atrială|Anxietate generalizată,2,0,153,0.44,medium,4,Cultură urină|HbA1c|Radiografie toracică|RMN cerebral,Monitorizare ambulatorie|Fizioterapie|Injecții subcutanate,1,0
+129,19,34,female,Neurologie,Pneumonie,1,7,2,0.53,low,2,Ionogramă|TSH|Profil lipidic|Funcție renală,Fizioterapie|Regim alimentar|Monitorizare ambulatorie,0,0
+258,28,18,male,Ortopedie,Depresie|Insuficiență cardiacă|Hipotiroidism|Fibrilație atrială,4,20,58,0.3,medium,4,TSH|Ecocardiografie|Spirometrie,Injecții subcutanate|Monitorizare ambulatorie|Exerciții fizice regulate,0,1
+26,24,38,female,Oftalmologie,Depresie,1,0,85,0.52,low,2,Hemoleucogramă completă,Fizioterapie|Terapie cu oxigen|Monitorizare ambulatorie,0,0
+288,30,35,female,Ginecologie,Depresie|Pneumonie,2,16,126,0.53,low,0,Ecocardiografie|ECG|Sumar urină,Medicație orală,1,0
+88,10,24,male,ORL,Diabet zaharat tip 2|Hipertensiune arterială,2,7,246,0.84,low,1,Profil hepatic,Terapie inhalatorie,1,0
+195,18,59,male,Dermatologie,Pneumonie,1,16,287,0.86,low,1,Coagulogramă|ECG|Profil lipidic,Terapie inhalatorie|Exerciții fizice regulate|Terapie cu oxigen,1,0
+96,5,83,female,Medicină Internă,Hipertensiune arterială|Depresie|Colecistită|Migrenă cronică,4,18,143,0.94,high,6,Cultură urină,Terapie inhalatorie,1,1
+32,8,69,female,Urologie,Artrită reumatoidă|Hernie de disc|Insuficiență cardiacă,3,11,314,0.77,high,7,HbA1c,Terapie inhalatorie,1,1
+295,14,82,female,Urologie,Lombosciatică|Artrită reumatoidă,2,4,288,0.95,high,5,Ionogramă|Sumar urină|Profil hepatic|Glicemie,Injecții subcutanate|Fizioterapie,1,1
+291,23,61,female,Ginecologie,Depresie,1,9,224,0.77,low,2,Profil lipidic|Coagulogramă|Cultură urină|Glicemie,Exerciții fizice regulate|Regim alimentar|Medicație orală,1,0
+97,8,69,male,Chirurgie Generală,Boală coronariană|Hernie de disc,2,5,103,0.49,medium,4,Glicemie|Spirometrie|CT toracic,Psihoterapie|Intervenție chirurgicală|Terapie cu oxigen,1,0
+57,22,52,male,Urologie,Anemie feriprivă|Boală coronariană,2,2,175,0.51,low,2,HbA1c,Psihoterapie|Terapie cu oxigen|Terapie inhalatorie,1,0
+132,20,32,male,Psihiatrie,Epilepsie|Depresie|Anxietate generalizată,3,3,243,0.44,high,5,EEG|Sumar urină|RMN cerebral|HbA1c,Medicație orală|Exerciții fizice regulate,1,1
+231,29,51,male,Psihiatrie,Astm bronșic,1,18,279,0.34,medium,3,HbA1c,Intervenție chirurgicală,1,1
+285,6,41,female,Dermatologie,Anemie feriprivă,1,11,135,0.98,low,1,Glicemie|Funcție renală|Ionogramă,Terapie cu oxigen,1,0
+257,21,60,female,Neurologie,Anxietate generalizată|Boală coronariană|Hipotiroidism|Migrenă cronică,4,7,205,0.71,high,5,Ecocardiografie,Terapie inhalatorie|Injecții subcutanate,1,1
+105,1,54,female,Cardiologie,Anxietate generalizată|Astm bronșic,2,1,2,0.59,low,0,EEG|Ionogramă|Glicemie,Psihoterapie|Medicație orală|Terapie cu oxigen,0,0
+44,13,78,male,Medicină Internă,Migrenă cronică|Hipertensiune arterială|Artrită reumatoidă,3,1,228,0.54,high,5,Coagulogramă|Hemoleucogramă completă|Sumar urină,Regim alimentar|Psihoterapie,1,1
+31,13,75,male,Cardiologie,Colecistită|Anemie feriprivă,2,11,50,0.31,high,5,ECG|Hemoleucogramă completă|EEG,Medicație orală|Monitorizare ambulatorie,1,1
+297,9,63,female,Psihiatrie,Anxietate generalizată|BPOC,2,2,268,0.56,low,1,EEG|CT toracic|Radiografie toracică|Ecografie abdominală,Monitorizare ambulatorie|Psihoterapie,1,0
+76,25,70,male,Cardiologie,Infecție urinară|Anemie feriprivă,2,20,343,0.47,high,5,Glicemie,Monitorizare ambulatorie|Regim alimentar|Medicație orală,1,1
+252,21,85,male,Ginecologie,Insuficiență cardiacă|Artrită reumatoidă|Fibrilație atrială,3,10,171,0.94,high,6,Glicemie,Terapie cu oxigen|Exerciții fizice regulate|Fizioterapie,1,1
+226,15,71,male,Chirurgie Generală,Infecție urinară|Hipertensiune arterială|Colecistită,3,16,136,0.52,high,6,EEG|Cultură urină|Sumar urină,Regim alimentar|Terapie cu oxigen|Injecții subcutanate,1,1
+72,26,62,female,Medicină Internă,Astm bronșic,1,5,173,0.48,low,2,Ionogramă|RMN cerebral|Cultură urină,Terapie inhalatorie|Exerciții fizice regulate|Intervenție chirurgicală,1,0
+131,19,20,male,ORL,Hipertensiune arterială|Depresie|Anxietate generalizată,3,10,155,0.95,medium,3,RMN cerebral|Sumar urină|ECG,Terapie inhalatorie|Fizioterapie|Exerciții fizice regulate,1,0
+179,8,76,male,Oftalmologie,Diabet zaharat tip 2|Colecistită|Anemie feriprivă|Infecție urinară,4,12,248,0.55,high,5,Radiografie toracică|RMN cerebral,Regim alimentar,1,1
+54,27,59,female,Oftalmologie,Hipertensiune arterială|Anemie feriprivă,2,11,285,0.35,medium,4,Radiografie toracică|Spirometrie,Monitorizare ambulatorie,1,1
+282,8,73,male,Chirurgie Generală,Anxietate generalizată,1,13,261,0.33,high,6,Coagulogramă,Fizioterapie,1,1
+62,25,71,female,Ortopedie,Anxietate generalizată,1,20,117,0.55,medium,3,Hemoleucogramă completă|Glicemie|Cultură urină|Funcție renală,Intervenție chirurgicală,1,0
+172,17,26,male,Ortopedie,Gastrita cronică|Boală coronariană|BPOC,3,10,335,0.86,medium,3,Cultură urină|Hemoleucogramă completă,Psihoterapie,1,0
+110,7,34,male,Cardiologie,Artrită reumatoidă,1,1,141,0.88,low,2,Profil hepatic|RMN cerebral|Hemoleucogramă completă|Cultură urină,Psihoterapie,1,0
+191,8,47,male,Neurologie,Migrenă cronică,1,16,112,0.53,low,2,ECG|Ionogramă|Cultură urină|CT toracic,Exerciții fizice regulate,1,0
+133,18,48,male,Medicină Internă,Insuficiență cardiacă,1,3,176,0.41,medium,3,Radiografie toracică|Spirometrie|Funcție renală|Cultură urină,Intervenție chirurgicală,1,0
+100,21,44,male,Pediatrie,Fibrilație atrială|Boală coronariană|Gastrita cronică|Pneumonie,4,1,238,0.3,high,7,Glicemie|CT toracic,Monitorizare ambulatorie|Injecții subcutanate,1,1
+45,29,35,female,Neurologie,Infecție urinară,1,17,97,0.97,low,2,RMN cerebral|Hemoleucogramă completă,Exerciții fizice regulate|Monitorizare ambulatorie|Terapie cu oxigen,1,0
+156,9,61,female,Ginecologie,Anemie feriprivă|Depresie|Anxietate generalizată,3,4,176,0.44,high,5,HbA1c|Coagulogramă|Profil hepatic|Ionogramă,Fizioterapie|Regim alimentar|Medicație orală,1,1
+188,23,79,female,Neurologie,Colecistită|Epilepsie,2,12,176,0.99,low,2,Ecocardiografie|Hemoleucogramă completă,Fizioterapie,1,0
+150,6,34,male,Ginecologie,Anemie feriprivă,1,9,116,0.99,low,0,Spirometrie|Glicemie,Terapie cu oxigen|Monitorizare ambulatorie|Fizioterapie,1,0
+34,3,58,male,Oftalmologie,Hipertensiune arterială,1,19,348,0.7,low,1,Sumar urină,Intervenție chirurgicală|Injecții subcutanate,1,0
+25,21,32,male,Ginecologie,Artrită reumatoidă|Astm bronșic|Diabet zaharat tip 2|Depresie,4,1,313,0.91,medium,4,Radiografie toracică,Regim alimentar|Terapie cu oxigen,1,0
+96,21,23,female,Oftalmologie,Anemie feriprivă,1,13,273,0.87,low,2,Glicemie|Hemoleucogramă completă|Ecocardiografie,Terapie cu oxigen|Terapie inhalatorie|Medicație orală,1,0
+93,5,76,male,Oftalmologie,Anxietate generalizată|Hipertensiune arterială|Fibrilație atrială|Epilepsie,4,6,92,0.52,high,5,Profil hepatic,Terapie cu oxigen|Intervenție chirurgicală,1,1
+237,16,69,female,Dermatologie,Hipotiroidism,1,19,84,0.69,low,2,Radiografie toracică,Medicație orală|Exerciții fizice regulate,0,0
+152,11,48,female,Ginecologie,Astm bronșic,1,2,207,0.32,medium,3,Cultură urină|Ionogramă|HbA1c,Fizioterapie|Terapie cu oxigen|Psihoterapie,1,1
+137,22,52,female,Dermatologie,Migrenă cronică|Infecție urinară,2,9,268,0.55,medium,3,RMN cerebral|Coagulogramă|CT toracic|Glicemie,Injecții subcutanate|Fizioterapie|Exerciții fizice regulate,1,0
+189,15,35,male,Dermatologie,Diabet zaharat tip 2,1,15,32,0.45,low,2,Radiografie toracică,Psihoterapie,0,0
+226,13,54,female,Neurologie,Insuficiență cardiacă|BPOC|Hipotiroidism|Epilepsie,4,8,187,0.82,medium,3,CT toracic|HbA1c,Monitorizare ambulatorie,1,0
+6,27,70,female,Ginecologie,BPOC|Diabet zaharat tip 2,2,19,346,0.62,medium,4,Ecografie abdominală,Terapie cu oxigen|Medicație orală|Injecții subcutanate,1,0
+287,13,38,male,Psihiatrie,BPOC|Depresie,2,3,306,0.36,high,5,Ionogramă|ECG,Terapie cu oxigen|Exerciții fizice regulate|Medicație orală,1,1
+165,1,74,male,Oftalmologie,Infecție urinară|Epilepsie,2,10,5,0.55,low,2,Funcție renală|HbA1c|Spirometrie|Ionogramă,Exerciții fizice regulate|Injecții subcutanate|Intervenție chirurgicală,0,0
+236,17,60,female,ORL,Astm bronșic|Hernie de disc,2,12,82,0.77,low,1,RMN cerebral|Ecografie abdominală,Exerciții fizice regulate|Injecții subcutanate|Psihoterapie,0,0
+210,28,62,male,Psihiatrie,Lombosciatică|Depresie|Colecistită,3,10,104,0.76,low,2,RMN cerebral,Intervenție chirurgicală|Medicație orală,1,0
+279,9,59,female,Dermatologie,Hipertensiune arterială,1,2,64,0.76,low,0,Glicemie|Funcție renală,Psihoterapie|Injecții subcutanate|Exerciții fizice regulate,0,0
+41,5,24,female,Oftalmologie,Infecție urinară,1,18,266,0.73,low,1,Hemoleucogramă completă|TSH,Fizioterapie|Terapie cu oxigen|Regim alimentar,1,0
+159,29,26,female,Medicină Internă,Depresie|Colecistită,2,1,348,0.58,low,2,Ionogramă|ECG,Fizioterapie|Intervenție chirurgicală|Psihoterapie,1,0
+149,2,20,male,Oftalmologie,Hernie de disc|Anxietate generalizată|Artrită reumatoidă|Epilepsie,4,9,297,0.76,medium,3,Spirometrie|Coagulogramă,Regim alimentar|Exerciții fizice regulate|Fizioterapie,1,0
+112,12,60,male,Cardiologie,Epilepsie,1,7,129,0.78,low,1,Sumar urină|Radiografie toracică,Intervenție chirurgicală|Medicație orală,1,0
+32,14,78,female,Medicină Internă,Hipertensiune arterială,1,6,322,0.36,high,7,ECG|HbA1c,Terapie cu oxigen,1,1
+134,30,60,female,Ortopedie,Hipotiroidism,1,11,163,0.99,low,1,HbA1c|EEG,Psihoterapie|Terapie inhalatorie|Terapie cu oxigen,1,0
+1,5,67,female,Chirurgie Generală,Pneumonie,1,6,200,0.34,high,7,TSH|Ionogramă,Injecții subcutanate|Medicație orală|Fizioterapie,1,1
+273,21,70,female,Urologie,Hipertensiune arterială|Boală coronariană,2,0,204,0.74,medium,3,ECG|Funcție renală|Spirometrie,Injecții subcutanate|Medicație orală,1,0
+161,6,45,female,Neurologie,Boală coronariană|Gastrita cronică|Artrită reumatoidă|Colecistită,4,0,235,0.75,high,5,Radiografie toracică|TSH|Hemoleucogramă completă|Profil lipidic,Terapie inhalatorie|Regim alimentar|Fizioterapie,1,1
+151,26,18,female,Oftalmologie,Artrită reumatoidă|Colecistită,2,15,287,0.66,medium,3,Profil lipidic,Psihoterapie|Terapie inhalatorie,1,0
+52,12,21,female,Dermatologie,Migrenă cronică,1,17,228,0.67,low,2,RMN cerebral,Injecții subcutanate,1,0
+54,9,18,female,Ginecologie,Hipotiroidism|Astm bronșic|Epilepsie,3,12,312,0.71,high,5,TSH|HbA1c,Medicație orală|Monitorizare ambulatorie|Regim alimentar,1,1
+33,13,85,female,ORL,Hernie de disc,1,12,353,0.46,high,6,Coagulogramă,Monitorizare ambulatorie|Exerciții fizice regulate,1,1
+53,29,58,male,Urologie,Colecistită,1,12,251,0.87,low,2,Radiografie toracică|HbA1c|Sumar urină|CT toracic,Monitorizare ambulatorie,1,0
+209,24,66,female,Urologie,Gastrita cronică,1,6,350,0.61,high,5,RMN cerebral|Ecografie abdominală|EEG|Glicemie,Exerciții fizice regulate|Terapie cu oxigen|Intervenție chirurgicală,1,1
+189,19,65,male,Dermatologie,Hernie de disc,1,3,220,0.67,low,2,Profil hepatic|Ionogramă|ECG,Intervenție chirurgicală|Medicație orală,1,0
+105,6,59,male,Cardiologie,Astm bronșic,1,0,84,0.76,low,0,HbA1c|Radiografie toracică,Exerciții fizice regulate|Injecții subcutanate|Terapie cu oxigen,0,0
+44,3,34,male,Neurologie,Migrenă cronică|Colecistită,2,8,358,0.69,medium,3,Profil hepatic|Sumar urină|HbA1c,Injecții subcutanate|Fizioterapie|Medicație orală,1,0
+29,6,26,male,Dermatologie,Infecție urinară,1,4,134,0.9,low,0,Hemoleucogramă completă|Funcție renală|Coagulogramă|Profil hepatic,Terapie cu oxigen,1,0
+237,17,64,female,Dermatologie,Gastrita cronică|Migrenă cronică|Fibrilație atrială,3,10,140,0.42,high,6,Cultură urină|Profil lipidic|ECG,Terapie cu oxigen|Exerciții fizice regulate,1,1
+164,27,55,female,Medicină Internă,Insuficiență cardiacă|Hipertensiune arterială,2,15,357,0.42,high,5,TSH|Coagulogramă|Ecografie abdominală|HbA1c,Psihoterapie|Monitorizare ambulatorie|Regim alimentar,1,1
+211,23,48,male,Dermatologie,Lombosciatică|Hipotiroidism|Artrită reumatoidă,3,18,225,0.96,high,5,Ionogramă,Terapie cu oxigen,1,1
+11,23,43,female,Medicină Internă,Anxietate generalizată|Pneumonie|Diabet zaharat tip 2,3,4,285,0.51,medium,4,TSH,Psihoterapie|Medicație orală,1,0
+68,22,66,female,Oftalmologie,Boală coronariană|Migrenă cronică|Colecistită,3,19,28,0.48,high,7,CT toracic|Glicemie|Spirometrie|Ecografie abdominală,Terapie cu oxigen|Fizioterapie,1,1
+10,27,73,male,Urologie,Insuficiență cardiacă|Artrită reumatoidă|Pneumonie,3,4,5,0.97,high,5,Hemoleucogramă completă,Fizioterapie|Monitorizare ambulatorie|Regim alimentar,1,1
+247,24,35,female,Medicină Internă,Epilepsie,1,6,2,0.73,low,2,ECG|Coagulogramă,Fizioterapie,0,0
+281,4,69,male,Pediatrie,Epilepsie|Infecție urinară|BPOC,3,5,76,0.46,high,6,TSH|Ecografie abdominală|RMN cerebral|Radiografie toracică,Injecții subcutanate,1,1
+201,28,25,male,Urologie,Astm bronșic|Lombosciatică,2,17,299,0.75,low,1,Ionogramă|ECG|Coagulogramă,Medicație orală,1,0
+91,17,56,female,Medicină Internă,Depresie,1,18,227,0.36,medium,3,Funcție renală,Medicație orală|Fizioterapie,1,1
+123,21,47,female,Psihiatrie,Fibrilație atrială,1,2,133,0.54,low,1,RMN cerebral|Radiografie toracică|Cultură urină,Fizioterapie,1,0
+15,23,24,female,Urologie,Anxietate generalizată|Hernie de disc|Lombosciatică|Infecție urinară,4,5,89,0.76,medium,4,Ecocardiografie|Profil lipidic|Coagulogramă|Profil hepatic,Psihoterapie|Terapie inhalatorie,0,0
+27,17,45,female,Dermatologie,Insuficiență cardiacă|Diabet zaharat tip 2|Depresie,3,12,337,0.3,high,7,Hemoleucogramă completă|Cultură urină,Medicație orală|Intervenție chirurgicală,1,1
+196,16,64,female,Oftalmologie,Hernie de disc|Astm bronșic,2,10,239,0.89,low,1,Ecografie abdominală|CT toracic,Psihoterapie,1,0
+256,25,22,male,Pediatrie,Depresie|Migrenă cronică,2,1,167,0.61,low,0,Cultură urină|EEG|HbA1c,Fizioterapie|Monitorizare ambulatorie|Exerciții fizice regulate,1,0
+23,15,69,male,Dermatologie,Depresie|Hipotiroidism,2,5,81,0.48,high,6,Cultură urină|CT toracic,Exerciții fizice regulate|Monitorizare ambulatorie,1,1
+126,29,75,male,Cardiologie,Hipertensiune arterială,1,2,57,0.61,low,2,CT toracic|EEG|Cultură urină,Injecții subcutanate|Monitorizare ambulatorie,0,0
+189,4,23,female,Ginecologie,Migrenă cronică|Lombosciatică|Pneumonie,3,18,21,0.85,low,2,HbA1c|EEG|Profil hepatic|Funcție renală,Psihoterapie|Regim alimentar|Medicație orală,0,0
+85,10,35,male,ORL,Hipertensiune arterială|Anxietate generalizată,2,17,109,0.46,medium,4,Ionogramă,Exerciții fizice regulate|Terapie inhalatorie,1,0
+161,26,20,male,Oftalmologie,Diabet zaharat tip 2|Artrită reumatoidă,2,16,5,0.43,medium,4,Radiografie toracică|Ecocardiografie|HbA1c,Monitorizare ambulatorie,0,0
+113,4,37,female,Psihiatrie,Lombosciatică,1,17,263,0.74,low,1,Ionogramă,Terapie inhalatorie|Monitorizare ambulatorie,1,0
+71,23,40,male,Ginecologie,Anxietate generalizată|Depresie,2,4,267,0.46,medium,4,Ecocardiografie|HbA1c|Profil lipidic|Sumar urină,Regim alimentar,1,0
+220,27,76,female,Pediatrie,Artrită reumatoidă|Infecție urinară|Astm bronșic|Anemie feriprivă,4,18,34,0.94,high,6,Ionogramă|EEG|Profil hepatic,Monitorizare ambulatorie,1,1
+195,23,70,female,Dermatologie,Depresie|Astm bronșic|Boală coronariană,3,17,179,0.36,high,6,CT toracic,Fizioterapie|Monitorizare ambulatorie,1,1
+166,11,76,male,Cardiologie,Pneumonie|Diabet zaharat tip 2|Anxietate generalizată,3,15,69,0.54,high,6,ECG|Ecografie abdominală|Hemoleucogramă completă,Fizioterapie,1,1
+244,30,41,female,Psihiatrie,Hipotiroidism|Fibrilație atrială|Boală coronariană|Anxietate generalizată,4,5,249,0.85,medium,3,Ecografie abdominală|Glicemie,Injecții subcutanate,1,0
+148,3,67,female,Pediatrie,Gastrita cronică|Colecistită,2,14,187,0.86,high,5,TSH|Cultură urină|Ionogramă|Funcție renală,Terapie cu oxigen,1,1
+141,14,21,female,Pediatrie,Migrenă cronică|Anemie feriprivă|Epilepsie,3,20,225,0.5,high,5,EEG,Medicație orală|Injecții subcutanate|Intervenție chirurgicală,1,1
+259,16,30,female,Psihiatrie,Anemie feriprivă,1,5,314,0.39,medium,3,Profil hepatic,Medicație orală|Intervenție chirurgicală,1,1
+167,8,18,male,Neurologie,Hipertensiune arterială|Diabet zaharat tip 2|Hernie de disc,3,15,276,0.47,high,5,Funcție renală,Intervenție chirurgicală,1,1
+245,21,50,male,Oftalmologie,Diabet zaharat tip 2|BPOC,2,5,95,0.52,low,2,Ecocardiografie,Terapie cu oxigen,1,0
+77,6,78,female,ORL,Hipotiroidism,1,8,337,0.79,high,5,RMN cerebral|Profil hepatic|ECG,Psihoterapie|Monitorizare ambulatorie,1,1
+90,10,54,female,ORL,Colecistită|Astm bronșic|Anxietate generalizată,3,9,12,0.59,medium,4,Ionogramă|EEG|Cultură urină|Radiografie toracică,Regim alimentar,0,0
+193,4,45,female,Medicină Internă,Infecție urinară|Fibrilație atrială,2,6,231,0.56,low,2,CT toracic|Ecocardiografie,Psihoterapie,1,0
+266,28,81,male,Oftalmologie,Pneumonie,1,2,90,0.96,medium,3,EEG|Ecocardiografie,Psihoterapie|Exerciții fizice regulate,0,0
+223,16,27,male,Ortopedie,Anemie feriprivă|Fibrilație atrială|Depresie|Epilepsie,4,3,311,0.44,high,6,Sumar urină|TSH|Funcție renală,Injecții subcutanate|Medicație orală,1,1
+94,26,41,female,Cardiologie,Boală coronariană|Fibrilație atrială|Hipotiroidism,3,4,29,0.33,high,6,ECG|Profil lipidic,Exerciții fizice regulate|Psihoterapie|Fizioterapie,1,1
+61,5,55,female,Oftalmologie,Gastrita cronică,1,13,338,0.63,low,1,Hemoleucogramă completă|Ecocardiografie,Monitorizare ambulatorie,1,0
+137,2,45,female,Chirurgie Generală,Hernie de disc,1,13,349,0.67,medium,3,Funcție renală|HbA1c|RMN cerebral,Exerciții fizice regulate|Intervenție chirurgicală|Monitorizare ambulatorie,1,0
+52,18,55,female,Neurologie,Hipertensiune arterială|Pneumonie,2,8,318,0.82,low,2,Ecografie abdominală|Funcție renală|CT toracic,Terapie cu oxigen,1,0
+21,12,69,female,ORL,Depresie,1,6,355,0.48,high,7,Profil lipidic,Terapie inhalatorie|Fizioterapie,1,1
+232,23,78,male,Ortopedie,Epilepsie|Hernie de disc|Anxietate generalizată,3,1,65,0.94,medium,4,Ecografie abdominală|HbA1c|ECG,Monitorizare ambulatorie,0,0
+191,9,54,female,Chirurgie Generală,Artrită reumatoidă|Hipertensiune arterială,2,14,295,0.52,low,1,CT toracic|Radiografie toracică,Monitorizare ambulatorie|Terapie cu oxigen,1,0
+122,20,66,female,ORL,BPOC|Depresie,2,0,227,0.52,medium,3,Sumar urină,Psihoterapie,1,0
+206,14,41,female,Ginecologie,Migrenă cronică|Hipertensiune arterială,2,19,355,0.7,medium,3,Cultură urină,Monitorizare ambulatorie,1,0
+70,6,32,female,Medicină Internă,Hipertensiune arterială,1,6,204,0.35,medium,4,RMN cerebral|Radiografie toracică|Hemoleucogramă completă,Fizioterapie|Exerciții fizice regulate|Terapie inhalatorie,1,1
+171,1,59,female,Urologie,Lombosciatică,1,18,91,0.87,low,0,CT toracic|EEG,Fizioterapie,1,0
+120,12,26,male,ORL,Migrenă cronică|Pneumonie,2,20,207,0.43,medium,4,Ionogramă|Profil lipidic,Psihoterapie|Injecții subcutanate,1,0
+18,16,18,female,Pediatrie,Boală coronariană,1,15,191,0.72,low,1,Cultură urină,Intervenție chirurgicală,1,0
+18,18,51,female,Medicină Internă,Astm bronșic,1,8,228,0.78,medium,3,HbA1c|ECG|Sumar urină|CT toracic,Psihoterapie,1,0
+250,12,60,female,Pediatrie,Depresie|Hernie de disc|Infecție urinară,3,16,41,0.6,medium,4,Funcție renală|Profil lipidic|EEG|CT toracic,Exerciții fizice regulate,0,0
+282,25,82,female,Dermatologie,Hernie de disc|BPOC,2,5,42,0.63,medium,4,Funcție renală|CT toracic|RMN cerebral|Ionogramă,Injecții subcutanate|Monitorizare ambulatorie,0,0
+237,1,68,male,Urologie,Epilepsie|Anxietate generalizată|Infecție urinară,3,16,342,0.43,high,9,Sumar urină|RMN cerebral|Ecografie abdominală,Monitorizare ambulatorie,1,1
+187,10,28,male,Psihiatrie,Gastrita cronică|Hipotiroidism|Insuficiență cardiacă,3,15,232,0.34,high,6,Spirometrie,Fizioterapie|Intervenție chirurgicală,1,1
+290,18,28,male,Chirurgie Generală,Depresie,1,4,13,0.33,medium,4,Radiografie toracică|EEG|Ecografie abdominală,Intervenție chirurgicală,0,1
+143,30,70,male,Medicină Internă,Anemie feriprivă|Migrenă cronică|BPOC|Fibrilație atrială,4,7,248,0.53,high,5,Funcție renală|Coagulogramă,Medicație orală,1,1
+46,9,49,male,Chirurgie Generală,Pneumonie|Epilepsie|Fibrilație atrială,3,16,322,0.42,high,5,EEG,Intervenție chirurgicală|Terapie inhalatorie,1,1
+133,16,75,male,Cardiologie,Hipertensiune arterială|Insuficiență cardiacă,2,17,42,0.3,high,5,Ecocardiografie,Intervenție chirurgicală,1,1
+210,28,29,female,Urologie,Pneumonie,1,12,131,0.52,low,2,EEG,Monitorizare ambulatorie,1,0
+249,25,70,female,Cardiologie,Anxietate generalizată,1,9,82,0.55,low,2,TSH,Terapie cu oxigen,0,0
+186,7,65,male,Ginecologie,Depresie,1,5,246,0.35,medium,3,EEG|Coagulogramă|HbA1c|Ionogramă,Injecții subcutanate,1,1
+98,7,85,male,Neurologie,Diabet zaharat tip 2|Hernie de disc|Anxietate generalizată,3,3,224,0.62,high,6,RMN cerebral|EEG|Hemoleucogramă completă,Medicație orală|Injecții subcutanate|Intervenție chirurgicală,1,1
+295,4,80,female,Cardiologie,BPOC|Boală coronariană,2,4,104,0.46,high,5,Ecografie abdominală|Radiografie toracică|Profil hepatic,Fizioterapie|Exerciții fizice regulate,1,1
+147,3,21,male,Ginecologie,Migrenă cronică,1,3,194,0.5,low,2,EEG|Funcție renală|ECG|Ecocardiografie,Monitorizare ambulatorie|Medicație orală|Fizioterapie,1,0
+271,13,22,male,Urologie,Anxietate generalizată,1,13,110,0.92,low,2,Spirometrie|Hemoleucogramă completă|Glicemie,Exerciții fizice regulate,1,0
+291,26,28,female,ORL,Depresie|Hipotiroidism,2,4,164,0.43,medium,4,Coagulogramă|Spirometrie|Ecografie abdominală,Exerciții fizice regulate,1,0
+199,12,52,female,Cardiologie,Anxietate generalizată,1,9,131,0.55,low,0,Radiografie toracică,Fizioterapie|Exerciții fizice regulate,1,0
+71,2,44,female,Cardiologie,Astm bronșic|Artrită reumatoidă,2,20,219,0.32,medium,3,TSH|Glicemie|Coagulogramă,Regim alimentar,1,1
+147,14,80,female,Chirurgie Generală,Diabet zaharat tip 2,1,1,269,0.5,medium,3,CT toracic|RMN cerebral|ECG|Spirometrie,Terapie inhalatorie|Intervenție chirurgicală|Psihoterapie,1,0
+94,6,25,female,Dermatologie,Boală coronariană,1,14,45,0.31,low,2,Profil hepatic|Ecocardiografie|TSH|Ionogramă,Intervenție chirurgicală|Regim alimentar|Monitorizare ambulatorie,0,1
+195,9,84,female,Ortopedie,Epilepsie|Pneumonie|BPOC,3,17,323,0.93,high,6,Glicemie|Cultură urină|Spirometrie,Fizioterapie|Regim alimentar|Injecții subcutanate,1,1
+248,1,23,female,Urologie,Hipertensiune arterială,1,14,200,0.39,medium,3,ECG|Spirometrie,Medicație orală|Psihoterapie,1,1
+236,27,57,male,Urologie,Anemie feriprivă,1,5,65,0.54,low,0,Ecocardiografie|RMN cerebral|Funcție renală|Coagulogramă,Medicație orală|Fizioterapie,0,0
+2,3,51,female,Dermatologie,Hipotiroidism|Hipertensiune arterială,2,7,271,0.34,high,5,RMN cerebral|Glicemie|CT toracic,Fizioterapie|Regim alimentar|Medicație orală,1,1
+254,4,23,male,Psihiatrie,Lombosciatică|Anxietate generalizată|BPOC|Infecție urinară,4,1,186,0.83,high,5,Coagulogramă,Medicație orală|Injecții subcutanate|Regim alimentar,1,1
+297,27,70,male,Cardiologie,Hernie de disc|Anemie feriprivă|Pneumonie,3,9,341,0.67,high,6,CT toracic|Funcție renală|RMN cerebral,Fizioterapie,1,1
+95,28,77,female,Medicină Internă,Colecistită|Epilepsie,2,11,354,0.6,medium,3,RMN cerebral|TSH|ECG,Monitorizare ambulatorie|Terapie inhalatorie,1,0
+45,20,44,male,Chirurgie Generală,Gastrita cronică,1,14,159,0.73,low,1,ECG|Coagulogramă,Intervenție chirurgicală,1,0
+30,20,63,male,Pediatrie,Boală coronariană|Lombosciatică,2,19,280,0.62,low,2,ECG|Hemoleucogramă completă|Ecografie abdominală,Terapie inhalatorie|Monitorizare ambulatorie|Psihoterapie,1,0
+113,4,40,female,Cardiologie,Artrită reumatoidă,1,16,196,0.8,low,2,EEG|TSH,Exerciții fizice regulate,1,0
+174,21,62,male,Pediatrie,BPOC|Migrenă cronică|Hernie de disc,3,14,332,0.6,high,5,Sumar urină,Psihoterapie|Terapie inhalatorie,1,1
+74,15,73,female,Dermatologie,Anemie feriprivă|Depresie|Astm bronșic|Hipotiroidism,4,20,283,0.7,high,7,Hemoleucogramă completă|Ecografie abdominală,Monitorizare ambulatorie|Psihoterapie|Terapie inhalatorie,1,1
+53,30,52,female,ORL,Depresie|Pneumonie|BPOC,3,13,272,0.63,medium,4,Hemoleucogramă completă,Terapie inhalatorie|Regim alimentar,1,0
+203,3,30,female,Chirurgie Generală,Boală coronariană,1,1,252,0.95,low,1,Ionogramă,Intervenție chirurgicală|Terapie cu oxigen|Exerciții fizice regulate,1,0
+191,18,85,male,Neurologie,Pneumonie|Colecistită,2,4,303,0.62,high,5,Glicemie,Fizioterapie|Intervenție chirurgicală|Medicație orală,1,1
+60,12,69,male,ORL,Fibrilație atrială|Diabet zaharat tip 2|Anemie feriprivă,3,1,191,0.75,high,6,HbA1c,Terapie cu oxigen|Monitorizare ambulatorie,1,1
+6,11,52,male,Chirurgie Generală,Anemie feriprivă|Infecție urinară|Insuficiență cardiacă,3,2,309,0.87,medium,4,Cultură urină|Glicemie|Hemoleucogramă completă,Fizioterapie|Medicație orală|Terapie cu oxigen,1,0
+54,2,78,male,Ortopedie,Colecistită,1,11,319,0.88,medium,3,ECG,Regim alimentar,1,0
+154,17,25,female,Medicină Internă,BPOC|Astm bronșic|Colecistită,3,4,40,0.82,medium,4,EEG|Ecocardiografie|Glicemie,Psihoterapie,0,0
+198,25,76,male,ORL,Infecție urinară,1,15,273,0.96,medium,4,Spirometrie|Hemoleucogramă completă,Terapie inhalatorie|Injecții subcutanate|Psihoterapie,1,0
+98,4,31,male,Neurologie,Migrenă cronică,1,14,1,0.97,low,1,Ecocardiografie|Radiografie toracică|HbA1c|Ecografie abdominală,Regim alimentar|Terapie inhalatorie,0,0
+4,15,70,female,Ginecologie,Infecție urinară,1,12,354,0.39,high,6,Ecocardiografie|Sumar urină|HbA1c,Exerciții fizice regulate,1,1
+171,29,47,female,Urologie,Colecistită|Insuficiență cardiacă,2,0,225,0.84,low,1,Spirometrie|Funcție renală|Radiografie toracică,Psihoterapie|Injecții subcutanate,1,0
+91,5,38,female,Psihiatrie,Anemie feriprivă|Hipertensiune arterială,2,4,49,0.69,low,1,Sumar urină,Monitorizare ambulatorie|Fizioterapie,0,0
+91,15,42,female,Dermatologie,Hipotiroidism|Boală coronariană|Diabet zaharat tip 2|Anemie feriprivă,4,14,250,0.51,medium,3,Glicemie|Hemoleucogramă completă,Medicație orală|Regim alimentar|Intervenție chirurgicală,1,0
+142,10,43,female,Neurologie,Pneumonie,1,8,85,0.53,low,0,Radiografie toracică|ECG|Ecografie abdominală,Medicație orală|Terapie inhalatorie,0,0
+133,19,76,male,Dermatologie,Gastrita cronică|Pneumonie|Depresie|BPOC,4,5,82,0.93,high,5,CT toracic|Hemoleucogramă completă,Fizioterapie,1,1
+229,9,68,male,Pediatrie,Lombosciatică,1,15,56,0.45,medium,4,Hemoleucogramă completă|CT toracic|Funcție renală|Profil hepatic,Monitorizare ambulatorie|Terapie inhalatorie|Fizioterapie,0,0
+94,26,28,male,Psihiatrie,Diabet zaharat tip 2|Migrenă cronică|Hipertensiune arterială|Insuficiență cardiacă,4,6,338,0.98,medium,4,Profil lipidic|Ecocardiografie,Psihoterapie,1,0
+108,18,56,female,Pediatrie,Diabet zaharat tip 2,1,1,64,0.37,medium,4,Ecografie abdominală|Ionogramă|Ecocardiografie|EEG,Intervenție chirurgicală|Injecții subcutanate,0,1
+97,14,61,female,Psihiatrie,Migrenă cronică|Astm bronșic,2,19,295,0.64,low,1,HbA1c|Ecografie abdominală|RMN cerebral,Terapie inhalatorie|Terapie cu oxigen,1,0
+83,20,67,female,Ginecologie,Epilepsie,1,18,159,0.91,medium,4,Ionogramă|Ecocardiografie,Psihoterapie,1,0
+279,17,68,male,Medicină Internă,Anemie feriprivă|Artrită reumatoidă|Depresie|Migrenă cronică,4,5,262,0.87,high,6,HbA1c,Injecții subcutanate|Exerciții fizice regulate,1,1
+262,6,55,female,Ginecologie,Hipotiroidism,1,8,341,0.7,low,2,Radiografie toracică,Intervenție chirurgicală,1,0
+139,16,68,female,Neurologie,Gastrita cronică|Hernie de disc|Lombosciatică|Hipertensiune arterială,4,14,182,0.86,high,6,HbA1c|Ecocardiografie|Funcție renală,Injecții subcutanate,1,1
+212,6,45,male,Dermatologie,Epilepsie|Gastrita cronică,2,10,55,0.53,low,1,TSH|Ecocardiografie,Terapie cu oxigen,0,0
+250,13,22,female,Oftalmologie,Gastrita cronică|Hipotiroidism,2,13,42,0.42,medium,3,Ecografie abdominală|RMN cerebral,Exerciții fizice regulate|Injecții subcutanate,0,0
+249,26,67,male,Urologie,Hipotiroidism|Fibrilație atrială,2,19,51,0.87,medium,4,Profil hepatic|Ecocardiografie,Fizioterapie|Regim alimentar,0,0
+116,3,28,female,Psihiatrie,Gastrita cronică|Colecistită,2,8,134,0.85,low,0,Funcție renală|Sumar urină|Coagulogramă|Cultură urină,Fizioterapie,1,0
+235,3,29,male,Medicină Internă,Lombosciatică|Boală coronariană,2,17,73,0.58,low,2,Glicemie|Funcție renală|Cultură urină|Profil lipidic,Exerciții fizice regulate|Terapie inhalatorie|Medicație orală,0,0
+293,18,77,female,Cardiologie,Lombosciatică,1,2,295,0.35,high,6,Ionogramă|CT toracic|HbA1c,Monitorizare ambulatorie,1,1
+87,13,28,female,Ortopedie,Colecistită,1,9,14,0.51,low,2,ECG,Psihoterapie,0,0
+169,28,82,male,ORL,Infecție urinară|Boală coronariană,2,1,120,0.54,medium,3,Ecografie abdominală|Glicemie|HbA1c,Regim alimentar,1,0
+299,30,40,female,Medicină Internă,Boală coronariană,1,4,277,0.74,medium,3,Coagulogramă|Cultură urină|ECG,Medicație orală|Exerciții fizice regulate,1,0
+172,2,83,male,Cardiologie,Gastrita cronică|Colecistită,2,1,137,0.95,medium,3,Coagulogramă|Spirometrie,Monitorizare ambulatorie|Regim alimentar|Medicație orală,1,0
+143,22,23,female,Dermatologie,Pneumonie,1,5,113,0.9,low,2,Ionogramă|Funcție renală|Profil hepatic,Terapie cu oxigen|Exerciții fizice regulate,1,0
+215,10,84,female,Neurologie,Astm bronșic|Insuficiență cardiacă|Artrită reumatoidă|Migrenă cronică,4,18,194,0.32,high,7,Profil hepatic|Profil lipidic,Intervenție chirurgicală|Fizioterapie|Monitorizare ambulatorie,1,1
+116,11,35,female,Dermatologie,BPOC|Anemie feriprivă|Astm bronșic,3,3,125,0.89,medium,3,Profil lipidic|CT toracic|Profil hepatic|HbA1c,Fizioterapie|Psihoterapie,1,0
+255,24,65,female,Urologie,Diabet zaharat tip 2|Anxietate generalizată,2,18,220,0.48,high,5,Radiografie toracică,Terapie cu oxigen|Injecții subcutanate,1,1
+126,26,83,female,Medicină Internă,Boală coronariană|Gastrita cronică|Depresie,3,16,173,0.69,high,5,Cultură urină|Coagulogramă|Funcție renală|CT toracic,Fizioterapie,1,1
+231,25,61,male,Oftalmologie,Artrită reumatoidă,1,20,200,0.95,low,1,TSH|EEG,Regim alimentar|Medicație orală|Intervenție chirurgicală,1,0
+191,24,74,female,Ortopedie,BPOC|Anemie feriprivă|Infecție urinară,3,6,230,0.82,high,5,Ecocardiografie,Exerciții fizice regulate|Monitorizare ambulatorie,1,1
+282,14,59,male,Ginecologie,Anemie feriprivă,1,3,353,0.4,medium,4,Sumar urină|CT toracic|RMN cerebral,Intervenție chirurgicală|Terapie inhalatorie,1,0
+200,8,67,male,Medicină Internă,Infecție urinară,1,3,106,0.94,medium,3,TSH|ECG,Regim alimentar,1,0
+94,4,25,male,Ginecologie,Depresie|Infecție urinară,2,5,15,0.51,low,0,Coagulogramă|Ecocardiografie|Profil hepatic|Profil lipidic,Fizioterapie,0,0
+103,11,75,male,Psihiatrie,Hernie de disc|Hipotiroidism,2,19,3,0.36,medium,4,Coagulogramă|TSH,Fizioterapie|Regim alimentar|Exerciții fizice regulate,0,1
+108,15,19,female,Chirurgie Generală,Lombosciatică|Hipertensiune arterială|Infecție urinară,3,10,25,0.95,low,2,RMN cerebral|Glicemie|Ionogramă|Ecografie abdominală,Fizioterapie|Psihoterapie|Terapie cu oxigen,0,0
+211,19,72,female,Oftalmologie,Insuficiență cardiacă,1,13,287,0.46,high,7,Ionogramă|Hemoleucogramă completă,Regim alimentar|Medicație orală|Psihoterapie,1,1
+102,27,48,female,Psihiatrie,BPOC|Anemie feriprivă,2,2,153,0.8,low,2,RMN cerebral,Intervenție chirurgicală|Exerciții fizice regulate,1,0
+148,29,64,female,Neurologie,Epilepsie|Infecție urinară|Boală coronariană|Pneumonie,4,3,330,0.35,high,7,RMN cerebral|TSH|ECG|Funcție renală,Exerciții fizice regulate,1,1
+252,24,82,female,Psihiatrie,Depresie|BPOC,2,20,332,0.4,high,5,Profil lipidic,Psihoterapie|Terapie cu oxigen|Exerciții fizice regulate,1,1
+247,6,47,male,Psihiatrie,Hernie de disc|Migrenă cronică|Colecistită,3,16,121,0.86,medium,4,RMN cerebral,Exerciții fizice regulate|Regim alimentar,1,0
+275,7,57,female,Dermatologie,Artrită reumatoidă,1,15,149,0.4,medium,3,Glicemie|Profil hepatic|Funcție renală,Psihoterapie|Injecții subcutanate,1,0
+256,2,37,male,Oftalmologie,BPOC,1,2,28,0.72,low,2,Cultură urină|Glicemie|Ionogramă,Injecții subcutanate,0,0
+123,24,74,male,Pediatrie,Astm bronșic|Hipertensiune arterială|Insuficiență cardiacă|Migrenă cronică,4,4,178,0.33,high,8,Ecocardiografie|HbA1c|Profil lipidic|EEG,Intervenție chirurgicală,1,1
+151,10,26,female,Ginecologie,Infecție urinară|Gastrita cronică|Astm bronșic,3,15,218,0.74,medium,4,ECG|Sumar urină|TSH|Hemoleucogramă completă,Fizioterapie|Monitorizare ambulatorie,1,0
+280,21,29,male,Neurologie,Migrenă cronică|Astm bronșic,2,1,14,0.67,low,1,Spirometrie|ECG,Regim alimentar,0,0
+177,4,32,female,Medicină Internă,Epilepsie|Boală coronariană,2,10,77,0.92,low,0,Profil lipidic,Terapie cu oxigen|Intervenție chirurgicală,0,0
+187,9,71,male,Chirurgie Generală,Pneumonie|Migrenă cronică|Epilepsie,3,2,243,0.82,high,6,Radiografie toracică,Regim alimentar,1,1
+246,7,20,female,Urologie,Colecistită|Epilepsie,2,4,197,0.46,medium,3,Funcție renală|Radiografie toracică,Exerciții fizice regulate|Medicație orală,1,0
+99,11,24,male,ORL,Diabet zaharat tip 2|BPOC|Hernie de disc|Infecție urinară,4,0,14,0.4,high,5,CT toracic|Ionogramă,Medicație orală,1,1
+13,14,40,female,Dermatologie,Hipotiroidism|Hernie de disc,2,1,260,0.96,low,1,ECG|Funcție renală,Regim alimentar|Injecții subcutanate,1,0
+195,4,57,male,Chirurgie Generală,Artrită reumatoidă|Migrenă cronică|Boală coronariană,3,20,361,0.65,high,5,RMN cerebral|Spirometrie,Terapie inhalatorie|Monitorizare ambulatorie|Injecții subcutanate,1,1
+216,21,55,male,Pediatrie,Diabet zaharat tip 2|Lombosciatică|Hipertensiune arterială|BPOC,4,1,341,0.77,high,5,Ionogramă|Glicemie|Funcție renală,Terapie inhalatorie,1,1
+263,12,48,female,Cardiologie,Gastrita cronică|Insuficiență cardiacă|Depresie,3,11,274,0.76,medium,3,Glicemie|Radiografie toracică|Ecografie abdominală,Medicație orală|Terapie cu oxigen,1,0
+35,6,44,female,Psihiatrie,Hipotiroidism|Epilepsie|Anemie feriprivă,3,17,174,0.91,medium,4,ECG,Regim alimentar,1,0
+273,1,65,male,Urologie,Hernie de disc|Depresie|Insuficiență cardiacă,3,14,304,0.56,high,5,ECG|Radiografie toracică,Terapie inhalatorie|Exerciții fizice regulate,1,1
+97,22,65,male,Dermatologie,Fibrilație atrială|Diabet zaharat tip 2,2,3,135,0.33,medium,3,Coagulogramă|Funcție renală|Ecografie abdominală|Radiografie toracică,Regim alimentar,1,1
+228,26,27,female,ORL,Hipertensiune arterială,1,17,112,0.84,low,1,Ecografie abdominală|RMN cerebral|Sumar urină|Ecocardiografie,Exerciții fizice regulate,1,0
+185,8,48,female,Chirurgie Generală,Hernie de disc,1,10,67,0.87,low,0,HbA1c|ECG|Ionogramă|Radiografie toracică,Regim alimentar,0,0
+69,11,43,female,Psihiatrie,Infecție urinară,1,2,272,0.46,high,5,Profil lipidic,Fizioterapie,1,1
+243,24,52,male,ORL,Hernie de disc|Hipotiroidism,2,20,249,0.99,medium,3,TSH|Ecografie abdominală|Spirometrie,Psihoterapie,1,0
+20,23,38,female,Dermatologie,Migrenă cronică,1,18,71,0.91,low,1,Glicemie|EEG|Ecografie abdominală,Injecții subcutanate|Terapie cu oxigen|Monitorizare ambulatorie,0,0
+96,16,71,male,Oftalmologie,Insuficiență cardiacă|Hipertensiune arterială,2,11,188,0.88,medium,3,Cultură urină|Hemoleucogramă completă|Radiografie toracică,Medicație orală|Terapie cu oxigen,1,0
+149,8,50,female,Urologie,Depresie,1,17,261,0.88,medium,3,Funcție renală|Profil hepatic|RMN cerebral|Coagulogramă,Medicație orală,1,0
+253,30,44,male,Dermatologie,Hipertensiune arterială|Insuficiență cardiacă,2,19,10,0.46,medium,4,Profil lipidic,Exerciții fizice regulate|Regim alimentar|Medicație orală,0,0
+47,3,32,female,Cardiologie,Hipotiroidism|Depresie,2,14,275,0.85,medium,3,Glicemie|Sumar urină,Injecții subcutanate,1,0
+157,24,54,male,Cardiologie,Migrenă cronică,1,8,324,0.93,medium,3,Spirometrie|Hemoleucogramă completă|Funcție renală,Medicație orală,1,0
+75,17,30,female,Neurologie,Colecistită,1,20,43,0.71,low,1,Funcție renală|Ionogramă|Hemoleucogramă completă,Medicație orală|Fizioterapie,0,0
+63,10,66,male,Chirurgie Generală,Insuficiență cardiacă,1,17,156,0.6,low,2,Ecocardiografie|Ionogramă|Cultură urină|ECG,Medicație orală,1,0
+103,17,46,male,Ortopedie,Migrenă cronică|Lombosciatică,2,7,71,0.63,low,1,Hemoleucogramă completă|ECG|EEG,Terapie inhalatorie|Psihoterapie,0,0
+93,9,64,male,Ortopedie,Artrită reumatoidă,1,3,14,0.66,low,0,Radiografie toracică|Ionogramă|Hemoleucogramă completă,Exerciții fizice regulate|Injecții subcutanate,0,0
+265,17,40,female,Pediatrie,Lombosciatică|Depresie,2,1,300,0.7,low,1,Profil hepatic|Glicemie|Ionogramă,Medicație orală|Fizioterapie|Injecții subcutanate,1,0
+209,5,27,female,Medicină Internă,BPOC,1,11,133,0.61,low,1,Profil hepatic|Profil lipidic,Terapie inhalatorie,1,0
+178,25,68,male,Dermatologie,Boală coronariană|Lombosciatică,2,3,331,0.55,medium,3,HbA1c|Ionogramă|Profil lipidic|Cultură urină,Terapie cu oxigen|Fizioterapie,1,0
+97,20,72,female,Chirurgie Generală,Hipotiroidism,1,3,327,0.48,high,6,Funcție renală,Monitorizare ambulatorie,1,1
+163,22,75,female,Chirurgie Generală,Depresie|Insuficiență cardiacă,2,11,9,0.64,low,2,Ecografie abdominală|Profil hepatic,Medicație orală|Intervenție chirurgicală|Injecții subcutanate,0,0
+192,25,47,female,Neurologie,Migrenă cronică,1,12,124,0.34,low,2,Profil lipidic,Terapie inhalatorie|Psihoterapie|Medicație orală,1,1
+132,6,68,male,Ortopedie,Diabet zaharat tip 2,1,5,206,0.55,medium,4,Profil hepatic|RMN cerebral|Coagulogramă,Injecții subcutanate|Medicație orală,1,0
+202,16,47,female,Ortopedie,Hipertensiune arterială,1,16,126,0.51,low,2,Funcție renală|Cultură urină,Regim alimentar|Medicație orală,1,0
+300,7,52,female,Dermatologie,Anxietate generalizată|BPOC,2,11,112,0.73,low,2,EEG|ECG|HbA1c,Terapie inhalatorie|Injecții subcutanate|Fizioterapie,1,0
+214,5,70,female,Neurologie,Infecție urinară|Fibrilație atrială|Gastrita cronică|Hernie de disc,4,1,45,0.45,high,7,Coagulogramă,Intervenție chirurgicală,1,1
+225,8,41,male,Neurologie,Colecistită|Anxietate generalizată|Hipotiroidism,3,18,141,0.87,medium,3,Radiografie toracică|Profil hepatic|Ionogramă,Fizioterapie|Regim alimentar|Injecții subcutanate,1,0
+116,29,46,female,Psihiatrie,Depresie|Colecistită|Boală coronariană,3,13,70,0.62,low,2,Radiografie toracică|Ecografie abdominală,Intervenție chirurgicală|Regim alimentar|Terapie cu oxigen,0,0
+20,2,77,male,Pediatrie,Infecție urinară|Depresie|Astm bronșic,3,15,256,0.64,high,5,Spirometrie|Sumar urină,Terapie cu oxigen,1,1
+39,4,82,female,Urologie,Boală coronariană|Anemie feriprivă|Insuficiență cardiacă,3,12,329,0.98,high,7,Cultură urină|Ecografie abdominală|CT toracic|HbA1c,Terapie inhalatorie,1,1
+237,7,56,female,Medicină Internă,Hipertensiune arterială|Diabet zaharat tip 2,2,19,150,0.61,low,1,Cultură urină|ECG|Ecografie abdominală,Intervenție chirurgicală|Exerciții fizice regulate|Terapie cu oxigen,1,0
+79,30,23,female,Oftalmologie,Insuficiență cardiacă|Depresie|Anemie feriprivă,3,17,196,0.46,high,6,Profil hepatic|Cultură urină|Sumar urină|Ecografie abdominală,Intervenție chirurgicală|Terapie cu oxigen|Medicație orală,1,1
+66,16,48,female,Cardiologie,Colecistită,1,11,188,0.31,high,5,Ionogramă,Exerciții fizice regulate|Medicație orală,1,1
+119,25,82,male,Neurologie,Epilepsie,1,4,278,0.75,high,5,Profil hepatic,Regim alimentar|Monitorizare ambulatorie|Psihoterapie,1,1
+298,22,82,female,Neurologie,Fibrilație atrială|Hipotiroidism|Gastrita cronică|Astm bronșic,4,13,218,0.48,high,7,Ionogramă|Hemoleucogramă completă,Psihoterapie,1,1
+75,6,40,female,Dermatologie,Gastrita cronică|Astm bronșic|Anxietate generalizată,3,10,47,0.63,medium,3,Ionogramă|Sumar urină|EEG,Fizioterapie|Intervenție chirurgicală,0,0
+255,27,24,female,Pediatrie,Pneumonie|BPOC,2,6,292,0.42,medium,4,Hemoleucogramă completă|HbA1c|ECG,Terapie cu oxigen|Exerciții fizice regulate,1,0
+208,25,50,female,Ginecologie,Migrenă cronică|Fibrilație atrială,2,14,107,0.89,low,0,Profil lipidic|Cultură urină|Hemoleucogramă completă,Terapie inhalatorie|Injecții subcutanate|Monitorizare ambulatorie,1,0
+25,25,35,female,Dermatologie,Anemie feriprivă|Epilepsie|Insuficiență cardiacă,3,18,211,0.62,high,5,Profil hepatic|HbA1c|Funcție renală,Exerciții fizice regulate|Intervenție chirurgicală|Psihoterapie,1,1
+23,16,47,male,Psihiatrie,Hipertensiune arterială|Astm bronșic|Colecistită|Hernie de disc,4,15,205,0.57,medium,3,Profil lipidic,Fizioterapie,1,0
+13,21,49,female,Dermatologie,BPOC|Pneumonie|Fibrilație atrială,3,4,127,0.54,medium,3,TSH|Hemoleucogramă completă,Injecții subcutanate|Exerciții fizice regulate|Fizioterapie,1,0
+173,21,69,male,ORL,Insuficiență cardiacă|Hipertensiune arterială,2,5,184,0.48,high,5,Coagulogramă,Exerciții fizice regulate|Terapie cu oxigen,1,1
+292,26,69,female,Dermatologie,Epilepsie,1,10,49,0.61,low,2,CT toracic|Sumar urină|Ecografie abdominală|Ionogramă,Terapie cu oxigen|Terapie inhalatorie,0,0
+91,14,36,female,Chirurgie Generală,Hernie de disc|Insuficiență cardiacă,2,1,339,0.81,low,1,RMN cerebral,Medicație orală|Regim alimentar|Intervenție chirurgicală,1,0
+154,8,40,female,Urologie,Migrenă cronică|Colecistită,2,1,307,0.76,medium,3,Sumar urină,Terapie cu oxigen|Psihoterapie|Exerciții fizice regulate,1,0
+290,5,46,female,Neurologie,Migrenă cronică,1,18,30,0.65,low,2,Ecografie abdominală,Intervenție chirurgicală|Injecții subcutanate|Terapie cu oxigen,0,0
+28,29,67,female,Urologie,Hipertensiune arterială,1,6,306,0.37,high,5,Profil hepatic|Profil lipidic|CT toracic|Ecocardiografie,Psihoterapie|Monitorizare ambulatorie|Terapie inhalatorie,1,1
+260,23,61,male,Psihiatrie,Fibrilație atrială|Depresie|Colecistită,3,20,27,0.46,medium,4,Profil hepatic|Ecocardiografie|Ecografie abdominală|Hemoleucogramă completă,Injecții subcutanate,0,0
+132,22,42,male,ORL,Gastrita cronică|Migrenă cronică|Depresie|Boală coronariană,4,0,135,0.84,medium,3,TSH|Hemoleucogramă completă,Psihoterapie,1,0
+187,18,66,male,Psihiatrie,BPOC|Artrită reumatoidă|Lombosciatică|Hernie de disc,4,16,34,0.73,high,5,ECG|Glicemie|Ionogramă,Monitorizare ambulatorie|Injecții subcutanate,1,1
+240,11,80,male,Ortopedie,Astm bronșic|Lombosciatică|Boală coronariană,3,10,214,0.35,high,7,Glicemie|ECG,Medicație orală|Fizioterapie,1,1
+298,15,37,female,Ginecologie,Anemie feriprivă|Boală coronariană|Colecistită,3,8,24,0.46,high,5,Profil lipidic|Coagulogramă,Intervenție chirurgicală|Psihoterapie,1,1
+64,28,75,male,Ginecologie,Diabet zaharat tip 2,1,12,289,0.89,medium,3,CT toracic|Radiografie toracică|HbA1c|Ecografie abdominală,Intervenție chirurgicală,1,0
+3,30,31,female,Cardiologie,Infecție urinară|Depresie|Insuficiență cardiacă|Anxietate generalizată,4,19,258,0.44,high,6,TSH|Glicemie,Medicație orală,1,1
+16,9,59,male,Pediatrie,Pneumonie|Gastrita cronică,2,0,254,0.42,medium,4,Ecocardiografie|Profil lipidic|Sumar urină,Psihoterapie,1,0
+97,25,53,female,Neurologie,Hipotiroidism,1,3,314,0.61,low,2,Ionogramă|CT toracic,Psihoterapie|Intervenție chirurgicală,1,0
+124,4,66,male,ORL,Hernie de disc|Pneumonie|Gastrita cronică|BPOC,4,9,273,0.95,high,6,Spirometrie|EEG|HbA1c|TSH,Regim alimentar|Intervenție chirurgicală|Terapie inhalatorie,1,1
+81,29,33,male,Cardiologie,Anxietate generalizată|Epilepsie,2,6,40,0.58,low,2,CT toracic,Intervenție chirurgicală|Monitorizare ambulatorie,0,0
+284,22,61,female,Neurologie,Astm bronșic,1,3,66,0.73,low,2,Hemoleucogramă completă,Fizioterapie|Medicație orală,0,0
+167,21,41,female,Ginecologie,Epilepsie|Hipotiroidism,2,9,181,0.33,high,5,CT toracic|Radiografie toracică|Funcție renală,Terapie cu oxigen|Psihoterapie,1,1
+23,13,24,female,Pediatrie,Infecție urinară|Hernie de disc,2,16,270,0.68,low,1,Ionogramă|RMN cerebral|Radiografie toracică,Intervenție chirurgicală,1,0
+75,26,67,male,Oftalmologie,Anxietate generalizată|Migrenă cronică,2,1,176,0.78,low,2,HbA1c|Funcție renală,Terapie cu oxigen|Regim alimentar|Fizioterapie,1,0
+255,15,81,male,Cardiologie,Pneumonie|Astm bronșic,2,10,117,0.31,medium,4,Ecocardiografie|Coagulogramă,Monitorizare ambulatorie|Terapie cu oxigen,1,1
+177,5,81,male,Chirurgie Generală,Migrenă cronică,1,3,361,0.84,medium,3,Coagulogramă|HbA1c|Ecografie abdominală|TSH,Medicație orală|Terapie cu oxigen,1,0
+184,17,83,female,ORL,Hipertensiune arterială|Migrenă cronică|Astm bronșic,3,13,88,0.64,medium,4,TSH|HbA1c,Exerciții fizice regulate,0,0
+167,10,52,female,ORL,Hipotiroidism|Hipertensiune arterială|Insuficiență cardiacă|Migrenă cronică,4,13,357,0.35,high,5,EEG,Exerciții fizice regulate|Regim alimentar|Monitorizare ambulatorie,1,1
+127,29,79,female,ORL,Hernie de disc|Artrită reumatoidă,2,0,317,0.74,medium,3,HbA1c|RMN cerebral|EEG,Monitorizare ambulatorie,1,0
+253,6,25,female,Cardiologie,Fibrilație atrială,1,9,4,0.5,low,1,HbA1c,Exerciții fizice regulate,0,0
+285,11,72,male,ORL,BPOC|Anemie feriprivă|Astm bronșic,3,8,172,0.56,medium,4,Glicemie,Terapie cu oxigen,1,0
+129,8,28,male,Urologie,Infecție urinară|Gastrita cronică|Depresie|Colecistită,4,14,176,0.57,low,2,Funcție renală|Ecocardiografie|EEG|Ecografie abdominală,Fizioterapie,1,0
+292,10,84,male,Medicină Internă,Hipotiroidism|BPOC,2,2,298,0.93,medium,4,Funcție renală,Regim alimentar|Exerciții fizice regulate,1,0
+195,4,83,female,Cardiologie,Fibrilație atrială|Hernie de disc|Artrită reumatoidă,3,19,66,0.49,high,6,Cultură urină|Ionogramă|Ecografie abdominală|Glicemie,Intervenție chirurgicală|Injecții subcutanate,1,1
+171,25,21,male,Pediatrie,Lombosciatică,1,20,101,0.74,low,1,RMN cerebral|Cultură urină|Profil hepatic|Ecocardiografie,Medicație orală,1,0
+81,9,39,male,ORL,Artrită reumatoidă,1,4,156,0.96,low,1,Glicemie|Funcție renală|EEG|RMN cerebral,Regim alimentar|Terapie inhalatorie,1,0
+77,30,75,female,Chirurgie Generală,Hipotiroidism,1,13,316,0.55,medium,3,EEG|Glicemie,Terapie cu oxigen|Exerciții fizice regulate,1,0
+142,8,84,male,Ortopedie,Infecție urinară|Diabet zaharat tip 2|Fibrilație atrială,3,10,200,0.42,high,8,Radiografie toracică|Profil hepatic|Sumar urină|Profil lipidic,Injecții subcutanate|Regim alimentar,1,1
+76,9,31,female,Ortopedie,Gastrita cronică|Epilepsie,2,12,79,0.6,low,2,Profil lipidic|Radiografie toracică|EEG|RMN cerebral,Regim alimentar,0,0
+14,15,38,female,Ginecologie,Anemie feriprivă|Hipertensiune arterială|Hipotiroidism,3,6,36,0.89,medium,4,Funcție renală|Ecocardiografie|Cultură urină|RMN cerebral,Intervenție chirurgicală|Terapie cu oxigen,0,0
+115,16,78,female,Ortopedie,Fibrilație atrială,1,8,86,0.64,medium,4,Glicemie|ECG|Profil hepatic,Intervenție chirurgicală|Exerciții fizice regulate|Fizioterapie,0,0
+259,5,72,male,Ortopedie,Depresie,1,19,283,0.62,medium,3,Funcție renală|Glicemie|RMN cerebral,Regim alimentar|Intervenție chirurgicală|Exerciții fizice regulate,1,0
+235,12,69,male,Psihiatrie,Diabet zaharat tip 2,1,17,217,0.63,high,5,TSH|CT toracic,Intervenție chirurgicală|Psihoterapie|Injecții subcutanate,1,1
+37,1,66,male,Dermatologie,Anemie feriprivă|Hipotiroidism,2,12,315,0.44,high,6,CT toracic|Glicemie|ECG|Hemoleucogramă completă,Injecții subcutanate|Exerciții fizice regulate,1,1
+66,17,21,female,Urologie,Migrenă cronică|Colecistită,2,15,3,0.38,low,2,TSH|Hemoleucogramă completă|Coagulogramă|Ecografie abdominală,Intervenție chirurgicală,0,1
+252,1,69,female,Pediatrie,Astm bronșic|BPOC,2,15,276,0.72,high,5,TSH|Ecocardiografie|CT toracic|RMN cerebral,Terapie inhalatorie,1,1
+35,6,20,female,Chirurgie Generală,Depresie|Gastrita cronică,2,7,362,0.69,low,2,TSH|RMN cerebral|Profil lipidic,Regim alimentar|Terapie cu oxigen,1,0
+162,26,29,male,Psihiatrie,Anemie feriprivă,1,13,6,0.56,low,2,Coagulogramă,Terapie cu oxigen|Fizioterapie,0,0
+134,7,82,male,Chirurgie Generală,Pneumonie|Artrită reumatoidă|Fibrilație atrială|Insuficiență cardiacă,4,11,250,0.34,high,8,HbA1c,Psihoterapie|Intervenție chirurgicală,1,1
+23,6,41,male,Dermatologie,Anxietate generalizată|Anemie feriprivă,2,11,222,0.9,medium,3,Profil hepatic,Exerciții fizice regulate|Terapie inhalatorie|Injecții subcutanate,1,0
+283,23,42,female,Neurologie,Astm bronșic|Epilepsie|Artrită reumatoidă,3,17,112,0.46,medium,4,EEG|RMN cerebral|Ionogramă|Ecocardiografie,Monitorizare ambulatorie|Injecții subcutanate,1,0
+27,8,55,male,Medicină Internă,Colecistită|Infecție urinară|Lombosciatică|Epilepsie,4,12,222,0.81,high,5,HbA1c,Terapie inhalatorie|Intervenție chirurgicală,1,1
+40,29,70,male,Oftalmologie,Migrenă cronică|Diabet zaharat tip 2|Hipotiroidism|Colecistită,4,16,252,0.89,high,6,Hemoleucogramă completă|Glicemie|Profil hepatic|ECG,Terapie cu oxigen|Intervenție chirurgicală|Exerciții fizice regulate,1,1
+242,8,20,female,Dermatologie,Hipertensiune arterială|Insuficiență cardiacă|Colecistită|Hernie de disc,4,4,254,0.44,high,6,Coagulogramă,Intervenție chirurgicală|Injecții subcutanate|Terapie cu oxigen,1,1
+79,4,78,female,Chirurgie Generală,Epilepsie|Infecție urinară,2,18,354,0.68,high,5,Ecocardiografie|Ionogramă|Sumar urină,Injecții subcutanate|Terapie cu oxigen|Medicație orală,1,1
+286,1,68,female,Neurologie,Hipotiroidism|Colecistită|Anxietate generalizată,3,11,232,0.44,high,9,CT toracic,Intervenție chirurgicală|Monitorizare ambulatorie|Psihoterapie,1,1
+68,17,28,female,Medicină Internă,Hipertensiune arterială,1,4,321,0.46,medium,3,Profil hepatic|EEG,Terapie cu oxigen,1,0
+202,23,54,female,Pediatrie,Depresie|Colecistită|Anemie feriprivă|Pneumonie,4,14,348,0.79,medium,3,Coagulogramă|Sumar urină|RMN cerebral,Exerciții fizice regulate|Psihoterapie,1,0
+247,12,47,female,Cardiologie,Boală coronariană|Depresie,2,20,316,0.61,low,2,HbA1c|Glicemie|Profil hepatic,Intervenție chirurgicală|Medicație orală,1,0
+144,2,70,male,Ortopedie,Depresie,1,3,196,0.87,medium,4,Sumar urină|Coagulogramă,Intervenție chirurgicală|Monitorizare ambulatorie|Fizioterapie,1,0
+259,23,48,male,Ortopedie,Fibrilație atrială|Anemie feriprivă|BPOC,3,15,102,0.35,medium,4,Funcție renală|ECG|RMN cerebral|Ecocardiografie,Terapie cu oxigen|Psihoterapie,1,1
+65,29,23,male,Medicină Internă,Anxietate generalizată|Colecistită,2,5,216,0.62,low,1,Sumar urină|Glicemie|RMN cerebral,Monitorizare ambulatorie|Regim alimentar|Exerciții fizice regulate,1,0
+279,7,50,female,Dermatologie,Anemie feriprivă,1,8,197,0.32,medium,4,Spirometrie,Regim alimentar,1,1
+202,12,39,female,Pediatrie,Lombosciatică,1,10,191,0.63,medium,3,Ionogramă|CT toracic|ECG|TSH,Fizioterapie,1,0
+27,1,67,female,Psihiatrie,Hernie de disc|Colecistită,2,9,328,0.38,high,5,TSH|Profil lipidic|Glicemie,Regim alimentar|Medicație orală|Injecții subcutanate,1,1
+1,23,66,female,Ortopedie,Hernie de disc,1,0,143,0.88,medium,4,Sumar urină|Funcție renală|Profil hepatic|Hemoleucogramă completă,Psihoterapie|Exerciții fizice regulate|Monitorizare ambulatorie,1,0
+199,5,33,male,Medicină Internă,Insuficiență cardiacă|Artrită reumatoidă,2,1,135,0.57,low,0,Funcție renală|Ecografie abdominală|EEG,Terapie cu oxigen|Psihoterapie,1,0
+50,14,71,female,Urologie,Boală coronariană|Artrită reumatoidă|Gastrita cronică,3,13,359,0.41,high,7,Profil lipidic|Ionogramă,Exerciții fizice regulate|Regim alimentar,1,1
+52,8,20,female,Cardiologie,Anemie feriprivă|Artrită reumatoidă|Lombosciatică,3,15,281,0.44,high,7,Funcție renală|Ionogramă|Glicemie,Injecții subcutanate|Intervenție chirurgicală|Regim alimentar,1,1
+286,5,51,female,Dermatologie,Colecistită,1,18,353,0.9,low,2,RMN cerebral|Coagulogramă,Exerciții fizice regulate|Monitorizare ambulatorie,1,0
+193,14,67,male,Oftalmologie,Astm bronșic,1,7,87,0.99,medium,4,Coagulogramă|ECG,Terapie inhalatorie|Regim alimentar|Exerciții fizice regulate,0,0
+248,26,67,male,Cardiologie,Insuficiență cardiacă|Boală coronariană|Anemie feriprivă,3,10,257,0.79,high,7,TSH|EEG|Profil hepatic|Profil lipidic,Terapie inhalatorie|Exerciții fizice regulate|Psihoterapie,1,1
+115,28,85,male,ORL,Hipertensiune arterială,1,8,174,0.74,medium,4,EEG,Monitorizare ambulatorie|Fizioterapie|Exerciții fizice regulate,1,0
+125,1,52,male,Cardiologie,Infecție urinară,1,11,299,0.34,high,5,ECG|Profil hepatic|Ecografie abdominală,Exerciții fizice regulate,1,1
+225,29,68,female,Medicină Internă,Fibrilație atrială|Anxietate generalizată,2,8,55,0.41,medium,4,CT toracic|Hemoleucogramă completă|Ecografie abdominală|RMN cerebral,Regim alimentar,0,0
+291,12,41,male,Ortopedie,Fibrilație atrială,1,8,130,0.85,low,2,Hemoleucogramă completă|EEG|Sumar urină,Terapie inhalatorie,1,0
+91,23,34,male,Cardiologie,Hernie de disc|Anemie feriprivă|Lombosciatică,3,17,197,0.35,high,6,Ionogramă|ECG,Terapie inhalatorie|Exerciții fizice regulate,1,1
+113,6,27,male,Psihiatrie,Lombosciatică|Hipotiroidism,2,12,31,0.85,low,2,Funcție renală,Regim alimentar,0,0
+20,18,70,male,Ginecologie,Hipertensiune arterială|Pneumonie|Hernie de disc|Boală coronariană,4,6,174,0.46,high,8,Cultură urină|Ecocardiografie|TSH,Fizioterapie|Regim alimentar,1,1
+184,15,25,male,Medicină Internă,Hipotiroidism,1,18,95,0.52,low,2,Profil hepatic,Fizioterapie|Monitorizare ambulatorie|Terapie cu oxigen,1,0
+1,23,51,female,Psihiatrie,Anxietate generalizată|Infecție urinară,2,2,35,0.81,low,2,Glicemie|Ecografie abdominală,Regim alimentar|Fizioterapie,0,0
+221,24,27,female,Ginecologie,Hernie de disc,1,5,254,0.34,medium,4,RMN cerebral|Glicemie,Fizioterapie,1,1
+83,4,20,male,Cardiologie,Fibrilație atrială|Hipertensiune arterială,2,18,44,0.51,low,0,HbA1c|Ecografie abdominală,Injecții subcutanate|Exerciții fizice regulate|Terapie inhalatorie,0,0
+47,22,26,male,Pediatrie,Artrită reumatoidă,1,2,117,0.71,low,1,Coagulogramă|Ionogramă,Monitorizare ambulatorie|Fizioterapie|Terapie cu oxigen,1,0
+38,7,23,female,Ortopedie,Pneumonie|Hernie de disc|Anemie feriprivă,3,16,11,0.82,medium,3,Hemoleucogramă completă,Monitorizare ambulatorie|Terapie cu oxigen|Intervenție chirurgicală,0,0
+81,23,76,female,Psihiatrie,Colecistită,1,16,188,0.4,high,6,Coagulogramă|Glicemie,Psihoterapie,1,1
+158,3,46,male,Psihiatrie,Lombosciatică|Anxietate generalizată,2,17,344,0.75,low,1,Coagulogramă,Injecții subcutanate|Terapie cu oxigen,1,0
+115,7,51,female,Cardiologie,Infecție urinară,1,20,259,0.97,low,2,Glicemie|Hemoleucogramă completă|Funcție renală,Terapie cu oxigen|Fizioterapie|Exerciții fizice regulate,1,0
+50,1,84,female,Dermatologie,Artrită reumatoidă|Astm bronșic,2,10,308,0.88,medium,4,RMN cerebral|EEG|Hemoleucogramă completă|Cultură urină,Fizioterapie|Terapie inhalatorie|Injecții subcutanate,1,0
+254,16,60,male,Urologie,Infecție urinară|Boală coronariană|Colecistită,3,13,274,0.46,high,7,TSH|Radiografie toracică,Psihoterapie|Exerciții fizice regulate,1,1
+58,1,33,female,Ortopedie,Anxietate generalizată,1,16,291,0.91,medium,3,Radiografie toracică|RMN cerebral|Sumar urină|Ecocardiografie,Intervenție chirurgicală,1,0
+46,26,62,male,Medicină Internă,Boală coronariană,1,19,9,0.65,low,0,Radiografie toracică|CT toracic|HbA1c,Intervenție chirurgicală|Injecții subcutanate|Fizioterapie,0,0
+13,13,72,male,Oftalmologie,Hernie de disc,1,20,139,0.85,low,2,ECG|CT toracic|Coagulogramă,Intervenție chirurgicală|Monitorizare ambulatorie,1,0
+112,2,66,female,Ginecologie,Depresie|Hipertensiune arterială|Pneumonie|Hernie de disc,4,11,98,0.54,high,6,ECG|Radiografie toracică,Terapie inhalatorie,1,1
+185,30,32,male,Pediatrie,Gastrita cronică,1,19,190,0.94,low,2,TSH|Ecografie abdominală,Injecții subcutanate,1,0
+291,8,62,female,Neurologie,Hernie de disc|Infecție urinară,2,16,99,0.76,low,0,Profil hepatic|Coagulogramă|ECG|Profil lipidic,Medicație orală|Monitorizare ambulatorie,1,0
+258,17,52,male,Ginecologie,Anemie feriprivă|Gastrita cronică|Epilepsie,3,13,144,0.95,medium,3,Ecocardiografie|ECG|Funcție renală,Regim alimentar|Medicație orală,1,0
+250,14,69,female,Psihiatrie,Lombosciatică,1,9,0,0.59,low,2,TSH|CT toracic|Ecocardiografie,Psihoterapie,0,0
+204,19,47,male,ORL,Hipertensiune arterială|Astm bronșic|Boală coronariană|Hernie de disc,4,5,58,0.76,medium,3,Hemoleucogramă completă|ECG,Regim alimentar,0,0
+220,21,61,female,Ortopedie,Infecție urinară|Gastrita cronică,2,3,208,0.81,low,1,Ionogramă,Exerciții fizice regulate|Terapie cu oxigen,1,0
+221,22,52,male,Psihiatrie,Epilepsie|Infecție urinară,2,1,184,0.82,medium,3,Funcție renală,Regim alimentar|Injecții subcutanate,1,0
+253,30,80,male,Chirurgie Generală,Boală coronariană,1,16,270,0.51,high,5,RMN cerebral|Glicemie|EEG|Ecografie abdominală,Fizioterapie,1,1
+161,12,70,male,Pediatrie,Hipertensiune arterială|Fibrilație atrială,2,7,171,0.4,medium,4,Profil hepatic,Terapie cu oxigen|Fizioterapie|Exerciții fizice regulate,1,0
+286,6,26,male,Cardiologie,Epilepsie|Astm bronșic|Hipertensiune arterială,3,4,232,0.36,high,6,Spirometrie,Psihoterapie|Exerciții fizice regulate|Injecții subcutanate,1,1
+295,14,24,female,Medicină Internă,BPOC,1,1,302,0.48,high,5,EEG|Funcție renală|Ionogramă|CT toracic,Injecții subcutanate|Medicație orală|Terapie cu oxigen,1,1
+198,26,53,female,Urologie,Epilepsie,1,8,206,0.89,medium,3,Ecocardiografie|Ecografie abdominală|Ionogramă|Hemoleucogramă completă,Medicație orală,1,0
+4,9,76,male,Medicină Internă,Insuficiență cardiacă|Artrită reumatoidă,2,9,333,0.42,high,7,Profil lipidic|HbA1c,Psihoterapie,1,1
+46,19,54,male,Cardiologie,Insuficiență cardiacă,1,18,176,0.39,medium,3,Funcție renală|HbA1c|Profil hepatic|RMN cerebral,Injecții subcutanate,1,1
+179,14,71,male,Ginecologie,Diabet zaharat tip 2,1,20,133,0.84,medium,3,Profil hepatic|Ecocardiografie,Terapie inhalatorie|Exerciții fizice regulate,1,0
+121,12,48,female,Chirurgie Generală,Gastrita cronică|Fibrilație atrială|Insuficiență cardiacă,3,4,348,0.67,high,5,Cultură urină|EEG|Ionogramă,Regim alimentar,1,1
+250,10,18,male,ORL,Boală coronariană,1,19,115,0.56,low,0,Spirometrie,Injecții subcutanate,1,0
+279,26,65,female,Cardiologie,Pneumonie,1,19,205,0.53,low,2,Ionogramă,Intervenție chirurgicală|Terapie inhalatorie,1,0
+140,20,58,female,Psihiatrie,Depresie|Colecistită|Anxietate generalizată,3,11,188,0.6,medium,3,ECG,Injecții subcutanate,1,0
+24,3,59,male,Ortopedie,Migrenă cronică|Hipertensiune arterială,2,20,45,0.55,low,0,Sumar urină|ECG|Radiografie toracică|Ionogramă,Exerciții fizice regulate,0,0
+56,15,35,male,Cardiologie,Artrită reumatoidă|Lombosciatică,2,5,95,0.32,medium,3,RMN cerebral|Glicemie,Terapie cu oxigen|Psihoterapie|Terapie inhalatorie,1,1
+234,24,83,female,Pediatrie,Artrită reumatoidă,1,14,76,0.45,high,6,Ecografie abdominală|CT toracic|Profil hepatic|HbA1c,Medicație orală|Intervenție chirurgicală|Exerciții fizice regulate,1,1
+228,15,50,female,Urologie,Depresie|Hipotiroidism|BPOC|Anxietate generalizată,4,5,164,0.67,medium,3,CT toracic|Coagulogramă,Terapie cu oxigen|Terapie inhalatorie|Exerciții fizice regulate,1,0
+139,4,55,male,Medicină Internă,Migrenă cronică|Artrită reumatoidă|Infecție urinară|Hernie de disc,4,4,146,0.46,high,5,Ionogramă|EEG|Profil lipidic,Injecții subcutanate|Exerciții fizice regulate,1,1
+154,24,37,female,Psihiatrie,Diabet zaharat tip 2|Depresie|Anemie feriprivă,3,18,98,0.47,high,6,CT toracic|Profil hepatic|Profil lipidic|HbA1c,Terapie inhalatorie|Regim alimentar,1,1
+280,1,72,male,Oftalmologie,Migrenă cronică,1,10,139,0.54,low,2,ECG|EEG|Spirometrie,Monitorizare ambulatorie,1,0
+131,16,70,male,Oftalmologie,Anemie feriprivă|Infecție urinară,2,7,160,0.34,high,5,Funcție renală,Injecții subcutanate,1,1
+16,6,76,female,Chirurgie Generală,Hernie de disc,1,1,63,0.94,medium,4,Coagulogramă|CT toracic,Medicație orală,0,0
+104,14,49,female,Urologie,Diabet zaharat tip 2,1,4,52,0.39,medium,3,Spirometrie|RMN cerebral|Funcție renală,Injecții subcutanate,0,1
+14,13,64,male,Dermatologie,BPOC|Hipertensiune arterială,2,19,216,0.59,medium,3,Ecocardiografie|RMN cerebral|HbA1c|Sumar urină,Regim alimentar|Terapie inhalatorie,1,0
+166,16,75,male,Psihiatrie,Lombosciatică|Hipotiroidism,2,10,326,0.51,high,5,ECG|Ecografie abdominală|Ecocardiografie|Glicemie,Medicație orală|Exerciții fizice regulate|Fizioterapie,1,1
+39,23,23,male,Neurologie,Diabet zaharat tip 2|BPOC,2,17,250,0.63,medium,3,Profil lipidic,Monitorizare ambulatorie|Psihoterapie,1,0
+265,4,69,female,Cardiologie,Gastrita cronică|Anemie feriprivă,2,13,260,0.76,high,5,Ecocardiografie|Coagulogramă|Glicemie,Terapie inhalatorie|Regim alimentar,1,1
+278,7,46,male,ORL,Insuficiență cardiacă,1,9,310,0.82,low,2,Radiografie toracică,Terapie inhalatorie,1,0
+103,20,47,female,Medicină Internă,Pneumonie|Anxietate generalizată|Lombosciatică|Hernie de disc,4,7,263,0.91,medium,3,Coagulogramă|CT toracic,Monitorizare ambulatorie,1,0
+189,24,84,male,Neurologie,Epilepsie|Artrită reumatoidă|Hipotiroidism,3,16,144,0.7,medium,4,Hemoleucogramă completă|Profil lipidic,Fizioterapie,1,0
+19,6,19,male,Psihiatrie,Anemie feriprivă|Infecție urinară,2,12,30,0.89,low,0,Ecografie abdominală|Funcție renală|Spirometrie|CT toracic,Terapie inhalatorie|Terapie cu oxigen|Psihoterapie,0,0
+177,4,29,female,ORL,Astm bronșic|Migrenă cronică|Fibrilație atrială|Anemie feriprivă,4,13,70,0.51,medium,4,Sumar urină|Profil hepatic,Regim alimentar|Injecții subcutanate,0,0
+46,3,20,male,Cardiologie,Fibrilație atrială|Anemie feriprivă,2,8,316,0.37,medium,4,Coagulogramă|Profil hepatic|Radiografie toracică,Terapie cu oxigen|Terapie inhalatorie|Intervenție chirurgicală,1,1
+72,12,37,female,Chirurgie Generală,Astm bronșic|Colecistită|Hernie de disc,3,18,35,0.3,high,5,Cultură urină|ECG,Intervenție chirurgicală|Terapie inhalatorie,1,1
+115,29,44,female,Pediatrie,BPOC|Migrenă cronică|Infecție urinară|Astm bronșic,4,19,30,0.32,medium,4,Hemoleucogramă completă,Injecții subcutanate,0,1
+12,30,27,male,Ginecologie,Hipertensiune arterială|Anemie feriprivă,2,12,68,0.56,low,0,Profil hepatic|Ionogramă|Coagulogramă,Injecții subcutanate|Exerciții fizice regulate,0,0
+67,24,82,female,Urologie,Astm bronșic,1,15,89,1.0,medium,3,Radiografie toracică|TSH|Glicemie|Coagulogramă,Injecții subcutanate,0,0
+286,24,29,male,Medicină Internă,Gastrita cronică|Astm bronșic,2,20,213,0.67,medium,3,Coagulogramă|Funcție renală|Glicemie,Fizioterapie|Intervenție chirurgicală|Medicație orală,1,0
+272,23,34,female,Oftalmologie,Migrenă cronică,1,11,330,0.94,low,1,Hemoleucogramă completă|Cultură urină|Ecografie abdominală,Medicație orală,1,0
+267,16,23,male,Urologie,Lombosciatică,1,5,303,0.68,medium,3,Profil hepatic|Profil lipidic,Terapie cu oxigen|Monitorizare ambulatorie,1,0
+119,9,57,female,Medicină Internă,Migrenă cronică|Anemie feriprivă|Lombosciatică,3,15,131,0.7,low,2,Coagulogramă|HbA1c|Ecografie abdominală,Exerciții fizice regulate,1,0
+37,25,65,male,Ortopedie,Pneumonie|Astm bronșic|Hipotiroidism,3,18,181,0.96,high,5,ECG,Intervenție chirurgicală,1,1
+288,17,70,female,Cardiologie,Infecție urinară|Fibrilație atrială,2,7,75,0.47,medium,4,HbA1c|Glicemie|Ecografie abdominală,Terapie cu oxigen|Terapie inhalatorie|Fizioterapie,0,0
+166,24,51,female,Chirurgie Generală,BPOC|Astm bronșic,2,15,205,0.68,low,1,Profil lipidic,Medicație orală,1,0
+143,16,24,female,Pediatrie,Boală coronariană,1,9,40,0.49,medium,4,Cultură urină|Spirometrie,Injecții subcutanate|Terapie inhalatorie,0,0
+141,27,65,male,Ginecologie,Artrită reumatoidă|BPOC|Hipertensiune arterială,3,2,208,0.54,medium,3,Funcție renală|Cultură urină|EEG,Monitorizare ambulatorie|Psihoterapie,1,0
+191,24,27,female,Medicină Internă,Hipotiroidism|Epilepsie|Astm bronșic|Colecistită,4,4,285,0.57,medium,4,Glicemie|Ecocardiografie,Regim alimentar|Exerciții fizice regulate,1,0
+48,10,79,male,Ortopedie,Insuficiență cardiacă|Migrenă cronică|Epilepsie,3,6,50,0.69,high,6,Glicemie|EEG|RMN cerebral,Exerciții fizice regulate|Psihoterapie,1,1
+8,26,60,female,Cardiologie,Epilepsie,1,7,265,0.81,low,2,Radiografie toracică,Regim alimentar,1,0
+204,23,31,male,ORL,Depresie|Infecție urinară,2,18,218,0.53,medium,3,Ecografie abdominală,Exerciții fizice regulate,1,0
+256,1,84,female,Urologie,Epilepsie|Colecistită|Lombosciatică,3,18,348,0.38,high,8,Glicemie|Sumar urină|CT toracic|Ionogramă,Regim alimentar|Psihoterapie,1,1
+221,16,60,male,Psihiatrie,Fibrilație atrială|Hipertensiune arterială,2,6,285,1.0,low,1,TSH|Funcție renală|Spirometrie,Terapie cu oxigen|Injecții subcutanate,1,0
+34,28,61,female,Psihiatrie,Hipotiroidism,1,0,204,0.66,medium,3,Glicemie|HbA1c|Coagulogramă,Intervenție chirurgicală,1,0
+251,28,80,male,Dermatologie,Diabet zaharat tip 2|Infecție urinară,2,10,59,0.79,medium,3,Sumar urină|Cultură urină|Spirometrie|Ionogramă,Exerciții fizice regulate|Intervenție chirurgicală|Terapie inhalatorie,0,0
+13,5,42,male,Pediatrie,Migrenă cronică|Fibrilație atrială|Anemie feriprivă,3,17,100,0.73,medium,3,Coagulogramă|Spirometrie|Cultură urină|HbA1c,Terapie cu oxigen,1,0
+238,1,23,male,Medicină Internă,Migrenă cronică|Hipotiroidism,2,2,320,0.4,medium,3,Profil lipidic|ECG|Ecografie abdominală,Monitorizare ambulatorie|Psihoterapie|Medicație orală,1,0
+104,18,32,female,Psihiatrie,Diabet zaharat tip 2|Lombosciatică,2,0,293,0.58,medium,3,Sumar urină|TSH,Fizioterapie|Terapie cu oxigen|Terapie inhalatorie,1,0
+183,7,74,female,Ortopedie,Hipertensiune arterială,1,18,281,0.9,medium,3,ECG|Cultură urină,Monitorizare ambulatorie,1,0
+21,14,68,female,Chirurgie Generală,Depresie|Hipertensiune arterială|Hipotiroidism|Hernie de disc,4,6,8,0.47,high,8,Ecografie abdominală|Profil hepatic|Radiografie toracică,Regim alimentar|Psihoterapie,1,1
+265,7,18,female,Urologie,Depresie|Lombosciatică|Pneumonie,3,3,226,0.95,high,5,Radiografie toracică,Intervenție chirurgicală|Monitorizare ambulatorie|Fizioterapie,1,1
+153,5,75,male,Oftalmologie,Gastrita cronică|BPOC|Colecistită|Pneumonie,4,0,18,0.49,high,7,TSH|Hemoleucogramă completă|ECG|Funcție renală,Terapie cu oxigen,1,1
+289,30,80,male,Urologie,Colecistită|Hernie de disc|Diabet zaharat tip 2|Astm bronșic,4,10,341,0.42,high,7,ECG|Radiografie toracică|RMN cerebral,Exerciții fizice regulate,1,1
+65,20,45,male,Neurologie,BPOC,1,12,241,0.76,low,2,Profil lipidic|Coagulogramă|ECG,Terapie inhalatorie|Injecții subcutanate|Fizioterapie,1,0
+13,26,83,male,Neurologie,Pneumonie|Boală coronariană,2,17,31,0.47,high,6,Ecocardiografie|Hemoleucogramă completă|Cultură urină,Injecții subcutanate,1,1
+282,21,45,male,Chirurgie Generală,Migrenă cronică|Hipotiroidism|Hipertensiune arterială,3,17,67,0.95,medium,4,Ionogramă|EEG|Funcție renală,Psihoterapie|Exerciții fizice regulate,0,0
+253,9,82,female,Medicină Internă,Lombosciatică|Infecție urinară,2,4,87,0.43,high,5,Radiografie toracică|ECG|CT toracic|Hemoleucogramă completă,Intervenție chirurgicală|Injecții subcutanate,1,1
+48,30,80,female,Ortopedie,Infecție urinară,1,17,152,0.94,low,2,Sumar urină|Glicemie|TSH|Radiografie toracică,Regim alimentar|Exerciții fizice regulate,1,0
+222,22,22,male,Ortopedie,Lombosciatică|Boală coronariană|Infecție urinară,3,3,51,0.78,low,2,Cultură urină,Fizioterapie|Exerciții fizice regulate,0,0
+300,27,69,male,Medicină Internă,Astm bronșic|Anemie feriprivă|Infecție urinară,3,8,240,0.43,high,7,ECG,Intervenție chirurgicală,1,1
+36,26,57,male,Cardiologie,Insuficiență cardiacă|Lombosciatică|Depresie|BPOC,4,5,299,0.55,high,5,Hemoleucogramă completă|Spirometrie|Sumar urină,Intervenție chirurgicală|Injecții subcutanate|Fizioterapie,1,1
+202,24,33,female,Ortopedie,Colecistită|Insuficiență cardiacă|Hernie de disc,3,6,34,0.67,low,2,Profil lipidic|Sumar urină|Coagulogramă|RMN cerebral,Intervenție chirurgicală|Fizioterapie,0,0
+108,15,54,female,Psihiatrie,Astm bronșic,1,18,319,0.35,medium,3,Profil hepatic|Ecocardiografie|RMN cerebral|TSH,Exerciții fizice regulate|Injecții subcutanate|Fizioterapie,1,1
+51,9,21,female,ORL,Astm bronșic|Artrită reumatoidă,2,13,339,0.57,medium,3,TSH|Hemoleucogramă completă|Profil hepatic,Medicație orală,1,0
+114,28,55,male,Ginecologie,Artrită reumatoidă,1,8,73,0.51,low,0,Sumar urină,Injecții subcutanate|Fizioterapie|Psihoterapie,0,0
+162,23,74,male,Medicină Internă,Migrenă cronică|Diabet zaharat tip 2|Hipertensiune arterială,3,8,256,0.93,high,7,ECG|Radiografie toracică|HbA1c,Medicație orală|Injecții subcutanate,1,1
+187,14,57,female,Medicină Internă,Hernie de disc,1,2,256,0.33,medium,3,TSH,Regim alimentar|Intervenție chirurgicală|Medicație orală,1,1
+182,30,81,female,ORL,Hernie de disc|Lombosciatică,2,19,239,0.52,medium,4,Cultură urină|Spirometrie|Sumar urină|Radiografie toracică,Intervenție chirurgicală|Monitorizare ambulatorie,1,0
+204,30,74,female,Oftalmologie,Artrită reumatoidă|Migrenă cronică|Pneumonie,3,3,201,0.94,high,5,Hemoleucogramă completă|Ecocardiografie|ECG,Fizioterapie|Terapie cu oxigen,1,1
+217,23,50,female,Pediatrie,Migrenă cronică|Anxietate generalizată|Insuficiență cardiacă,3,3,156,0.58,low,2,Hemoleucogramă completă,Terapie cu oxigen|Psihoterapie,1,0
+162,20,23,male,Chirurgie Generală,Boală coronariană|Infecție urinară|BPOC,3,13,187,0.35,high,6,EEG|Profil lipidic|CT toracic,Exerciții fizice regulate|Psihoterapie|Medicație orală,1,1
+212,12,44,female,Oftalmologie,Diabet zaharat tip 2|Epilepsie|Colecistită,3,17,110,0.84,low,2,Hemoleucogramă completă,Regim alimentar|Monitorizare ambulatorie|Terapie inhalatorie,1,0
+170,2,45,female,Dermatologie,Hipotiroidism|Boală coronariană|BPOC|Gastrita cronică,4,8,19,0.39,medium,4,ECG|TSH|Profil lipidic,Psihoterapie|Terapie inhalatorie|Terapie cu oxigen,0,1
+98,26,30,male,Psihiatrie,Hipotiroidism|Epilepsie|Anxietate generalizată,3,18,314,0.89,high,5,Coagulogramă|ECG|Radiografie toracică,Terapie cu oxigen,1,1
+225,4,73,female,Chirurgie Generală,BPOC,1,12,23,0.38,medium,4,HbA1c,Monitorizare ambulatorie|Regim alimentar|Medicație orală,0,1
+281,2,49,male,Psihiatrie,Infecție urinară,1,6,203,0.35,medium,4,Radiografie toracică|HbA1c|Profil hepatic,Fizioterapie|Exerciții fizice regulate|Intervenție chirurgicală,1,1
+38,10,33,male,Neurologie,Migrenă cronică|Gastrita cronică|Infecție urinară,3,15,91,0.57,low,2,Profil hepatic,Monitorizare ambulatorie,1,0
+89,4,65,male,Urologie,Lombosciatică|Hipotiroidism|Diabet zaharat tip 2,3,6,185,0.53,medium,3,Cultură urină|Ecografie abdominală|Glicemie|Ecocardiografie,Exerciții fizice regulate|Fizioterapie|Terapie cu oxigen,1,0
+39,24,41,female,Pediatrie,Anemie feriprivă,1,12,356,0.57,low,2,Ecocardiografie,Intervenție chirurgicală|Fizioterapie|Exerciții fizice regulate,1,0
+117,19,53,female,Cardiologie,Hipertensiune arterială|Astm bronșic|Migrenă cronică,3,13,57,0.79,medium,3,CT toracic,Psihoterapie|Injecții subcutanate|Terapie cu oxigen,0,0
+232,12,46,male,Medicină Internă,Hipertensiune arterială|Hernie de disc|Migrenă cronică|Pneumonie,4,3,103,0.9,medium,3,Spirometrie|Ecografie abdominală,Medicație orală,1,0
+141,3,74,female,Neurologie,Hipertensiune arterială|Colecistită,2,11,197,0.56,high,5,CT toracic|Coagulogramă,Psihoterapie|Medicație orală,1,1
+219,18,66,male,Ortopedie,Epilepsie,1,16,249,0.73,medium,3,Hemoleucogramă completă|Profil hepatic|Ecocardiografie,Terapie cu oxigen,1,0
+247,28,34,female,ORL,Epilepsie|Anemie feriprivă,2,7,198,0.6,low,1,Ecocardiografie|HbA1c|Coagulogramă|EEG,Fizioterapie|Psihoterapie|Intervenție chirurgicală,1,0
+105,18,76,female,Dermatologie,Boală coronariană|Astm bronșic,2,5,42,0.5,low,2,Ecocardiografie|Ecografie abdominală|Radiografie toracică,Monitorizare ambulatorie,0,0
+263,27,37,male,Chirurgie Generală,Hipotiroidism|Anemie feriprivă|Hipertensiune arterială,3,9,27,0.42,high,5,RMN cerebral|Coagulogramă|Cultură urină|Funcție renală,Intervenție chirurgicală,1,1
+278,3,44,male,Chirurgie Generală,Fibrilație atrială|Depresie,2,4,137,0.91,low,2,TSH|Ecografie abdominală|CT toracic,Intervenție chirurgicală,1,0
+265,10,45,male,Oftalmologie,Anxietate generalizată|Anemie feriprivă|Hipertensiune arterială,3,12,358,0.4,high,6,Ecocardiografie|Ionogramă|TSH|Ecografie abdominală,Exerciții fizice regulate|Fizioterapie|Injecții subcutanate,1,1
+258,22,78,female,Chirurgie Generală,Hipotiroidism|Gastrita cronică|Hipertensiune arterială,3,6,339,0.39,high,9,Funcție renală|EEG|Spirometrie|ECG,Terapie cu oxigen|Injecții subcutanate,1,1
+59,27,40,female,Dermatologie,Migrenă cronică,1,16,66,0.62,low,2,Coagulogramă,Terapie inhalatorie|Exerciții fizice regulate|Psihoterapie,0,0
+135,4,47,female,Dermatologie,Colecistită,1,15,82,0.7,low,2,Ionogramă,Injecții subcutanate|Terapie cu oxigen|Regim alimentar,0,0
+60,26,50,female,Psihiatrie,Fibrilație atrială,1,6,45,0.78,low,2,HbA1c|Profil hepatic|TSH|Spirometrie,Psihoterapie|Fizioterapie|Injecții subcutanate,0,0
+135,30,39,female,Neurologie,Pneumonie|Hipertensiune arterială,2,8,184,0.53,low,1,ECG,Terapie cu oxigen|Terapie inhalatorie|Exerciții fizice regulate,1,0
+56,21,79,female,ORL,Colecistită|Hipotiroidism|Gastrita cronică|Artrită reumatoidă,4,12,175,0.39,high,8,Profil hepatic|Hemoleucogramă completă,Monitorizare ambulatorie|Regim alimentar,1,1
+84,7,76,male,ORL,Hipotiroidism|Hipertensiune arterială,2,12,260,0.43,high,5,Hemoleucogramă completă|Ecografie abdominală,Psihoterapie|Exerciții fizice regulate,1,1
+228,20,60,male,Oftalmologie,Gastrita cronică|Fibrilație atrială|Lombosciatică,3,11,76,0.49,high,5,Spirometrie|Funcție renală|Cultură urină,Medicație orală,1,1
+33,26,83,female,Chirurgie Generală,Fibrilație atrială,1,19,79,0.73,medium,3,Profil lipidic|ECG|Spirometrie|RMN cerebral,Psihoterapie|Terapie inhalatorie,0,0
+146,5,38,male,Chirurgie Generală,Pneumonie,1,14,91,0.89,low,0,ECG,Psihoterapie|Intervenție chirurgicală|Monitorizare ambulatorie,1,0
+128,21,64,male,Ginecologie,Gastrita cronică,1,6,74,0.44,medium,3,Glicemie,Exerciții fizice regulate|Terapie inhalatorie,0,0
+245,26,73,male,Ortopedie,Hipotiroidism|Boală coronariană,2,12,211,0.39,high,6,Sumar urină|Profil hepatic|Radiografie toracică,Intervenție chirurgicală|Medicație orală|Monitorizare ambulatorie,1,1
+252,2,48,male,Pediatrie,Artrită reumatoidă|Pneumonie,2,13,341,0.79,low,2,EEG|Funcție renală,Exerciții fizice regulate|Monitorizare ambulatorie,1,0
+258,9,20,female,Pediatrie,Astm bronșic|Infecție urinară|Depresie|Gastrita cronică,4,10,279,0.53,medium,4,Funcție renală|Coagulogramă,Monitorizare ambulatorie|Intervenție chirurgicală|Exerciții fizice regulate,1,0
+81,15,52,female,Cardiologie,Migrenă cronică,1,2,0,0.83,low,1,Funcție renală|Cultură urină,Medicație orală,0,0
+46,16,29,female,ORL,Depresie|Colecistită|Lombosciatică,3,10,7,0.89,medium,3,Profil hepatic,Intervenție chirurgicală,0,0
+133,2,78,male,ORL,Epilepsie,1,7,147,0.98,low,2,HbA1c,Terapie inhalatorie|Terapie cu oxigen,1,0
+134,21,21,male,Ginecologie,Fibrilație atrială|Diabet zaharat tip 2,2,3,185,0.69,medium,3,Ecografie abdominală,Psihoterapie,1,0
+117,20,62,male,Neurologie,Gastrita cronică,1,20,317,0.53,low,1,Spirometrie,Fizioterapie,1,0
+135,11,25,female,Cardiologie,Hernie de disc|Astm bronșic,2,6,249,0.9,low,1,EEG|Cultură urină|Hemoleucogramă completă|Profil lipidic,Regim alimentar|Intervenție chirurgicală,1,0
+176,23,25,female,Dermatologie,Boală coronariană,1,2,276,0.46,high,5,Hemoleucogramă completă|HbA1c|RMN cerebral,Injecții subcutanate|Regim alimentar|Monitorizare ambulatorie,1,1
+11,9,43,male,Chirurgie Generală,Colecistită,1,6,74,0.9,low,2,HbA1c|Spirometrie|Ionogramă|ECG,Injecții subcutanate,0,0
+42,3,49,female,Neurologie,Infecție urinară,1,3,70,0.59,low,1,EEG|Spirometrie,Medicație orală|Terapie inhalatorie|Fizioterapie,0,0
+123,18,44,female,Urologie,Gastrita cronică|Hipertensiune arterială,2,13,312,0.49,medium,4,Funcție renală|Radiografie toracică|Cultură urină|Profil lipidic,Medicație orală|Exerciții fizice regulate|Terapie inhalatorie,1,0
+291,22,72,female,Oftalmologie,Artrită reumatoidă,1,19,129,0.91,medium,3,Ecocardiografie|Hemoleucogramă completă|Cultură urină,Psihoterapie|Injecții subcutanate|Terapie inhalatorie,1,0
+258,9,50,male,Psihiatrie,Artrită reumatoidă|Diabet zaharat tip 2|Hernie de disc,3,15,58,0.91,low,2,EEG|CT toracic|Profil lipidic,Fizioterapie|Psihoterapie|Intervenție chirurgicală,0,0
+39,3,82,male,Ginecologie,Anxietate generalizată|Astm bronșic,2,1,261,0.35,high,5,Ecografie abdominală,Psihoterapie|Regim alimentar,1,1
+57,2,54,female,Cardiologie,Lombosciatică|Anxietate generalizată,2,8,130,0.52,low,0,TSH|Spirometrie,Monitorizare ambulatorie|Fizioterapie,1,0
+33,19,60,male,Neurologie,Lombosciatică,1,11,351,0.78,low,2,EEG|Spirometrie,Fizioterapie|Exerciții fizice regulate|Intervenție chirurgicală,1,0
+183,3,56,female,Ortopedie,Hipertensiune arterială|Anxietate generalizată,2,0,272,1.0,low,2,Sumar urină|RMN cerebral|HbA1c|Ionogramă,Monitorizare ambulatorie,1,0
+85,6,40,female,Chirurgie Generală,Gastrita cronică|Depresie|BPOC|Astm bronșic,4,8,288,0.46,high,5,Ionogramă|Coagulogramă|Glicemie,Regim alimentar|Monitorizare ambulatorie|Medicație orală,1,1
+238,14,27,male,Pediatrie,Hernie de disc|Colecistită,2,7,45,0.37,low,2,CT toracic|Ecocardiografie,Terapie inhalatorie|Medicație orală,0,1
+170,18,58,male,Psihiatrie,Astm bronșic|Migrenă cronică|Lombosciatică|Diabet zaharat tip 2,4,0,253,0.49,high,5,Profil hepatic|TSH|Ecografie abdominală|Cultură urină,Psihoterapie|Terapie cu oxigen|Exerciții fizice regulate,1,1
+269,17,36,male,Psihiatrie,Colecistită|Anemie feriprivă|Diabet zaharat tip 2,3,10,341,0.99,medium,3,CT toracic|Ionogramă|Cultură urină,Injecții subcutanate,1,0
+189,8,74,female,Medicină Internă,Gastrita cronică|Hernie de disc,2,7,67,0.89,low,2,Coagulogramă|EEG|Ionogramă,Monitorizare ambulatorie,0,0
+91,18,78,male,Ginecologie,BPOC|Infecție urinară|Hipertensiune arterială,3,11,233,0.38,high,9,HbA1c|EEG,Intervenție chirurgicală|Fizioterapie|Terapie cu oxigen,1,1
+198,17,41,female,Pediatrie,Pneumonie,1,18,30,0.76,low,0,ECG|EEG|CT toracic,Injecții subcutanate|Terapie cu oxigen|Intervenție chirurgicală,0,0
+207,17,85,female,Urologie,Anxietate generalizată|Artrită reumatoidă|Insuficiență cardiacă|Astm bronșic,4,19,39,0.77,medium,4,Ecocardiografie|Profil lipidic,Injecții subcutanate|Fizioterapie,0,0
+245,20,59,male,Dermatologie,Infecție urinară|Hipotiroidism|Gastrita cronică|Lombosciatică,4,11,7,0.5,low,2,ECG|Radiografie toracică|Hemoleucogramă completă|RMN cerebral,Injecții subcutanate|Exerciții fizice regulate|Intervenție chirurgicală,0,0
+47,14,67,female,Neurologie,Diabet zaharat tip 2|Anxietate generalizată,2,7,112,0.61,low,2,Radiografie toracică,Injecții subcutanate|Fizioterapie,1,0
+68,24,23,female,ORL,Hipotiroidism,1,16,13,0.79,low,0,Sumar urină|Hemoleucogramă completă|TSH,Psihoterapie|Exerciții fizice regulate|Monitorizare ambulatorie,0,0
+257,29,82,male,Ginecologie,Lombosciatică|Insuficiență cardiacă|Diabet zaharat tip 2,3,15,168,0.46,high,6,Cultură urină|TSH|Ionogramă|EEG,Intervenție chirurgicală|Terapie cu oxigen|Monitorizare ambulatorie,1,1
+143,20,58,female,Cardiologie,Epilepsie,1,1,22,0.67,low,1,Radiografie toracică|Glicemie|RMN cerebral,Intervenție chirurgicală|Terapie inhalatorie|Exerciții fizice regulate,0,0
+255,26,39,male,Ortopedie,Anxietate generalizată|Epilepsie,2,4,207,0.36,high,5,Funcție renală,Monitorizare ambulatorie|Regim alimentar,1,1
+300,14,82,male,Psihiatrie,Hernie de disc|Insuficiență cardiacă|Hipertensiune arterială,3,2,223,0.48,high,7,Radiografie toracică|Cultură urină|Glicemie,Medicație orală,1,1
+167,18,29,female,Pediatrie,Astm bronșic,1,7,9,0.89,low,2,Ecografie abdominală|EEG|TSH,Intervenție chirurgicală|Exerciții fizice regulate,0,0
+171,8,48,male,Chirurgie Generală,Astm bronșic|Infecție urinară,2,15,354,0.57,low,1,Hemoleucogramă completă|Radiografie toracică|Sumar urină,Exerciții fizice regulate|Regim alimentar,1,0
+18,14,26,female,Psihiatrie,Astm bronșic|Anemie feriprivă,2,2,270,0.73,low,2,Coagulogramă|Ionogramă,Terapie inhalatorie|Medicație orală,1,0
+198,25,32,female,Chirurgie Generală,Astm bronșic,1,17,36,0.69,low,2,Profil lipidic|Ecografie abdominală|Cultură urină,Medicație orală|Intervenție chirurgicală,0,0
+39,6,61,male,Dermatologie,Anemie feriprivă,1,3,269,0.97,medium,3,TSH,Exerciții fizice regulate|Terapie inhalatorie,1,0
+82,3,37,male,ORL,Anxietate generalizată|Artrită reumatoidă|BPOC,3,17,232,0.44,high,7,EEG,Medicație orală,1,1
+82,27,82,female,Oftalmologie,Hipotiroidism|Colecistită|Artrită reumatoidă,3,14,236,0.56,high,6,HbA1c|Hemoleucogramă completă|RMN cerebral,Fizioterapie|Regim alimentar,1,1
+65,25,61,female,Psihiatrie,Hernie de disc,1,12,134,0.71,low,2,Ecocardiografie,Regim alimentar,1,0
+263,28,50,female,Chirurgie Generală,Insuficiență cardiacă,1,11,165,0.5,low,0,TSH|ECG|Funcție renală,Exerciții fizice regulate|Injecții subcutanate,1,0
+121,25,68,male,Ortopedie,Epilepsie,1,16,220,0.9,medium,4,Ecocardiografie|Coagulogramă,Medicație orală|Regim alimentar|Terapie inhalatorie,1,0
+51,26,47,male,Neurologie,Artrită reumatoidă,1,15,71,0.96,low,2,Profil hepatic|Profil lipidic|Funcție renală|ECG,Exerciții fizice regulate|Medicație orală|Terapie inhalatorie,0,0
+91,24,37,male,Neurologie,Pneumonie,1,18,15,0.96,low,0,Profil lipidic|Funcție renală,Terapie cu oxigen|Medicație orală,0,0
+106,2,26,male,Urologie,Anxietate generalizată|Astm bronșic|Infecție urinară,3,13,10,0.41,high,5,Ionogramă|Sumar urină,Psihoterapie|Exerciții fizice regulate|Terapie cu oxigen,1,1
+121,7,58,female,Ortopedie,Artrită reumatoidă|Hipotiroidism|Pneumonie|Hipertensiune arterială,4,11,277,0.67,medium,4,Profil hepatic|Sumar urină|Funcție renală|Profil lipidic,Intervenție chirurgicală|Psihoterapie,1,0
+292,2,40,female,Dermatologie,Lombosciatică|Fibrilație atrială,2,6,335,0.54,low,1,Radiografie toracică|Funcție renală|Coagulogramă|Hemoleucogramă completă,Terapie cu oxigen|Fizioterapie|Monitorizare ambulatorie,1,0
+75,19,23,female,Chirurgie Generală,Insuficiență cardiacă,1,4,327,0.48,high,5,Glicemie,Monitorizare ambulatorie|Intervenție chirurgicală,1,1
+296,18,44,female,Pediatrie,Anxietate generalizată|Boală coronariană,2,10,318,0.57,low,2,Sumar urină|Funcție renală|HbA1c|Radiografie toracică,Medicație orală,1,0
+276,28,50,female,Dermatologie,Gastrita cronică,1,14,290,0.87,low,2,ECG|Sumar urină,Medicație orală,1,0
+177,22,74,male,Urologie,Astm bronșic|Hernie de disc,2,11,303,0.56,medium,4,RMN cerebral,Intervenție chirurgicală|Terapie cu oxigen,1,0
+266,22,52,male,Urologie,Hipotiroidism|Hernie de disc,2,3,25,0.64,low,2,HbA1c|Coagulogramă|Radiografie toracică|Hemoleucogramă completă,Fizioterapie,0,0
+110,27,61,female,Cardiologie,Hipotiroidism,1,16,171,0.9,low,2,ECG|Spirometrie,Terapie cu oxigen,1,0
+155,10,45,female,Cardiologie,Lombosciatică|Infecție urinară|Pneumonie,3,9,273,0.76,high,5,Glicemie|Ionogramă|HbA1c|Profil hepatic,Terapie inhalatorie|Monitorizare ambulatorie,1,1
+162,15,69,male,Medicină Internă,Gastrita cronică|Hipertensiune arterială,2,20,18,0.94,medium,3,Ecografie abdominală|Profil lipidic|Coagulogramă|Sumar urină,Terapie cu oxigen|Regim alimentar,0,0
+240,9,72,female,Dermatologie,Migrenă cronică,1,0,290,0.79,high,5,Profil lipidic|CT toracic|Ionogramă|Funcție renală,Exerciții fizice regulate,1,1
+103,7,42,female,Pediatrie,Hernie de disc|Insuficiență cardiacă|Anxietate generalizată,3,9,318,0.96,medium,3,HbA1c|Funcție renală,Terapie inhalatorie|Medicație orală|Injecții subcutanate,1,0
+75,13,33,male,Neurologie,Pneumonie,1,10,77,0.57,low,2,Ecocardiografie|Glicemie,Monitorizare ambulatorie,0,0
+267,28,61,female,Ginecologie,Infecție urinară|Migrenă cronică,2,13,72,0.98,low,1,RMN cerebral|TSH|Hemoleucogramă completă,Exerciții fizice regulate|Terapie cu oxigen|Intervenție chirurgicală,0,0
+262,6,78,male,Medicină Internă,Migrenă cronică,1,1,40,0.85,low,2,RMN cerebral,Monitorizare ambulatorie|Terapie cu oxigen|Injecții subcutanate,0,0
+282,30,27,male,Ginecologie,Hipotiroidism,1,3,99,0.83,low,1,Funcție renală|ECG|TSH,Intervenție chirurgicală|Medicație orală,1,0
+108,26,51,female,Pediatrie,Boală coronariană,1,17,354,0.86,low,2,Ionogramă|Ecocardiografie|CT toracic|Radiografie toracică,Medicație orală|Monitorizare ambulatorie,1,0
+171,15,32,female,Psihiatrie,Colecistită|Fibrilație atrială|Anxietate generalizată|Lombosciatică,4,14,304,0.95,medium,3,Ionogramă,Monitorizare ambulatorie,1,0
+66,8,42,female,Ginecologie,Insuficiență cardiacă|Boală coronariană,2,10,181,0.49,high,5,Ecografie abdominală|Cultură urină,Terapie cu oxigen,1,1
+232,15,20,female,ORL,Epilepsie,1,17,273,0.93,low,1,Ecocardiografie,Injecții subcutanate|Medicație orală,1,0
+125,12,22,female,Pediatrie,Pneumonie,1,14,231,0.52,low,2,Radiografie toracică|Funcție renală|RMN cerebral,Regim alimentar,1,0
+77,3,18,female,Oftalmologie,Pneumonie|Epilepsie,2,14,208,0.8,medium,3,Coagulogramă,Intervenție chirurgicală|Terapie cu oxigen,1,0
+227,19,44,male,Ginecologie,BPOC|Anemie feriprivă|Diabet zaharat tip 2|Hernie de disc,4,18,265,0.72,high,5,Ionogramă|ECG|Hemoleucogramă completă|Profil hepatic,Terapie cu oxigen|Psihoterapie|Medicație orală,1,1
+125,17,27,male,Neurologie,BPOC|Anemie feriprivă|Insuficiență cardiacă|Lombosciatică,4,0,259,0.82,medium,4,CT toracic,Fizioterapie|Intervenție chirurgicală|Injecții subcutanate,1,0
+247,10,50,female,Medicină Internă,BPOC|Fibrilație atrială,2,4,329,0.94,medium,3,Hemoleucogramă completă|Spirometrie|RMN cerebral,Intervenție chirurgicală|Monitorizare ambulatorie|Injecții subcutanate,1,0
+285,27,19,female,Oftalmologie,Hernie de disc,1,9,92,0.31,low,2,Ionogramă|TSH,Injecții subcutanate,1,1
+232,28,30,female,Ortopedie,Migrenă cronică|BPOC|Pneumonie,3,16,30,0.85,low,2,Cultură urină|ECG,Injecții subcutanate|Fizioterapie|Terapie cu oxigen,0,0
+293,13,71,female,Ginecologie,Epilepsie,1,7,321,0.63,medium,4,ECG,Regim alimentar,1,0
+71,3,58,male,Chirurgie Generală,Fibrilație atrială,1,5,76,0.49,low,2,Ecografie abdominală,Exerciții fizice regulate,0,0
+98,15,20,male,Medicină Internă,Hipertensiune arterială|Gastrita cronică,2,8,75,0.7,low,1,Ionogramă|Spirometrie,Terapie inhalatorie|Regim alimentar,0,0
+97,6,18,male,Psihiatrie,Pneumonie|Insuficiență cardiacă|Depresie,3,9,136,0.78,low,2,Ecografie abdominală,Intervenție chirurgicală,1,0
+1,17,65,female,ORL,Diabet zaharat tip 2|Lombosciatică|Boală coronariană,3,18,96,0.59,low,2,EEG,Exerciții fizice regulate|Terapie inhalatorie,1,0
+64,17,35,male,Ortopedie,Artrită reumatoidă,1,5,295,0.56,low,1,Hemoleucogramă completă,Medicație orală,1,0
+100,29,38,male,Pediatrie,Insuficiență cardiacă|Infecție urinară,2,10,259,0.93,low,1,ECG|Profil hepatic|Ecografie abdominală,Regim alimentar|Fizioterapie,1,0
+52,23,52,male,Medicină Internă,Diabet zaharat tip 2|Astm bronșic|Epilepsie,3,7,349,0.4,high,7,Hemoleucogramă completă,Terapie cu oxigen|Monitorizare ambulatorie,1,1
+153,22,40,male,Dermatologie,Artrită reumatoidă|Epilepsie|Boală coronariană|Migrenă cronică,4,3,319,0.9,high,5,Ionogramă|Glicemie|Profil hepatic|Sumar urină,Regim alimentar,1,1
+55,20,31,male,Chirurgie Generală,BPOC,1,3,222,0.78,low,2,Glicemie,Injecții subcutanate|Exerciții fizice regulate|Regim alimentar,1,0
+287,17,35,male,Medicină Internă,Hipotiroidism,1,12,74,0.75,low,2,Hemoleucogramă completă,Psihoterapie|Medicație orală|Fizioterapie,0,0
+254,7,73,female,Ortopedie,Depresie|BPOC,2,19,233,0.39,high,7,Profil lipidic|CT toracic,Terapie inhalatorie|Intervenție chirurgicală,1,1
+238,20,30,female,Ginecologie,Astm bronșic|Insuficiență cardiacă|Colecistită|Migrenă cronică,4,8,361,0.31,high,5,Hemoleucogramă completă|Spirometrie,Monitorizare ambulatorie|Fizioterapie|Terapie inhalatorie,1,1
+128,21,39,female,ORL,Diabet zaharat tip 2|Colecistită,2,6,8,0.58,low,0,Ionogramă|Funcție renală|Profil hepatic|Sumar urină,Terapie cu oxigen,0,0
+32,23,35,male,Urologie,Migrenă cronică|Diabet zaharat tip 2|Lombosciatică,3,0,72,0.58,medium,3,Sumar urină,Psihoterapie|Injecții subcutanate,0,0
+32,4,58,female,Psihiatrie,Fibrilație atrială|Epilepsie,2,17,134,0.66,low,1,Sumar urină,Injecții subcutanate,1,0
+279,6,74,male,Dermatologie,Diabet zaharat tip 2|Epilepsie|Gastrita cronică|Migrenă cronică,4,19,236,0.77,high,5,TSH|HbA1c|ECG|EEG,Psihoterapie|Exerciții fizice regulate|Terapie inhalatorie,1,1
+115,9,63,male,Pediatrie,BPOC|Hipertensiune arterială,2,19,326,0.4,high,5,Funcție renală|Coagulogramă|Ecocardiografie|Ionogramă,Regim alimentar,1,1
+91,30,24,female,Psihiatrie,Hipotiroidism,1,12,132,0.54,low,1,Ecocardiografie,Injecții subcutanate|Regim alimentar,1,0
+276,26,63,female,Chirurgie Generală,Hipotiroidism|Astm bronșic|Hernie de disc,3,8,357,0.47,high,7,Profil lipidic|Radiografie toracică|RMN cerebral,Injecții subcutanate|Fizioterapie|Regim alimentar,1,1
+191,9,58,female,Dermatologie,Astm bronșic|Fibrilație atrială|Pneumonie|BPOC,4,2,50,0.86,medium,4,Coagulogramă|RMN cerebral|Radiografie toracică,Fizioterapie,0,0
+122,5,60,female,Dermatologie,Anxietate generalizată,1,13,112,0.3,medium,4,CT toracic|Coagulogramă|Hemoleucogramă completă,Injecții subcutanate|Monitorizare ambulatorie|Intervenție chirurgicală,1,1
+146,3,73,male,Urologie,Fibrilație atrială|Pneumonie,2,2,6,1.0,low,2,Coagulogramă|ECG|Spirometrie,Fizioterapie,0,0
+62,28,82,female,Medicină Internă,Boală coronariană,1,2,222,0.98,medium,3,Spirometrie|Coagulogramă|EEG|Ecografie abdominală,Intervenție chirurgicală|Medicație orală|Regim alimentar,1,0
+152,27,42,male,Chirurgie Generală,Diabet zaharat tip 2|Astm bronșic,2,11,202,0.88,medium,3,Cultură urină,Terapie inhalatorie|Terapie cu oxigen|Intervenție chirurgicală,1,0
+147,28,29,female,Medicină Internă,Colecistită|BPOC|Epilepsie|Insuficiență cardiacă,4,16,99,0.81,low,2,TSH|Spirometrie|Profil hepatic|Cultură urină,Exerciții fizice regulate|Intervenție chirurgicală,1,0
+217,30,64,female,ORL,Epilepsie,1,14,205,0.52,low,1,Ecocardiografie|Ecografie abdominală|EEG|Spirometrie,Psihoterapie|Intervenție chirurgicală,1,0
+230,4,28,male,Medicină Internă,Gastrita cronică|Colecistită,2,18,199,0.72,low,2,Radiografie toracică|Sumar urină,Medicație orală,1,0
+146,7,72,male,Urologie,Astm bronșic|Hipotiroidism|Gastrita cronică|Fibrilație atrială,4,16,105,1.0,high,6,Cultură urină|Coagulogramă|RMN cerebral,Monitorizare ambulatorie,1,1
+111,8,49,female,Psihiatrie,Boală coronariană|Diabet zaharat tip 2|Hernie de disc|Gastrita cronică,4,15,196,0.84,high,5,Spirometrie,Injecții subcutanate,1,1
+172,2,44,female,Urologie,Boală coronariană|Gastrita cronică|Hipotiroidism,3,9,312,0.8,medium,4,EEG,Psihoterapie,1,0
+196,10,81,female,Cardiologie,Hipotiroidism|Colecistită|Anemie feriprivă|Migrenă cronică,4,13,13,0.44,high,6,Ecocardiografie|ECG|RMN cerebral|TSH,Intervenție chirurgicală|Terapie cu oxigen|Fizioterapie,1,1
+256,4,36,male,Ginecologie,Anemie feriprivă,1,10,222,0.59,low,2,Profil lipidic|EEG,Regim alimentar|Monitorizare ambulatorie|Fizioterapie,1,0
+254,25,38,male,Medicină Internă,Colecistită,1,13,38,0.96,low,0,Sumar urină|Coagulogramă|Spirometrie|Profil hepatic,Exerciții fizice regulate|Intervenție chirurgicală|Injecții subcutanate,0,0
+81,6,68,male,Psihiatrie,Insuficiență cardiacă|BPOC,2,8,298,0.79,medium,4,Cultură urină|ECG|Radiografie toracică,Injecții subcutanate|Exerciții fizice regulate|Monitorizare ambulatorie,1,0
+139,18,41,female,Neurologie,Pneumonie,1,20,37,0.32,medium,3,Profil hepatic|Funcție renală|Glicemie,Medicație orală|Terapie cu oxigen|Regim alimentar,0,1
+7,8,48,male,Chirurgie Generală,Gastrita cronică,1,15,4,0.54,low,0,Profil lipidic|Ionogramă,Exerciții fizice regulate|Psihoterapie,0,0
+279,22,67,male,Medicină Internă,Fibrilație atrială|Migrenă cronică,2,19,280,0.97,medium,3,Sumar urină|Glicemie|Ionogramă,Medicație orală,1,0
+278,27,74,female,Urologie,Infecție urinară,1,20,14,0.95,low,2,RMN cerebral,Exerciții fizice regulate|Intervenție chirurgicală,0,0
+203,13,30,male,Cardiologie,Epilepsie,1,9,269,0.54,medium,3,Glicemie|Hemoleucogramă completă|RMN cerebral|Ionogramă,Psihoterapie|Regim alimentar|Terapie inhalatorie,1,0
+245,29,51,female,Chirurgie Generală,Lombosciatică|Diabet zaharat tip 2,2,5,153,0.83,low,2,Funcție renală|Cultură urină,Medicație orală,1,0
+73,15,47,female,ORL,Lombosciatică,1,8,172,0.85,low,0,CT toracic,Monitorizare ambulatorie|Medicație orală|Regim alimentar,1,0
+166,5,68,male,Dermatologie,Colecistită|Pneumonie|Fibrilație atrială,3,9,188,0.81,high,5,Sumar urină|Ecografie abdominală|Coagulogramă|Ecocardiografie,Terapie inhalatorie,1,1
+71,17,28,female,Pediatrie,Anxietate generalizată|Depresie|Gastrita cronică,3,7,45,0.98,medium,3,Ecocardiografie|Coagulogramă,Terapie inhalatorie|Intervenție chirurgicală|Medicație orală,0,0
+293,25,60,female,Cardiologie,Diabet zaharat tip 2|Boală coronariană|Epilepsie,3,1,361,0.47,high,5,HbA1c|Sumar urină,Terapie cu oxigen,1,1
+103,24,59,female,Ortopedie,Artrită reumatoidă,1,8,99,0.47,low,2,Glicemie|ECG|Hemoleucogramă completă|CT toracic,Injecții subcutanate|Fizioterapie,1,0
+113,21,72,male,Medicină Internă,Pneumonie|Colecistită,2,4,341,0.76,medium,3,Profil lipidic|TSH|Radiografie toracică|Spirometrie,Injecții subcutanate|Terapie inhalatorie,1,0
+62,22,24,female,Medicină Internă,Diabet zaharat tip 2|Hernie de disc,2,0,7,0.84,low,2,Profil lipidic|Ionogramă|Sumar urină|Cultură urină,Injecții subcutanate|Medicație orală,0,0
+166,26,46,female,Chirurgie Generală,Hernie de disc|Astm bronșic|Gastrita cronică|Boală coronariană,4,11,332,0.75,high,5,Ecocardiografie|Ecografie abdominală|EEG|Hemoleucogramă completă,Exerciții fizice regulate|Regim alimentar,1,1
+41,28,49,male,Pediatrie,BPOC,1,0,116,0.92,low,2,ECG|Sumar urină|Funcție renală|RMN cerebral,Medicație orală|Regim alimentar,1,0
+45,14,23,male,Chirurgie Generală,Lombosciatică,1,4,22,0.58,low,2,Funcție renală|Hemoleucogramă completă|Radiografie toracică,Injecții subcutanate,0,0
+170,27,30,male,ORL,Infecție urinară|Artrită reumatoidă,2,18,81,0.35,medium,3,RMN cerebral,Intervenție chirurgicală,0,1
+282,12,85,female,Pediatrie,Lombosciatică,1,12,193,0.96,high,5,Sumar urină|EEG|Funcție renală|TSH,Medicație orală|Regim alimentar|Psihoterapie,1,1
+250,7,78,male,Pediatrie,Colecistită|Hernie de disc|Migrenă cronică|Gastrita cronică,4,8,118,0.66,high,6,Hemoleucogramă completă|Funcție renală|Ionogramă,Terapie inhalatorie,1,1
+231,1,54,female,Psihiatrie,Hipotiroidism|Lombosciatică|Fibrilație atrială,3,17,125,0.56,medium,3,Radiografie toracică|ECG|HbA1c|Profil lipidic,Injecții subcutanate|Medicație orală|Regim alimentar,1,0
+145,22,76,female,Psihiatrie,Pneumonie|Artrită reumatoidă,2,0,61,0.66,medium,4,Profil lipidic|Ionogramă|Hemoleucogramă completă|Cultură urină,Medicație orală|Terapie cu oxigen,0,0
+283,28,64,female,Ginecologie,Gastrita cronică|Hipertensiune arterială|Depresie,3,8,92,0.64,medium,4,Sumar urină|CT toracic,Psihoterapie|Injecții subcutanate,1,0
+101,22,45,male,Psihiatrie,Gastrita cronică,1,7,128,0.61,low,1,EEG,Psihoterapie|Regim alimentar,1,0
+228,21,25,female,ORL,Migrenă cronică|Lombosciatică,2,11,67,0.71,low,2,Funcție renală|ECG|Radiografie toracică,Exerciții fizice regulate|Injecții subcutanate|Regim alimentar,0,0
+230,9,59,male,Neurologie,Depresie|BPOC,2,3,364,0.33,medium,4,EEG|Funcție renală|Coagulogramă|Radiografie toracică,Exerciții fizice regulate|Psihoterapie,1,1
+43,13,59,female,Neurologie,Hernie de disc,1,17,345,0.62,low,1,HbA1c|Hemoleucogramă completă|CT toracic,Intervenție chirurgicală|Medicație orală,1,0
+211,29,40,female,Medicină Internă,Diabet zaharat tip 2,1,5,174,0.94,low,1,Ionogramă|Sumar urină|CT toracic|Ecografie abdominală,Monitorizare ambulatorie|Psihoterapie,1,0
+215,13,76,male,Medicină Internă,Hipertensiune arterială|Artrită reumatoidă|Insuficiență cardiacă,3,3,56,0.75,high,5,Radiografie toracică|CT toracic,Intervenție chirurgicală|Exerciții fizice regulate|Terapie inhalatorie,1,1
+248,20,82,female,Dermatologie,Boală coronariană|Infecție urinară,2,11,33,0.72,medium,4,Funcție renală|Ecocardiografie|ECG|Profil hepatic,Intervenție chirurgicală|Fizioterapie|Regim alimentar,0,0
+74,30,46,female,Neurologie,Depresie,1,13,5,0.98,low,1,Ecografie abdominală|Funcție renală,Injecții subcutanate,0,0
+126,5,80,male,Ortopedie,Hernie de disc,1,10,276,0.82,high,5,HbA1c,Fizioterapie|Terapie inhalatorie,1,1
+200,30,75,male,Urologie,Boală coronariană,1,8,342,0.94,high,5,Cultură urină|Coagulogramă|HbA1c|EEG,Exerciții fizice regulate,1,1
+162,20,43,male,Oftalmologie,Insuficiență cardiacă|Colecistită|Pneumonie,3,12,56,0.37,medium,4,Coagulogramă,Psihoterapie,0,1
+144,25,52,male,Ortopedie,Diabet zaharat tip 2|Pneumonie,2,7,170,0.76,low,1,RMN cerebral|Ecocardiografie|Spirometrie|Coagulogramă,Psihoterapie,1,0
+281,10,38,male,Dermatologie,Hipotiroidism|Lombosciatică,2,19,91,0.65,low,1,Cultură urină|CT toracic|Sumar urină|Coagulogramă,Medicație orală|Psihoterapie,1,0
+210,18,84,male,Dermatologie,BPOC|Depresie|Insuficiență cardiacă|Migrenă cronică,4,2,102,0.82,high,5,Profil hepatic|Ecocardiografie,Fizioterapie,1,1
+156,27,24,male,Oftalmologie,Migrenă cronică|Anxietate generalizată,2,17,292,0.97,low,1,Hemoleucogramă completă|Funcție renală,Fizioterapie|Monitorizare ambulatorie,1,0
+183,20,31,male,Neurologie,Pneumonie,1,13,131,0.79,low,0,Coagulogramă|Sumar urină,Fizioterapie,1,0
+161,5,83,female,Cardiologie,Depresie,1,1,192,0.41,high,5,Sumar urină|Spirometrie|TSH,Fizioterapie,1,1
+181,13,37,female,Dermatologie,Gastrita cronică,1,4,312,0.97,low,2,Sumar urină,Terapie inhalatorie|Injecții subcutanate,1,0
+213,29,71,female,Cardiologie,Colecistită|Diabet zaharat tip 2|Anxietate generalizată|Depresie,4,2,26,0.7,high,6,Spirometrie|Profil hepatic|Coagulogramă,Psihoterapie,1,1
+67,11,75,female,Psihiatrie,Astm bronșic,1,3,243,0.75,high,5,Ionogramă,Intervenție chirurgicală|Exerciții fizice regulate,1,1
+33,23,78,male,Urologie,Epilepsie|Pneumonie,2,2,184,0.68,high,5,Funcție renală,Intervenție chirurgicală|Fizioterapie|Medicație orală,1,1
+106,15,84,female,Cardiologie,Colecistită|Astm bronșic,2,18,186,0.63,medium,3,EEG|ECG|HbA1c,Regim alimentar,1,0
+133,29,80,male,Oftalmologie,Diabet zaharat tip 2|Gastrita cronică|Epilepsie,3,13,264,0.54,high,5,Profil lipidic,Monitorizare ambulatorie,1,1
+278,30,71,male,Dermatologie,BPOC|Depresie,2,2,27,0.4,medium,4,RMN cerebral|ECG|Ecocardiografie|Profil hepatic,Medicație orală|Monitorizare ambulatorie|Intervenție chirurgicală,0,0
+122,4,53,female,Cardiologie,Insuficiență cardiacă|Anemie feriprivă|Hipertensiune arterială|Hipotiroidism,4,13,361,0.79,medium,3,TSH|EEG,Terapie cu oxigen|Fizioterapie,1,0
+199,5,24,male,Pediatrie,Boală coronariană,1,8,260,0.87,low,1,Ecografie abdominală|Hemoleucogramă completă|TSH|EEG,Psihoterapie,1,0
+42,18,20,male,Neurologie,Pneumonie|Infecție urinară,2,10,98,0.56,low,2,Ecocardiografie,Terapie inhalatorie|Psihoterapie|Fizioterapie,1,0
+220,8,81,female,Ginecologie,Pneumonie|Anxietate generalizată,2,4,152,0.53,medium,4,Funcție renală,Psihoterapie|Exerciții fizice regulate,1,0
+111,7,33,female,Ortopedie,Insuficiență cardiacă,1,17,265,0.41,medium,3,ECG|Cultură urină,Injecții subcutanate|Exerciții fizice regulate,1,0
+272,16,24,female,Chirurgie Generală,Migrenă cronică,1,0,171,0.78,low,1,CT toracic|Spirometrie|Ecocardiografie|ECG,Exerciții fizice regulate|Medicație orală,1,0
+21,26,79,male,Ortopedie,Migrenă cronică|Depresie|Boală coronariană,3,8,345,0.37,high,9,HbA1c|Profil hepatic|Cultură urină|Sumar urină,Terapie inhalatorie|Medicație orală,1,1
+196,30,19,male,Dermatologie,Epilepsie|Migrenă cronică|Anxietate generalizată,3,15,310,0.5,medium,4,Spirometrie|Ecografie abdominală|Cultură urină|Ecocardiografie,Medicație orală|Fizioterapie,1,0
+295,28,62,male,Ginecologie,Migrenă cronică,1,8,291,0.96,medium,3,ECG,Intervenție chirurgicală,1,0
+162,30,27,female,ORL,Artrită reumatoidă|Gastrita cronică|Fibrilație atrială,3,1,30,0.71,medium,4,Spirometrie|Funcție renală,Medicație orală|Injecții subcutanate,0,0
+27,5,80,male,Urologie,Hipotiroidism|Artrită reumatoidă|Pneumonie|Hernie de disc,4,0,222,0.76,high,6,Glicemie,Monitorizare ambulatorie,1,1
+284,19,68,female,Urologie,Gastrita cronică|Artrită reumatoidă|Hernie de disc,3,12,311,0.39,high,7,Glicemie|Hemoleucogramă completă|CT toracic|Ecografie abdominală,Psihoterapie,1,1
+151,22,56,female,Oftalmologie,Hipertensiune arterială,1,10,19,0.86,low,0,HbA1c|CT toracic|Radiografie toracică,Regim alimentar|Intervenție chirurgicală|Terapie cu oxigen,0,0
+170,14,38,female,Cardiologie,Astm bronșic|Hipertensiune arterială|Hipotiroidism,3,1,29,0.99,medium,4,Profil hepatic,Terapie cu oxigen,0,0
+187,8,74,male,Urologie,Colecistită|Hernie de disc|Lombosciatică,3,0,285,0.73,high,6,Profil hepatic|Cultură urină|Spirometrie,Medicație orală|Exerciții fizice regulate|Psihoterapie,1,1
+149,11,26,female,Dermatologie,Artrită reumatoidă,1,20,301,0.67,medium,3,EEG|Cultură urină,Regim alimentar,1,0
+234,9,31,female,Urologie,Infecție urinară|Hernie de disc|Hipotiroidism,3,15,49,0.71,medium,4,ECG|Ecocardiografie|Profil lipidic|Cultură urină,Terapie inhalatorie|Monitorizare ambulatorie,0,0
+209,27,30,female,Chirurgie Generală,Lombosciatică|Boală coronariană|BPOC,3,0,18,0.81,medium,3,ECG|Coagulogramă,Intervenție chirurgicală,0,0
+206,6,20,female,ORL,Fibrilație atrială|Pneumonie,2,7,213,0.85,medium,3,Glicemie|Hemoleucogramă completă|ECG,Fizioterapie|Intervenție chirurgicală|Medicație orală,1,0
+262,22,18,male,Medicină Internă,Anxietate generalizată,1,20,78,0.88,low,0,Ecografie abdominală,Terapie inhalatorie,0,0
+83,6,73,female,ORL,Astm bronșic|Colecistită|Depresie,3,5,297,0.97,high,6,Spirometrie|Cultură urină,Medicație orală|Intervenție chirurgicală|Terapie cu oxigen,1,1
+272,4,34,male,Cardiologie,Artrită reumatoidă,1,4,167,0.4,medium,4,Profil lipidic,Exerciții fizice regulate,1,0
+55,29,41,male,Cardiologie,Pneumonie|Anxietate generalizată,2,17,336,0.34,medium,3,TSH,Exerciții fizice regulate,1,1
+136,21,43,female,Chirurgie Generală,Boală coronariană|Diabet zaharat tip 2|Astm bronșic|Depresie,4,14,327,0.49,high,5,Profil lipidic|Spirometrie,Regim alimentar|Terapie cu oxigen|Exerciții fizice regulate,1,1
+237,4,59,male,Urologie,Boală coronariană|Astm bronșic|Depresie,3,10,11,0.76,low,2,HbA1c|ECG|Ionogramă,Terapie inhalatorie|Regim alimentar|Exerciții fizice regulate,0,0
+86,29,82,female,Chirurgie Generală,Pneumonie,1,5,202,0.63,high,5,Ecocardiografie,Regim alimentar|Monitorizare ambulatorie|Medicație orală,1,1
+5,15,30,female,Oftalmologie,Hernie de disc|Boală coronariană|Astm bronșic|Diabet zaharat tip 2,4,8,189,0.38,high,5,Radiografie toracică,Psihoterapie|Terapie cu oxigen,1,1
+254,11,70,male,Cardiologie,Infecție urinară|Artrită reumatoidă,2,9,276,0.81,high,5,Glicemie|ECG|Cultură urină,Medicație orală|Intervenție chirurgicală,1,1
+95,10,78,male,Chirurgie Generală,Artrită reumatoidă,1,6,338,0.8,medium,3,CT toracic|Hemoleucogramă completă|Glicemie|Profil hepatic,Medicație orală|Terapie inhalatorie|Intervenție chirurgicală,1,0
+194,30,52,male,ORL,Hipotiroidism|Pneumonie|Epilepsie|Depresie,4,17,37,0.37,medium,4,Spirometrie|Cultură urină|Profil hepatic,Monitorizare ambulatorie,0,1
+227,27,75,female,Ginecologie,Gastrita cronică|Insuficiență cardiacă,2,14,36,0.34,medium,4,HbA1c|Profil lipidic|RMN cerebral|ECG,Medicație orală,0,1
+243,7,62,male,Urologie,Insuficiență cardiacă,1,16,33,0.53,low,1,Ionogramă|Hemoleucogramă completă|Coagulogramă|Cultură urină,Psihoterapie|Intervenție chirurgicală|Exerciții fizice regulate,0,0
+1,2,84,female,Pediatrie,Colecistită,1,10,161,0.34,high,6,RMN cerebral|Funcție renală|HbA1c|Radiografie toracică,Injecții subcutanate|Medicație orală,1,1
+135,9,70,male,Medicină Internă,Gastrita cronică,1,6,305,0.93,high,5,Coagulogramă,Psihoterapie|Exerciții fizice regulate|Medicație orală,1,1
+120,7,53,female,Neurologie,Epilepsie,1,5,293,0.82,low,1,Cultură urină|Coagulogramă,Monitorizare ambulatorie|Exerciții fizice regulate,1,0
+190,18,70,male,Medicină Internă,Astm bronșic,1,6,53,0.38,high,6,Funcție renală|Cultură urină|Glicemie|Profil hepatic,Terapie cu oxigen|Monitorizare ambulatorie|Fizioterapie,1,1
+124,2,25,female,Ginecologie,Epilepsie,1,17,152,0.33,low,2,Hemoleucogramă completă,Fizioterapie|Terapie inhalatorie,1,1
+300,25,52,female,Psihiatrie,Anemie feriprivă,1,0,171,0.92,low,1,Sumar urină,Terapie cu oxigen|Regim alimentar|Fizioterapie,1,0
+190,24,38,female,Pediatrie,Infecție urinară|Lombosciatică,2,0,226,0.76,medium,3,HbA1c|Hemoleucogramă completă|ECG,Exerciții fizice regulate|Intervenție chirurgicală,1,0
+54,16,75,male,Pediatrie,Depresie|Colecistită|Artrită reumatoidă|Diabet zaharat tip 2,4,18,7,0.53,medium,4,Ecocardiografie|Profil lipidic,Terapie cu oxigen,0,0
+169,4,85,female,Dermatologie,Lombosciatică|Pneumonie,2,11,162,0.33,high,5,Glicemie|Ecografie abdominală,Injecții subcutanate|Terapie cu oxigen,1,1
+62,28,62,female,Chirurgie Generală,Hernie de disc,1,3,165,0.98,low,2,Hemoleucogramă completă,Injecții subcutanate|Psihoterapie,1,0
+114,29,83,male,Medicină Internă,Diabet zaharat tip 2|Astm bronșic,2,4,17,0.4,medium,4,CT toracic,Intervenție chirurgicală,0,0
+25,16,72,female,Oftalmologie,Hernie de disc,1,10,347,0.62,high,5,Cultură urină|TSH|Spirometrie|Hemoleucogramă completă,Intervenție chirurgicală,1,1
+239,8,72,female,Urologie,Depresie|Lombosciatică,2,18,356,0.4,high,5,HbA1c|Spirometrie,Exerciții fizice regulate,1,1
+286,3,81,male,Neurologie,Epilepsie|Colecistită|Astm bronșic|Diabet zaharat tip 2,4,18,352,0.44,high,7,Sumar urină|HbA1c|Profil hepatic|Coagulogramă,Psihoterapie|Terapie cu oxigen,1,1
+270,26,83,male,Ginecologie,Hipertensiune arterială|Gastrita cronică|Astm bronșic,3,20,359,0.62,high,7,Spirometrie|CT toracic,Regim alimentar|Monitorizare ambulatorie|Terapie inhalatorie,1,1
+136,19,43,male,ORL,Infecție urinară|Fibrilație atrială,2,13,136,0.97,low,0,Radiografie toracică|Coagulogramă,Medicație orală|Injecții subcutanate,1,0
+94,29,84,female,Psihiatrie,Epilepsie|Depresie|Astm bronșic|Diabet zaharat tip 2,4,16,233,0.62,high,5,CT toracic|Sumar urină|EEG|Ecografie abdominală,Monitorizare ambulatorie|Regim alimentar,1,1
+260,3,72,male,Ortopedie,Colecistită,1,6,283,0.81,medium,3,CT toracic|RMN cerebral|Ecografie abdominală|Cultură urină,Exerciții fizice regulate,1,0
+68,13,40,female,ORL,Lombosciatică,1,18,227,0.59,low,1,RMN cerebral|Ionogramă,Monitorizare ambulatorie|Intervenție chirurgicală,1,0
+50,8,31,male,Psihiatrie,Gastrita cronică|Insuficiență cardiacă,2,8,186,0.44,medium,3,CT toracic,Exerciții fizice regulate|Psihoterapie,1,0
+200,11,35,male,Ginecologie,Hipertensiune arterială,1,12,271,0.48,medium,3,Sumar urină|Spirometrie|Coagulogramă|Ionogramă,Injecții subcutanate|Regim alimentar|Terapie cu oxigen,1,0
+297,3,25,male,Ginecologie,Colecistită,1,6,217,0.51,low,2,Profil hepatic|Glicemie|ECG|Ionogramă,Fizioterapie|Injecții subcutanate|Monitorizare ambulatorie,1,0
+155,3,59,female,Ginecologie,Insuficiență cardiacă|Boală coronariană|Artrită reumatoidă,3,2,356,0.98,high,5,Ecografie abdominală,Intervenție chirurgicală|Psihoterapie|Medicație orală,1,1
+25,6,82,male,Oftalmologie,Hernie de disc|Fibrilație atrială,2,5,8,0.65,low,2,Glicemie,Terapie inhalatorie,0,0
+117,7,70,female,Urologie,Depresie|Migrenă cronică|Anxietate generalizată,3,19,72,0.65,high,5,Sumar urină|Profil hepatic,Injecții subcutanate|Terapie cu oxigen,1,1
+97,6,55,female,Ginecologie,Depresie,1,10,187,0.49,medium,4,Ionogramă|Radiografie toracică|Profil hepatic|ECG,Intervenție chirurgicală|Regim alimentar,1,0
+36,30,40,male,Ginecologie,Hernie de disc|Astm bronșic,2,12,299,0.71,low,1,Radiografie toracică|RMN cerebral|ECG,Psihoterapie|Medicație orală|Intervenție chirurgicală,1,0
+89,9,81,male,Cardiologie,Depresie,1,11,164,0.96,medium,3,Profil hepatic|HbA1c|ECG,Regim alimentar,1,0
+119,3,67,male,Urologie,Infecție urinară,1,5,138,0.4,high,6,Cultură urină|EEG|Profil hepatic|CT toracic,Fizioterapie,1,1
+291,19,46,male,Urologie,Epilepsie|Depresie,2,1,185,0.65,low,2,HbA1c|RMN cerebral|Funcție renală,Injecții subcutanate,1,0
+152,22,32,male,Urologie,Artrită reumatoidă|Lombosciatică,2,12,231,0.33,high,5,Sumar urină,Intervenție chirurgicală,1,1
+110,18,51,female,Pediatrie,Hipertensiune arterială|Anemie feriprivă,2,7,255,0.89,low,1,ECG|Glicemie|Spirometrie|Profil lipidic,Fizioterapie|Terapie cu oxigen|Intervenție chirurgicală,1,0
+205,8,57,male,Chirurgie Generală,Migrenă cronică,1,19,259,0.98,low,2,HbA1c,Terapie inhalatorie|Fizioterapie,1,0
+32,23,19,male,Ginecologie,Hipertensiune arterială,1,9,303,0.77,low,2,Cultură urină|Ionogramă|HbA1c,Exerciții fizice regulate|Fizioterapie,1,0
+249,1,27,female,Pediatrie,Pneumonie,1,15,305,0.95,medium,3,Coagulogramă|ECG,Exerciții fizice regulate|Fizioterapie|Medicație orală,1,0
+64,24,28,female,Dermatologie,Diabet zaharat tip 2|Anxietate generalizată|Hernie de disc,3,8,114,0.83,medium,4,ECG|Ionogramă|Radiografie toracică|Ecocardiografie,Medicație orală,1,0
+250,13,23,male,Chirurgie Generală,Insuficiență cardiacă,1,18,142,0.49,low,2,RMN cerebral|Profil hepatic,Fizioterapie,1,0
+217,10,79,male,Urologie,Artrită reumatoidă|Anxietate generalizată|Migrenă cronică,3,7,81,0.74,medium,4,Ecocardiografie,Fizioterapie,0,0
+229,11,66,male,Ginecologie,Hipotiroidism|Pneumonie,2,6,156,0.78,medium,4,Cultură urină,Regim alimentar,1,0
+260,26,28,male,Psihiatrie,Insuficiență cardiacă|Migrenă cronică|Anxietate generalizată,3,8,56,0.87,medium,3,Sumar urină|Ecografie abdominală,Terapie cu oxigen|Monitorizare ambulatorie,0,0
+83,5,83,male,Ortopedie,Anxietate generalizată,1,7,301,0.64,medium,4,Ionogramă|Profil lipidic|Hemoleucogramă completă,Fizioterapie|Medicație orală|Intervenție chirurgicală,1,0
+225,18,65,male,Dermatologie,Epilepsie|Lombosciatică|Migrenă cronică|Infecție urinară,4,8,156,0.4,medium,4,Ecografie abdominală|Profil hepatic|TSH|Sumar urină,Medicație orală|Fizioterapie|Terapie cu oxigen,1,0
+130,18,45,male,Ginecologie,Hipotiroidism|Colecistită,2,20,323,0.89,medium,3,Profil hepatic|Ionogramă,Exerciții fizice regulate|Medicație orală,1,0
+101,29,27,male,Medicină Internă,Boală coronariană,1,4,215,0.48,medium,4,EEG|Cultură urină|Spirometrie|Ionogramă,Terapie inhalatorie,1,0
+55,27,79,male,Chirurgie Generală,Astm bronșic|Infecție urinară,2,7,117,0.85,medium,3,Ecografie abdominală|Spirometrie,Fizioterapie|Terapie inhalatorie,1,0
+9,4,44,female,Urologie,Diabet zaharat tip 2,1,7,133,0.36,low,2,Cultură urină|Ecocardiografie,Fizioterapie|Regim alimentar|Terapie cu oxigen,1,1
+17,3,76,male,Urologie,Insuficiență cardiacă|Gastrita cronică|Diabet zaharat tip 2|Anemie feriprivă,4,17,201,0.74,high,7,Sumar urină|Ecografie abdominală|Hemoleucogramă completă|Profil hepatic,Terapie cu oxigen,1,1
+212,26,54,female,Pediatrie,Anxietate generalizată|Pneumonie|Colecistită|Epilepsie,4,13,287,0.96,medium,3,Coagulogramă|CT toracic,Exerciții fizice regulate|Terapie cu oxigen|Regim alimentar,1,0
+270,10,44,male,Chirurgie Generală,Depresie,1,7,74,0.95,low,0,Ecocardiografie|TSH|EEG,Injecții subcutanate|Psihoterapie|Intervenție chirurgicală,0,0
+65,2,28,male,Psihiatrie,Hipertensiune arterială|Anemie feriprivă|Epilepsie|BPOC,4,6,87,0.47,high,5,Glicemie|HbA1c|EEG|Funcție renală,Exerciții fizice regulate|Terapie cu oxigen,1,1
+48,24,67,female,Psihiatrie,Lombosciatică|Gastrita cronică|Epilepsie,3,19,75,0.43,high,6,Spirometrie|Profil hepatic|TSH|Sumar urină,Regim alimentar|Terapie cu oxigen|Psihoterapie,1,1
+145,15,18,male,Ortopedie,Diabet zaharat tip 2,1,0,270,0.65,low,1,Ecocardiografie|Glicemie|Coagulogramă,Injecții subcutanate|Monitorizare ambulatorie|Medicație orală,1,0
+11,12,45,male,Neurologie,Anxietate generalizată|Hipertensiune arterială|Migrenă cronică,3,8,82,0.65,low,2,Ecografie abdominală|Sumar urină,Intervenție chirurgicală,0,0
+44,1,80,male,Psihiatrie,Infecție urinară|BPOC|Anxietate generalizată|Fibrilație atrială,4,2,64,0.89,medium,4,Profil lipidic,Terapie inhalatorie,0,0
+3,30,71,male,Psihiatrie,Pneumonie|Migrenă cronică,2,18,246,0.77,high,5,TSH|Profil lipidic|Cultură urină,Monitorizare ambulatorie|Intervenție chirurgicală|Psihoterapie,1,1
+124,4,22,male,Oftalmologie,Epilepsie|BPOC|Astm bronșic|Lombosciatică,4,4,68,0.94,medium,3,CT toracic|Ecografie abdominală|ECG|Profil hepatic,Injecții subcutanate,0,0
+92,21,62,male,Ginecologie,Insuficiență cardiacă|BPOC|Artrită reumatoidă|Anxietate generalizată,4,14,190,0.33,high,6,RMN cerebral|Radiografie toracică|Funcție renală,Exerciții fizice regulate,1,1
+147,24,45,female,Cardiologie,Astm bronșic|Anemie feriprivă|Anxietate generalizată,3,13,365,0.66,high,5,Ecografie abdominală|Hemoleucogramă completă|Profil hepatic|Ecocardiografie,Fizioterapie|Terapie cu oxigen,1,1
+162,16,65,female,Urologie,BPOC,1,19,60,0.61,low,2,HbA1c,Psihoterapie,0,0

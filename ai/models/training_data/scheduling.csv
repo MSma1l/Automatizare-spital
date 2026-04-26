@@ -1,0 +1,1201 @@
+date,day_of_week,hour,minute,doctor_id,patient_id,specialty,duration_minutes,appointment_type,doctor_daily_load,has_conflict,wait_days,status,optimal_score
+2025-10-15,2,12,0,3,152,Ortopedie,30,consultation,2,0,1,cancelled,0.855
+2025-06-19,3,13,30,20,172,Ginecologie,30,consultation,3,0,1,cancelled,0.911
+2025-03-17,0,9,30,1,83,Neurologie,60,consultation,8,0,3,completed,0.645
+2025-05-04,6,13,30,13,181,Ginecologie,30,video,5,0,21,cancelled,0.96
+2025-03-27,3,17,30,5,112,Urologie,30,checkup,4,0,5,completed,0.887
+2025-07-07,0,16,30,14,55,Oftalmologie,30,video,3,0,2,completed,1
+2025-01-06,0,10,30,17,50,Cardiologie,30,consultation,5,0,5,completed,0.979
+2025-11-25,1,12,0,9,71,ORL,15,checkup,0,0,21,no_show,1
+2025-11-20,3,12,0,16,192,ORL,45,video,0,0,7,completed,0.983
+2025-03-09,6,9,0,2,114,ORL,45,consultation,8,0,21,completed,0.44
+2025-01-09,3,11,30,6,151,Psihiatrie,60,checkup,10,1,3,completed,0.682
+2025-09-14,6,9,30,3,45,Ginecologie,15,checkup,11,1,5,rescheduled,0.468
+2025-01-02,3,10,30,4,88,Ginecologie,30,checkup,9,1,21,rescheduled,0.755
+2025-02-14,4,10,0,6,3,Pediatrie,45,checkup,11,1,21,rescheduled,0.669
+2025-12-15,0,14,0,5,80,Cardiologie,30,consultation,4,0,3,completed,1
+2025-04-01,1,17,30,15,68,Neurologie,30,checkup,5,0,5,cancelled,1
+2025-12-18,3,15,0,19,99,Ortopedie,30,consultation,11,1,3,cancelled,0.666
+2025-06-25,2,14,30,3,132,Pediatrie,30,checkup,0,0,5,completed,0.925
+2025-09-01,0,9,30,12,145,Medicină Internă,45,video,5,0,7,cancelled,1
+2025-06-21,5,11,0,6,92,Dermatologie,30,checkup,12,1,0,completed,0.505
+2025-08-22,4,13,30,13,122,Pediatrie,30,consultation,5,0,3,completed,1
+2025-09-17,2,9,30,9,148,Medicină Internă,30,consultation,2,0,21,no_show,0.968
+2025-09-26,4,10,0,5,170,Chirurgie Generală,45,consultation,1,0,14,cancelled,0.942
+2025-01-01,2,14,0,6,78,Dermatologie,15,consultation,3,0,7,completed,1
+2025-10-12,6,16,30,1,123,Ortopedie,30,checkup,10,1,3,rescheduled,0.404
+2025-08-26,1,14,0,13,33,Chirurgie Generală,45,consultation,12,1,3,rescheduled,0.717
+2025-12-12,4,15,30,20,101,Urologie,15,checkup,11,1,30,rescheduled,0.747
+2025-05-01,3,11,30,17,1,Oftalmologie,30,consultation,1,0,1,completed,0.959
+2025-04-19,5,10,0,11,99,ORL,30,consultation,4,0,14,completed,0.901
+2025-03-25,1,11,0,15,22,Chirurgie Generală,45,consultation,6,0,0,completed,0.973
+2025-10-22,2,12,30,1,125,ORL,60,consultation,12,1,1,rescheduled,0.698
+2025-08-19,1,12,30,11,137,Chirurgie Generală,30,consultation,6,0,3,completed,0.95
+2025-03-18,1,8,30,7,132,Oftalmologie,45,checkup,0,0,0,cancelled,0.869
+2025-11-03,0,14,30,14,87,ORL,30,video,8,0,2,completed,0.708
+2025-08-17,6,10,0,20,29,Chirurgie Generală,45,checkup,6,0,1,completed,0.779
+2025-08-09,5,16,30,15,177,Oftalmologie,30,video,11,1,14,cancelled,0.36
+2025-01-21,1,9,30,2,38,Oftalmologie,60,checkup,1,0,30,completed,1
+2025-08-05,1,11,0,9,185,ORL,45,consultation,6,0,14,completed,0.927
+2025-06-05,3,13,0,2,96,Oftalmologie,30,emergency,6,0,7,completed,0.969
+2025-07-24,3,16,30,9,2,Medicină Internă,30,emergency,10,1,1,rescheduled,0.7
+2025-11-03,0,15,30,4,57,Pediatrie,15,consultation,1,0,7,completed,0.899
+2025-11-01,5,10,30,16,143,Cardiologie,30,consultation,7,0,21,completed,0.526
+2025-09-30,1,14,30,9,104,Cardiologie,45,checkup,1,0,5,completed,1
+2025-07-09,2,10,30,15,173,Ginecologie,15,checkup,2,0,5,completed,1
+2025-01-12,6,15,30,18,191,Ginecologie,60,consultation,8,0,7,cancelled,0.558
+2025-02-26,2,13,0,6,197,Psihiatrie,60,checkup,5,0,3,completed,1
+2025-06-13,4,15,0,11,129,Urologie,30,consultation,6,0,5,cancelled,0.784
+2025-04-01,1,11,0,18,86,Ginecologie,45,checkup,1,0,7,no_show,1
+2025-07-30,2,10,0,20,58,Ortopedie,45,checkup,1,0,7,no_show,0.966
+2025-10-19,6,14,0,12,6,Psihiatrie,45,emergency,6,0,21,cancelled,0.868
+2025-03-24,0,12,0,6,121,Psihiatrie,60,consultation,4,0,0,completed,0.853
+2025-08-16,5,17,0,15,129,ORL,30,checkup,5,0,21,completed,0.738
+2025-02-05,2,8,0,14,134,Ginecologie,60,consultation,6,0,21,completed,0.871
+2025-10-01,2,14,30,16,186,Cardiologie,30,consultation,11,1,14,rescheduled,0.566
+2025-09-19,4,14,30,14,32,Neurologie,30,consultation,9,1,14,rescheduled,0.75
+2025-06-23,0,9,0,16,54,Dermatologie,15,checkup,1,0,7,cancelled,1
+2025-05-14,2,11,30,11,116,Psihiatrie,30,consultation,0,0,1,completed,1
+2025-07-05,5,14,30,6,146,ORL,30,emergency,10,1,2,cancelled,0.595
+2025-12-22,0,9,30,13,66,ORL,30,video,9,1,3,cancelled,0.691
+2025-09-22,0,11,0,12,165,Ortopedie,30,checkup,8,0,21,completed,0.86
+2025-03-28,4,16,30,6,124,Medicină Internă,15,video,5,0,2,completed,0.875
+2025-03-03,0,14,30,16,118,Oftalmologie,60,video,11,1,14,cancelled,0.598
+2025-09-26,4,16,0,12,171,Cardiologie,30,consultation,5,0,2,no_show,1
+2025-02-10,0,17,0,15,146,Urologie,30,consultation,11,1,2,completed,0.498
+2025-05-06,1,10,30,6,11,Oftalmologie,30,consultation,11,1,2,completed,0.899
+2025-09-25,3,10,0,8,63,Oftalmologie,45,checkup,1,0,14,completed,1
+2025-11-21,4,9,30,4,114,Neurologie,30,consultation,9,1,2,rescheduled,0.58
+2025-02-27,3,15,30,7,151,ORL,45,checkup,0,0,3,completed,0.944
+2025-11-20,3,9,30,17,73,ORL,30,video,3,0,7,completed,0.966
+2025-04-04,4,12,30,17,121,Ginecologie,30,consultation,6,0,1,cancelled,0.965
+2025-06-25,2,14,0,7,200,Neurologie,45,consultation,8,0,14,completed,0.609
+2025-04-18,4,13,0,11,41,Pediatrie,45,emergency,2,0,2,no_show,0.79
+2025-08-31,6,14,30,9,59,Dermatologie,30,video,4,0,3,completed,0.842
+2025-06-07,5,11,30,14,2,Medicină Internă,15,consultation,10,1,14,completed,0.424
+2025-05-21,2,8,0,7,170,Psihiatrie,30,video,0,0,14,completed,0.838
+2025-04-21,0,13,30,9,28,Neurologie,30,consultation,7,0,5,no_show,0.675
+2025-01-24,4,15,30,16,64,Dermatologie,60,checkup,0,0,7,completed,0.845
+2025-02-26,2,12,0,11,199,Psihiatrie,30,consultation,2,0,5,completed,1
+2025-08-13,2,10,30,18,136,Dermatologie,45,consultation,12,1,1,cancelled,0.679
+2025-07-04,4,16,30,7,48,Chirurgie Generală,30,checkup,5,0,30,completed,0.916
+2025-11-06,3,15,0,5,31,ORL,30,consultation,7,0,14,completed,0.796
+2025-10-17,4,11,0,17,84,Urologie,30,checkup,10,1,1,rescheduled,0.694
+2025-02-17,0,17,0,18,41,Urologie,45,consultation,7,0,30,cancelled,0.611
+2025-05-22,3,12,0,11,19,Ortopedie,45,consultation,8,0,7,no_show,0.594
+2025-01-11,5,11,30,1,160,Medicină Internă,15,consultation,6,0,21,completed,0.814
+2025-12-01,0,14,30,19,40,Pediatrie,45,consultation,2,0,5,no_show,0.877
+2025-01-21,1,15,30,3,84,Chirurgie Generală,60,checkup,3,0,3,completed,1
+2025-07-01,1,8,30,4,97,Cardiologie,30,emergency,11,1,2,rescheduled,0.573
+2025-08-13,2,11,0,13,152,Neurologie,15,consultation,9,1,7,rescheduled,0.702
+2025-09-08,0,15,30,11,107,Pediatrie,30,consultation,8,0,2,completed,0.649
+2025-08-22,4,8,30,14,103,Neurologie,30,video,1,0,14,completed,0.942
+2025-11-26,2,15,30,1,71,Psihiatrie,45,consultation,2,0,2,completed,1.0
+2025-09-23,1,9,30,2,16,Oftalmologie,45,video,10,1,2,cancelled,0.746
+2025-03-31,0,16,0,6,94,Neurologie,45,consultation,3,0,7,no_show,0.907
+2025-05-16,4,13,0,1,85,Cardiologie,60,consultation,2,0,0,completed,0.901
+2025-03-22,5,9,30,8,24,Medicină Internă,60,consultation,7,0,3,cancelled,0.429
+2025-08-14,3,9,0,10,122,Ginecologie,60,consultation,5,0,3,completed,0.976
+2025-10-20,0,10,0,17,34,Ortopedie,30,consultation,1,0,2,completed,0.889
+2025-05-08,3,10,0,10,85,Psihiatrie,60,checkup,8,0,30,completed,0.772
+2025-07-11,4,14,0,13,162,Cardiologie,45,video,0,0,0,cancelled,0.947
+2025-03-24,0,11,0,19,124,Ginecologie,60,consultation,9,1,3,completed,0.625
+2025-08-14,3,9,30,17,87,Chirurgie Generală,60,consultation,5,0,5,completed,1
+2025-12-06,5,9,30,17,68,Neurologie,45,consultation,0,0,1,completed,0.753
+2025-10-09,3,14,0,12,79,Ginecologie,30,video,1,0,30,completed,1
+2025-09-19,4,10,0,1,51,Psihiatrie,45,checkup,12,1,2,completed,0.523
+2025-07-05,5,12,0,12,41,Neurologie,45,checkup,9,1,2,completed,0.472
+2025-03-19,2,12,30,7,72,Cardiologie,60,video,4,0,5,completed,0.913
+2025-06-03,1,8,30,18,172,Dermatologie,30,emergency,9,1,30,rescheduled,0.613
+2025-07-30,2,9,30,6,196,Pediatrie,30,consultation,6,0,2,cancelled,1
+2025-05-22,3,9,30,4,186,Psihiatrie,30,checkup,3,0,7,cancelled,1
+2025-01-06,0,14,30,17,27,ORL,30,consultation,7,0,1,completed,0.663
+2025-06-24,1,16,0,13,66,Neurologie,45,consultation,2,0,7,cancelled,1
+2025-05-30,4,10,0,3,188,Oftalmologie,60,video,3,0,7,cancelled,1
+2025-11-23,6,9,30,9,65,ORL,30,consultation,4,0,1,completed,0.776
+2025-09-06,5,10,30,8,152,Medicină Internă,45,consultation,12,1,14,rescheduled,0.399
+2025-11-07,4,12,30,2,155,Neurologie,30,emergency,1,0,1,cancelled,0.92
+2025-07-04,4,13,30,13,184,Psihiatrie,15,checkup,7,0,5,completed,0.87
+2025-11-18,1,15,30,1,56,Oftalmologie,30,checkup,5,0,21,cancelled,0.933
+2025-08-22,4,16,30,12,175,Chirurgie Generală,30,video,4,0,0,completed,1
+2025-03-24,0,10,30,13,193,Chirurgie Generală,45,consultation,7,0,3,completed,0.696
+2025-04-27,6,10,30,4,185,Neurologie,45,consultation,7,0,14,completed,0.571
+2025-06-22,6,15,30,6,44,Chirurgie Generală,15,consultation,4,0,7,completed,0.709
+2025-10-14,1,12,30,20,179,Neurologie,30,consultation,9,1,21,cancelled,0.734
+2025-06-24,1,12,30,5,99,Neurologie,45,emergency,12,1,2,cancelled,0.655
+2025-02-12,2,10,0,15,11,Pediatrie,30,checkup,4,1,2,cancelled,1
+2025-08-14,3,14,0,5,4,Dermatologie,30,consultation,9,1,5,rescheduled,0.9
+2025-10-12,6,13,0,14,48,Urologie,30,checkup,6,0,7,no_show,0.826
+2025-07-09,2,11,0,11,139,Chirurgie Generală,15,checkup,5,0,30,completed,0.926
+2025-10-03,4,13,0,17,182,Ginecologie,30,consultation,9,1,2,rescheduled,0.619
+2025-04-25,4,12,0,15,159,Ginecologie,30,consultation,2,1,3,cancelled,0.738
+2025-06-27,4,12,0,3,175,Chirurgie Generală,15,emergency,9,1,2,completed,0.833
+2025-08-09,5,14,0,13,56,ORL,30,checkup,10,1,3,rescheduled,0.523
+2025-09-18,3,17,0,18,175,Oftalmologie,30,consultation,9,1,1,cancelled,0.453
+2025-02-06,3,13,30,6,188,Pediatrie,30,checkup,12,1,30,completed,0.61
+2025-01-16,3,14,30,4,85,Neurologie,15,consultation,11,1,21,rescheduled,0.571
+2025-03-12,2,16,0,4,80,Chirurgie Generală,30,consultation,4,0,2,completed,1
+2025-04-27,6,11,0,11,116,Neurologie,30,consultation,9,1,1,cancelled,0.482
+2025-01-01,2,17,0,1,84,Medicină Internă,30,video,9,1,5,completed,0.559
+2025-03-30,6,10,30,6,138,Pediatrie,60,consultation,10,1,21,cancelled,0.312
+2025-12-28,6,16,0,17,39,Ginecologie,15,consultation,8,0,14,completed,0.406
+2025-06-09,0,16,0,12,175,Ortopedie,30,consultation,1,0,7,no_show,1
+2025-12-04,3,12,30,15,30,ORL,30,consultation,5,0,30,completed,0.886
+2025-07-26,5,8,0,16,169,Psihiatrie,45,checkup,8,0,7,no_show,0.256
+2025-09-25,3,11,0,10,83,Ortopedie,30,consultation,10,1,3,rescheduled,0.64
+2025-02-12,2,12,30,4,83,Urologie,30,consultation,7,0,14,cancelled,0.661
+2025-01-22,2,10,0,10,151,Psihiatrie,60,checkup,10,1,3,rescheduled,0.584
+2025-01-15,2,8,30,13,49,Chirurgie Generală,60,consultation,10,1,21,cancelled,0.538
+2025-07-09,2,14,0,7,26,Ginecologie,60,video,11,1,3,cancelled,0.691
+2025-09-11,3,10,0,2,98,Pediatrie,60,consultation,4,1,2,completed,1
+2025-07-19,5,15,30,13,12,Ortopedie,30,consultation,10,1,2,completed,0.248
+2025-12-15,0,13,30,7,168,Psihiatrie,60,consultation,0,0,3,completed,1
+2025-09-07,6,10,0,13,11,Psihiatrie,45,consultation,11,1,2,cancelled,0.393
+2025-03-01,5,9,30,3,47,Urologie,30,video,4,0,7,completed,0.782
+2025-10-19,6,10,0,13,52,Neurologie,30,checkup,2,0,0,completed,0.88
+2025-02-27,3,10,30,6,22,Psihiatrie,45,consultation,9,1,3,cancelled,0.54
+2025-12-06,5,16,0,7,186,Chirurgie Generală,15,consultation,2,0,30,no_show,0.861
+2025-06-29,6,12,0,13,98,Ortopedie,60,checkup,3,0,2,completed,0.612
+2025-02-05,2,16,30,18,42,Ortopedie,30,consultation,1,0,3,completed,1
+2025-11-13,3,15,30,12,10,Ortopedie,60,checkup,0,0,5,cancelled,1
+2025-04-25,4,15,0,19,140,Neurologie,15,video,7,0,7,completed,0.65
+2025-11-12,2,11,0,16,157,Dermatologie,30,video,7,0,21,completed,0.752
+2025-05-27,1,14,0,13,66,Ortopedie,30,consultation,12,1,2,rescheduled,0.651
+2025-07-30,2,14,0,13,33,ORL,30,video,6,0,5,completed,1
+2025-06-22,6,10,30,5,186,Urologie,30,consultation,3,0,21,completed,0.767
+2025-11-13,3,11,30,18,196,Medicină Internă,30,consultation,6,0,1,completed,0.941
+2025-11-16,6,11,0,7,87,Urologie,60,checkup,8,0,21,completed,0.68
+2025-04-16,2,11,0,9,191,ORL,30,consultation,6,0,14,completed,0.97
+2025-03-08,5,15,30,11,157,Oftalmologie,30,checkup,0,0,14,completed,0.869
+2025-01-05,6,16,0,11,24,Chirurgie Generală,60,consultation,11,1,2,rescheduled,0.551
+2025-06-11,2,13,30,16,87,Psihiatrie,30,consultation,12,1,5,completed,0.62
+2025-03-19,2,9,0,18,159,Medicină Internă,30,checkup,7,0,2,cancelled,0.7
+2025-03-17,0,16,0,2,35,Medicină Internă,30,checkup,12,1,0,cancelled,0.749
+2025-07-05,5,16,0,15,6,Ginecologie,60,checkup,5,0,21,completed,0.856
+2025-07-21,0,16,0,7,163,Chirurgie Generală,30,emergency,12,1,1,cancelled,0.763
+2025-09-11,3,8,30,6,94,Dermatologie,30,consultation,8,0,0,completed,0.672
+2025-12-25,3,10,30,14,87,Cardiologie,30,video,10,1,5,rescheduled,0.825
+2025-10-10,4,8,0,19,5,Dermatologie,30,video,6,0,7,completed,0.832
+2025-09-20,5,16,30,14,182,Chirurgie Generală,30,consultation,4,0,5,completed,0.868
+2025-08-19,1,16,0,11,131,Neurologie,15,consultation,12,1,1,rescheduled,0.66
+2025-05-02,4,15,0,1,186,Cardiologie,45,consultation,9,1,1,cancelled,0.741
+2025-08-24,6,14,30,4,157,Neurologie,15,consultation,11,1,21,rescheduled,0.491
+2025-08-10,6,15,0,7,13,Psihiatrie,15,consultation,8,0,14,completed,0.457
+2025-09-11,3,13,0,16,74,Psihiatrie,45,video,0,0,5,completed,1
+2025-10-05,6,13,0,4,180,Neurologie,30,video,12,1,30,rescheduled,0.487
+2025-11-22,5,15,30,20,106,Urologie,45,consultation,4,0,7,completed,0.652
+2025-05-09,4,10,0,3,16,Neurologie,30,video,0,0,14,completed,0.783
+2025-08-17,6,8,0,11,151,Chirurgie Generală,45,checkup,1,0,7,completed,0.585
+2025-07-09,2,12,30,11,140,Psihiatrie,30,checkup,0,0,3,cancelled,1
+2025-06-16,0,16,30,15,119,Ginecologie,30,emergency,6,0,0,completed,0.877
+2025-11-20,3,9,30,1,112,ORL,60,consultation,2,0,0,completed,1
+2025-05-19,0,11,0,16,101,Ortopedie,30,video,8,0,2,completed,0.593
+2025-03-23,6,12,0,12,28,Neurologie,60,emergency,9,1,2,rescheduled,0.501
+2025-09-11,3,15,30,16,4,Dermatologie,45,consultation,4,0,3,completed,1
+2025-07-11,4,15,0,12,145,Ginecologie,15,consultation,6,0,21,completed,1
+2025-06-10,1,14,30,9,143,Chirurgie Generală,30,consultation,3,0,30,cancelled,0.802
+2025-12-29,0,13,0,8,126,Oftalmologie,30,consultation,8,0,3,completed,0.603
+2025-06-14,5,9,30,15,155,Psihiatrie,30,consultation,12,1,2,cancelled,0.477
+2025-01-31,4,12,0,1,84,Chirurgie Generală,45,checkup,2,0,30,completed,0.908
+2025-06-10,1,13,0,7,153,Oftalmologie,30,emergency,11,1,21,cancelled,0.624
+2025-07-12,5,11,0,10,67,Pediatrie,30,consultation,10,1,7,rescheduled,0.498
+2025-07-08,1,12,0,15,161,Medicină Internă,30,checkup,12,1,3,completed,0.636
+2025-11-07,4,12,0,19,33,Chirurgie Generală,60,consultation,5,0,3,completed,1
+2025-07-12,5,13,30,11,102,Ortopedie,30,video,0,0,3,cancelled,0.916
+2026-01-01,3,9,0,3,36,Ortopedie,30,consultation,11,1,2,cancelled,0.729
+2025-07-02,2,11,30,11,193,Neurologie,30,checkup,8,0,14,completed,0.659
+2025-04-17,3,11,0,9,59,Pediatrie,15,checkup,0,0,14,completed,0.987
+2025-01-22,2,8,0,5,36,Urologie,30,consultation,10,1,7,rescheduled,0.611
+2025-12-09,1,14,30,18,18,Cardiologie,30,consultation,3,0,0,completed,0.884
+2025-10-25,5,16,0,13,55,Ortopedie,30,video,11,1,7,rescheduled,0.43
+2025-04-14,0,15,30,11,51,Chirurgie Generală,60,consultation,10,1,2,rescheduled,0.77
+2025-11-05,2,17,30,7,48,Neurologie,15,video,11,1,21,rescheduled,0.61
+2025-06-02,0,15,0,19,78,Chirurgie Generală,30,checkup,3,0,21,completed,0.837
+2025-09-19,4,8,0,7,47,Chirurgie Generală,30,video,6,0,5,completed,0.905
+2025-09-03,2,13,30,8,20,Oftalmologie,30,consultation,0,0,21,no_show,0.775
+2025-01-01,2,10,30,19,41,Neurologie,15,consultation,3,0,7,completed,0.973
+2025-06-02,0,15,0,10,37,Dermatologie,30,video,12,1,21,rescheduled,0.843
+2025-11-22,5,15,0,16,45,Cardiologie,30,emergency,7,0,5,completed,0.48
+2025-09-03,2,9,0,7,17,Medicină Internă,45,consultation,7,0,5,completed,0.855
+2025-01-07,1,13,0,3,198,Dermatologie,45,emergency,3,0,0,completed,1
+2025-08-18,0,15,0,19,112,Urologie,60,checkup,3,0,7,completed,0.947
+2025-02-15,5,13,30,16,140,Ortopedie,30,video,11,1,5,rescheduled,0.491
+2025-03-31,0,13,30,15,89,Dermatologie,30,checkup,7,0,3,no_show,0.608
+2025-02-14,4,13,0,11,92,ORL,30,emergency,10,1,2,rescheduled,0.502
+2025-11-17,0,9,30,18,162,Psihiatrie,30,emergency,2,0,14,cancelled,0.992
+2025-07-22,1,9,30,4,129,Urologie,15,consultation,0,0,5,no_show,0.99
+2025-06-21,5,12,30,12,141,Medicină Internă,30,video,3,0,7,completed,0.649
+2025-02-24,0,10,30,5,178,Pediatrie,45,video,8,0,5,no_show,0.671
+2025-07-27,6,10,0,18,164,Neurologie,60,consultation,0,1,1,rescheduled,0.72
+2025-12-15,0,9,30,15,31,Medicină Internă,60,checkup,0,0,3,completed,1
+2025-10-29,2,16,0,16,9,Ginecologie,30,consultation,11,1,5,cancelled,0.802
+2025-10-03,4,15,30,19,159,Chirurgie Generală,60,checkup,0,0,30,cancelled,1
+2025-02-17,0,9,0,15,98,Psihiatrie,30,checkup,7,1,3,cancelled,0.74
+2025-08-20,2,10,30,4,3,ORL,30,video,12,1,0,cancelled,0.757
+2025-05-21,2,14,30,18,168,Psihiatrie,15,checkup,11,1,5,rescheduled,0.727
+2025-08-20,2,10,0,2,75,Oftalmologie,30,consultation,2,0,1,completed,1
+2025-12-01,0,16,30,2,78,Ortopedie,30,video,9,1,14,rescheduled,0.799
+2025-08-16,5,15,0,4,43,Ortopedie,30,video,9,1,5,rescheduled,0.396
+2025-01-11,5,14,30,18,28,Medicină Internă,30,consultation,8,0,1,completed,0.615
+2025-12-07,6,11,30,17,63,Ortopedie,30,consultation,9,1,2,rescheduled,0.433
+2025-10-13,0,10,0,6,150,Medicină Internă,30,consultation,3,0,1,completed,0.894
+2025-01-06,0,11,0,4,135,ORL,30,checkup,4,0,1,no_show,1
+2025-04-07,0,14,30,16,55,Neurologie,30,checkup,10,1,5,completed,0.562
+2025-03-16,6,14,0,3,123,Urologie,60,consultation,2,0,14,cancelled,0.754
+2025-05-15,3,11,30,2,83,Medicină Internă,15,checkup,5,0,7,cancelled,1
+2025-03-07,4,12,30,6,62,Oftalmologie,30,checkup,1,0,0,completed,1
+2025-03-16,6,15,0,12,72,Medicină Internă,30,checkup,5,0,5,completed,0.907
+2025-06-07,5,16,30,17,125,Medicină Internă,45,video,9,1,7,completed,0.384
+2025-10-21,1,9,30,3,178,Ginecologie,60,checkup,9,1,7,rescheduled,0.61
+2025-05-18,6,16,30,20,132,Pediatrie,30,video,3,0,3,completed,0.855
+2025-07-30,2,10,30,7,197,Oftalmologie,60,consultation,12,1,7,rescheduled,0.593
+2025-12-18,3,11,30,7,119,Oftalmologie,30,consultation,11,1,21,cancelled,0.749
+2025-06-22,6,10,30,12,63,Medicină Internă,30,consultation,9,1,5,rescheduled,0.67
+2025-05-11,6,13,30,4,97,Urologie,60,consultation,3,0,2,completed,0.916
+2025-05-22,3,12,30,7,69,Cardiologie,60,checkup,7,0,5,completed,0.65
+2025-03-03,0,9,0,12,195,Cardiologie,15,consultation,1,0,2,cancelled,1
+2025-04-15,1,8,0,1,29,Chirurgie Generală,60,emergency,4,0,2,completed,0.831
+2025-10-20,0,15,30,8,39,Cardiologie,30,consultation,3,0,30,completed,0.982
+2025-03-24,0,9,30,16,32,Neurologie,30,consultation,3,0,2,completed,0.995
+2025-04-23,2,10,0,8,172,Dermatologie,30,video,6,0,2,cancelled,0.909
+2025-03-18,1,15,30,20,193,Medicină Internă,15,emergency,3,0,5,cancelled,1
+2025-09-26,4,11,0,16,130,Oftalmologie,30,consultation,3,0,7,completed,0.969
+2025-07-26,5,10,30,12,104,Dermatologie,30,consultation,3,0,21,no_show,0.708
+2025-12-18,3,16,0,3,116,Psihiatrie,45,consultation,5,0,0,completed,0.901
+2025-08-12,1,10,0,9,94,Dermatologie,30,consultation,9,1,7,cancelled,0.735
+2025-04-11,4,16,30,12,13,Pediatrie,15,video,1,0,5,completed,0.924
+2025-03-18,1,10,30,9,48,Pediatrie,30,consultation,1,0,1,completed,0.988
+2025-12-02,1,15,0,10,141,Ginecologie,60,video,3,1,30,cancelled,1
+2025-05-18,6,15,0,18,32,Ginecologie,30,consultation,2,0,21,completed,0.88
+2025-01-05,6,10,0,9,132,Cardiologie,30,video,6,0,0,completed,0.934
+2025-07-08,1,13,30,15,63,Ginecologie,30,consultation,3,0,7,completed,1
+2025-07-13,6,9,30,15,136,Ginecologie,45,consultation,8,0,21,completed,0.427
+2025-11-07,4,13,30,9,135,Medicină Internă,30,video,2,0,2,completed,0.903
+2025-07-08,1,16,0,20,106,Medicină Internă,30,consultation,5,0,14,completed,1
+2025-08-19,1,16,0,10,102,Pediatrie,30,video,7,0,3,completed,0.535
+2025-07-10,3,16,30,5,107,Cardiologie,30,consultation,10,1,21,rescheduled,0.806
+2025-07-17,3,16,30,3,154,Dermatologie,30,checkup,7,1,30,completed,0.737
+2025-02-04,1,11,0,10,130,Ortopedie,15,consultation,11,1,7,rescheduled,0.769
+2025-09-24,2,11,30,13,86,Oftalmologie,30,checkup,4,0,14,completed,1
+2025-08-13,2,15,30,17,10,ORL,45,emergency,9,1,5,completed,0.807
+2025-06-19,3,14,30,9,37,Ortopedie,45,consultation,9,1,3,rescheduled,0.853
+2025-01-22,2,8,0,5,50,Medicină Internă,30,consultation,2,0,5,no_show,0.975
+2025-03-25,1,16,30,16,17,Pediatrie,30,video,10,1,5,rescheduled,0.998
+2025-08-24,6,15,30,20,187,Chirurgie Generală,60,video,4,0,5,no_show,0.793
+2025-06-17,1,12,30,20,200,Pediatrie,30,consultation,7,0,21,completed,0.559
+2025-07-27,6,8,30,9,28,Ortopedie,30,video,3,0,2,no_show,0.838
+2025-09-16,1,11,30,14,146,Chirurgie Generală,30,consultation,9,1,5,completed,0.631
+2025-02-03,0,15,0,14,104,Medicină Internă,30,checkup,0,0,3,completed,0.651
+2025-07-22,1,13,30,14,61,Dermatologie,30,video,5,0,3,completed,1
+2025-02-12,2,9,0,1,39,Urologie,30,video,12,1,14,cancelled,0.706
+2025-04-01,1,8,30,12,174,ORL,60,checkup,10,1,5,rescheduled,0.6
+2025-06-08,6,11,0,19,22,Cardiologie,45,video,3,0,21,cancelled,0.721
+2025-05-30,4,13,0,20,73,Ortopedie,15,checkup,4,0,14,completed,1
+2025-09-12,4,13,30,2,101,Chirurgie Generală,45,checkup,12,1,5,completed,0.649
+2025-07-25,4,11,0,10,171,Chirurgie Generală,30,checkup,11,1,2,rescheduled,0.837
+2025-10-28,1,16,0,4,115,Ortopedie,30,consultation,12,1,3,rescheduled,0.708
+2025-07-29,1,9,30,7,122,ORL,15,consultation,3,0,0,cancelled,1
+2025-05-10,5,11,30,15,169,Medicină Internă,45,video,7,0,3,no_show,0.423
+2025-10-18,5,16,0,1,43,Dermatologie,30,checkup,5,0,21,completed,0.841
+2025-11-06,3,12,30,7,185,Ortopedie,30,emergency,10,1,3,rescheduled,0.632
+2025-02-23,6,12,0,7,38,Chirurgie Generală,45,video,11,1,5,cancelled,0.44
+2025-09-28,6,17,0,14,198,Psihiatrie,45,checkup,11,1,5,rescheduled,0.51
+2025-05-26,0,11,30,19,161,Neurologie,30,video,7,0,7,completed,0.698
+2025-06-11,2,15,0,15,68,Dermatologie,60,video,3,0,5,completed,1
+2025-04-24,3,17,30,8,102,Cardiologie,30,video,12,1,14,cancelled,0.602
+2025-10-07,1,17,0,17,188,ORL,45,emergency,10,1,1,completed,0.634
+2025-05-28,2,15,0,13,144,Psihiatrie,30,checkup,3,1,3,rescheduled,1
+2025-05-06,1,17,0,4,34,Psihiatrie,45,consultation,4,0,3,no_show,0.917
+2025-02-19,2,15,30,10,139,Psihiatrie,30,consultation,2,0,21,completed,1
+2025-05-03,5,9,30,6,30,Ginecologie,30,checkup,12,1,5,cancelled,0.363
+2025-02-12,2,11,0,12,46,Medicină Internă,45,checkup,4,0,21,completed,1
+2025-02-14,4,17,0,5,88,Ortopedie,30,checkup,3,0,21,completed,1
+2025-08-10,6,9,30,7,43,Pediatrie,45,checkup,9,1,7,rescheduled,0.536
+2025-04-27,6,15,30,18,198,Ginecologie,30,checkup,3,0,0,completed,0.783
+2025-12-07,6,16,30,14,192,Cardiologie,60,video,1,0,1,completed,0.792
+2025-03-01,5,13,30,16,142,Urologie,45,consultation,9,1,14,cancelled,0.451
+2025-10-02,3,15,30,2,28,Cardiologie,60,checkup,2,0,14,no_show,0.943
+2025-05-24,5,11,30,3,136,Chirurgie Generală,15,consultation,4,0,0,completed,0.818
+2025-03-12,2,16,0,12,30,Neurologie,60,emergency,5,0,2,completed,1
+2025-02-10,0,10,30,10,195,Urologie,45,video,1,0,5,completed,0.969
+2025-10-10,4,14,0,13,193,Cardiologie,30,video,1,0,2,completed,0.922
+2025-02-05,2,9,0,4,123,Cardiologie,30,consultation,8,0,2,no_show,0.76
+2025-06-21,5,9,0,1,121,Pediatrie,45,consultation,11,1,30,completed,0.454
+2025-09-18,3,10,30,1,175,Urologie,60,checkup,11,1,14,rescheduled,0.667
+2025-04-19,5,13,30,7,136,Dermatologie,30,consultation,9,1,3,cancelled,0.49
+2025-05-18,6,10,0,14,66,ORL,45,consultation,1,0,2,completed,0.844
+2025-11-25,1,13,0,5,183,Cardiologie,30,consultation,0,0,7,completed,1
+2025-04-22,1,10,0,19,1,ORL,30,consultation,11,1,0,rescheduled,0.715
+2025-11-28,4,15,30,11,106,Medicină Internă,45,checkup,7,0,21,completed,0.754
+2025-07-19,5,11,0,16,126,Dermatologie,30,consultation,6,0,1,cancelled,0.903
+2025-05-29,3,10,0,10,37,Dermatologie,30,consultation,0,0,14,completed,1
+2025-08-21,3,11,0,15,52,Psihiatrie,60,video,6,0,5,completed,1
+2025-11-27,3,12,0,18,131,ORL,60,consultation,11,1,3,rescheduled,0.83
+2025-02-20,3,10,30,13,6,Neurologie,30,video,3,0,2,completed,1
+2025-11-11,1,13,0,16,136,Cardiologie,30,consultation,12,1,7,cancelled,0.639
+2025-10-18,5,11,30,7,48,Neurologie,45,emergency,6,0,14,completed,0.697
+2025-11-05,2,13,30,4,98,Ginecologie,45,video,5,1,3,rescheduled,0.892
+2025-05-04,6,12,30,8,111,Urologie,15,consultation,9,1,21,rescheduled,0.545
+2025-07-31,3,12,0,4,175,Urologie,30,consultation,11,1,2,rescheduled,0.65
+2025-01-19,6,10,30,4,72,ORL,30,consultation,3,0,21,completed,0.863
+2025-11-03,0,12,0,2,122,Psihiatrie,30,consultation,12,1,7,rescheduled,0.742
+2025-09-08,0,15,0,14,85,Neurologie,15,checkup,9,1,2,rescheduled,0.645
+2025-08-20,2,13,0,1,190,Neurologie,60,checkup,10,1,2,rescheduled,0.776
+2025-03-22,5,10,0,6,51,Pediatrie,30,consultation,0,0,2,completed,0.963
+2025-04-15,1,11,30,14,40,Psihiatrie,15,video,7,0,2,completed,0.849
+2025-03-31,0,14,30,4,22,Ortopedie,30,consultation,1,0,7,completed,0.964
+2025-12-13,5,12,30,15,41,Oftalmologie,30,checkup,7,0,7,cancelled,0.346
+2025-05-23,4,10,0,1,51,Medicină Internă,30,emergency,7,0,21,completed,0.627
+2025-04-28,0,15,0,18,123,Medicină Internă,60,checkup,11,1,14,rescheduled,0.498
+2025-04-03,3,12,0,5,62,Cardiologie,30,checkup,1,0,5,completed,0.925
+2025-06-20,4,13,0,2,110,Ginecologie,60,consultation,12,1,14,cancelled,0.682
+2025-02-15,5,12,30,3,109,Psihiatrie,45,consultation,12,1,3,rescheduled,0.468
+2025-01-16,3,8,0,1,199,ORL,45,video,11,1,0,rescheduled,0.791
+2025-11-23,6,13,0,7,124,Neurologie,30,video,10,1,3,cancelled,0.499
+2025-03-18,1,17,30,13,173,Neurologie,45,checkup,4,0,2,completed,0.764
+2025-03-17,0,13,30,10,126,Urologie,60,consultation,2,0,2,completed,1
+2025-01-21,1,12,30,1,12,Oftalmologie,15,checkup,3,0,7,completed,1
+2025-09-22,0,10,0,13,97,Oftalmologie,30,consultation,12,1,2,rescheduled,0.636
+2025-07-07,0,10,0,19,97,Psihiatrie,15,emergency,10,1,5,rescheduled,0.832
+2025-05-04,6,11,30,20,91,Cardiologie,45,emergency,8,0,1,completed,0.549
+2025-07-20,6,10,0,18,136,Psihiatrie,15,checkup,4,0,7,completed,0.815
+2025-08-31,6,12,0,17,50,Medicină Internă,45,consultation,10,1,1,rescheduled,0.521
+2025-12-23,1,11,30,6,134,Oftalmologie,45,checkup,4,0,2,completed,1
+2025-08-03,6,15,0,12,185,Psihiatrie,45,consultation,1,0,14,completed,0.93
+2025-05-30,4,17,30,6,91,Chirurgie Generală,45,video,0,0,14,completed,0.767
+2025-07-08,1,11,0,10,50,Psihiatrie,15,consultation,6,0,14,cancelled,0.747
+2025-09-29,0,12,0,8,188,Neurologie,30,checkup,8,0,14,completed,0.679
+2025-03-10,0,12,0,11,10,Dermatologie,45,consultation,4,0,21,completed,1
+2025-09-27,5,10,30,4,102,Psihiatrie,30,consultation,1,0,7,completed,0.707
+2025-08-27,2,15,0,18,13,Oftalmologie,60,consultation,1,0,2,completed,0.927
+2025-04-26,5,8,30,2,186,Neurologie,60,video,9,1,14,rescheduled,0.45
+2025-06-17,1,17,0,15,129,Medicină Internă,45,emergency,8,0,0,completed,0.747
+2025-01-16,3,13,30,14,29,Urologie,30,checkup,0,0,3,completed,0.689
+2025-12-26,4,12,30,20,31,Psihiatrie,60,video,9,1,7,rescheduled,0.629
+2025-01-30,3,9,0,4,135,ORL,45,consultation,8,0,2,completed,0.641
+2025-06-25,2,15,0,14,50,Ortopedie,45,consultation,3,0,5,completed,0.914
+2025-08-03,6,9,30,2,179,Psihiatrie,60,consultation,8,0,21,completed,0.527
+2025-07-07,0,14,30,8,127,Medicină Internă,30,video,11,1,0,cancelled,0.739
+2025-01-10,4,16,0,2,134,Pediatrie,30,consultation,9,1,1,completed,0.735
+2025-01-14,1,11,30,3,83,Psihiatrie,30,video,12,1,2,completed,0.586
+2025-09-18,3,13,30,19,28,Ginecologie,45,checkup,12,1,5,completed,0.845
+2025-11-15,5,10,30,10,192,Cardiologie,30,consultation,8,1,5,rescheduled,0.529
+2025-09-02,1,16,0,14,12,Pediatrie,30,consultation,11,1,1,rescheduled,0.779
+2025-07-09,2,12,0,20,13,Urologie,30,checkup,11,1,1,rescheduled,0.491
+2026-01-01,3,17,30,19,43,Medicină Internă,45,emergency,9,1,21,rescheduled,0.495
+2025-11-16,6,13,30,10,142,ORL,45,checkup,11,1,7,cancelled,0.526
+2025-09-25,3,10,30,19,99,ORL,60,consultation,5,0,2,cancelled,0.966
+2025-06-08,6,13,0,6,49,Neurologie,30,emergency,3,0,1,no_show,0.694
+2025-01-29,2,11,0,18,122,Ortopedie,30,consultation,12,1,3,completed,0.773
+2025-11-25,1,11,0,10,144,Psihiatrie,30,checkup,5,0,7,completed,1
+2025-03-12,2,14,0,10,1,Chirurgie Generală,60,video,1,0,21,completed,1
+2025-08-11,0,11,0,13,152,Chirurgie Generală,30,consultation,10,1,2,cancelled,0.628
+2025-07-28,0,14,0,1,144,Ginecologie,45,consultation,10,1,21,cancelled,0.766
+2025-09-28,6,10,30,4,65,Pediatrie,45,consultation,2,0,14,completed,0.66
+2025-01-21,1,16,0,16,193,Pediatrie,15,checkup,8,0,3,cancelled,0.692
+2025-02-02,6,17,0,13,129,Pediatrie,15,checkup,9,1,3,completed,0.419
+2025-02-03,0,11,0,20,166,Dermatologie,15,checkup,1,0,3,completed,0.975
+2025-04-01,1,16,0,19,114,ORL,30,consultation,11,1,3,cancelled,0.673
+2025-08-14,3,11,30,13,42,Cardiologie,45,consultation,2,0,14,completed,1
+2025-03-08,5,13,30,1,143,Neurologie,45,checkup,10,1,14,completed,0.751
+2025-10-17,4,14,0,9,6,Medicină Internă,60,checkup,4,0,2,completed,0.868
+2025-04-29,1,9,0,11,92,Psihiatrie,60,consultation,6,0,5,completed,1
+2025-03-26,2,14,0,20,42,Cardiologie,30,consultation,6,0,5,completed,1
+2025-03-09,6,12,30,13,32,Pediatrie,30,consultation,10,1,5,rescheduled,0.366
+2025-03-28,4,16,30,2,37,Medicină Internă,30,consultation,1,0,2,completed,0.912
+2025-08-20,2,10,30,4,102,Ginecologie,30,video,7,0,5,completed,0.734
+2025-03-24,0,14,30,19,138,Ortopedie,30,consultation,8,0,3,completed,0.68
+2025-06-24,1,15,30,20,113,Pediatrie,45,video,3,0,5,cancelled,1
+2025-12-15,0,17,30,1,87,Pediatrie,30,consultation,11,1,0,cancelled,0.549
+2025-10-29,2,12,30,13,175,Neurologie,30,emergency,6,0,5,no_show,0.82
+2025-01-08,2,11,0,13,139,Ortopedie,15,video,2,0,3,completed,0.979
+2025-02-14,4,17,30,1,199,Chirurgie Generală,30,consultation,1,0,3,completed,1
+2025-03-31,0,9,0,11,146,Medicină Internă,60,emergency,0,0,5,completed,1
+2025-05-01,3,11,30,18,5,Ortopedie,30,video,5,0,30,completed,1
+2025-08-10,6,17,30,17,75,ORL,30,video,5,0,7,completed,0.89
+2025-02-03,0,14,30,12,116,ORL,30,checkup,12,1,14,rescheduled,0.675
+2025-04-02,2,10,30,15,100,Ginecologie,30,emergency,10,1,2,completed,0.664
+2025-08-20,2,10,0,20,17,Psihiatrie,45,video,7,0,5,completed,0.781
+2025-08-12,1,12,0,5,82,Urologie,30,checkup,11,1,0,cancelled,0.598
+2025-06-12,3,14,0,13,165,Ortopedie,45,emergency,5,0,2,completed,1
+2025-07-19,5,11,30,15,146,Cardiologie,15,consultation,4,0,2,completed,0.742
+2025-07-11,4,10,0,17,101,Ginecologie,30,consultation,5,0,7,completed,1
+2025-12-16,1,12,30,13,57,Pediatrie,30,video,9,1,21,rescheduled,0.946
+2025-03-26,2,10,30,6,137,Chirurgie Generală,45,video,2,0,3,completed,0.91
+2025-10-29,2,10,0,11,136,Oftalmologie,45,consultation,3,0,21,completed,0.954
+2025-12-30,1,11,30,1,166,Ginecologie,30,video,8,0,7,cancelled,0.712
+2025-05-14,2,10,0,10,161,Oftalmologie,30,checkup,8,0,1,cancelled,0.619
+2025-09-04,3,13,0,2,51,Urologie,45,consultation,3,0,0,cancelled,1
+2025-06-16,0,10,0,11,84,Pediatrie,30,emergency,5,0,2,completed,1
+2025-09-26,4,9,30,15,82,Cardiologie,15,checkup,2,0,7,completed,1
+2025-01-19,6,15,0,15,99,Oftalmologie,30,video,11,1,5,rescheduled,0.446
+2025-01-31,4,13,0,16,2,Dermatologie,30,consultation,8,0,21,completed,0.728
+2025-06-19,3,13,30,14,15,Chirurgie Generală,60,checkup,6,0,3,completed,1
+2025-06-02,0,16,0,16,181,Chirurgie Generală,30,video,10,1,2,cancelled,0.689
+2025-07-06,6,15,30,20,74,Ortopedie,30,consultation,9,1,21,completed,0.396
+2025-12-21,6,11,30,1,35,Cardiologie,60,consultation,12,1,3,cancelled,0.324
+2025-02-07,4,17,0,4,84,Chirurgie Generală,15,consultation,5,0,5,completed,0.794
+2025-08-06,2,13,0,4,73,Dermatologie,30,checkup,9,1,3,cancelled,0.816
+2025-09-13,5,17,0,14,115,ORL,45,emergency,4,0,1,completed,0.696
+2025-07-07,0,16,0,12,74,Pediatrie,60,consultation,3,0,2,completed,1
+2025-04-08,1,15,0,7,156,Ortopedie,60,checkup,10,1,3,rescheduled,0.551
+2025-07-13,6,15,0,17,63,Medicină Internă,30,consultation,11,1,5,rescheduled,0.333
+2025-07-26,5,12,0,15,46,Ortopedie,60,checkup,5,0,30,completed,0.765
+2025-05-17,5,12,30,5,147,Cardiologie,30,checkup,8,0,21,completed,0.392
+2025-05-04,6,15,30,2,141,Ortopedie,45,video,10,1,5,rescheduled,0.599
+2025-12-18,3,10,30,7,145,ORL,30,consultation,0,0,2,completed,0.874
+2025-07-30,2,16,0,14,84,ORL,60,consultation,4,0,5,completed,0.944
+2025-03-27,3,10,30,8,148,Urologie,30,checkup,4,0,1,completed,0.839
+2025-09-10,2,10,30,10,64,Cardiologie,30,consultation,4,0,30,completed,1
+2025-03-01,5,9,30,20,150,Ginecologie,15,checkup,7,0,1,completed,0.591
+2025-09-27,5,16,0,7,126,Psihiatrie,60,consultation,9,1,30,completed,0.435
+2025-09-23,1,10,0,1,173,Neurologie,30,consultation,11,1,14,completed,0.641
+2025-01-23,3,10,30,20,176,Ginecologie,30,checkup,9,1,3,cancelled,0.682
+2025-12-21,6,15,30,17,92,Ortopedie,30,checkup,0,0,21,cancelled,0.811
+2025-01-09,3,10,30,8,100,ORL,15,checkup,12,1,5,rescheduled,0.674
+2025-02-04,1,11,0,7,187,Oftalmologie,60,video,0,0,7,completed,1
+2025-06-28,5,14,0,10,51,Ginecologie,30,video,8,0,7,completed,0.394
+2025-01-03,4,13,30,3,54,ORL,30,consultation,1,0,0,completed,1
+2025-03-02,6,16,30,14,120,ORL,30,consultation,12,1,7,rescheduled,0.556
+2025-02-27,3,11,0,5,47,Cardiologie,30,emergency,7,0,3,completed,0.595
+2025-05-08,3,10,0,2,76,Oftalmologie,30,consultation,3,0,7,completed,0.98
+2025-12-07,6,15,0,5,196,Dermatologie,30,consultation,0,0,7,completed,0.858
+2025-01-05,6,13,30,5,39,Oftalmologie,30,consultation,9,1,2,completed,0.57
+2025-06-29,6,15,0,1,55,Psihiatrie,45,checkup,2,0,5,cancelled,0.812
+2025-08-21,3,9,30,7,109,Chirurgie Generală,30,checkup,6,0,21,completed,0.929
+2025-01-14,1,10,0,5,7,Ortopedie,60,video,6,0,7,completed,0.925
+2025-03-27,3,13,0,15,185,Psihiatrie,60,consultation,9,1,0,rescheduled,0.671
+2025-03-06,3,16,0,11,82,Dermatologie,60,consultation,10,1,7,rescheduled,0.639
+2025-01-17,4,10,0,1,158,Chirurgie Generală,60,consultation,7,0,14,completed,0.509
+2025-08-05,1,16,30,20,17,Chirurgie Generală,30,checkup,5,0,3,completed,1
+2025-02-24,0,9,30,15,112,Cardiologie,30,checkup,12,1,1,cancelled,0.814
+2025-03-04,1,8,0,14,142,Pediatrie,30,consultation,12,1,21,rescheduled,0.574
+2025-01-07,1,12,30,15,28,Ortopedie,30,video,1,0,7,completed,1
+2025-04-11,4,12,30,15,27,Pediatrie,15,emergency,5,0,0,cancelled,0.921
+2025-05-22,3,12,0,13,45,Neurologie,45,consultation,9,1,3,rescheduled,0.794
+2025-09-28,6,14,30,14,181,Medicină Internă,30,checkup,3,0,0,completed,0.703
+2025-04-13,6,13,0,15,66,Medicină Internă,60,consultation,2,0,5,completed,0.622
+2025-03-12,2,14,30,1,9,Cardiologie,60,consultation,6,0,30,completed,1
+2025-03-01,5,8,30,15,32,Dermatologie,15,emergency,4,0,5,no_show,0.706
+2025-02-04,1,15,30,19,1,Chirurgie Generală,30,video,1,0,2,completed,0.978
+2025-10-29,2,10,30,13,156,Urologie,60,checkup,10,1,1,rescheduled,0.682
+2025-08-13,2,14,30,13,155,Urologie,45,consultation,6,0,1,completed,1
+2025-10-20,0,10,0,6,196,Chirurgie Generală,30,consultation,11,1,30,cancelled,0.666
+2025-11-01,5,10,0,20,115,Cardiologie,15,video,4,0,3,no_show,0.788
+2025-08-28,3,8,30,18,44,Neurologie,15,consultation,2,0,7,completed,0.88
+2025-12-05,4,14,0,18,22,Pediatrie,30,emergency,9,1,5,cancelled,0.831
+2025-08-18,0,16,0,3,114,Cardiologie,45,checkup,10,1,5,rescheduled,0.585
+2025-12-05,4,12,0,18,103,Dermatologie,30,consultation,12,1,1,completed,0.79
+2025-04-30,2,13,30,17,96,Ginecologie,60,checkup,0,0,2,completed,0.919
+2025-08-31,6,10,0,6,49,Medicină Internă,30,consultation,6,0,7,completed,0.915
+2025-12-12,4,15,30,6,154,ORL,30,video,2,0,14,completed,1
+2025-12-10,2,16,30,2,69,Cardiologie,30,consultation,1,0,14,cancelled,0.917
+2025-01-23,3,12,0,6,125,Dermatologie,45,video,8,0,3,completed,0.743
+2025-02-24,0,15,30,19,169,ORL,45,consultation,10,1,0,cancelled,0.574
+2025-11-09,6,11,0,9,157,Medicină Internă,15,checkup,4,0,3,completed,0.868
+2025-06-23,0,9,0,6,92,Oftalmologie,45,video,6,0,5,completed,1
+2025-04-24,3,10,30,18,179,Urologie,30,consultation,6,0,2,completed,0.949
+2025-09-27,5,11,0,14,6,Oftalmologie,45,consultation,1,0,14,completed,0.807
+2025-07-03,3,14,0,7,183,Medicină Internă,30,consultation,11,1,3,rescheduled,0.54
+2025-04-06,6,17,0,9,83,Urologie,30,consultation,12,1,14,rescheduled,0.51
+2025-05-23,4,15,30,5,68,Neurologie,45,consultation,10,1,0,rescheduled,0.888
+2025-05-29,3,10,30,13,17,Ginecologie,45,checkup,11,1,1,cancelled,0.659
+2025-10-21,1,15,0,18,139,Psihiatrie,15,consultation,8,0,2,completed,0.572
+2025-07-31,3,12,0,8,84,Oftalmologie,30,consultation,6,0,5,completed,0.824
+2025-05-08,3,14,30,20,141,Ginecologie,30,checkup,9,1,3,completed,0.657
+2025-02-16,6,10,30,11,169,Cardiologie,30,checkup,11,1,5,rescheduled,0.598
+2025-07-04,4,10,30,2,90,Neurologie,15,consultation,10,1,7,rescheduled,0.556
+2025-11-02,6,12,30,7,108,Chirurgie Generală,30,video,10,1,1,cancelled,0.494
+2025-01-29,2,11,0,2,7,Oftalmologie,45,checkup,12,1,1,cancelled,0.796
+2025-10-25,5,10,0,10,97,Medicină Internă,45,consultation,11,1,21,cancelled,0.407
+2025-06-17,1,15,30,6,4,Dermatologie,30,video,7,0,3,cancelled,0.743
+2025-10-20,0,11,30,11,57,Pediatrie,45,video,0,0,2,cancelled,0.995
+2025-07-15,1,15,0,14,87,Psihiatrie,30,consultation,10,1,3,cancelled,0.802
+2025-04-28,0,16,0,14,42,Ortopedie,30,consultation,2,0,14,completed,1
+2025-08-31,6,10,0,11,157,Neurologie,30,consultation,2,0,30,completed,0.696
+2025-09-15,0,15,30,18,133,ORL,30,consultation,12,1,21,cancelled,0.804
+2025-07-22,1,12,30,18,33,Pediatrie,60,consultation,9,1,21,rescheduled,0.784
+2025-01-07,1,16,30,15,35,Psihiatrie,30,consultation,2,0,3,completed,1
+2025-04-15,1,12,0,16,88,Pediatrie,30,checkup,11,1,3,cancelled,0.738
+2025-01-25,5,12,30,6,95,Dermatologie,60,consultation,2,0,5,cancelled,0.595
+2025-07-05,5,15,30,2,9,ORL,60,consultation,10,1,3,cancelled,0.496
+2025-06-23,0,15,0,3,29,Ortopedie,60,consultation,11,1,30,rescheduled,0.534
+2025-09-09,1,14,0,15,113,Medicină Internă,45,consultation,4,0,7,completed,0.96
+2025-03-28,4,8,30,6,19,Ginecologie,30,consultation,8,0,14,completed,0.543
+2025-01-22,2,10,0,2,99,Oftalmologie,60,video,5,0,5,completed,1
+2025-11-16,6,16,30,8,79,Cardiologie,15,video,11,1,14,cancelled,0.342
+2025-07-22,1,11,30,17,18,Medicină Internă,30,consultation,4,0,7,completed,0.985
+2025-05-15,3,11,0,18,93,Psihiatrie,15,checkup,3,0,14,completed,0.909
+2025-12-09,1,10,0,5,138,Ginecologie,60,checkup,4,0,7,cancelled,0.887
+2025-10-18,5,13,0,20,16,Dermatologie,60,consultation,9,1,7,completed,0.651
+2025-12-15,0,9,30,8,10,Neurologie,60,video,8,0,3,completed,0.817
+2025-05-18,6,9,0,18,167,Pediatrie,30,consultation,3,0,14,completed,0.909
+2025-10-09,3,12,30,6,146,Pediatrie,60,checkup,8,0,7,completed,0.794
+2025-04-19,5,9,0,2,30,Cardiologie,30,consultation,0,1,7,rescheduled,0.755
+2025-01-16,3,12,30,13,32,Cardiologie,30,video,3,0,14,completed,1
+2025-05-01,3,16,30,11,167,Pediatrie,45,consultation,8,0,14,completed,0.735
+2025-10-09,3,14,0,11,80,Medicină Internă,60,checkup,10,1,14,rescheduled,0.533
+2025-04-12,5,15,0,15,193,Medicină Internă,60,consultation,4,0,30,completed,0.764
+2025-01-11,5,16,0,14,111,ORL,30,consultation,1,1,7,completed,0.815
+2025-06-03,1,16,0,8,73,Cardiologie,45,checkup,1,0,14,no_show,0.984
+2025-01-22,2,12,0,12,198,Urologie,45,consultation,8,0,5,completed,0.838
+2025-10-18,5,13,30,6,100,Oftalmologie,30,consultation,3,0,5,completed,0.767
+2025-09-28,6,17,30,20,19,Chirurgie Generală,15,video,6,0,5,completed,0.662
+2025-08-21,3,16,0,20,61,Ortopedie,15,consultation,6,0,14,completed,1
+2025-10-23,3,13,0,13,4,Dermatologie,60,checkup,0,0,30,completed,0.885
+2025-03-13,3,17,30,12,86,Urologie,30,video,7,0,2,completed,0.599
+2025-07-17,3,13,0,4,139,ORL,45,checkup,2,0,7,completed,0.884
+2025-03-12,2,11,0,6,37,Oftalmologie,60,consultation,9,1,1,rescheduled,0.612
+2025-05-16,4,15,30,9,34,Neurologie,45,consultation,4,0,14,completed,0.682
+2025-08-11,0,15,0,1,148,Ortopedie,30,video,7,0,7,completed,0.696
+2025-07-24,3,10,30,14,71,Cardiologie,30,consultation,2,0,21,no_show,0.964
+2025-09-15,0,9,30,9,2,Cardiologie,15,checkup,8,0,7,completed,0.703
+2025-08-03,6,9,30,1,124,Neurologie,15,consultation,8,0,14,completed,0.554
+2025-03-01,5,13,0,20,46,Ginecologie,60,consultation,10,1,1,rescheduled,0.68
+2025-07-05,5,10,30,2,146,Ortopedie,30,consultation,1,0,5,completed,0.9
+2025-01-03,4,17,30,3,130,Oftalmologie,45,checkup,5,0,2,completed,0.936
+2025-07-31,3,13,0,14,89,Ortopedie,30,consultation,7,0,3,completed,0.584
+2025-11-16,6,15,0,16,52,Dermatologie,45,consultation,12,1,7,rescheduled,0.499
+2025-06-30,0,15,30,8,176,Ortopedie,15,video,3,0,14,completed,1
+2025-08-13,2,10,0,11,39,Medicină Internă,30,consultation,4,0,3,completed,0.874
+2025-04-23,2,17,30,10,139,Urologie,30,consultation,2,0,2,no_show,0.943
+2025-11-19,2,17,30,13,36,Urologie,15,consultation,7,0,21,completed,0.514
+2025-06-21,5,11,30,13,41,Pediatrie,30,emergency,0,0,5,completed,0.868
+2025-06-16,0,9,30,10,188,Cardiologie,45,checkup,3,0,1,completed,1
+2025-02-18,1,13,0,5,85,Dermatologie,45,consultation,6,0,7,completed,0.766
+2025-01-13,0,11,30,8,81,Dermatologie,45,consultation,2,0,21,completed,1
+2025-10-17,4,11,0,1,41,Medicină Internă,45,checkup,0,0,1,completed,1
+2025-04-04,4,16,30,19,67,Ginecologie,45,checkup,0,0,0,cancelled,1
+2025-04-08,1,16,30,20,141,Cardiologie,60,emergency,9,1,7,cancelled,0.764
+2025-04-29,1,14,0,2,3,Medicină Internă,30,checkup,3,0,14,completed,0.952
+2025-01-02,3,10,0,2,55,Medicină Internă,15,checkup,12,1,2,rescheduled,0.578
+2025-06-03,1,14,0,8,168,Chirurgie Generală,60,checkup,2,0,3,cancelled,1
+2025-10-18,5,11,0,12,100,Neurologie,15,consultation,7,0,5,completed,0.597
+2025-07-23,2,13,0,3,140,Medicină Internă,45,checkup,0,0,21,no_show,0.846
+2025-03-06,3,14,0,7,146,Dermatologie,30,checkup,5,0,0,completed,0.999
+2025-08-23,5,11,0,11,84,Cardiologie,30,checkup,0,0,2,completed,0.793
+2025-04-05,5,10,30,18,66,Ortopedie,30,checkup,10,1,21,cancelled,0.714
+2025-03-18,1,10,0,10,85,Neurologie,15,emergency,0,0,7,cancelled,1
+2025-05-06,1,8,30,17,65,Pediatrie,15,video,1,0,3,completed,0.874
+2025-03-11,1,13,0,10,174,Chirurgie Generală,60,video,7,0,21,completed,0.731
+2025-06-15,6,16,0,3,44,Oftalmologie,45,emergency,4,0,0,no_show,0.679
+2025-05-04,6,11,0,1,178,Ortopedie,30,consultation,2,0,5,completed,0.933
+2025-01-01,2,16,0,3,89,Ortopedie,30,emergency,0,0,3,no_show,1
+2025-02-20,3,14,0,3,91,Urologie,45,checkup,7,0,7,completed,0.543
+2025-09-15,0,11,30,11,141,Urologie,15,checkup,5,0,5,no_show,1
+2025-03-27,3,14,0,13,143,Urologie,15,consultation,12,1,3,rescheduled,0.523
+2025-11-06,3,16,0,18,97,Oftalmologie,60,checkup,9,1,5,rescheduled,0.66
+2025-09-18,3,10,30,2,169,Neurologie,60,consultation,11,1,14,rescheduled,0.819
+2025-11-11,1,10,0,8,35,ORL,60,consultation,1,0,5,completed,1
+2025-04-19,5,15,0,3,108,Chirurgie Generală,30,emergency,11,1,0,rescheduled,0.489
+2025-01-19,6,14,0,9,183,Psihiatrie,30,video,2,0,5,cancelled,0.788
+2025-03-07,4,14,0,8,96,Psihiatrie,30,video,12,1,1,rescheduled,0.684
+2025-05-10,5,11,0,2,89,Psihiatrie,45,consultation,7,0,3,no_show,0.527
+2025-02-19,2,13,0,5,197,Neurologie,45,checkup,9,1,1,cancelled,0.807
+2025-02-07,4,12,30,20,11,Ortopedie,30,video,3,0,14,completed,0.745
+2025-10-05,6,15,0,20,100,Medicină Internă,30,checkup,12,1,21,completed,0.485
+2025-01-29,2,11,30,14,101,Ginecologie,60,video,0,0,7,no_show,1
+2025-02-13,3,13,30,12,93,Cardiologie,30,consultation,12,1,14,rescheduled,0.953
+2025-07-20,6,17,30,20,198,Pediatrie,45,checkup,5,1,7,rescheduled,0.758
+2025-08-21,3,10,0,13,35,Medicină Internă,60,consultation,4,0,2,cancelled,0.886
+2025-06-25,2,17,30,9,173,Ortopedie,30,checkup,8,0,30,completed,0.406
+2025-09-10,2,17,0,20,105,Ortopedie,45,emergency,11,1,1,cancelled,0.568
+2025-04-13,6,13,0,5,185,Dermatologie,60,video,2,0,7,completed,0.729
+2025-05-01,3,10,30,7,9,Psihiatrie,30,consultation,5,0,5,completed,0.888
+2025-07-09,2,16,30,19,173,Dermatologie,30,emergency,6,0,21,cancelled,1
+2025-05-18,6,15,30,7,93,Pediatrie,30,checkup,4,0,21,completed,0.544
+2025-02-02,6,11,30,5,21,Ortopedie,30,consultation,8,0,0,completed,0.496
+2025-11-13,3,16,30,17,23,Chirurgie Generală,30,consultation,2,0,21,completed,0.846
+2025-04-04,4,9,0,1,117,Dermatologie,30,consultation,11,1,5,rescheduled,0.816
+2025-04-03,3,11,30,2,171,Dermatologie,45,checkup,3,0,2,completed,1
+2025-06-08,6,10,0,15,146,Medicină Internă,30,emergency,3,0,21,no_show,0.916
+2025-01-16,3,12,0,16,136,Chirurgie Generală,60,consultation,1,0,7,completed,1
+2025-06-12,3,9,30,9,190,Ortopedie,30,video,12,1,5,rescheduled,0.636
+2025-12-15,0,14,30,2,29,Ginecologie,30,video,10,1,21,cancelled,0.663
+2025-06-24,1,16,0,8,114,Ginecologie,30,checkup,6,0,3,completed,0.904
+2025-01-02,3,9,0,2,196,ORL,45,video,7,0,1,no_show,0.603
+2025-12-04,3,17,0,1,39,Ginecologie,60,consultation,2,0,2,completed,1
+2025-04-10,3,9,0,20,78,Pediatrie,60,checkup,1,0,2,completed,1
+2025-09-11,3,17,0,7,32,Pediatrie,30,consultation,11,1,2,cancelled,0.456
+2025-04-01,1,16,0,20,166,Ortopedie,30,checkup,7,0,3,completed,0.791
+2025-12-04,3,14,0,5,44,Ortopedie,45,emergency,7,0,7,cancelled,0.68
+2025-11-05,2,13,0,10,94,Ginecologie,45,video,12,1,14,cancelled,0.711
+2025-08-07,3,9,30,2,121,Medicină Internă,15,consultation,7,1,2,cancelled,0.771
+2025-03-03,0,15,0,7,98,Cardiologie,15,checkup,2,0,3,cancelled,1
+2025-10-13,0,14,0,3,127,ORL,45,checkup,11,1,14,cancelled,0.586
+2025-05-13,1,15,30,7,84,Ginecologie,45,consultation,3,0,30,no_show,1
+2025-03-24,0,16,0,4,194,Oftalmologie,30,video,5,0,7,completed,0.994
+2025-03-20,3,14,0,6,188,Chirurgie Generală,30,consultation,9,1,30,rescheduled,0.678
+2025-07-19,5,10,30,8,18,ORL,30,consultation,6,0,5,completed,0.823
+2025-05-01,3,8,30,8,144,Dermatologie,45,checkup,5,0,21,completed,0.91
+2025-12-05,4,8,30,13,59,Oftalmologie,45,checkup,5,0,3,completed,0.839
+2025-09-01,0,8,30,9,146,Neurologie,45,video,10,1,1,rescheduled,0.678
+2025-02-09,6,13,30,11,110,Dermatologie,15,video,1,0,3,no_show,0.789
+2025-10-30,3,10,30,12,48,Cardiologie,30,consultation,2,1,2,completed,0.981
+2025-11-30,6,12,0,3,39,Dermatologie,15,consultation,3,0,3,no_show,0.767
+2025-07-26,5,12,30,13,10,Oftalmologie,60,checkup,1,0,5,completed,0.919
+2025-04-05,5,9,30,1,118,Chirurgie Generală,45,video,8,0,7,completed,0.565
+2025-05-02,4,15,0,19,179,Psihiatrie,30,consultation,1,0,3,completed,1
+2025-10-24,4,14,0,8,32,Ortopedie,15,consultation,1,0,0,completed,1
+2025-07-13,6,10,30,19,164,Ginecologie,45,consultation,0,0,0,completed,0.707
+2025-06-08,6,12,30,16,103,Dermatologie,30,checkup,4,0,1,cancelled,0.762
+2025-07-17,3,16,30,2,66,Chirurgie Generală,15,consultation,5,0,2,completed,0.916
+2025-05-20,1,13,0,15,113,Neurologie,30,checkup,10,1,3,cancelled,0.648
+2025-07-14,0,10,0,2,178,Chirurgie Generală,30,emergency,2,0,1,completed,0.854
+2025-08-07,3,10,0,11,158,Dermatologie,60,checkup,8,0,14,completed,0.735
+2025-06-28,5,16,30,14,64,Dermatologie,60,emergency,4,0,3,completed,0.991
+2025-11-10,0,9,0,20,63,Psihiatrie,60,consultation,9,1,5,rescheduled,0.794
+2025-05-19,0,16,30,1,135,ORL,45,checkup,2,0,0,completed,0.88
+2025-09-02,1,15,0,19,172,Urologie,45,video,9,1,21,rescheduled,0.766
+2025-05-08,3,9,0,19,115,Ortopedie,15,consultation,7,0,5,completed,0.755
+2025-05-27,1,14,30,12,87,Ginecologie,45,consultation,12,1,1,rescheduled,0.626
+2025-01-22,2,10,30,10,98,Neurologie,30,checkup,9,1,1,rescheduled,0.863
+2025-02-24,0,9,0,7,188,Ginecologie,30,consultation,5,0,5,completed,0.877
+2025-10-26,6,11,30,1,143,Medicină Internă,60,consultation,9,1,7,completed,0.493
+2025-06-02,0,10,30,13,100,Pediatrie,15,consultation,8,0,0,completed,0.794
+2025-04-04,4,10,30,6,172,Psihiatrie,30,video,3,0,2,completed,1
+2025-06-04,2,10,30,19,107,Urologie,45,checkup,10,1,3,completed,0.746
+2025-01-15,2,8,30,5,146,Dermatologie,30,checkup,0,0,14,completed,0.84
+2025-05-27,1,9,30,7,10,Dermatologie,30,consultation,2,0,14,cancelled,0.901
+2025-01-25,5,9,30,14,101,Chirurgie Generală,30,emergency,11,1,21,completed,0.536
+2025-09-24,2,17,0,1,35,Cardiologie,30,consultation,1,0,21,completed,0.956
+2025-04-23,2,10,30,15,113,Neurologie,45,consultation,6,0,3,cancelled,0.903
+2025-09-02,1,13,30,11,64,Psihiatrie,15,consultation,5,0,1,no_show,1
+2025-04-29,1,15,30,16,44,Pediatrie,15,consultation,12,1,1,rescheduled,0.689
+2025-10-25,5,15,0,3,117,Psihiatrie,30,consultation,12,1,1,rescheduled,0.536
+2025-07-11,4,8,30,9,170,Urologie,30,emergency,1,0,5,completed,0.713
+2025-07-31,3,9,0,9,13,Medicină Internă,30,checkup,8,0,3,cancelled,0.706
+2025-08-29,4,14,30,17,17,Ortopedie,30,checkup,12,1,30,cancelled,0.645
+2025-10-01,2,10,30,17,186,Psihiatrie,30,consultation,3,0,5,cancelled,1
+2025-02-09,6,15,0,5,22,Neurologie,60,consultation,7,0,0,completed,0.626
+2025-11-11,1,8,0,15,13,Ginecologie,30,consultation,10,1,21,cancelled,0.586
+2025-06-30,0,9,30,12,46,Oftalmologie,30,video,12,1,1,rescheduled,0.798
+2025-07-18,4,15,0,8,143,Ginecologie,30,consultation,4,0,1,completed,1
+2025-12-14,6,10,30,19,166,Medicină Internă,45,consultation,3,0,0,completed,0.892
+2025-05-31,5,10,0,10,129,Urologie,30,checkup,5,1,5,completed,1
+2025-01-06,0,16,30,17,176,Chirurgie Generală,15,emergency,5,0,7,completed,0.846
+2025-07-23,2,11,0,6,154,Psihiatrie,30,consultation,2,0,5,completed,0.848
+2025-03-29,5,9,30,19,40,Cardiologie,30,video,5,0,1,completed,0.894
+2025-03-22,5,9,30,4,19,Chirurgie Generală,60,video,12,1,3,rescheduled,0.517
+2025-10-30,3,10,30,8,112,Pediatrie,30,emergency,2,0,2,completed,0.951
+2025-04-03,3,8,30,3,86,ORL,30,checkup,10,1,7,rescheduled,0.763
+2025-04-10,3,10,0,8,168,Urologie,45,consultation,4,0,21,completed,1
+2025-11-25,1,9,0,4,45,Neurologie,30,consultation,10,1,21,rescheduled,0.671
+2025-07-10,3,12,30,18,107,Urologie,30,consultation,0,0,5,completed,0.991
+2025-07-19,5,10,30,5,173,Cardiologie,15,consultation,9,1,21,completed,0.624
+2025-09-12,4,11,30,8,81,Urologie,30,emergency,6,0,2,cancelled,0.999
+2025-03-02,6,13,0,7,76,ORL,30,checkup,11,1,21,completed,0.327
+2025-04-02,2,9,0,1,79,Psihiatrie,15,consultation,9,1,2,rescheduled,0.78
+2025-09-06,5,16,0,3,121,Oftalmologie,30,video,6,0,5,completed,0.786
+2025-10-22,2,14,0,6,132,Psihiatrie,30,emergency,0,0,21,completed,1
+2025-03-28,4,14,0,1,90,Pediatrie,45,checkup,3,0,2,completed,1
+2025-06-14,5,14,30,6,70,Pediatrie,60,video,8,0,21,completed,0.555
+2025-11-12,2,9,0,2,116,Medicină Internă,30,consultation,7,0,21,cancelled,0.788
+2025-04-01,1,16,0,17,157,Medicină Internă,45,video,3,0,5,no_show,1
+2025-02-28,4,16,30,6,102,Ginecologie,30,consultation,4,0,1,no_show,1
+2025-04-08,1,9,0,7,58,Psihiatrie,45,consultation,8,0,7,completed,0.789
+2025-11-04,1,15,0,17,123,Chirurgie Generală,45,emergency,11,1,0,completed,0.633
+2025-09-04,3,12,0,2,109,ORL,45,video,2,1,21,cancelled,1
+2025-05-17,5,10,0,20,33,Ginecologie,45,video,1,0,5,completed,0.886
+2025-10-31,4,11,0,18,178,Dermatologie,30,checkup,11,1,7,completed,0.725
+2025-07-20,6,11,30,18,99,Ortopedie,45,consultation,1,0,3,completed,0.749
+2025-09-17,2,13,0,11,84,Pediatrie,45,checkup,10,1,7,cancelled,0.685
+2025-10-24,4,16,0,15,69,ORL,30,emergency,6,0,30,completed,0.792
+2025-08-13,2,13,30,16,6,Urologie,15,emergency,7,0,7,completed,0.617
+2025-10-20,0,10,30,3,131,Pediatrie,45,video,4,0,5,completed,1
+2025-08-23,5,12,30,7,103,Psihiatrie,30,video,1,0,2,completed,0.881
+2025-01-06,0,15,0,17,101,Cardiologie,30,consultation,0,0,1,completed,1
+2025-07-23,2,11,0,1,140,Ortopedie,30,video,5,0,14,completed,1
+2025-04-08,1,16,0,11,124,Dermatologie,45,checkup,3,0,7,completed,0.909
+2025-02-24,0,13,30,8,4,Ortopedie,60,consultation,5,0,0,completed,0.932
+2025-12-14,6,11,30,7,5,Chirurgie Generală,30,consultation,4,0,2,completed,0.656
+2025-10-05,6,14,30,14,115,Oftalmologie,15,emergency,11,1,21,cancelled,0.442
+2025-11-26,2,15,0,4,162,Pediatrie,30,video,1,1,2,rescheduled,0.989
+2025-05-10,5,9,0,13,124,Dermatologie,45,video,8,0,3,no_show,0.621
+2025-07-13,6,9,0,4,83,Chirurgie Generală,45,consultation,7,0,21,cancelled,0.704
+2025-04-05,5,16,0,4,156,Cardiologie,30,consultation,10,1,7,rescheduled,0.521
+2025-06-07,5,12,30,10,139,Dermatologie,45,consultation,9,1,2,rescheduled,0.425
+2025-03-29,5,9,0,18,58,Chirurgie Generală,15,video,2,0,7,completed,0.894
+2025-11-02,6,8,0,13,33,ORL,30,consultation,1,0,14,completed,0.862
+2025-11-24,0,9,30,16,41,Medicină Internă,45,checkup,8,0,7,completed,0.679
+2025-06-16,0,9,30,6,175,Chirurgie Generală,30,video,1,0,30,completed,0.914
+2025-07-08,1,13,30,3,15,Chirurgie Generală,60,checkup,10,1,0,rescheduled,0.791
+2025-06-07,5,10,0,12,164,Pediatrie,30,consultation,7,0,7,cancelled,0.56
+2025-06-01,6,9,30,4,92,Oftalmologie,30,video,9,1,5,rescheduled,0.578
+2025-01-19,6,11,30,17,137,Cardiologie,30,consultation,3,0,21,completed,0.689
+2025-04-13,6,10,0,14,10,Urologie,30,checkup,2,0,5,completed,0.857
+2025-04-11,4,8,30,6,81,ORL,15,consultation,7,0,3,cancelled,0.711
+2025-04-19,5,16,0,16,132,Cardiologie,30,checkup,1,0,7,completed,0.782
+2025-02-14,4,15,30,13,42,Oftalmologie,45,checkup,1,0,2,cancelled,1
+2025-03-11,1,13,30,13,162,Medicină Internă,30,video,0,0,5,cancelled,0.982
+2025-09-30,1,13,30,16,59,Oftalmologie,15,video,10,1,7,rescheduled,0.655
+2025-12-27,5,9,30,17,75,Dermatologie,30,consultation,4,0,5,completed,0.627
+2025-12-10,2,13,30,19,95,Ginecologie,30,video,5,0,21,completed,0.839
+2025-12-30,1,13,0,17,190,Neurologie,45,consultation,2,0,7,completed,0.857
+2025-12-06,5,16,0,5,77,Urologie,30,checkup,7,0,5,no_show,0.465
+2025-10-25,5,12,30,11,26,Dermatologie,45,consultation,7,0,2,no_show,0.547
+2025-04-04,4,15,0,7,136,Urologie,30,consultation,8,0,1,completed,0.695
+2025-09-09,1,15,0,9,87,Oftalmologie,15,video,11,1,14,cancelled,0.829
+2025-10-21,1,14,0,4,114,Ginecologie,30,consultation,2,0,3,completed,0.857
+2025-04-17,3,10,30,3,161,ORL,30,checkup,12,1,0,cancelled,0.715
+2025-12-09,1,10,0,13,6,Psihiatrie,45,consultation,3,0,1,completed,0.996
+2025-09-30,1,9,30,10,35,ORL,60,consultation,3,0,0,completed,0.816
+2025-02-21,4,16,0,2,73,Chirurgie Generală,15,consultation,3,0,2,completed,0.964
+2025-06-25,2,16,30,7,98,Medicină Internă,30,consultation,3,0,5,completed,0.938
+2025-05-04,6,15,0,1,161,Chirurgie Generală,30,video,12,1,14,rescheduled,0.471
+2025-07-07,0,14,30,15,171,Pediatrie,15,consultation,6,0,2,completed,1
+2025-03-01,5,9,30,8,101,ORL,45,checkup,8,0,5,completed,0.585
+2025-01-15,2,16,30,13,105,Cardiologie,30,consultation,2,0,3,completed,1
+2025-07-31,3,9,0,20,179,Ginecologie,60,consultation,3,0,21,completed,1
+2025-06-03,1,11,30,2,96,Neurologie,15,checkup,8,1,5,rescheduled,0.69
+2025-04-17,3,11,0,9,163,Dermatologie,45,checkup,8,0,2,completed,0.815
+2025-04-19,5,16,30,19,12,Medicină Internă,30,consultation,12,1,21,cancelled,0.297
+2025-01-02,3,13,0,17,138,Dermatologie,60,checkup,12,1,2,rescheduled,0.539
+2025-06-29,6,9,0,11,138,Psihiatrie,60,consultation,7,0,2,completed,0.434
+2025-10-11,5,17,0,4,194,Medicină Internă,45,video,12,1,7,completed,0.318
+2025-04-14,0,10,0,19,129,Urologie,60,checkup,3,0,3,completed,1
+2025-04-30,2,10,30,16,116,Cardiologie,45,consultation,11,1,0,rescheduled,0.683
+2025-02-27,3,17,30,7,132,ORL,60,video,2,0,3,completed,0.962
+2025-05-15,3,9,0,8,22,Oftalmologie,15,checkup,7,0,0,cancelled,0.443
+2025-02-03,0,8,30,19,181,Dermatologie,15,consultation,4,0,14,cancelled,0.878
+2025-09-05,4,14,30,4,163,Ortopedie,30,consultation,7,1,7,cancelled,0.673
+2025-03-19,2,15,30,19,105,Pediatrie,30,consultation,7,0,14,completed,0.888
+2025-12-22,0,14,0,6,108,Neurologie,30,video,0,1,3,cancelled,1
+2025-02-20,3,14,0,2,122,Cardiologie,30,consultation,11,1,7,rescheduled,0.857
+2025-01-17,4,13,0,13,107,Psihiatrie,30,checkup,3,0,5,completed,0.926
+2025-06-23,0,12,30,1,16,Neurologie,30,consultation,12,1,5,rescheduled,0.721
+2025-08-25,0,9,0,15,44,Ortopedie,15,consultation,6,0,7,completed,0.933
+2025-02-08,5,14,30,5,48,Neurologie,15,video,5,0,7,completed,0.759
+2025-09-11,3,9,0,18,18,Ginecologie,45,checkup,4,0,1,no_show,1
+2025-04-26,5,15,30,5,48,Chirurgie Generală,30,checkup,0,0,2,no_show,0.795
+2025-12-07,6,15,30,10,190,Ginecologie,45,checkup,2,0,0,completed,0.841
+2025-08-04,0,14,30,11,25,Pediatrie,60,checkup,1,0,7,completed,0.751
+2025-12-13,5,9,30,12,150,Urologie,30,consultation,2,0,5,completed,0.707
+2025-10-02,3,13,0,6,111,Urologie,60,video,11,1,2,cancelled,0.599
+2025-09-03,2,13,30,5,55,Ginecologie,30,consultation,0,0,2,completed,0.977
+2025-01-13,0,12,0,15,169,Urologie,60,video,1,0,5,completed,0.961
+2025-06-03,1,8,30,19,189,Psihiatrie,45,video,12,1,21,completed,0.583
+2025-07-21,0,13,0,7,84,Pediatrie,30,consultation,6,0,21,completed,1
+2025-09-28,6,11,30,14,48,Ortopedie,45,consultation,1,0,2,completed,0.86
+2025-12-18,3,16,0,1,92,Chirurgie Generală,15,consultation,3,1,0,cancelled,0.873
+2026-01-01,3,17,30,8,152,Neurologie,45,consultation,8,0,14,no_show,0.724
+2025-03-04,1,10,30,1,6,Oftalmologie,60,video,6,0,7,completed,1
+2025-04-14,0,16,30,20,12,Medicină Internă,15,emergency,5,0,30,no_show,1
+2025-10-08,2,11,30,13,63,Cardiologie,15,video,9,1,5,cancelled,0.7
+2025-02-19,2,15,0,15,22,Neurologie,30,consultation,1,0,5,completed,1
+2025-05-13,1,11,0,19,80,Ortopedie,60,consultation,4,0,7,completed,1
+2025-05-23,4,11,0,15,83,Medicină Internă,60,checkup,4,0,21,completed,1
+2025-07-27,6,11,0,2,25,Cardiologie,30,consultation,10,1,7,completed,0.466
+2025-02-16,6,14,0,5,168,Pediatrie,30,checkup,12,1,2,rescheduled,0.38
+2025-07-20,6,9,30,17,18,Ginecologie,30,consultation,2,0,14,completed,0.901
+2025-03-23,6,17,0,12,117,Cardiologie,15,consultation,9,1,1,cancelled,0.381
+2025-03-13,3,13,30,4,141,Neurologie,45,video,10,1,2,cancelled,0.64
+2025-05-27,1,14,30,4,9,Cardiologie,30,consultation,0,0,3,completed,1
+2025-03-07,4,13,0,15,23,Cardiologie,15,video,2,0,21,completed,1
+2025-02-05,2,11,0,1,168,Dermatologie,60,emergency,0,0,3,cancelled,0.991
+2025-04-25,4,17,30,10,98,Psihiatrie,15,video,10,1,2,rescheduled,0.325
+2025-11-21,4,10,0,4,160,Neurologie,30,consultation,7,0,14,no_show,0.809
+2025-06-08,6,12,0,9,61,Chirurgie Generală,30,consultation,7,0,5,completed,0.481
+2025-12-14,6,9,30,6,101,Ginecologie,60,checkup,6,0,3,completed,0.842
+2025-12-24,2,15,0,5,71,Neurologie,60,checkup,7,0,3,completed,0.508
+2025-11-16,6,10,30,3,170,Ortopedie,30,checkup,5,1,3,completed,0.787
+2025-09-19,4,10,30,10,38,Ortopedie,30,video,12,1,2,rescheduled,0.669
+2025-07-13,6,12,0,5,23,Chirurgie Generală,45,consultation,4,0,14,completed,0.597
+2025-05-12,0,13,0,1,103,ORL,45,video,10,1,14,cancelled,0.827
+2025-09-10,2,15,0,17,38,Ginecologie,30,video,6,0,2,completed,1
+2025-05-28,2,12,0,3,136,Urologie,30,video,8,1,3,rescheduled,0.714
+2025-02-20,3,15,0,6,24,Ortopedie,45,consultation,3,0,2,cancelled,0.909
+2025-04-06,6,10,0,4,182,Medicină Internă,15,checkup,8,0,14,completed,0.599
+2025-11-25,1,16,30,2,15,Pediatrie,30,video,3,0,3,cancelled,1
+2025-11-15,5,13,0,3,23,Dermatologie,15,consultation,4,0,5,completed,0.92
+2025-02-20,3,13,30,18,107,Cardiologie,45,consultation,10,1,14,completed,0.795
+2025-03-21,4,15,30,20,193,Cardiologie,45,consultation,9,1,7,completed,0.578
+2025-06-18,2,16,0,4,20,Pediatrie,60,consultation,5,0,7,completed,0.86
+2025-03-27,3,13,30,17,191,Cardiologie,30,emergency,9,1,14,cancelled,0.464
+2025-02-24,0,11,0,20,121,Ortopedie,30,consultation,9,1,21,cancelled,0.748
+2025-07-16,2,10,30,4,138,Pediatrie,30,video,0,0,3,cancelled,1
+2025-05-27,1,12,30,12,120,Urologie,15,consultation,4,0,2,cancelled,0.993
+2025-03-11,1,10,30,6,42,Neurologie,30,consultation,6,0,14,completed,1
+2025-12-08,0,12,30,15,175,ORL,30,consultation,11,1,1,cancelled,0.636
+2025-07-06,6,14,0,3,83,Cardiologie,45,video,4,0,3,completed,0.863
+2025-07-06,6,8,30,6,73,Pediatrie,45,checkup,9,1,5,rescheduled,0.369
+2025-03-12,2,10,30,17,17,Pediatrie,15,consultation,1,0,7,cancelled,1
+2025-04-28,0,8,0,12,19,Medicină Internă,30,consultation,12,1,7,completed,0.52
+2025-12-24,2,10,0,8,171,Oftalmologie,60,consultation,8,0,0,completed,0.824
+2025-09-13,5,11,0,16,130,Oftalmologie,45,video,1,0,2,completed,0.915
+2025-02-26,2,9,0,15,127,Chirurgie Generală,45,consultation,9,1,3,cancelled,0.609
+2025-05-13,1,9,0,20,119,Ortopedie,30,consultation,2,0,2,cancelled,0.996
+2025-07-09,2,15,30,15,120,Ortopedie,15,consultation,1,1,2,completed,0.908
+2025-05-15,3,15,30,18,165,Pediatrie,30,emergency,3,0,3,no_show,1
+2025-09-29,0,8,0,15,76,Neurologie,45,checkup,5,0,7,completed,0.932
+2025-05-13,1,15,30,17,104,Ortopedie,60,consultation,8,0,30,completed,0.752
+2025-08-08,4,10,0,15,168,Medicină Internă,45,consultation,1,0,7,no_show,1
+2025-07-25,4,12,0,12,155,Ortopedie,30,checkup,11,1,5,rescheduled,0.822
+2025-01-27,0,11,0,9,133,Urologie,60,checkup,3,0,7,cancelled,1
+2025-06-27,4,15,0,16,52,Oftalmologie,30,consultation,5,0,3,no_show,0.924
+2025-01-05,6,10,30,14,116,Cardiologie,45,checkup,7,0,3,completed,0.463
+2025-12-27,5,16,0,17,67,Ortopedie,45,checkup,6,0,1,completed,0.816
+2025-04-03,3,8,0,6,165,Ortopedie,30,consultation,1,0,14,completed,0.764
+2025-09-09,1,9,0,2,200,Dermatologie,30,video,5,0,2,completed,1
+2025-10-23,3,13,0,12,45,Neurologie,45,video,0,0,21,completed,1
+2025-07-31,3,17,0,4,69,Ortopedie,45,consultation,1,0,5,cancelled,0.912
+2025-08-19,1,12,0,7,21,Medicină Internă,60,consultation,12,1,0,rescheduled,0.726
+2025-10-26,6,10,0,14,118,Ortopedie,30,consultation,9,1,2,rescheduled,0.502
+2025-08-14,3,9,30,15,111,Pediatrie,60,consultation,3,0,0,completed,1
+2025-03-22,5,16,30,4,179,Oftalmologie,30,checkup,2,0,2,cancelled,0.767
+2025-04-03,3,12,0,6,147,Neurologie,45,consultation,10,1,0,completed,0.602
+2025-03-06,3,15,30,15,102,ORL,30,consultation,2,0,3,no_show,0.959
+2025-10-29,2,12,30,1,116,Psihiatrie,15,video,6,0,0,completed,1
+2025-01-12,6,9,0,4,145,Ortopedie,30,consultation,12,1,1,rescheduled,0.493
+2025-06-03,1,16,0,20,9,Dermatologie,30,checkup,0,0,2,completed,1
+2025-03-30,6,8,0,8,92,Neurologie,15,video,10,1,14,rescheduled,0.38
+2025-01-31,4,9,0,11,73,Chirurgie Generală,45,checkup,0,0,3,completed,0.879
+2025-12-22,0,15,0,8,50,Ortopedie,30,consultation,2,0,1,cancelled,0.957
+2025-01-14,1,11,0,4,33,Dermatologie,45,consultation,9,1,1,cancelled,0.701
+2025-11-10,0,13,0,2,31,Ortopedie,30,checkup,3,0,5,completed,0.9
+2025-05-23,4,9,0,13,47,Oftalmologie,45,consultation,1,0,21,completed,1
+2025-03-09,6,9,30,3,180,Pediatrie,15,consultation,11,1,3,completed,0.496
+2025-05-21,2,12,0,17,162,Medicină Internă,30,consultation,2,0,21,completed,0.838
+2025-01-14,1,8,0,18,69,Chirurgie Generală,60,consultation,3,0,1,completed,0.954
+2025-04-28,0,16,30,1,82,Neurologie,30,emergency,2,0,7,completed,0.984
+2025-08-15,4,12,30,5,67,Ginecologie,45,consultation,11,1,7,completed,0.672
+2025-03-20,3,17,0,9,161,ORL,30,video,12,1,1,rescheduled,0.611
+2025-10-05,6,12,0,14,127,ORL,30,checkup,3,0,14,completed,0.795
+2025-10-13,0,11,0,12,159,Cardiologie,30,checkup,8,0,30,completed,0.767
+2025-09-15,0,15,30,17,136,Pediatrie,45,checkup,12,1,3,rescheduled,0.64
+2025-09-02,1,9,0,1,190,Urologie,30,checkup,10,1,5,rescheduled,0.676
+2025-11-23,6,16,30,3,150,Medicină Internă,30,consultation,2,0,0,completed,0.866
+2025-04-04,4,11,30,6,194,Dermatologie,30,checkup,3,0,2,completed,1
+2025-03-28,4,15,0,9,23,Dermatologie,30,consultation,0,0,7,completed,1
+2025-07-21,0,9,30,2,35,Medicină Internă,30,consultation,5,0,1,completed,0.942
+2025-09-02,1,15,0,1,184,Pediatrie,45,consultation,12,1,1,rescheduled,0.727
+2025-07-09,2,15,0,5,42,Dermatologie,45,consultation,9,1,2,completed,0.665
+2025-01-11,5,16,0,15,125,ORL,15,consultation,6,0,7,completed,0.702
+2025-01-29,2,12,30,5,101,Dermatologie,30,checkup,5,1,5,rescheduled,1
+2025-02-16,6,11,30,5,58,ORL,30,video,3,0,1,completed,0.871
+2025-11-13,3,10,0,14,77,Ortopedie,60,emergency,6,0,21,completed,1
+2025-04-02,2,12,30,17,93,Ginecologie,60,video,12,1,0,completed,0.666
+2025-04-17,3,15,30,6,160,Cardiologie,45,video,12,1,1,rescheduled,0.636
+2025-08-14,3,8,0,16,159,Oftalmologie,30,consultation,11,1,2,completed,0.701
+2025-05-27,1,13,30,10,69,Dermatologie,15,checkup,3,0,3,completed,1
+2025-10-21,1,10,0,6,92,Dermatologie,45,consultation,3,0,14,completed,1
+2025-10-18,5,8,30,6,51,Urologie,30,emergency,1,0,30,completed,0.638
+2025-06-22,6,14,30,16,190,Dermatologie,30,consultation,4,0,14,completed,0.9
+2025-01-17,4,13,0,16,137,Neurologie,30,consultation,4,0,7,completed,1
+2025-09-16,1,17,30,9,55,Ginecologie,15,emergency,1,0,5,completed,0.939
+2025-06-29,6,16,30,14,120,Ortopedie,45,consultation,3,0,21,no_show,0.819
+2025-06-02,0,16,0,17,96,Urologie,45,checkup,0,0,5,completed,0.906
+2025-10-23,3,16,0,17,79,Chirurgie Generală,15,checkup,8,0,2,completed,0.524
+2025-01-18,5,11,0,8,181,Pediatrie,30,video,9,1,5,rescheduled,0.609
+2025-07-22,1,12,30,7,6,Medicină Internă,30,emergency,1,0,1,completed,0.816
+2025-09-01,0,16,30,3,158,Cardiologie,45,checkup,10,1,5,rescheduled,0.8
+2025-09-15,0,15,0,13,121,Pediatrie,30,consultation,10,1,14,cancelled,0.63
+2025-09-15,0,15,30,1,190,Chirurgie Generală,45,checkup,0,0,7,completed,0.811
+2025-03-13,3,15,30,2,68,ORL,60,consultation,11,1,14,cancelled,0.569
+2025-01-16,3,11,0,6,16,Neurologie,30,consultation,10,1,21,rescheduled,0.793
+2025-04-09,2,17,0,17,158,Neurologie,45,checkup,8,0,5,completed,0.523
+2025-04-15,1,15,0,15,24,Ginecologie,45,video,8,0,14,completed,0.743
+2025-03-29,5,11,30,6,8,Pediatrie,45,checkup,10,1,30,rescheduled,0.612
+2025-05-02,4,17,30,20,178,Cardiologie,30,consultation,9,1,7,rescheduled,0.5
+2025-01-14,1,17,0,3,158,Chirurgie Generală,45,consultation,0,0,30,completed,0.977
+2025-10-15,2,16,30,8,14,Psihiatrie,30,video,10,1,14,rescheduled,0.68
+2025-10-03,4,9,30,17,2,Medicină Internă,45,video,4,0,7,completed,0.919
+2025-01-27,0,9,30,19,186,ORL,30,video,8,0,0,no_show,0.596
+2025-01-24,4,9,0,20,40,Medicină Internă,45,consultation,0,0,5,completed,0.788
+2025-02-03,0,12,30,5,136,Ortopedie,45,consultation,2,0,14,cancelled,0.976
+2025-09-27,5,10,0,1,118,Ortopedie,30,checkup,5,0,2,completed,0.771
+2025-08-03,6,12,30,19,176,Neurologie,45,video,6,0,2,completed,0.768
+2025-07-20,6,9,0,17,35,Cardiologie,30,consultation,0,0,14,no_show,0.668
+2025-05-16,4,10,0,11,153,Medicină Internă,45,consultation,4,0,5,cancelled,1
+2025-09-06,5,16,0,6,3,Psihiatrie,45,video,10,1,1,rescheduled,0.55
+2025-11-02,6,8,0,5,58,Ginecologie,30,consultation,8,0,5,completed,0.351
+2025-12-27,5,8,30,15,1,Ortopedie,60,consultation,6,0,14,cancelled,0.667
+2025-04-24,3,14,30,9,129,Neurologie,45,video,12,1,3,completed,0.787
+2025-12-14,6,8,0,13,180,Dermatologie,45,video,8,0,3,completed,0.288
+2025-09-23,1,11,30,14,39,Pediatrie,60,consultation,0,0,14,completed,1
+2025-11-16,6,17,30,10,150,Neurologie,30,checkup,9,1,14,completed,0.491
+2025-03-31,0,9,0,9,48,Oftalmologie,30,consultation,6,0,1,completed,0.883
+2025-07-23,2,9,30,19,150,Medicină Internă,30,video,6,0,5,cancelled,0.85
+2025-10-29,2,16,0,7,83,Urologie,45,video,6,0,5,completed,0.89
+2025-11-09,6,10,30,1,78,Neurologie,30,checkup,0,0,21,completed,0.741
+2025-06-17,1,10,0,20,22,Ortopedie,60,consultation,0,1,1,rescheduled,0.953
+2025-12-01,0,17,30,13,38,Oftalmologie,45,video,12,1,3,cancelled,0.604
+2025-05-26,0,15,0,7,77,Neurologie,15,checkup,9,1,5,rescheduled,0.726
+2025-11-22,5,16,30,5,9,Oftalmologie,45,consultation,5,0,3,completed,0.853
+2025-03-11,1,10,0,11,159,Psihiatrie,45,consultation,2,0,14,completed,0.769
+2025-09-06,5,17,30,20,27,Oftalmologie,60,checkup,9,1,3,completed,0.151
+2025-10-07,1,16,0,12,103,Urologie,30,consultation,7,0,2,no_show,0.586
+2025-08-18,0,13,30,4,135,Medicină Internă,30,video,2,0,7,completed,1
+2025-01-04,5,10,30,16,66,Neurologie,45,consultation,1,0,5,completed,0.781
+2025-07-27,6,9,0,16,126,Ginecologie,30,consultation,7,0,3,completed,0.612
+2025-12-06,5,9,0,5,178,Chirurgie Generală,45,emergency,9,1,5,rescheduled,0.567
+2025-04-12,5,12,0,7,118,Cardiologie,30,emergency,12,1,2,completed,0.483
+2025-10-09,3,13,30,16,111,Cardiologie,30,video,6,0,14,completed,1
+2025-02-03,0,16,0,16,106,Chirurgie Generală,15,emergency,1,0,7,no_show,0.926
+2025-07-02,2,9,0,6,138,Oftalmologie,30,consultation,6,0,2,completed,0.819
+2025-02-07,4,13,30,17,1,Chirurgie Generală,30,emergency,11,1,7,rescheduled,0.787
+2025-05-19,0,14,30,12,64,Oftalmologie,45,video,0,0,14,completed,0.933
+2025-05-26,0,8,0,1,184,Dermatologie,30,consultation,8,0,0,cancelled,0.46
+2025-10-07,1,9,0,18,7,ORL,30,consultation,12,1,2,completed,0.593
+2025-01-21,1,10,30,18,142,Medicină Internă,45,consultation,11,1,7,cancelled,0.685
+2025-07-20,6,10,30,3,98,Dermatologie,45,emergency,3,0,7,completed,0.797
+2025-08-02,5,9,0,7,155,Ginecologie,30,video,8,0,21,cancelled,0.562
+2025-09-16,1,15,30,2,153,Ortopedie,15,checkup,1,0,7,completed,0.903
+2025-12-21,6,14,30,8,21,Neurologie,30,video,2,0,3,completed,0.676
+2025-10-15,2,8,0,13,62,Ortopedie,45,consultation,10,1,3,rescheduled,0.571
+2025-08-21,3,15,0,5,5,Chirurgie Generală,30,video,10,1,0,rescheduled,0.678
+2025-06-01,6,12,0,18,174,ORL,45,video,3,0,14,completed,0.956
+2025-02-07,4,15,30,8,148,Dermatologie,30,emergency,12,1,3,rescheduled,0.744
+2025-06-17,1,14,30,1,94,Pediatrie,60,consultation,6,0,5,completed,0.955
+2025-07-11,4,12,30,1,56,Medicină Internă,30,consultation,0,0,0,completed,0.988
+2025-01-23,3,9,0,14,69,Cardiologie,45,checkup,0,0,5,completed,1
+2025-03-26,2,8,0,1,37,Chirurgie Generală,30,checkup,5,0,2,no_show,0.906
+2025-12-23,1,13,0,4,148,ORL,45,video,0,1,7,rescheduled,0.87
+2025-03-10,0,16,30,12,127,Dermatologie,45,consultation,4,0,5,completed,0.93
+2025-11-06,3,10,30,11,58,Urologie,15,checkup,10,1,5,cancelled,0.85
+2025-11-01,5,11,30,17,55,Dermatologie,60,video,12,1,3,completed,0.533
+2025-12-18,3,11,0,16,158,Ginecologie,15,checkup,6,1,30,rescheduled,1
+2025-08-04,0,15,30,18,109,Cardiologie,30,consultation,10,1,2,rescheduled,0.716
+2025-04-11,4,11,0,12,130,Chirurgie Generală,15,consultation,3,0,1,completed,0.991
+2025-11-22,5,17,30,16,25,Chirurgie Generală,30,consultation,7,0,3,completed,0.378
+2025-10-30,3,10,30,19,68,Cardiologie,45,video,11,1,7,rescheduled,0.765
+2025-12-15,0,15,30,19,14,Chirurgie Generală,45,consultation,11,1,1,cancelled,0.571
+2025-07-23,2,11,30,13,149,Pediatrie,30,consultation,1,0,2,completed,0.98
+2025-11-07,4,12,30,13,141,Cardiologie,30,checkup,12,1,2,rescheduled,0.697
+2025-08-31,6,15,0,18,68,Pediatrie,60,video,1,0,2,completed,0.686
+2025-08-10,6,12,0,7,37,Psihiatrie,45,checkup,3,0,1,completed,0.853
+2025-01-21,1,10,0,11,62,Ortopedie,45,video,7,0,21,completed,0.637
+2025-05-13,1,9,30,8,160,Psihiatrie,30,emergency,5,0,0,completed,1
+2025-05-09,4,14,0,3,109,Oftalmologie,30,emergency,2,0,2,completed,1
+2025-06-02,0,12,0,20,152,Urologie,30,checkup,12,1,7,rescheduled,0.682
+2025-05-18,6,14,0,13,15,Ginecologie,30,checkup,9,1,7,rescheduled,0.538
+2025-04-24,3,9,0,13,73,Pediatrie,30,consultation,12,1,14,completed,0.691
+2025-03-07,4,12,30,15,56,Pediatrie,60,consultation,11,1,5,completed,0.644
+2025-07-23,2,11,30,16,8,Ginecologie,15,checkup,0,0,14,completed,0.946
+2025-06-05,3,9,30,3,187,Cardiologie,45,emergency,4,0,1,completed,1
+2025-01-10,4,14,30,16,195,Chirurgie Generală,30,consultation,6,0,5,completed,1
+2025-01-08,2,16,0,13,49,Urologie,45,consultation,12,1,14,rescheduled,0.615
+2025-05-15,3,17,0,10,147,Ginecologie,30,checkup,10,1,5,rescheduled,0.851
+2025-12-24,2,15,30,19,139,Psihiatrie,30,video,12,1,1,cancelled,0.573
+2025-12-28,6,12,0,19,190,Oftalmologie,60,video,0,0,5,cancelled,0.849
+2025-08-12,1,10,0,5,191,Pediatrie,60,consultation,6,0,1,completed,1
+2025-10-27,0,14,0,4,85,Oftalmologie,30,video,3,0,0,completed,0.957
+2025-12-24,2,17,0,5,50,Oftalmologie,60,emergency,4,0,3,cancelled,0.802
+2025-11-23,6,9,30,15,192,Urologie,45,consultation,8,0,5,no_show,0.575
+2025-11-26,2,12,30,2,85,ORL,30,video,1,0,0,completed,1
+2025-04-13,6,14,30,19,165,Chirurgie Generală,30,checkup,9,1,5,completed,0.598
+2025-12-14,6,10,30,15,160,Dermatologie,30,emergency,3,0,5,no_show,0.78
+2025-11-14,4,16,30,5,52,Medicină Internă,45,consultation,8,0,21,completed,0.66
+2025-02-20,3,11,30,11,188,Ginecologie,45,consultation,4,0,7,completed,1
+2025-07-24,3,10,30,16,91,Neurologie,60,consultation,7,0,0,completed,0.61
+2025-08-01,4,15,0,10,175,Cardiologie,30,consultation,5,0,1,completed,0.986
+2025-05-12,0,16,30,3,198,Urologie,30,checkup,4,1,14,completed,1
+2025-10-01,2,17,0,17,199,Pediatrie,45,video,0,0,5,no_show,0.997
+2025-07-29,1,10,30,9,40,Pediatrie,30,consultation,2,1,7,cancelled,0.842
+2025-04-25,4,8,30,3,55,Dermatologie,45,consultation,12,1,3,rescheduled,0.559
+2025-11-07,4,12,30,19,125,Ortopedie,45,consultation,2,0,1,completed,0.905
+2025-06-02,0,10,0,15,53,Chirurgie Generală,45,consultation,11,1,5,completed,0.622
+2025-01-08,2,13,30,8,147,Dermatologie,45,video,9,1,14,cancelled,0.841
+2025-08-10,6,8,30,9,38,ORL,60,video,12,1,2,rescheduled,0.441
+2025-09-29,0,13,0,11,134,Dermatologie,45,video,7,0,3,completed,0.836
+2025-12-07,6,12,30,18,112,Ginecologie,30,consultation,1,0,1,cancelled,0.894
+2025-05-17,5,17,0,7,1,Urologie,30,emergency,9,1,3,cancelled,0.508
+2025-05-22,3,9,30,6,63,ORL,45,consultation,6,1,7,cancelled,0.89
+2025-07-12,5,14,30,6,118,Medicină Internă,45,consultation,8,0,14,completed,0.469
+2025-04-04,4,16,0,3,96,Neurologie,60,checkup,12,1,14,rescheduled,0.606
+2025-09-14,6,9,0,13,93,Chirurgie Generală,30,consultation,8,0,0,completed,0.531
+2025-03-15,5,10,30,4,116,Oftalmologie,30,checkup,2,0,2,completed,0.844
+2025-10-21,1,8,30,11,70,Psihiatrie,30,checkup,0,0,5,cancelled,1
+2025-12-27,5,10,30,14,128,Chirurgie Generală,30,checkup,1,0,21,completed,0.787
+2025-11-16,6,14,30,7,119,Urologie,15,checkup,5,0,1,completed,0.598
+2025-12-31,2,14,0,13,141,Pediatrie,30,checkup,7,0,5,cancelled,0.916
+2025-01-09,3,14,30,3,39,Pediatrie,30,checkup,2,0,7,completed,1
+2025-02-15,5,12,0,5,146,ORL,45,checkup,6,0,14,completed,0.834
+2025-03-10,0,15,0,16,2,Medicină Internă,30,emergency,9,1,0,rescheduled,0.649
+2025-09-04,3,15,0,13,142,Oftalmologie,60,consultation,11,1,5,completed,0.715
+2025-08-12,1,14,30,2,63,Psihiatrie,30,consultation,5,0,7,cancelled,1
+2025-04-08,1,11,30,1,125,Ginecologie,30,consultation,2,0,7,cancelled,0.804
+2025-02-21,4,10,30,2,175,Chirurgie Generală,30,video,5,0,1,completed,0.837
+2025-04-24,3,12,30,9,12,Dermatologie,30,checkup,3,0,1,completed,0.876
+2025-09-05,4,17,0,5,59,ORL,45,video,3,0,30,completed,0.831
+2025-10-01,2,13,0,19,164,Ginecologie,60,checkup,7,0,21,completed,0.628
+2025-11-24,0,17,30,12,110,Urologie,30,consultation,7,0,2,no_show,0.785
+2025-08-05,1,15,30,10,6,Neurologie,30,video,9,1,3,rescheduled,0.688
+2025-09-13,5,12,0,4,91,Oftalmologie,60,consultation,11,1,21,cancelled,0.484
+2025-08-13,2,10,30,18,199,Psihiatrie,30,consultation,9,1,14,rescheduled,0.646
+2025-07-08,1,16,30,6,59,Pediatrie,30,consultation,11,1,3,cancelled,0.646
+2025-05-07,2,13,30,1,120,Pediatrie,30,emergency,7,0,3,completed,0.645
+2025-06-26,3,15,30,18,73,ORL,15,checkup,4,0,21,completed,0.904
+2025-06-22,6,8,0,6,20,Urologie,45,consultation,8,0,14,completed,0.449
+2025-02-20,3,10,30,9,171,Ginecologie,30,video,11,1,5,completed,0.733
+2025-08-19,1,10,0,19,185,Ortopedie,30,consultation,10,1,30,completed,0.811
+2025-01-15,2,15,30,12,192,Cardiologie,30,checkup,6,0,2,completed,1
+2025-08-24,6,9,30,14,106,Medicină Internă,60,consultation,5,0,21,completed,0.89
+2025-01-17,4,9,0,5,175,Psihiatrie,60,consultation,9,1,5,rescheduled,0.86
+2025-08-05,1,13,30,16,92,Oftalmologie,45,consultation,7,0,3,completed,0.688
+2025-05-22,3,15,0,9,76,Cardiologie,45,consultation,12,1,21,rescheduled,0.667
+2025-07-04,4,11,30,5,97,Cardiologie,30,consultation,7,0,3,completed,0.795
+2025-10-27,0,15,30,13,157,ORL,30,checkup,2,0,5,completed,1
+2025-02-17,0,10,0,1,56,Urologie,30,video,11,1,14,rescheduled,0.637
+2025-04-17,3,15,30,10,175,Dermatologie,60,consultation,2,0,21,completed,1
+2025-05-04,6,17,0,9,93,Dermatologie,30,emergency,1,0,5,completed,0.701
+2025-04-12,5,9,0,4,67,Psihiatrie,45,checkup,8,0,14,completed,0.602
+2025-05-29,3,8,30,10,63,Ginecologie,30,consultation,1,0,1,completed,1
+2025-07-11,4,12,0,4,186,Psihiatrie,30,video,1,0,5,completed,1
+2025-08-10,6,12,30,6,162,Neurologie,60,consultation,12,1,5,cancelled,0.471
+2025-02-19,2,8,30,17,82,Medicină Internă,30,consultation,7,0,3,completed,0.629
+2025-08-08,4,15,0,8,185,Neurologie,30,consultation,11,1,7,rescheduled,0.653
+2025-01-18,5,8,0,2,48,Urologie,30,consultation,10,1,7,rescheduled,0.35
+2025-03-12,2,9,0,4,75,Ortopedie,15,consultation,0,0,1,completed,0.859
+2025-10-29,2,13,0,4,103,Medicină Internă,60,consultation,11,1,5,rescheduled,0.749
+2025-01-17,4,17,0,19,34,Ortopedie,45,consultation,6,0,0,no_show,0.836
+2025-11-11,1,15,0,4,195,Pediatrie,30,consultation,3,0,2,completed,0.921
+2025-03-01,5,15,0,8,188,Oftalmologie,30,video,6,0,3,completed,0.891
+2025-04-06,6,12,30,10,157,Ginecologie,30,consultation,4,0,3,completed,0.815
+2025-10-26,6,17,0,14,193,Ginecologie,45,checkup,3,0,5,completed,0.73
+2025-07-04,4,9,30,8,92,Medicină Internă,45,consultation,11,1,2,rescheduled,0.793
+2025-06-20,4,13,0,9,125,Medicină Internă,60,consultation,3,0,5,completed,0.976
+2025-08-02,5,11,0,9,122,Chirurgie Generală,30,consultation,9,1,7,rescheduled,0.625
+2025-05-19,0,16,30,14,185,Chirurgie Generală,45,consultation,8,0,7,no_show,0.58
+2025-03-07,4,15,30,8,40,Dermatologie,30,video,12,1,30,rescheduled,0.63
+2025-06-23,0,12,0,15,166,Psihiatrie,60,video,11,1,7,completed,0.654
+2025-06-15,6,10,30,14,141,Chirurgie Generală,30,consultation,10,1,5,rescheduled,0.63
+2025-03-17,0,10,30,19,164,Pediatrie,45,emergency,12,1,5,cancelled,0.796
+2025-08-01,4,9,0,17,22,Neurologie,30,emergency,10,1,2,rescheduled,0.721
+2025-04-17,3,12,30,2,121,Psihiatrie,30,video,0,0,2,completed,1
+2025-09-04,3,17,0,18,36,Medicină Internă,45,checkup,1,0,1,completed,0.928
+2025-06-02,0,15,30,13,48,Chirurgie Generală,45,video,11,1,5,completed,0.569
+2025-03-26,2,11,30,12,193,Medicină Internă,30,video,9,1,1,rescheduled,0.88
+2025-10-29,2,14,30,1,56,Medicină Internă,45,consultation,10,1,1,cancelled,0.616
+2025-04-03,3,14,30,10,146,Ginecologie,15,consultation,10,1,0,cancelled,0.633
+2025-04-23,2,13,0,4,100,Neurologie,30,emergency,9,1,0,rescheduled,0.678
+2025-05-07,2,13,30,19,9,Neurologie,30,consultation,4,0,21,completed,0.822
+2025-12-18,3,10,0,10,12,Oftalmologie,30,checkup,1,0,30,cancelled,1
+2025-09-10,2,13,0,3,65,Urologie,15,consultation,4,0,7,completed,1
+2025-06-09,0,14,0,2,39,Urologie,30,video,6,0,3,completed,1
+2025-01-17,4,15,0,20,155,Cardiologie,30,consultation,12,1,2,cancelled,0.696
+2025-10-11,5,10,0,2,54,Chirurgie Generală,30,consultation,11,1,5,completed,0.411
+2025-02-19,2,12,0,7,140,Medicină Internă,15,consultation,7,0,7,completed,0.633
+2025-03-11,1,15,0,19,175,Dermatologie,60,video,2,0,5,cancelled,1
+2025-03-24,0,17,0,10,24,Neurologie,30,checkup,10,1,2,rescheduled,0.446
+2025-11-08,5,10,30,16,131,Chirurgie Generală,30,consultation,6,0,1,completed,0.815
+2025-02-10,0,8,30,10,158,Neurologie,45,consultation,12,1,5,rescheduled,0.6
+2025-06-28,5,10,0,3,182,Pediatrie,15,consultation,5,0,5,completed,0.857
+2025-12-05,4,10,0,14,141,Dermatologie,45,consultation,5,0,7,completed,1
+2025-11-21,4,11,30,3,182,Ginecologie,30,checkup,9,1,2,cancelled,0.696
+2025-07-03,3,11,30,17,146,Oftalmologie,30,consultation,5,0,30,completed,0.941
+2025-12-06,5,16,0,12,94,Urologie,30,consultation,2,0,7,completed,0.892
+2025-07-19,5,11,30,13,94,Cardiologie,30,video,7,1,0,rescheduled,0.725
+2025-02-26,2,15,0,13,131,ORL,60,consultation,2,0,14,completed,0.998
+2025-02-22,5,16,0,14,105,Urologie,30,checkup,12,1,14,rescheduled,0.488
+2025-07-28,0,9,0,4,90,ORL,30,consultation,8,0,2,completed,0.697
+2025-01-07,1,12,30,11,40,Urologie,30,video,9,1,5,rescheduled,0.696
+2025-10-11,5,10,0,8,96,Neurologie,45,video,5,0,14,no_show,0.828
+2025-06-10,1,10,30,5,43,ORL,30,consultation,0,0,3,completed,0.954
+2025-09-08,0,13,0,20,195,Ginecologie,30,consultation,8,1,1,completed,0.559
+2025-02-22,5,14,30,8,78,Neurologie,45,video,2,0,5,no_show,0.871
+2025-08-29,4,13,30,10,188,ORL,30,consultation,1,0,7,no_show,0.967
+2025-04-25,4,8,0,12,128,Urologie,45,video,10,1,30,rescheduled,0.557
+2025-03-16,6,9,30,9,62,Psihiatrie,30,checkup,5,0,5,no_show,0.775
+2025-09-10,2,15,30,1,140,Dermatologie,30,video,0,0,7,completed,0.901
+2025-07-03,3,16,30,1,97,Neurologie,45,consultation,6,0,2,cancelled,0.884
+2025-07-10,3,11,0,3,103,Chirurgie Generală,30,consultation,3,0,5,completed,1
+2025-07-03,3,10,0,17,72,Pediatrie,30,consultation,9,1,2,cancelled,0.679
+2025-07-23,2,10,30,15,199,Ginecologie,60,consultation,12,1,21,rescheduled,0.687
+2025-03-14,4,16,0,7,78,Urologie,15,consultation,1,0,1,completed,1
+2025-06-19,3,11,30,20,28,Chirurgie Generală,30,consultation,4,0,5,completed,1
+2025-07-13,6,8,30,6,95,Ginecologie,15,video,3,0,1,cancelled,0.804
+2025-12-12,4,13,30,6,57,Neurologie,30,checkup,12,1,1,rescheduled,0.719
+2025-03-13,3,13,30,6,177,Oftalmologie,45,consultation,1,0,30,completed,1
+2025-03-09,6,8,0,14,119,Urologie,60,consultation,1,0,2,completed,0.587
+2025-09-01,0,16,0,13,57,Ortopedie,45,emergency,3,0,2,completed,1
+2025-01-24,4,10,30,1,48,Ortopedie,15,consultation,9,1,0,cancelled,0.657
+2025-11-13,3,10,30,3,155,Cardiologie,15,checkup,2,0,7,completed,0.946
+2025-07-12,5,9,30,13,184,Psihiatrie,45,emergency,1,0,3,no_show,0.742
+2025-10-24,4,17,0,8,1,Dermatologie,45,consultation,12,1,30,rescheduled,0.75
+2025-04-30,2,9,30,15,120,Urologie,45,consultation,6,0,7,cancelled,0.836
+2025-03-02,6,13,30,7,174,Oftalmologie,45,consultation,1,0,30,completed,0.86
+2025-08-04,0,14,30,2,89,Ortopedie,45,checkup,12,1,3,rescheduled,0.712
+2025-02-14,4,15,30,16,141,Cardiologie,30,consultation,11,1,7,rescheduled,0.642
+2025-05-06,1,9,0,13,123,ORL,30,video,0,0,14,completed,1
+2025-03-19,2,10,30,4,139,Chirurgie Generală,30,consultation,2,0,7,completed,1
+2025-11-28,4,12,30,8,128,Neurologie,15,video,9,1,3,rescheduled,0.863
+2025-08-21,3,15,0,19,193,Urologie,30,checkup,3,0,1,completed,1
+2025-08-12,1,11,30,13,157,Pediatrie,30,checkup,8,0,1,completed,0.745
+2025-07-31,3,11,0,11,54,Urologie,30,consultation,12,1,2,completed,0.845
+2025-07-18,4,15,0,14,101,Dermatologie,30,consultation,12,1,21,completed,0.577
+2025-09-07,6,10,30,11,89,Pediatrie,60,video,7,0,3,completed,0.633
+2025-07-17,3,13,30,9,136,Ginecologie,30,checkup,2,0,14,completed,0.951
+2025-01-12,6,10,0,11,2,Medicină Internă,30,video,6,0,5,completed,0.618
+2025-02-26,2,9,0,14,197,Ortopedie,45,video,11,1,5,cancelled,0.71
+2025-01-12,6,13,0,9,176,Dermatologie,60,consultation,9,1,1,rescheduled,0.587
+2025-12-03,2,11,0,6,38,Pediatrie,30,checkup,8,0,7,cancelled,0.624
+2025-05-27,1,16,30,19,119,Ortopedie,30,video,4,0,1,completed,0.865
+2025-04-28,0,14,0,3,75,Ginecologie,30,video,2,0,2,completed,1
+2025-10-18,5,14,30,11,17,Psihiatrie,60,checkup,12,1,7,rescheduled,0.395
+2025-04-11,4,11,0,5,134,Medicină Internă,30,consultation,2,0,14,completed,1
+2025-12-13,5,12,30,5,100,Dermatologie,45,video,3,0,14,completed,0.79
+2025-08-20,2,14,30,1,131,Ortopedie,60,checkup,9,1,3,cancelled,0.6
+2025-07-15,1,8,30,9,156,Dermatologie,60,video,9,1,1,cancelled,0.482
+2025-07-09,2,16,30,19,184,Cardiologie,30,consultation,4,0,14,completed,0.936
+2025-01-26,6,15,0,3,28,Chirurgie Generală,30,consultation,5,0,5,completed,0.773
+2025-12-29,0,14,0,7,135,Psihiatrie,30,checkup,11,1,7,rescheduled,0.677
+2025-02-01,5,10,0,12,104,Medicină Internă,60,consultation,10,1,2,rescheduled,0.473
+2025-09-25,3,14,0,9,132,ORL,30,consultation,5,0,0,completed,0.97
+2025-07-26,5,12,30,13,73,Ginecologie,30,video,7,0,0,no_show,0.464
+2025-11-08,5,8,30,4,104,Oftalmologie,30,checkup,11,1,2,cancelled,0.356
+2025-09-22,0,16,30,17,109,Neurologie,15,checkup,6,0,5,completed,1
+2025-04-14,0,14,0,14,17,Ginecologie,60,emergency,0,0,30,completed,1
+2025-10-04,5,9,30,14,84,Ginecologie,45,checkup,3,0,2,completed,0.887
+2025-12-02,1,13,0,10,41,Medicină Internă,30,consultation,7,0,7,completed,0.846
+2025-10-04,5,15,30,14,141,Ginecologie,45,consultation,12,1,2,rescheduled,0.541
+2025-09-21,6,11,0,15,46,Ginecologie,45,consultation,8,0,2,completed,0.382
+2025-12-30,1,9,30,5,133,Chirurgie Generală,60,consultation,3,1,5,completed,0.861
+2025-01-04,5,12,30,5,185,Cardiologie,45,emergency,3,0,7,completed,0.687
+2025-08-22,4,16,0,4,195,Urologie,30,consultation,11,1,7,cancelled,0.712
+2025-07-19,5,10,0,1,114,Neurologie,30,consultation,2,0,2,completed,0.747
+2025-12-14,6,17,30,16,178,ORL,30,checkup,12,1,7,completed,0.297
+2025-12-31,2,16,0,19,150,ORL,30,consultation,11,1,7,rescheduled,0.562
+2025-07-28,0,10,30,17,61,Pediatrie,30,consultation,0,0,3,completed,1
+2025-05-25,6,17,30,12,51,Ginecologie,45,video,2,0,1,completed,0.685
+2025-12-27,5,8,0,12,178,Dermatologie,30,consultation,0,0,3,cancelled,0.987
+2025-10-28,1,9,30,2,191,Psihiatrie,15,consultation,11,1,14,rescheduled,0.818
+2025-03-10,0,11,0,9,120,Chirurgie Generală,30,video,3,0,2,completed,1
+2025-04-16,2,11,0,20,48,Neurologie,30,consultation,9,1,1,rescheduled,0.71
+2025-09-16,1,16,30,10,174,Pediatrie,45,consultation,3,0,30,completed,1
+2025-03-13,3,15,30,14,94,Ortopedie,45,consultation,6,0,2,cancelled,1
+2025-09-13,5,14,30,1,11,Cardiologie,45,emergency,10,1,1,cancelled,0.327
+2025-12-07,6,8,30,13,5,Chirurgie Generală,15,consultation,12,1,3,rescheduled,0.527
+2025-07-25,4,17,0,2,166,Psihiatrie,45,video,5,0,14,no_show,1
+2025-07-15,1,13,0,1,23,Cardiologie,15,consultation,0,0,5,completed,0.885
+2025-01-02,3,15,30,18,12,Ortopedie,30,video,3,0,30,completed,0.96
+2025-10-06,0,16,0,20,175,Cardiologie,45,consultation,4,0,7,completed,1
+2025-07-21,0,9,0,17,22,Ortopedie,60,checkup,6,0,3,no_show,1
+2025-10-20,0,10,30,9,197,Ginecologie,45,video,11,1,2,completed,0.728
+2025-06-28,5,14,0,8,3,Oftalmologie,30,video,9,1,3,cancelled,0.467
+2025-03-13,3,9,0,10,36,ORL,30,consultation,6,0,3,completed,0.986
+2025-09-06,5,11,0,17,127,Ginecologie,30,video,10,1,5,completed,0.399
+2025-04-21,0,11,0,14,140,Urologie,60,checkup,0,0,7,cancelled,1
+2025-07-25,4,9,0,6,109,Medicină Internă,30,checkup,11,1,5,cancelled,0.642
+2025-12-19,4,10,30,3,102,Chirurgie Generală,30,checkup,10,1,7,completed,0.567
+2025-08-26,1,10,0,11,145,Urologie,30,consultation,9,1,5,rescheduled,0.668
+2025-08-11,0,10,30,13,76,Cardiologie,30,consultation,8,0,7,completed,0.738
+2025-12-30,1,17,30,4,198,Ginecologie,30,video,6,0,5,completed,0.907
+2025-02-05,2,17,0,19,91,Medicină Internă,30,consultation,8,0,7,cancelled,0.562
+2025-01-29,2,16,30,2,2,Psihiatrie,45,consultation,9,1,7,rescheduled,0.799
+2025-08-17,6,13,30,12,164,Ginecologie,60,checkup,10,1,0,rescheduled,0.517
+2025-03-18,1,11,0,3,165,Urologie,30,checkup,7,0,5,no_show,0.748
+2025-07-25,4,14,30,5,47,Ortopedie,30,consultation,9,1,2,rescheduled,0.609
+2025-01-22,2,8,30,7,6,Ortopedie,45,emergency,6,0,3,completed,0.863
+2025-10-21,1,12,0,16,189,ORL,30,consultation,12,1,3,completed,0.634
+2025-05-22,3,10,30,14,174,Ginecologie,30,emergency,8,0,14,completed,0.531
+2025-06-05,3,10,30,8,66,Chirurgie Generală,45,consultation,10,1,3,cancelled,0.519
+2025-07-01,1,16,0,9,130,Pediatrie,45,checkup,3,0,21,completed,0.958
+2025-08-08,4,14,30,16,56,Medicină Internă,60,video,8,0,2,cancelled,0.743
+2025-09-26,4,12,30,8,41,ORL,30,video,8,0,14,completed,0.595
+2025-05-05,0,16,30,20,177,Chirurgie Generală,60,consultation,0,0,14,completed,1
+2025-01-17,4,13,30,13,119,Ortopedie,45,consultation,7,0,2,no_show,0.818
+2025-11-05,2,15,0,15,115,Pediatrie,60,checkup,2,0,5,completed,1
+2025-11-18,1,17,0,8,144,Cardiologie,15,consultation,8,0,1,completed,0.511
+2025-03-09,6,14,0,10,88,Cardiologie,45,video,1,0,3,cancelled,0.872
+2025-05-16,4,15,0,8,193,Ginecologie,45,video,5,0,14,completed,1

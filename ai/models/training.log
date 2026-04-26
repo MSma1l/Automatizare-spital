@@ -13,3 +13,23 @@
 2026-04-20 22:10:34,356 [INFO] CV accuracy: 0.9993 (+/- 0.0013)
 2026-04-20 22:10:34,369 [INFO] Model saved: C:\Depozit\gitProjects\Automatizare-spital\ai\models\saved_models\registration_agent_v20260420_221034.pkl
 2026-04-20 22:10:34,370 [INFO] Report saved: C:\Depozit\gitProjects\Automatizare-spital\ai\models\reports\registration_agent_report.json
+2026-04-26 19:23:35,662 [INFO] ============================================================
+2026-04-26 19:23:35,662 [INFO] Training Registration Agent (TF-IDF + LogisticRegression)
+2026-04-26 19:23:35,662 [INFO] ============================================================
+2026-04-26 19:23:35,693 [INFO] Loaded 5960 labeled lines
+2026-04-26 19:23:35,960 [INFO] TF-IDF matrix: (5960, 782)
+2026-04-26 19:23:37,172 [INFO] Accuracy:  0.9857
+2026-04-26 19:23:37,172 [INFO] F1 (weighted): 0.9856
+2026-04-26 19:23:37,172 [INFO] CV accuracy: 0.9883 (+/- 0.0021)
+2026-04-26 19:23:37,189 [INFO] Model saved: C:\Depozit\gitProjects\Automatizare-spital\ai\models\saved_models\registration_agent_v20260426_192337.pkl
+2026-04-26 19:23:37,189 [INFO] Report saved: C:\Depozit\gitProjects\Automatizare-spital\ai\models\reports\registration_agent_report.json
+2026-04-26 19:42:16,147 [INFO] ============================================================
+2026-04-26 19:42:16,147 [INFO] Training Registration Agent (TF-IDF + LogisticRegression)
+2026-04-26 19:42:16,147 [INFO] ============================================================
+2026-04-26 19:42:16,160 [INFO] Loaded 5960 labeled lines
+2026-04-26 19:42:16,290 [INFO] TF-IDF matrix: (5960, 782)
+2026-04-26 19:42:17,107 [INFO] Accuracy:  0.9857
+2026-04-26 19:42:17,107 [INFO] F1 (weighted): 0.9856
+2026-04-26 19:42:17,107 [INFO] CV accuracy: 0.9883 (+/- 0.0021)
+2026-04-26 19:42:17,110 [INFO] Model saved: C:\Depozit\gitProjects\Automatizare-spital\ai\models\saved_models\registration_agent_v20260426_194217.pkl
+2026-04-26 19:42:17,110 [INFO] Report saved: C:\Depozit\gitProjects\Automatizare-spital\ai\models\reports\registration_agent_report.json

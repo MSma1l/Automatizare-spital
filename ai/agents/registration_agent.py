@@ -62,6 +62,8 @@ DATE_PATTERNS = [
 PHONE_PATTERN = re.compile(r"(?:\+?\d{1,3}[\s.-]?)?(?:\(?\d{2,4}\)?[\s.-]?)?\d{3}[\s.-]?\d{3,4}(?:[\s.-]?\d{2,4})?")
 EMAIL_PATTERN = re.compile(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+")
 INSURANCE_PATTERN = re.compile(r"\b(?:RO|MD|CNP)?\s*\d{10,16}\b", re.IGNORECASE)
+# Romanian/Moldovan CNP (Cod Numeric Personal): exactly 13 digits
+CNP_PATTERN = re.compile(r"\b\d{13}\b")
 # Moldovan ID card document number: letter(s) + 7-9 digits (e.g. B37050258)
 MD_ID_DOCNO_PATTERN = re.compile(r"\b[A-Z]{1,2}\d{7,9}\b")
 # Words that are all-caps (possible name on Moldovan ID card)
@@ -73,6 +75,27 @@ MD_ID_MARKERS = [
     "agenția servicii publice", "cetatenia", "cetățenia", "гражданство",
     "data nasterii", "data nașterii", "дата рождения",
     "data emiterii", "data expirarii", "data expirării",
+]
+
+# Keywords that identify an "Anchetă Pacient / Анкета пациента" intake form
+ANKETA_MARKERS = [
+    "anchetă pacient", "ancheta pacient", "анкета пациента",
+    "clinică privată", "clinica privata",
+    "data completării", "дата заполнения",
+    "(dd.mm.yyyy)", "(13 cifre",
+]
+
+# Lines that are pure form noise / instructions on the anketa form
+ANKETA_NOISE_PATTERNS = [
+    re.compile(r"clinic[ăa]\s+privat[ăa]", re.IGNORECASE),
+    re.compile(r"anchet[ăa]\s+pacient", re.IGNORECASE),
+    re.compile(r"анкета\s+пациент", re.IGNORECASE),
+    re.compile(r"litere\s+de\s+tipar", re.IGNORECASE),
+    re.compile(r"печатными\s+буквами", re.IGNORECASE),
+    re.compile(r"registration\s*agent", re.IGNORECASE),
+    re.compile(r"semn[ăa]tur[ăa]", re.IGNORECASE),
+    re.compile(r"подпись", re.IGNORECASE),
+    re.compile(r"^\(.*\)$"),  # parenthetical-only line e.g. "(13 cifre/цифр)"
 ]
 
 
@@ -142,12 +165,45 @@ class RegistrationAgent(BaseAgent):
             except Exception as e:
                 logger.warning(f"Registration Agent: could not load model: {e}")
 
+    @staticmethod
+    def _is_anketa_noise(line: str) -> bool:
+        """True if a line is form chrome (header, instruction, signature)."""
+        for pat in ANKETA_NOISE_PATTERNS:
+            if pat.search(line):
+                return True
+        return False
+
+    @staticmethod
+    def _label_field_for_line(line: str) -> str | None:
+        """Recognise label lines including bilingual anketa-style labels
+        like 'Nume / Фамилия:' or 'Asigurare / Полис / CNP'."""
+        line_l = line.lower().strip(" \t:.")
+        # Drop trailing parenthetical hints like "(DD.MM.YYYY)" or "(+_)"
+        line_l = re.sub(r"\([^)]*\)", "", line_l).strip(" \t:/")
+        # Try the whole line first
+        if line_l in KEYWORD_TO_FIELD:
+            return KEYWORD_TO_FIELD[line_l]
+        # Split on '/' to handle bilingual labels — return the first matching token
+        candidates = [c.strip(" \t:.") for c in line_l.split("/") if c.strip()]
+        for c in candidates:
+            if c in KEYWORD_TO_FIELD:
+                return KEYWORD_TO_FIELD[c]
+            for kw, f in KEYWORD_TO_FIELD.items():
+                if c == kw or c.startswith(kw + " ") or c.endswith(" " + kw):
+                    return f
+        # Substring fallback
+        for kw, f in KEYWORD_TO_FIELD.items():
+            if kw in line_l:
+                return f
+        return None
+
     # ── Rule-based extractor ─────────────────────────────────────
     def _rule_extract(self, text: str) -> dict:
         out: dict = {}
         lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
         text_l = text.lower()
         is_md_id = any(marker in text_l for marker in MD_ID_MARKERS)
+        is_anketa = any(marker in text_l for marker in ANKETA_MARKERS)
 
         # ── Pass 1: "Key: value" on same line ─────────────────────
         for line in lines:
@@ -163,6 +219,31 @@ class RegistrationAgent(BaseAgent):
                             break
                 if field and value:
                     self._assign(out, field, value)
+
+        # ── Pass 1b: Anketa form layout — bilingual label on one line,
+        #            value (often handwritten/typed) on the next ────────
+        if is_anketa:
+            for i, line in enumerate(lines):
+                if self._is_anketa_noise(line):
+                    continue
+                field = self._label_field_for_line(line)
+                if not field:
+                    continue
+                # Look at next 1-3 lines for a real value
+                for j in (1, 2, 3):
+                    if i + j >= len(lines):
+                        break
+                    val = lines[i + j].strip()
+                    if not val:
+                        continue
+                    if self._is_anketa_noise(val):
+                        continue
+                    # Skip if the next line is itself another label
+                    if self._label_field_for_line(val):
+                        break
+                    if field not in out or not out[field]:
+                        self._assign(out, field, val)
+                        break
 
         # ── Pass 2: Moldovan ID card layout — label on one line, value on next ─
         # Handles patterns like:
@@ -297,22 +378,30 @@ class RegistrationAgent(BaseAgent):
 
         if "insurance_number" not in out:
             phone_digits = re.sub(r"\D", "", out.get("phone", ""))
-            for line in lines:
-                # ID card doc number is good substitute
-                m = MD_ID_DOCNO_PATTERN.search(line)
-                if m:
-                    out["insurance_number"] = m.group(0)
+            # Anketa form: prefer 13-digit CNP first
+            if is_anketa:
+                for line in lines:
+                    m = CNP_PATTERN.search(line)
+                    if m:
+                        out["insurance_number"] = m.group(0)
+                        break
+            if "insurance_number" not in out:
+                for line in lines:
+                    # ID card doc number is good substitute
+                    m = MD_ID_DOCNO_PATTERN.search(line)
+                    if m:
+                        out["insurance_number"] = m.group(0)
+                        break
+                    m = INSURANCE_PATTERN.search(line)
+                    if not m:
+                        continue
+                    candidate = m.group(0).strip()
+                    if phone_digits and phone_digits in re.sub(r"\D", "", candidate):
+                        continue
+                    if re.fullmatch(r"\d{4}", candidate):
+                        continue
+                    out["insurance_number"] = candidate
                     break
-                m = INSURANCE_PATTERN.search(line)
-                if not m:
-                    continue
-                candidate = m.group(0).strip()
-                if phone_digits and phone_digits in re.sub(r"\D", "", candidate):
-                    continue
-                if re.fullmatch(r"\d{4}", candidate):
-                    continue
-                out["insurance_number"] = candidate
-                break
 
         return out
 
@@ -339,7 +428,11 @@ class RegistrationAgent(BaseAgent):
             if d:
                 out["birth_date"] = d
         elif field == "phone":
-            out["phone"] = _clean_phone(value)
+            cleaned = _clean_phone(value)
+            digits = re.sub(r"\D", "", cleaned)
+            # Only accept if it really looks like a phone (7-15 digits)
+            if 7 <= len(digits) <= 15:
+                out["phone"] = cleaned
         elif field == "gender":
             norm = GENDER_MAP.get(value.strip().lower())
             if norm:
@@ -350,9 +443,18 @@ class RegistrationAgent(BaseAgent):
                 out["email"] = m.group(0).lower()
         elif field == "insurance_number":
             m = INSURANCE_PATTERN.search(value)
-            out["insurance_number"] = (m.group(0).strip() if m else value.strip())
+            if m:
+                out["insurance_number"] = m.group(0).strip()
+            else:
+                # Accept raw value only if it has at least 6 digits (avoid noise)
+                stripped = value.strip()
+                digit_count = sum(1 for c in stripped if c.isdigit())
+                if digit_count >= 6 and len(stripped) <= 30:
+                    out["insurance_number"] = stripped
         else:
-            out[field] = value.strip()
+            v = value.strip()
+            if v:
+                out[field] = v
 
     # ── ML classifier (per-line field labeller) ──────────────────
     def _ml_extract(self, text: str) -> dict:
